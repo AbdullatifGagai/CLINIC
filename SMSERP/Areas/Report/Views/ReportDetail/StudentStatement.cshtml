@@ -1,0 +1,188 @@
+﻿@using ZCLINIC
+<div class="page-header page-header-default">
+    <div class="breadcrumb-line">
+        <h5 class="text-semibold">Student Fees Ledger</h5>
+    </div>
+</div>
+
+@{
+    string a = string.Empty;
+}
+
+
+
+<div class="content">
+    <div class="panel panel-flat">
+        <div class="panel-body">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <div class="row">
+
+
+                <div class="form-group form-group-xs col-md-12">
+
+                    <div class="form-group form-group-xs col-md-2">
+                        <label>From  Date<b class="wysiwyg-color-red"></b></label>
+                        <input type="date" class="form-control" id="FromDate" />
+
+                    </div>
+
+
+
+
+                    <div class="form-group form-group-xs col-md-2">
+                        <label>To Date<b class="wysiwyg-color-red"></b></label>
+                        <input type="date" class="form-control" id="ToDate" />
+
+                    </div>
+
+
+
+
+
+
+
+                </div>
+
+
+
+
+            </div>
+            <div class="row">
+
+
+                <div class="form-group form-group-xs col-md-12">
+
+
+                    <div class="form-group form-group-xs col-md-2">
+                        <label>GrId<b class="wysiwyg-color-red"></b></label>
+                        <input type="text" readonly class="form-control" id="GrId" />
+
+                    </div>
+
+
+
+
+
+
+
+
+                    <div class="form-group form-group-xs col-md-2">
+                        <label>Gr No<b class="wysiwyg-color-red"></b></label>
+                        <input type="text" readonly class="form-control" id="Grno" />
+
+                    </div>
+
+
+
+
+                    <div class="form-group form-group-xs col-md-4">
+                        <label>Student Name<b class="wysiwyg-color-red"></b></label>
+                        <input type="text" readonly=readonly class="form-control" id="Name" />
+
+                    </div>
+
+
+
+
+                    <div class="form-group form-group-xs mt-20 col-md-1">
+                        <a class="btn btn-info btn-sm" id="AddItemBtn" data-script="#"><i class="icon-add mr-5"></i>Student</a>
+                    </div>
+
+
+                    
+
+
+
+
+
+
+
+
+                </div>
+
+
+
+
+            </div>
+
+
+
+
+            <div class="row">
+
+
+                <div class="form-group form-group-xs col-md-6">
+
+                    <div class="form-group form-group-xs col-md-4">
+                        <a id="FeeId" class="btn btn-primary btn-xs"><i class="position-left"></i>Student Fees Ledger</a>
+                       
+
+
+                      
+
+
+                    </div>
+                    
+
+
+
+
+                </div>
+
+
+
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+@*<script>
+
+    document.getElementById('FromDate').valueAsDate = new Date();
+    document.getElementById('ToDate').valueAsDate = new Date();
+
+
+    $('#ReceivableId').click(function (e) {
+
+
+        //var format1 = 'Form Date: ' + moment($("#FromDate").val()).format('DD/MM/YYYY') +
+        //    ' Up to Date: ' + moment($("#ToDate").val()).format('DD/MM/YYYY') +
+        //    ' From Account Name: ' + $("#FAccountCode").val() + '-' + $('#FAccountName option:selected').text() +
+        //    ' Upto Account Name: ' + $("#TAccountCode").val() + '-' + $('#TAccountName option:selected').text();
+
+
+        //var RecId = $('#FId').val();
+
+
+        debugger
+
+
+        var value = `/Report/Reportrdlc/AReport?rvalues.Name=21&rvalues.Value[0]=${$('#FId').val()}&rvalues.Value[1]=${$('#FromDate').val()}&rvalues.Value[2]=${$('#ToDate').val()}&rvalues.Value[3]=''&rvalues.Value[4]=''&rvalues.Value[5]=''&rvalues.Value[6]=''`
+        $(this).attr('href', value)
+        $(this).attr('target', "_blank")
+
+
+
+
+    })
+
+</script>*@

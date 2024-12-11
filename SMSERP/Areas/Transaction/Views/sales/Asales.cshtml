@@ -1,0 +1,354 @@
+﻿
+@using ZCLINIC
+@model ZCLINIC.Areas.Transaction.Models.sales
+
+@{
+    string URL = Model == null ? "/Transaction/PurchaseOrder/SavePurchaseOrder" : "/Transaction/PurchaseOrder/UpdatePurchaseOrder";
+    int counter = 0;
+    List<ZCLINIC.Areas.Master.Models.Product> Product = new ZCLINIC.Areas.Master.Models.Product().Master_ProductGetAll(Context.Session.GetBValues(), Context.GetIP(), Context.GetCInfo());
+    List<ZCLINIC.Areas.Master.Models.Store> Store = new ZCLINIC.Areas.Master.Models.Store().Master_StoreGetAll(Context.Session.GetBValues(), Context.GetIP(), Context.GetCInfo());
+
+    //List<WMFCCTAPP.Areas.Master.Models.Store> store = new WMFCCTAPP.Areas.Master.Models.Store().Master_StoreGetAll(Context.Session.GetBValues(), Context.GetIP(), Context.GetCInfo());
+
+
+
+
+}
+
+<style>
+    /*Remove Arrows/Spinners from type number*/
+    /* Chrome, Safari, Edge, Opera */
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+
+    /* Firefox */
+    input[type=number] {
+        -moz-appearance: textfield;
+    }
+</style>
+
+<form method="post" data-url="@URL" data-rurl="/Transaction/PurchaseOrder" data-display="Cash Payment Voucher">
+
+
+
+    @Html.HiddenFor(m => m.SalesId)
+    @Html.HiddenFor(m => m.GrNo)
+    @Html.HiddenFor(m => m.GrId)
+
+    <div class="row">
+
+
+
+        <div class="form-group form-group-xs col-md-12">
+
+            <div class="form-group form-group-xs col-md-2">
+                <label>Sale No<b class="wysiwyg-color-red"></b></label>
+                @Html.TextBoxFor(m => m.SalesCode, new { @class = "form-control", type = "text", @readonly = "readonly" })
+
+            </div>
+
+            <div class="form-group form-group-xs col-md-2">
+                <label>Sale Date<b class="wysiwyg-color-red"></b></label>
+                @Html.TextBoxFor(m => m.SaleDate, new { @class = "form-control", type = "date" })
+
+            </div>
+
+
+            <div class="form-group form-group-xs col-md-4">
+                <label>Student Name<b class="wysiwyg-color-red"></b></label>
+
+                @Html.TextBoxFor(m => m.StudentName, new { @class = "form-control", type = "text" })
+
+
+
+
+            </div>
+
+            <div class="form-group form-group-xs mt-20 col-md-1">
+                <a class="btn btn-info btn-sm" id="AddItemBtn" data-script="#"><i class="icon-add mr-5"></i>Student</a>
+            </div>
+
+
+
+
+
+
+            <div class="form-group form-group-xs col-md-2">
+                <label>RefId<b class="wysiwyg-color-red"></b></label>
+                @Html.TextBoxFor(m => m.RefId, new { @class = "form-control", type = "text", @readonly = "readonly" })
+
+            </div>
+
+
+
+        </div>
+
+
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+    <div class="row">
+
+
+
+        <div class="form-group form-group-xs col-md-12">
+
+
+
+
+            <div class="form-group form-group-xs col-md-3">
+                <label>Bank Name<b class="wysiwyg-color-red"></b></label>
+                @{
+                    List<ZCLINIC.Areas.Master.Models.Master_SubAccount> SubAcc = new ZCLINIC.Areas.Master.Models.Master_SubAccount().Master_SubAccountGetBankMaster(Context.Session.GetBValues(), Context.GetIP(), Context.GetCInfo());
+                    SubAcc.Insert(0, new ZCLINIC.Areas.Master.Models.Master_SubAccount { Com_id = 0, Subacc_Name = "Select Bank  Name" });
+                }
+                @Html.DropDownList("BankId", SubAcc.Select(s => new SelectListItem() { Text = s.Subacc_Name, Value = s.Com_id.ToString() }), new { @class = "form-control " })
+
+            </div>
+
+
+
+            <div class="form-group form-group-xs col-md-3">
+                <label>Month Name<b class="wysiwyg-color-red"></b></label>
+                @{
+                    List<ZCLINIC.Areas.Master.Models.AcadmicYear> AcadmicYear = new ZCLINIC.Areas.Master.Models.AcadmicYear().Master_AcadmicYearGetAll(Context.Session.GetBValues(), Context.GetIP(), Context.GetCInfo());
+                    AcadmicYear.Insert(0, new ZCLINIC.Areas.Master.Models.AcadmicYear { Id = 0, FeesTerm = "Select Month  Name" });
+                }
+                @Html.DropDownList("MonId", AcadmicYear.Select(s => new SelectListItem() { Text = s.FeesTerm, Value = s.Id.ToString() }), new { @class = "form-control " })
+
+            </div>
+
+
+
+
+
+            <div class="form-group form-group-xs col-md-2">
+                <label>Due Date<b class="wysiwyg-color-red"></b></label>
+                @Html.TextBoxFor(m => m.DueDate, new { @class = "form-control", type = "date" })
+
+            </div>
+
+
+            <div class="form-group form-group-xs mt-20 col-md-1">
+                <a class="btn btn-info btn-sm" id="AddItemCourseBtn" data-script="#"><i class="icon-add mr-5"></i>Add Course Item</a>
+            </div>
+
+
+
+
+        </div>
+
+
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div style="display:none;">
+
+
+        @*@{
+                List<SMCHSL.Areas.Master.Models.Master_SubAccount> SubAccount_ChartOfAccount = new SMCHSL.Areas.Master.Models..Master_SubAccountGetAll(Context.Session.GetBValues(), Context.GetIP(), Context.GetCInfo());
+
+            }*@
+
+
+
+
+
+        @*@{
+                List<WMFCCTAPP.Areas.Master.Models.Product> Product = new WMFCCTAPP.Areas.Master.Models.Product().Master_ProductGetAll(Context.Session.GetBValues(), Context.GetIP(), Context.GetCInfo());
+                Product.Insert(0, new WMFCCTAPP.Areas.Master.Models.Product { ProductId = 0, ProductName = "Select Product  Name" });
+            }*@
+
+
+
+
+
+
+
+
+    </div>
+
+    <div class="col-lg-12 table-responsive form-group">
+        <br />
+        <table class="table table-xxs table-md table-bordered table-striped table-hover bg-lightgray dataTables_scrollBody">
+            <thead>
+                <tr class="bg-blue-800">
+                    <th class="col-lg-2">Product Name</th>
+                    <th class="col-lg-1">Pro.Unit</th>
+                    <th class="col-lg-1">Rate</th>
+
+                    <th class="col-lg-1">UnitQty</th>
+                    <th class="col-lg-1">Amount</th>
+                    <th class="col-lg-1">DisAmt</th>
+                    <th class="col-lg-1">Saletex%</th>
+                    <th class="col-lg-1">SaletaxAmt</th>
+
+
+
+                    <th class="col-lg-1">TotalAmount</th>
+
+
+
+
+
+
+
+
+                    <th class="col-lg-1">Actions</th>
+
+                </tr>
+                <tr>
+                    <th class="col-lg-4">
+                        <select id="ProductName" class="form-control bootstrap-select" data-style="btn-default btn-xs" data-search="true" data-width="100%">
+                            <option value="0">--Select Product--</option>
+                            @foreach (var item in Product)
+                            {
+                                <option value="@item.ProductId">@item.ProductName</option>
+                            }
+                        </select>
+
+                    </th>
+
+
+
+
+
+
+
+                    <th><input class="form-control" id="UnitId" type="text" readonly /></th>
+
+
+                    <th><input class="form-control" id="Rate" type="number" /></th>
+
+                    <th><input class="form-control" id="Qty" type="number" /></th>
+                    <th><input class="form-control" id="TotalAmt" type="number" readonly /></th>
+                    <th><input class="form-control" id="DisAmt" type="number" /></th>
+                    <th><input class="form-control" id="SalePar" type="number" /></th>
+
+                    <th><input class="form-control" id="SaleAmt" type="number" readonly /></th>
+                    <th><input class="form-control" id="TAmt" type="number" readonly /></th>
+
+
+
+                    <th class="col-lg-4">
+                        <select id="StoreName" class="form-control bootstrap-select" data-style="btn-default btn-xs" data-search="true" data-width="100%">
+                            <option value="0">--Select Store--</option>
+                            @foreach (var item in Store)
+                            {
+                                <option value="@item.storeId">@item.Storename</option>
+                            }
+                        </select>
+
+                    </th>
+
+
+
+
+
+
+
+                    @*<th class="col-lg-4">
+                            <select id="StoreName" class="form-control bootstrap-select" data-style="btn-default btn-xs" data-search="true" data-width="100%">
+                                <option value="0">--Select Store--</option>
+                                @foreach (var item in store)
+                                {
+                                    <option value="@item.storeId">@item.Storename</option>
+                                }
+                            </select>
+
+                        </th>*@
+
+
+
+
+                    <td>
+
+                        <a id="btn_add" class="text-primary-600"><i class="icon-add"></i></a>
+
+                    </td>
+
+                </tr>
+            </thead>
+            <tbody id="tbodytable">
+            </tbody>
+            <tfoot>
+                <tr>
+
+                    <td colspan="3"></td>
+                    <td class="text-right">Total Amount</td>
+                    <td>@Html.TextBoxFor(m => m.Total_Amt, new { @class = "form-control", type = "number", @readonly = "readonly" })</td>
+
+
+                    <td>@Html.TextBoxFor(m => m.Total_DisAmt, new { @class = "form-control", type = "number", @readonly = "readonly" })</td>
+                    <td></td>
+                    <td>@Html.TextBoxFor(m => m.Total_Saletex, new { @class = "form-control", type = "number", @readonly = "readonly" })</td>
+                    <td>@Html.TextBoxFor(m => m.Total_Amount, new { @class = "form-control", type = "number", @readonly = "readonly" })</td>
+
+
+
+
+
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="modal-footer mt-10 no-padding no-border">
+
+
+
+        <a data-url="/Transaction/sales/Index" data-script="#" class="btn btn-danger btn-xs  closeBtn" data-dismiss="modal"><i class="icon-cross"></i>Close</a>
+
+        <button type="button" data-submit="" class="btn btn-primary  btn-xs  SaveBtn"><i class="icon-floppy-disk position-left"></i>Save</button>
+        @* <button type="button" data-submit="" class="btn btn-primary btn-xs SaveBtn"><i class="icon-floppy-disk position-left"></i>Save</button>*@
+
+    </div>
+
+</form>

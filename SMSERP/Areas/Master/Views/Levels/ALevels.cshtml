@@ -1,0 +1,379 @@
+﻿@using ZCLINIC
+@model ZCLINIC.Areas.Master.Models.Levels
+
+@{
+    string URL = Model == null ? "/Master/Levels/SaveLevels" : "/Master/Levels/UpdateLevels";
+    int counter = 0;
+}
+
+<style>
+    /*Remove Arrows/Spinners from type number*/
+    /* Chrome, Safari, Edge, Opera */
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+
+    /* Firefox */
+    input[type=number] {
+        -moz-appearance: textfield;
+    }
+</style>
+
+<form method="post" data-url="@URL" data-rurl="/Master/Levels" data-display="Bank Payment Voucher">
+
+
+
+    @Html.HiddenFor(m => m.LId)
+    <div class="row">
+
+
+
+        <div class="form-group form-group-xs col-md-12">
+
+            <div class="form-group form-group-xs col-md-6">
+                <label>Level Name<b class="wysiwyg-color-red"></b></label>
+                @Html.TextBoxFor(m => m.LevelName, new { @class = "form-control", type = "text", required = "required" })
+
+            </div>
+            <div class="form-group form-group-xs col-md-6">
+                <label>Teacher Name<b class="wysiwyg-color-red"></b></label>
+                @{
+                    List<ZCLINIC.Areas.Master.Models.Teacher> Teacher = new ZCLINIC.Areas.Master.Models.Teacher().Master_TeacherGetAll(Context.Session.GetBValues(), Context.GetIP(), Context.GetCInfo());
+
+                }
+                @Html.DropDownList("TeacherId", Teacher.Select(s => new SelectListItem() { Text = s.TeacherName, Value = s.TeacherId.ToString() }), new { @class = "form-control " })
+            </div>
+
+
+
+
+
+
+
+
+        </div>
+    </div>
+
+
+
+    <div class="row">
+
+        <div class="form-group form-group-xs col-md-12">
+            <div class="form-group form-group-xs col-md-6">
+                <label>Days<b class="wysiwyg-color-red"></b></label>
+                @{
+                    List<ZCLINIC.Areas.Master.Models.Days> Days = new ZCLINIC.Areas.Master.Models.Days().Master_DaysGetAll(Context.Session.GetBValues(), Context.GetIP(), Context.GetCInfo());
+
+                }
+                @Html.DropDownList("DaysId", Days.Select(s => new SelectListItem() { Text = s.DayName, Value = s.DId.ToString() }), new { @class = "form-control " })
+
+            </div>
+
+
+            <div class="form-group form-group-xs col-md-6">
+                <label>Admission Fee<b class="wysiwyg-color-red"></b></label>
+                @Html.TextBoxFor(m => m.AdmissionFee, new { @class = "form-control input-group", placeholder = "Admission Fee", type = "number", required = "required" })
+
+            </div>
+
+
+
+
+
+
+        </div>
+
+
+
+    </div>
+
+
+
+    <div class="row">
+
+        <div class="form-group form-group-xs col-md-12">
+
+            <div class="form-group form-group-xs col-md-6">
+                <label>Monthly Fee<b class="wysiwyg-color-red"></b></label>
+                @Html.TextBoxFor(m => m.MonthlyFee, new { @class = "form-control input-group", placeholder = "Monthly Fee", type = "number", required = "required" })
+
+            </div>
+
+            <div class="form-group form-group-xs col-md-6">
+                <label>Course Fee<b class="wysiwyg-color-red"></b></label>
+                @Html.TextBoxFor(m => m.CourseFee, new { @class = "form-control input-group", placeholder = "Course Fee", type = "number", required = "required" })
+
+            </div>
+
+
+        </div>
+
+
+
+    </div>
+
+
+    <div class="row">
+
+        <div class="form-group form-group-xs col-md-12">
+
+            <div class="form-group form-group-xs col-md-6">
+                <label>Secuirty Fee<b class="wysiwyg-color-red"></b></label>
+                @Html.TextBoxFor(m => m.SecuirtyFee, new { @class = "form-control input-group", placeholder = "Secuirty Fee", type = "number", required = "required" })
+
+            </div>
+
+            <div class="form-group form-group-xs col-md-6">
+                <label>Annual Fee<b class="wysiwyg-color-red"></b></label>
+                @Html.TextBoxFor(m => m.AnnualFee, new { @class = "form-control input-group", placeholder = "Annual Fee", type = "number", required = "required" })
+
+            </div>
+
+
+        </div>
+
+
+
+    </div>
+
+    <div class="row">
+
+        <div class="form-group form-group-xs col-md-12">
+
+            <div class="form-group form-group-xs col-md-6">
+                <label>Transport Fee<b class="wysiwyg-color-red"></b></label>
+                @Html.TextBoxFor(m => m.TransportFee, new { @class = "form-control input-group", placeholder = "Transport Fee", type = "number", required = "required" })
+
+            </div>
+
+            <div class="form-group form-group-xs col-md-6">
+                <label>Others Fee<b class="wysiwyg-color-red"></b></label>
+                @Html.TextBoxFor(m => m.Others, new { @class = "form-control input-group", placeholder = "Others Fee", type = "number", required = "required" })
+
+            </div>
+
+
+        </div>
+
+
+
+    </div>
+
+
+    <div class="row">
+
+        <div class="form-group form-group-xs col-md-12">
+
+            <div class="form-group form-group-xs col-md-6">
+                <label>Start Date<b class="wysiwyg-color-red"></b></label>
+                @Html.TextBoxFor(m => m.Sdate, new { @class = "form-control", type = "date", required = "required" })
+
+            </div>
+
+            <div class="form-group form-group-xs col-md-6">
+                <label>End Date<b class="wysiwyg-color-red"></b></label>
+                @Html.TextBoxFor(m => m.Edate, new { @class = "form-control", type = "date", required = "required" })
+
+            </div>
+
+
+        </div>
+    </div>
+
+
+
+    <div class="row">
+
+        <div class="form-group form-group-xs col-md-12">
+
+            <div class="form-group form-group-xs col-md-6">
+                <label>Degree Name<b class="wysiwyg-color-red"></b></label>
+                <label>Degree Name<b class="wysiwyg-color-red"></b></label>
+                <div>
+                    @{
+                        List<ZCLINIC.Areas.Master.Models.Degree> Degree = new ZCLINIC.Areas.Master.Models.Degree().Master_DegreeGetAll(Context.Session.GetBValues(), Context.GetIP(), Context.GetCInfo());
+                        Degree.Insert(0, new ZCLINIC.Areas.Master.Models.Degree { DegId = 0, DegName = "Select Degree" });
+
+                    }
+                    @Html.DropDownList("DegreeId", Degree.Select(p => new SelectListItem() { Text = p.DegName, Value = p.DegId.ToString() }), new { @class = "form-control", data_style = "btn-default btn-xs", tabindex = '4', data_search = "true", data_width = "100%" })
+
+                </div>
+            </div>
+
+            <div class="form-group form-group-xs col-md-6">
+                <label>Session Name<b class="wysiwyg-color-red"></b></label>
+                <div>
+                    @{
+                        List<ZCLINIC.Areas.Master.Models.Fiscal> Fiscal = new ZCLINIC.Areas.Master.Models.Fiscal().Master_FiscalGetAll(Context.Session.GetBValues(), Context.GetIP(), Context.GetCInfo());
+                        Fiscal.Insert(0, new ZCLINIC.Areas.Master.Models.Fiscal { FId = 0, FName = "Select Fiscal" });
+
+                    }
+                    @Html.DropDownList("SessionId", Fiscal.Select(p => new SelectListItem() { Text = p.FName, Value = p.FId.ToString() }), new { @class = "form-control", data_style = "btn-default btn-xs", tabindex = '4', data_search = "true", data_width = "100%" })
+
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+
+
+
+    <!--<div class="panel-body form-group panel panel-flat mt-5" style="height:322px; width:100%; overflow-y:auto;" id="table-div">
+
+
+        <div class="table-responsive container-fluid quotaiontable">
+            <table class="table table-xxs table-md table-bordered table-striped table-hover bg-lightgray dataTables_scrollBody">
+                <thead>
+                    <tr class="bg-blue-800">
+
+                        <th>Account Name</th>
+                        <th>Remarks</th>
+                        <th>Debit</th>
+                        <th>Credit</th>
+
+
+                        <th></th>
+
+
+                    </tr>
+                    <tr>
+
+
+
+
+
+                        <th class="col-md-5">
+
+
+                        </th>
+                        <th class="col-md-3"><input type="text" class="form-control Remarksfield TxtBox" , id="Remarks" /></th>
+                        <th class="col-md-2"><input type="text" class="form-control Debitfield TxtBox" id="DebitAmt" /></th>
+                        <th class="col-md-2"><input type="text" class="form-control Creditfield TxtBox" id="CreditAmt" /></th>
+
+                        <th class="col-lg-1"><a class="icon-add text-primary" id="AddItemBtn"></a></th>
+                    </tr>
+
+
+                </thead>-->
+    @*<tbody class="BankVoucherDetails">
+            @if (Model != null)
+            {
+                foreach (var item in Model.VoucherDetails)
+                {
+                    counter++;
+
+
+                    <tr>
+
+
+
+
+                        <td>
+
+                            @Html.DropDownListFor(m => m.VoucherDetails[counter - 1].SUB_CODE, Master_SubAccount.Select(p => new SelectListItem() { Text = p.Subacc_Name.ToString(), Value = p.Sub_accountCode.ToString() }), new { @class = "bootstrap-select vatratecal", data_live_search = "true", data_width = "100%" })
+                        </td>
+
+
+                        <td><input type="text" class="form-control Remarksfield" value="@item.Remarks"></td>
+
+                        <td><input type="text" class="form-control Debitfield" value="@item.DEBIT"></td>
+                        <td><input type="text" class="form-control Creditfield" value="@item.CREDIT"></td>
+
+
+                        <td><a id=""><i class="icon-trash removeitem text-danger-600"></i></a></td>
+                    </tr>
+                }
+            }
+
+        </tbody>*@
+
+
+
+
+
+
+
+
+
+
+    @*<tfoot>
+            <tr>
+
+                <td colspan="1"></td>
+                <td class="text-right">Total Amount</td>
+                <td>@Html.TextBoxFor(m => m.TDebitAmt, new { @class = "form-control", type = "number", @readonly = "readonly" })</td>
+
+
+
+                <td>@Html.TextBoxFor(m => m.TCreditAmt, new { @class = "form-control", type = "number", @readonly = "readonly" })</td>
+
+
+
+            </tr>
+
+        </tfoot>*@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--</table>
+
+
+
+
+        </div>
+
+
+    </div>-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="modal-footer mt-10 no-padding no-border">
+
+
+
+        <button type="button" class="btn btn-danger btn-xs" data-dismiss="modal"><i class="icon-cross"></i>Close</button>
+        <button type="button" data-submit="true" class="btn btn-primary  btn-xs"><i class="icon-floppy-disk position-left"></i>Save</button>
+        @* <button type="button" data-submit="" class="btn btn-primary btn-xs SaveBtn"><i class="icon-floppy-disk position-left"></i>Save</button>*@
+
+    </div>
+
+</form>
+
+<script>
+
+    document.getElementById('Sdate').valueAsDate = new Date();
+    document.getElementById('Edate').valueAsDate = new Date();
+
+
+</script>

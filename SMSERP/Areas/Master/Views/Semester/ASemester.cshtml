@@ -1,0 +1,85 @@
+﻿
+
+@using ZCLINIC
+@model ZCLINIC.Areas.Master.Models.Semester
+
+@{
+    string URL = Model == null ? "/Master/Semester/SaveSemester" : "/Master/Semester/UpdateSemester";
+}
+
+<form class="form-horizontal" method="post" id="" data-url="@URL" data-display="Master" data-rurl="/Master/Semester">
+
+    @Html.HiddenFor(m => m.Id)
+
+    <div class="row">
+
+
+        <div class="form-group form-group-xs">
+            <label class="control-label col-sm-4">Semester Name <b class="wysiwyg-color-red">*</b></label>
+            <div class="form-group has-feedback col-sm-8">
+                @Html.TextBoxFor(m => m.SName, new { @class = "form-control input-group", placeholder = "Semester  Name", type = "text", required = "required" })
+                <div class="form-control-feedback"><i class=""></i></div>
+            </div>
+        </div>
+
+
+
+
+        @*<div class="form-group form-group-xs col-md-4">
+            <label>Level Name<b class="wysiwyg-color-red"></b></label>
+            @{
+
+
+                List<ZCLINIC.Areas.Master.Models.Levels> Levels = new ZCLINIC.Areas.Master.Models.Levels().Master_LevelsGetAll(Context.Session.GetBValues(), Context.GetIP(), Context.GetCInfo());
+                Levels.Insert(0, new ZCLINIC.Areas.Master.Models.Levels { LId = 0, LevelName = "Select Level  Name" });
+            }
+            @Html.DropDownList("Lid", Levels.Select(s => new SelectListItem() { Text = s.LevelName, Value = s.LId.ToString() }), new { @class = "form-control " })
+
+
+        </div>*@
+
+        <div class="form-group form-group-xs">
+            <label class="control-label col-sm-4">Fiscal Year<b class="wysiwyg-color-red">*</b></label>
+            <div class="form-group has-feedback col-sm-8">
+                @{
+
+
+                    List<ZCLINIC.Areas.Master.Models.Fiscal> Fiscal = new ZCLINIC.Areas.Master.Models.Fiscal().Master_FiscalGetAll(Context.Session.GetBValues(), Context.GetIP(), Context.GetCInfo());
+                    Fiscal.Insert(0, new ZCLINIC.Areas.Master.Models.Fiscal { FId = 0, FName = "Select Fiscal  Name" });
+                }
+                @Html.DropDownList("SId", Fiscal.Select(s => new SelectListItem() { Text = s.FName, Value = s.FId.ToString() }), new { @class = "form-control " })
+
+                <div class="form-control-feedback"><i class=""></i></div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="modal-footer no-padding no-border">
+            <button type="button" class="btn btn-danger btn-xs" data-dismiss="modal"><i class="icon-cross"></i>Close</button>
+            <button type="button" data-submit="true" class="btn btn-primary btn-xs"><i class="icon-floppy-disk position-left"></i>Save</button>
+        </div>
+
+    </div>
+
+</form>
+
+

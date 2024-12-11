@@ -1,0 +1,96 @@
+﻿
+@using ZCLINIC
+@model ZCLINIC.Areas.URM.Models.USERAUTH
+
+@{
+    string URL = Model == null ? "/URM/USERAUTH/SaveUSERAUTH" : "/URM/USERAUTH/UpdateUSERAUTH";
+}
+
+<form class="form-horizontal" method="post" id="" data-url="@URL" data-display="URM" data-rurl="/URM/USERAUTH">
+
+    @Html.HiddenFor(m => m.User_id)
+
+    <div class="row">
+
+        <div class="form-group form-group-xs">
+            <label class="control-label col-sm-4">User Id</label>
+            <div class="form-group has-feedback col-sm-8">
+                @Html.TextBoxFor(m => m.User_id, new { @class = "form-control input-group", @readonly = "readonly", placeholder = "", type = "text" })
+                <div class="form-control-feedback"><i class=""></i></div>
+            </div>
+        </div>
+
+        <div class="form-group form-group-xs">
+            <label class="control-label col-sm-4">User Name<b class="wysiwyg-color-red">*</b></label>
+            <div class="form-group has-feedback col-sm-8">
+                @Html.TextBoxFor(m => m.USER_NAME, new { @class = "form-control input-group", placeholder = "Enter User Name", type = "text", required = "required" })
+                <div class="form-control-feedback"><i class=""></i></div>
+            </div>
+        </div>
+
+
+
+
+
+        <div class="form-group form-group-xs">
+            <label class="control-label col-sm-4">Full Name<b class="wysiwyg-color-red">*</b></label>
+            <div class="form-group has-feedback col-sm-8">
+                @Html.TextBoxFor(m => m.FullName, new { @class = "form-control input-group", placeholder = "Enter Full Name ", type = "text", required = "required" })
+                <div class="form-control-feedback"><i class=""></i></div>
+            </div>
+        </div>
+          <div class="form-group form-group-xs">
+            <label class="control-label col-sm-4">Password<b class="wysiwyg-color-red">*</b></label>
+            <div class="form-group has-feedback col-sm-8">
+                @Html.TextBoxFor(m => m.USER_PWS, new { @class = "form-control input-group", placeholder = "Enter Password ", type = "password", required = "required" })
+                <div class="form-control-feedback"><i class=""></i></div>
+            </div>
+        </div>
+
+
+
+
+        <div class="form-group form-group-xs">
+            <label class="control-label col-sm-4">Roles<b class="wysiwyg-color-red">*</b></label>
+            <div class="form-group has-feedback col-sm-8">
+                @{
+                    List<ZCLINIC.Areas.URM.Models.URM_Role> cities = new ZCLINIC.Areas.URM.Models.URM_Role().URM_RoleGetAll(Context.Session.GetBValues(), Context.GetIP(), Context.GetCInfo());
+
+                }
+                @Html.DropDownList("Role_ID", cities.Select(s => new SelectListItem() { Text = s.Roles_Name, Value = s.Roles_ID.ToString()}), new { @class = "form-control " })
+                <div class="form-control-feedback"><i class=""></i></div>
+            </div>
+
+        </div>
+
+
+        <div class="form-group form-group-xs">
+            <label class="control-label col-sm-4">Company Name<b class="wysiwyg-color-red">*</b></label>
+            <div class="form-group has-feedback col-sm-8">
+                @{
+
+                    //  int UserId = Model.User_id;
+
+                    List<ZCLINIC.Areas.URM.Models.Company> Company = new ZCLINIC.Areas.URM.Models.Company().URM_CompanyGetNewListAll(Context.Session.GetBValues(), Context.GetIP(), Context.GetCInfo());
+
+                }
+                @Html.DropDownList("TenantId", Company.Select(s => new SelectListItem() { Text = s.CompanyName, Value = s.TenantId.ToString() }), new { @class = "form-control " })
+                <div class="form-control-feedback"><i class=""></i></div>
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+        <div class="modal-footer no-padding no-border">
+            <button type="button" class="btn btn-danger btn-xs" data-dismiss="modal"><i class="icon-cross"></i>Close</button>
+            <button type="button" data-submit="true" class="btn btn-primary btn-xs"><i class="icon-floppy-disk position-left"></i>Save</button>
+        </div>
+
+    </div>
+
+</form>

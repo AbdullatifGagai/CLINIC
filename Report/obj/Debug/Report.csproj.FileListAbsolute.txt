@@ -1,0 +1,1636 @@
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\bin\SqlServerTypes\x64\msvcr120.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\bin\SqlServerTypes\x64\SqlServerSpatial140.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\bin\SqlServerTypes\x86\msvcr120.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\bin\SqlServerTypes\x86\SqlServerSpatial140.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\bin\Reports\AllowStatmentSummary.rdlc
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\bin\Reports\AllowStatment.rdlc
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\bin\Reports\FeeVoucherCus.rdlc
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\bin\Reports\FeeVoucher.rdlc
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\bin\Reports\StudentReceivable.rdlc
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\bin\Reports\PurchaseInward.rdlc
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\bin\Reports\PurchaseOrder.rdlc
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\bin\Reports\Issuance.rdlc
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\bin\Reports\GetAccStockReport.rdlc
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\bin\Reports\PurchaseDetails.rdlc
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\bin\Reports\StockStatusReport.rdlc
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\bin\Reports\StockReportQtyWise.rdlc
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\bin\Reports\Requisition.rdlc
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\bin\Reports\CPDForm.rdlc
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\bin\Report.dll.config
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\bin\Report.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\bin\Report.pdb
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\bin\System.Web.Razor.Fakes.fakesconfig
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\bin\Microsoft.QualityTools.Testing.Fakes.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\bin\Microsoft.ReportViewer.Common.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\bin\Microsoft.ReportViewer.DataVisualization.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\bin\Microsoft.ReportViewer.Design.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\bin\Microsoft.ReportViewer.ProcessingObjectModel.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\bin\Microsoft.ReportViewer.WebDesign.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\bin\Microsoft.ReportViewer.WebForms.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\bin\Microsoft.SqlServer.Types.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\bin\Newtonsoft.Json.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\bin\System.Web.Helpers.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\bin\System.Web.Mvc.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\bin\System.Web.Optimization.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\bin\System.Web.Razor.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\bin\System.Web.WebPages.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\bin\System.Web.WebPages.Razor.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\bin\WebGrease.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\bin\Microsoft.ReportViewer.WinForms.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\bin\EnvDTE.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\bin\Microsoft.VisualStudio.Shell.Interop.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\bin\Microsoft.VisualStudio.Shell.Interop.8.0.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\bin\stdole.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\bin\Microsoft.VisualStudio.OLE.Interop.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\bin\Microsoft.VisualStudio.TextManager.Interop.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\bin\Microsoft.VisualStudio.TextManager.Interop.8.0.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\bin\Microsoft.MSXML.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\bin\Newtonsoft.Json.pdb
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\bin\Newtonsoft.Json.xml
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\bin\System.Web.Helpers.xml
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\bin\System.Web.Mvc.xml
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\bin\System.Web.Razor.xml
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\bin\System.Web.WebPages.xml
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\bin\System.Web.WebPages.Razor.xml
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\bin\cs\Microsoft.QualityTools.Testing.Fakes.resources.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\bin\de\Microsoft.QualityTools.Testing.Fakes.resources.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\bin\es\Microsoft.QualityTools.Testing.Fakes.resources.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\bin\fr\Microsoft.QualityTools.Testing.Fakes.resources.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\bin\it\Microsoft.QualityTools.Testing.Fakes.resources.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\bin\ja\Microsoft.QualityTools.Testing.Fakes.resources.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\bin\ko\Microsoft.QualityTools.Testing.Fakes.resources.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\bin\pl\Microsoft.QualityTools.Testing.Fakes.resources.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\bin\pt-BR\Microsoft.QualityTools.Testing.Fakes.resources.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\bin\ru\Microsoft.QualityTools.Testing.Fakes.resources.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\bin\tr\Microsoft.QualityTools.Testing.Fakes.resources.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\bin\zh-Hans\Microsoft.QualityTools.Testing.Fakes.resources.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\bin\zh-Hant\Microsoft.QualityTools.Testing.Fakes.resources.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\bin\de\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\bin\es\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\bin\fr\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\bin\it\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\bin\ja\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\bin\ko\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\bin\pt\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\bin\ru\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\bin\zh-CHS\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\bin\zh-CHT\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\bin\de\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\bin\es\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\bin\fr\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\bin\it\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\bin\ja\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\bin\ko\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\bin\pt\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\bin\ru\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\bin\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\bin\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\bin\de\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\bin\es\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\bin\fr\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\bin\it\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\bin\ja\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\bin\ko\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\bin\pt\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\bin\ru\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\bin\zh-CHS\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\bin\zh-CHT\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\bin\de\Microsoft.ReportViewer.WebDesign.resources.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\bin\es\Microsoft.ReportViewer.WebDesign.resources.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\bin\fr\Microsoft.ReportViewer.WebDesign.resources.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\bin\it\Microsoft.ReportViewer.WebDesign.resources.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\bin\ja\Microsoft.ReportViewer.WebDesign.resources.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\bin\ko\Microsoft.ReportViewer.WebDesign.resources.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\bin\pt\Microsoft.ReportViewer.WebDesign.resources.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\bin\ru\Microsoft.ReportViewer.WebDesign.resources.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\bin\zh-CHS\Microsoft.ReportViewer.WebDesign.resources.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\bin\zh-CHT\Microsoft.ReportViewer.WebDesign.resources.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\bin\de\Microsoft.ReportViewer.WebForms.resources.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\bin\es\Microsoft.ReportViewer.WebForms.resources.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\bin\fr\Microsoft.ReportViewer.WebForms.resources.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\bin\it\Microsoft.ReportViewer.WebForms.resources.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\bin\ja\Microsoft.ReportViewer.WebForms.resources.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\bin\ko\Microsoft.ReportViewer.WebForms.resources.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\bin\pt\Microsoft.ReportViewer.WebForms.resources.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\bin\ru\Microsoft.ReportViewer.WebForms.resources.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\bin\zh-CHS\Microsoft.ReportViewer.WebForms.resources.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\bin\zh-CHT\Microsoft.ReportViewer.WebForms.resources.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\bin\de\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\bin\es\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\bin\fr\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\bin\it\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\bin\ja\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\bin\ko\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\bin\pt\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\bin\ru\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\bin\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\bin\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\obj\Debug\Report.csprojFakesResolveAssemblyReference.cache
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\obj\Debug\Fakes\fakes.args
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\obj\Debug\Fakes\swr\b\CInfo_Std.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\obj\Debug\Fakes\swr\b\cs\Microsoft.QualityTools.Testing.Fakes.resources.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\obj\Debug\Fakes\swr\b\DatabaseTVP.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\obj\Debug\Fakes\swr\b\de\Microsoft.QualityTools.Testing.Fakes.resources.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\obj\Debug\Fakes\swr\b\de\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\obj\Debug\Fakes\swr\b\de\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\obj\Debug\Fakes\swr\b\de\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\obj\Debug\Fakes\swr\b\de\Microsoft.ReportViewer.WebDesign.resources.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\obj\Debug\Fakes\swr\b\de\Microsoft.ReportViewer.WebForms.resources.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\obj\Debug\Fakes\swr\b\de\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\obj\Debug\Fakes\swr\b\EnvDTE.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\obj\Debug\Fakes\swr\b\es\Microsoft.QualityTools.Testing.Fakes.resources.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\obj\Debug\Fakes\swr\b\es\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\obj\Debug\Fakes\swr\b\es\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\obj\Debug\Fakes\swr\b\es\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\obj\Debug\Fakes\swr\b\es\Microsoft.ReportViewer.WebDesign.resources.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\obj\Debug\Fakes\swr\b\es\Microsoft.ReportViewer.WebForms.resources.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\obj\Debug\Fakes\swr\b\es\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\obj\Debug\Fakes\swr\b\fr\Microsoft.QualityTools.Testing.Fakes.resources.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\obj\Debug\Fakes\swr\b\fr\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\obj\Debug\Fakes\swr\b\fr\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\obj\Debug\Fakes\swr\b\fr\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\obj\Debug\Fakes\swr\b\fr\Microsoft.ReportViewer.WebDesign.resources.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\obj\Debug\Fakes\swr\b\fr\Microsoft.ReportViewer.WebForms.resources.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\obj\Debug\Fakes\swr\b\fr\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\obj\Debug\Fakes\swr\b\it\Microsoft.QualityTools.Testing.Fakes.resources.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\obj\Debug\Fakes\swr\b\it\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\obj\Debug\Fakes\swr\b\it\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\obj\Debug\Fakes\swr\b\it\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\obj\Debug\Fakes\swr\b\it\Microsoft.ReportViewer.WebDesign.resources.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\obj\Debug\Fakes\swr\b\it\Microsoft.ReportViewer.WebForms.resources.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\obj\Debug\Fakes\swr\b\it\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\obj\Debug\Fakes\swr\b\ja\Microsoft.QualityTools.Testing.Fakes.resources.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\obj\Debug\Fakes\swr\b\ja\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\obj\Debug\Fakes\swr\b\ja\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\obj\Debug\Fakes\swr\b\ja\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\obj\Debug\Fakes\swr\b\ja\Microsoft.ReportViewer.WebDesign.resources.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\obj\Debug\Fakes\swr\b\ja\Microsoft.ReportViewer.WebForms.resources.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\obj\Debug\Fakes\swr\b\ja\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\obj\Debug\Fakes\swr\b\ko\Microsoft.QualityTools.Testing.Fakes.resources.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\obj\Debug\Fakes\swr\b\ko\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\obj\Debug\Fakes\swr\b\ko\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\obj\Debug\Fakes\swr\b\ko\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\obj\Debug\Fakes\swr\b\ko\Microsoft.ReportViewer.WebDesign.resources.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\obj\Debug\Fakes\swr\b\ko\Microsoft.ReportViewer.WebForms.resources.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\obj\Debug\Fakes\swr\b\ko\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\obj\Debug\Fakes\swr\b\Logger.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\obj\Debug\Fakes\swr\b\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\obj\Debug\Fakes\swr\b\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\obj\Debug\Fakes\swr\b\Microsoft.MSXML.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\obj\Debug\Fakes\swr\b\Microsoft.QualityTools.Testing.Fakes.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\obj\Debug\Fakes\swr\b\Microsoft.ReportViewer.Common.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\obj\Debug\Fakes\swr\b\Microsoft.ReportViewer.DataVisualization.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\obj\Debug\Fakes\swr\b\Microsoft.ReportViewer.Design.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\obj\Debug\Fakes\swr\b\Microsoft.ReportViewer.ProcessingObjectModel.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\obj\Debug\Fakes\swr\b\Microsoft.ReportViewer.WebDesign.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\obj\Debug\Fakes\swr\b\Microsoft.ReportViewer.WebForms.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\obj\Debug\Fakes\swr\b\Microsoft.ReportViewer.WinForms.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\obj\Debug\Fakes\swr\b\Microsoft.SqlServer.Types.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\obj\Debug\Fakes\swr\b\Microsoft.VisualStudio.OLE.Interop.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\obj\Debug\Fakes\swr\b\Microsoft.VisualStudio.Shell.Interop.8.0.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\obj\Debug\Fakes\swr\b\Microsoft.VisualStudio.Shell.Interop.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\obj\Debug\Fakes\swr\b\Microsoft.VisualStudio.TextManager.Interop.8.0.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\obj\Debug\Fakes\swr\b\Microsoft.VisualStudio.TextManager.Interop.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\obj\Debug\Fakes\swr\b\Microsoft.Web.Infrastructure.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\obj\Debug\Fakes\swr\b\Newtonsoft.Json.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\obj\Debug\Fakes\swr\b\Newtonsoft.Json.pdb
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\obj\Debug\Fakes\swr\b\Newtonsoft.Json.xml
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\obj\Debug\Fakes\swr\b\pl\Microsoft.QualityTools.Testing.Fakes.resources.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\obj\Debug\Fakes\swr\b\Proxy.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\obj\Debug\Fakes\swr\b\pt-BR\Microsoft.QualityTools.Testing.Fakes.resources.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\obj\Debug\Fakes\swr\b\pt\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\obj\Debug\Fakes\swr\b\pt\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\obj\Debug\Fakes\swr\b\pt\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\obj\Debug\Fakes\swr\b\pt\Microsoft.ReportViewer.WebDesign.resources.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\obj\Debug\Fakes\swr\b\pt\Microsoft.ReportViewer.WebForms.resources.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\obj\Debug\Fakes\swr\b\pt\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\obj\Debug\Fakes\swr\b\ru\Microsoft.QualityTools.Testing.Fakes.resources.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\obj\Debug\Fakes\swr\b\ru\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\obj\Debug\Fakes\swr\b\ru\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\obj\Debug\Fakes\swr\b\ru\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\obj\Debug\Fakes\swr\b\ru\Microsoft.ReportViewer.WebDesign.resources.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\obj\Debug\Fakes\swr\b\ru\Microsoft.ReportViewer.WebForms.resources.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\obj\Debug\Fakes\swr\b\ru\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\obj\Debug\Fakes\swr\b\stdole.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\obj\Debug\Fakes\swr\b\System.Web.Helpers.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\obj\Debug\Fakes\swr\b\System.Web.Helpers.xml
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\obj\Debug\Fakes\swr\b\System.Web.Mvc.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\obj\Debug\Fakes\swr\b\System.Web.Mvc.xml
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\obj\Debug\Fakes\swr\b\System.Web.Optimization.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\obj\Debug\Fakes\swr\b\System.Web.Razor.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\obj\Debug\Fakes\swr\b\System.Web.Razor.Fakes.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\obj\Debug\Fakes\swr\b\System.Web.Razor.Fakes.fakesconfig
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\obj\Debug\Fakes\swr\b\System.Web.Razor.Fakes.pdb
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\obj\Debug\Fakes\swr\b\System.Web.Razor.Fakes.xml
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\obj\Debug\Fakes\swr\b\System.Web.Razor.xml
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\obj\Debug\Fakes\swr\b\System.Web.WebPages.Deployment.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\obj\Debug\Fakes\swr\b\System.Web.WebPages.Deployment.xml
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\obj\Debug\Fakes\swr\b\System.Web.WebPages.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\obj\Debug\Fakes\swr\b\System.Web.WebPages.Razor.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\obj\Debug\Fakes\swr\b\System.Web.WebPages.Razor.xml
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\obj\Debug\Fakes\swr\b\System.Web.WebPages.xml
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\obj\Debug\Fakes\swr\b\tr\Microsoft.QualityTools.Testing.Fakes.resources.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\obj\Debug\Fakes\swr\b\WebGrease.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\obj\Debug\Fakes\swr\b\zh-CHS\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\obj\Debug\Fakes\swr\b\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\obj\Debug\Fakes\swr\b\zh-CHS\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\obj\Debug\Fakes\swr\b\zh-CHS\Microsoft.ReportViewer.WebDesign.resources.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\obj\Debug\Fakes\swr\b\zh-CHS\Microsoft.ReportViewer.WebForms.resources.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\obj\Debug\Fakes\swr\b\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\obj\Debug\Fakes\swr\b\zh-CHT\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\obj\Debug\Fakes\swr\b\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\obj\Debug\Fakes\swr\b\zh-CHT\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\obj\Debug\Fakes\swr\b\zh-CHT\Microsoft.ReportViewer.WebDesign.resources.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\obj\Debug\Fakes\swr\b\zh-CHT\Microsoft.ReportViewer.WebForms.resources.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\obj\Debug\Fakes\swr\b\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\obj\Debug\Fakes\swr\b\zh-Hans\Microsoft.QualityTools.Testing.Fakes.resources.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\obj\Debug\Fakes\swr\b\zh-Hant\Microsoft.QualityTools.Testing.Fakes.resources.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\obj\Debug\Fakes\swr\f.ah
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\obj\Debug\Fakes\swr\f.ch
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\obj\Debug\Fakes\swr\f.cs
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\obj\Debug\Fakes\swr\f.csproj
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\obj\Debug\Fakes\swr\f.fakes
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\obj\Debug\Fakes\swr\f.fakesconfig
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\obj\Debug\Fakes\swr\f.snk
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\obj\Debug\Fakes\swr\o\.NETFramework,Version=v4.7.2.AssemblyAttributes.cs
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\obj\Debug\Fakes\swr\o\f.csproj.AssemblyReference.cache
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\obj\Debug\Fakes\swr\o\f.csproj.CopyComplete
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\obj\Debug\Fakes\swr\o\f.csproj.CoreCompileInputs.cache
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\obj\Debug\Fakes\swr\o\f.csproj.FileListAbsolute.txt
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\obj\Debug\Fakes\swr\o\System.Web.Razor.Fakes.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\obj\Debug\Fakes\swr\o\System.Web.Razor.Fakes.pdb
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\obj\Debug\Report.csproj.AssemblyReference.cache
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\obj\Debug\RdlCompile.cache
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\obj\Debug\RdlCompile.compiled
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\obj\Debug\Report.csproj.CoreCompileInputs.cache
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\obj\Debug\Report.csproj.CopyComplete
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\obj\Debug\Report.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\obj\Debug\Report.pdb
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\bin\roslyn\csc.exe
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\bin\roslyn\csc.exe.config
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\bin\roslyn\csc.rsp
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\bin\roslyn\csi.exe
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\bin\roslyn\csi.exe.config
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\bin\roslyn\csi.rsp
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\bin\roslyn\System.AppContext.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\bin\roslyn\System.Console.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\bin\roslyn\System.IO.Compression.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\bin\roslyn\System.IO.Pipes.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\bin\roslyn\System.Security.Claims.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\bin\roslyn\System.ValueTuple.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\bin\roslyn\System.Xml.XPath.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\bin\roslyn\vbc.exe
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\bin\roslyn\vbc.exe.config
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\bin\roslyn\vbc.rsp
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\bin\roslyn\VBCSCompiler.exe
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\bin\Reports\StudentFeesLedger.rdlc
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\bin\Reports\ReceivableSummary.rdlc
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\bin\Reports\AdmissionSummary.rdlc
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\bin\Reports\SaleInvoice.rdlc
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\bin\Reports\GetProductStockReport.rdlc
+C:\Users\Abdul Latif\source\Workspaces\SMSERP\SMSERP\Report\bin\Reports\BatchWiseReceivable.rdlc
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\bin\SqlServerTypes\x64\msvcr120.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\bin\SqlServerTypes\x64\SqlServerSpatial140.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\bin\SqlServerTypes\x86\msvcr120.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\bin\SqlServerTypes\x86\SqlServerSpatial140.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\bin\Reports\GetProductStockReport.rdlc
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\bin\Reports\BatchWiseReceivable.rdlc
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\bin\Reports\SaleInvoice.rdlc
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\bin\Reports\AdmissionSummary.rdlc
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\bin\Reports\ReceivableSummary.rdlc
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\bin\Reports\StudentFeesLedger.rdlc
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\bin\Reports\AllowStatmentSummary.rdlc
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\bin\Reports\AllowStatment.rdlc
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\bin\Reports\FeeVoucherCus.rdlc
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\bin\Reports\FeeVoucher.rdlc
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\bin\Reports\StudentReceivable.rdlc
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\bin\Reports\PurchaseInward.rdlc
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\bin\Reports\PurchaseOrder.rdlc
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\bin\Reports\Issuance.rdlc
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\bin\Reports\GetAccStockReport.rdlc
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\bin\Reports\PurchaseDetails.rdlc
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\bin\Reports\StockStatusReport.rdlc
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\bin\Reports\StockReportQtyWise.rdlc
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\bin\Reports\Requisition.rdlc
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\bin\Reports\CPDForm.rdlc
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\bin\Report.dll.config
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\bin\Report.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\bin\Report.pdb
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\bin\roslyn\csc.exe
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\bin\roslyn\csc.exe.config
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\bin\roslyn\csc.rsp
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\bin\roslyn\csi.exe
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\bin\roslyn\csi.exe.config
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\bin\roslyn\csi.rsp
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\bin\roslyn\System.AppContext.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\bin\roslyn\System.Console.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\bin\roslyn\System.IO.Compression.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\bin\roslyn\System.IO.Pipes.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\bin\roslyn\System.Security.Claims.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\bin\roslyn\System.ValueTuple.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\bin\roslyn\System.Xml.XPath.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\bin\roslyn\vbc.exe
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\bin\roslyn\vbc.exe.config
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\bin\roslyn\vbc.rsp
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\bin\roslyn\VBCSCompiler.exe
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\bin\System.Web.Razor.Fakes.fakesconfig
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\bin\Microsoft.QualityTools.Testing.Fakes.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\bin\Microsoft.ReportViewer.Common.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\bin\Microsoft.ReportViewer.DataVisualization.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\bin\Microsoft.ReportViewer.Design.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\bin\Microsoft.ReportViewer.ProcessingObjectModel.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\bin\Microsoft.ReportViewer.WebDesign.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\bin\Microsoft.ReportViewer.WebForms.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\bin\Newtonsoft.Json.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\bin\System.Web.Helpers.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\bin\System.Web.Mvc.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\bin\System.Web.Optimization.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\bin\System.Web.Razor.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\bin\System.Web.WebPages.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\bin\System.Web.WebPages.Razor.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\bin\WebGrease.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\bin\Microsoft.ReportViewer.WinForms.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\bin\EnvDTE.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\bin\Microsoft.VisualStudio.Shell.Interop.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\bin\Microsoft.VisualStudio.Shell.Interop.8.0.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\bin\stdole.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\bin\Microsoft.VisualStudio.OLE.Interop.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\bin\Microsoft.VisualStudio.TextManager.Interop.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\bin\Microsoft.VisualStudio.TextManager.Interop.8.0.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\bin\Microsoft.MSXML.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\bin\Newtonsoft.Json.pdb
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\bin\Newtonsoft.Json.xml
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\bin\System.Web.Helpers.xml
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\bin\System.Web.Mvc.xml
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\bin\System.Web.Razor.xml
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\bin\System.Web.WebPages.xml
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\bin\System.Web.WebPages.Razor.xml
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\bin\cs\Microsoft.QualityTools.Testing.Fakes.resources.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\bin\de\Microsoft.QualityTools.Testing.Fakes.resources.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\bin\es\Microsoft.QualityTools.Testing.Fakes.resources.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\bin\fr\Microsoft.QualityTools.Testing.Fakes.resources.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\bin\it\Microsoft.QualityTools.Testing.Fakes.resources.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\bin\ja\Microsoft.QualityTools.Testing.Fakes.resources.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\bin\ko\Microsoft.QualityTools.Testing.Fakes.resources.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\bin\pl\Microsoft.QualityTools.Testing.Fakes.resources.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\bin\pt-BR\Microsoft.QualityTools.Testing.Fakes.resources.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\bin\ru\Microsoft.QualityTools.Testing.Fakes.resources.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\bin\tr\Microsoft.QualityTools.Testing.Fakes.resources.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\bin\zh-Hans\Microsoft.QualityTools.Testing.Fakes.resources.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\bin\zh-Hant\Microsoft.QualityTools.Testing.Fakes.resources.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\bin\de\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\bin\es\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\bin\fr\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\bin\it\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\bin\ja\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\bin\ko\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\bin\pt\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\bin\ru\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\bin\zh-CHS\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\bin\zh-CHT\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\bin\de\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\bin\es\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\bin\fr\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\bin\it\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\bin\ja\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\bin\ko\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\bin\pt\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\bin\ru\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\bin\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\bin\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\bin\de\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\bin\es\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\bin\fr\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\bin\it\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\bin\ja\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\bin\ko\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\bin\pt\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\bin\ru\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\bin\zh-CHS\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\bin\zh-CHT\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\bin\de\Microsoft.ReportViewer.WebDesign.resources.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\bin\es\Microsoft.ReportViewer.WebDesign.resources.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\bin\fr\Microsoft.ReportViewer.WebDesign.resources.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\bin\it\Microsoft.ReportViewer.WebDesign.resources.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\bin\ja\Microsoft.ReportViewer.WebDesign.resources.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\bin\ko\Microsoft.ReportViewer.WebDesign.resources.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\bin\pt\Microsoft.ReportViewer.WebDesign.resources.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\bin\ru\Microsoft.ReportViewer.WebDesign.resources.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\bin\zh-CHS\Microsoft.ReportViewer.WebDesign.resources.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\bin\zh-CHT\Microsoft.ReportViewer.WebDesign.resources.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\bin\de\Microsoft.ReportViewer.WebForms.resources.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\bin\es\Microsoft.ReportViewer.WebForms.resources.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\bin\fr\Microsoft.ReportViewer.WebForms.resources.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\bin\it\Microsoft.ReportViewer.WebForms.resources.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\bin\ja\Microsoft.ReportViewer.WebForms.resources.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\bin\ko\Microsoft.ReportViewer.WebForms.resources.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\bin\pt\Microsoft.ReportViewer.WebForms.resources.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\bin\ru\Microsoft.ReportViewer.WebForms.resources.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\bin\zh-CHS\Microsoft.ReportViewer.WebForms.resources.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\bin\zh-CHT\Microsoft.ReportViewer.WebForms.resources.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\bin\de\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\bin\es\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\bin\fr\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\bin\it\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\bin\ja\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\bin\ko\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\bin\pt\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\bin\ru\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\bin\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\bin\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\obj\Debug\Report.csprojFakesResolveAssemblyReference.cache
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\obj\Debug\Report.csproj.AssemblyReference.cache
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\obj\Debug\Report.csproj.CoreCompileInputs.cache
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\obj\Debug\Report.csproj.CopyComplete
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\obj\Debug\Report.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\obj\Debug\Report.pdb
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\bin\SqlServerTypes\x64\msvcr120.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\bin\SqlServerTypes\x64\SqlServerSpatial140.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\bin\SqlServerTypes\x86\msvcr120.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\bin\SqlServerTypes\x86\SqlServerSpatial140.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\bin\Reports\GetProductStockReport.rdlc
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\bin\Reports\BatchWiseReceivable.rdlc
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\bin\Reports\SaleInvoice.rdlc
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\bin\Reports\AdmissionSummary.rdlc
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\bin\Reports\ReceivableSummary.rdlc
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\bin\Reports\StudentFeesLedger.rdlc
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\bin\Reports\AllowStatmentSummary.rdlc
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\bin\Reports\AllowStatment.rdlc
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\bin\Reports\FeeVoucherCus.rdlc
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\bin\Reports\FeeVoucher.rdlc
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\bin\Reports\StudentReceivable.rdlc
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\bin\Reports\PurchaseInward.rdlc
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\bin\Reports\PurchaseOrder.rdlc
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\bin\Reports\Issuance.rdlc
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\bin\Reports\GetAccStockReport.rdlc
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\bin\Reports\PurchaseDetails.rdlc
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\bin\Reports\StockStatusReport.rdlc
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\bin\Reports\StockReportQtyWise.rdlc
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\bin\Reports\Requisition.rdlc
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\bin\Reports\CPDForm.rdlc
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\bin\Report.dll.config
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\bin\Report.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\bin\Report.pdb
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\bin\roslyn\csc.exe
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\bin\roslyn\csc.exe.config
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\bin\roslyn\csc.rsp
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\bin\roslyn\csi.exe
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\bin\roslyn\csi.exe.config
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\bin\roslyn\csi.rsp
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\bin\roslyn\System.AppContext.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\bin\roslyn\System.Console.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\bin\roslyn\System.IO.Compression.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\bin\roslyn\System.IO.Pipes.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\bin\roslyn\System.Security.Claims.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\bin\roslyn\System.ValueTuple.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\bin\roslyn\System.Xml.XPath.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\bin\roslyn\vbc.exe
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\bin\roslyn\vbc.exe.config
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\bin\roslyn\vbc.rsp
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\bin\roslyn\VBCSCompiler.exe
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\bin\System.Web.Razor.Fakes.fakesconfig
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\bin\Microsoft.QualityTools.Testing.Fakes.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\bin\Microsoft.ReportViewer.Common.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\bin\Microsoft.ReportViewer.DataVisualization.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\bin\Microsoft.ReportViewer.Design.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\bin\Microsoft.ReportViewer.ProcessingObjectModel.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\bin\Microsoft.ReportViewer.WebDesign.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\bin\Microsoft.ReportViewer.WebForms.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\bin\Microsoft.SqlServer.Types.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\bin\Newtonsoft.Json.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\bin\System.Web.Helpers.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\bin\System.Web.Mvc.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\bin\System.Web.Optimization.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\bin\System.Web.Razor.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\bin\System.Web.WebPages.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\bin\System.Web.WebPages.Razor.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\bin\WebGrease.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\bin\Microsoft.ReportViewer.WinForms.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\bin\EnvDTE.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\bin\Microsoft.VisualStudio.Shell.Interop.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\bin\Microsoft.VisualStudio.Shell.Interop.8.0.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\bin\stdole.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\bin\Microsoft.VisualStudio.OLE.Interop.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\bin\Microsoft.VisualStudio.TextManager.Interop.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\bin\Microsoft.VisualStudio.TextManager.Interop.8.0.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\bin\Microsoft.MSXML.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\bin\Newtonsoft.Json.pdb
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\bin\Newtonsoft.Json.xml
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\bin\System.Web.Helpers.xml
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\bin\System.Web.Mvc.xml
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\bin\System.Web.Razor.xml
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\bin\System.Web.WebPages.xml
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\bin\System.Web.WebPages.Razor.xml
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\bin\cs\Microsoft.QualityTools.Testing.Fakes.resources.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\bin\de\Microsoft.QualityTools.Testing.Fakes.resources.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\bin\es\Microsoft.QualityTools.Testing.Fakes.resources.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\bin\fr\Microsoft.QualityTools.Testing.Fakes.resources.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\bin\it\Microsoft.QualityTools.Testing.Fakes.resources.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\bin\ja\Microsoft.QualityTools.Testing.Fakes.resources.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\bin\ko\Microsoft.QualityTools.Testing.Fakes.resources.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\bin\pl\Microsoft.QualityTools.Testing.Fakes.resources.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\bin\pt-BR\Microsoft.QualityTools.Testing.Fakes.resources.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\bin\ru\Microsoft.QualityTools.Testing.Fakes.resources.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\bin\tr\Microsoft.QualityTools.Testing.Fakes.resources.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\bin\zh-Hans\Microsoft.QualityTools.Testing.Fakes.resources.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\bin\zh-Hant\Microsoft.QualityTools.Testing.Fakes.resources.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\bin\de\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\bin\es\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\bin\fr\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\bin\it\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\bin\ja\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\bin\ko\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\bin\pt\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\bin\ru\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\bin\zh-CHS\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\bin\zh-CHT\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\bin\de\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\bin\es\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\bin\fr\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\bin\it\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\bin\ja\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\bin\ko\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\bin\pt\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\bin\ru\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\bin\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\bin\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\bin\de\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\bin\es\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\bin\fr\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\bin\it\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\bin\ja\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\bin\ko\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\bin\pt\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\bin\ru\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\bin\zh-CHS\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\bin\zh-CHT\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\bin\de\Microsoft.ReportViewer.WebDesign.resources.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\bin\es\Microsoft.ReportViewer.WebDesign.resources.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\bin\fr\Microsoft.ReportViewer.WebDesign.resources.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\bin\it\Microsoft.ReportViewer.WebDesign.resources.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\bin\ja\Microsoft.ReportViewer.WebDesign.resources.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\bin\ko\Microsoft.ReportViewer.WebDesign.resources.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\bin\pt\Microsoft.ReportViewer.WebDesign.resources.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\bin\ru\Microsoft.ReportViewer.WebDesign.resources.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\bin\zh-CHS\Microsoft.ReportViewer.WebDesign.resources.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\bin\zh-CHT\Microsoft.ReportViewer.WebDesign.resources.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\bin\de\Microsoft.ReportViewer.WebForms.resources.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\bin\es\Microsoft.ReportViewer.WebForms.resources.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\bin\fr\Microsoft.ReportViewer.WebForms.resources.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\bin\it\Microsoft.ReportViewer.WebForms.resources.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\bin\ja\Microsoft.ReportViewer.WebForms.resources.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\bin\ko\Microsoft.ReportViewer.WebForms.resources.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\bin\pt\Microsoft.ReportViewer.WebForms.resources.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\bin\ru\Microsoft.ReportViewer.WebForms.resources.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\bin\zh-CHS\Microsoft.ReportViewer.WebForms.resources.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\bin\zh-CHT\Microsoft.ReportViewer.WebForms.resources.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\bin\de\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\bin\es\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\bin\fr\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\bin\it\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\bin\ja\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\bin\ko\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\bin\pt\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\bin\ru\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\bin\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\bin\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\obj\Debug\RdlCompile.cache
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\obj\Debug\RdlCompile.compiled
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\obj\Debug\Report.csproj.CoreCompileInputs.cache
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\obj\Debug\Report.csproj.CopyComplete
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\obj\Debug\Report.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\obj\Debug\Report.pdb
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\bin\Reports\GetReportPurchasedateWise.rdlc
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\bin\Reports\GetReportsaledateWise.rdlc
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\bin\Reports\GetReportsaledateWise.rdlc
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\bin\Reports\GetReportPurchasedateWise.rdlc
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\fakes.args
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\CInfo_Std.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\cs\Microsoft.QualityTools.Testing.Fakes.resources.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\DatabaseTVP.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\de\Microsoft.QualityTools.Testing.Fakes.resources.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\de\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\de\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\de\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\de\Microsoft.ReportViewer.WebDesign.resources.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\de\Microsoft.ReportViewer.WebForms.resources.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\de\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\EnvDTE.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\es\Microsoft.QualityTools.Testing.Fakes.resources.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\es\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\es\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\es\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\es\Microsoft.ReportViewer.WebDesign.resources.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\es\Microsoft.ReportViewer.WebForms.resources.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\es\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\fr\Microsoft.QualityTools.Testing.Fakes.resources.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\fr\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\fr\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\fr\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\fr\Microsoft.ReportViewer.WebDesign.resources.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\fr\Microsoft.ReportViewer.WebForms.resources.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\fr\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\it\Microsoft.QualityTools.Testing.Fakes.resources.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\it\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\it\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\it\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\it\Microsoft.ReportViewer.WebDesign.resources.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\it\Microsoft.ReportViewer.WebForms.resources.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\it\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\ja\Microsoft.QualityTools.Testing.Fakes.resources.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\ja\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\ja\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\ja\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\ja\Microsoft.ReportViewer.WebDesign.resources.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\ja\Microsoft.ReportViewer.WebForms.resources.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\ja\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\ko\Microsoft.QualityTools.Testing.Fakes.resources.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\ko\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\ko\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\ko\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\ko\Microsoft.ReportViewer.WebDesign.resources.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\ko\Microsoft.ReportViewer.WebForms.resources.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\ko\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\Logger.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\Microsoft.MSXML.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\Microsoft.QualityTools.Testing.Fakes.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\Microsoft.ReportViewer.Common.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\Microsoft.ReportViewer.DataVisualization.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\Microsoft.ReportViewer.Design.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\Microsoft.ReportViewer.ProcessingObjectModel.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\Microsoft.ReportViewer.WebDesign.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\Microsoft.ReportViewer.WebForms.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\Microsoft.ReportViewer.WinForms.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\Microsoft.SqlServer.Types.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\Microsoft.VisualStudio.OLE.Interop.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\Microsoft.VisualStudio.Shell.Interop.8.0.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\Microsoft.VisualStudio.Shell.Interop.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\Microsoft.VisualStudio.TextManager.Interop.8.0.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\Microsoft.VisualStudio.TextManager.Interop.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\Microsoft.Web.Infrastructure.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\Newtonsoft.Json.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\Newtonsoft.Json.pdb
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\Newtonsoft.Json.xml
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\pl\Microsoft.QualityTools.Testing.Fakes.resources.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\Proxy.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\pt-BR\Microsoft.QualityTools.Testing.Fakes.resources.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\pt\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\pt\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\pt\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\pt\Microsoft.ReportViewer.WebDesign.resources.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\pt\Microsoft.ReportViewer.WebForms.resources.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\pt\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\ru\Microsoft.QualityTools.Testing.Fakes.resources.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\ru\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\ru\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\ru\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\ru\Microsoft.ReportViewer.WebDesign.resources.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\ru\Microsoft.ReportViewer.WebForms.resources.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\ru\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\stdole.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\System.Web.Helpers.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\System.Web.Helpers.xml
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\System.Web.Mvc.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\System.Web.Mvc.xml
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\System.Web.Optimization.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\System.Web.Razor.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\System.Web.Razor.Fakes.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\System.Web.Razor.Fakes.fakesconfig
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\System.Web.Razor.Fakes.pdb
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\System.Web.Razor.Fakes.xml
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\System.Web.Razor.xml
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\System.Web.WebPages.Deployment.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\System.Web.WebPages.Deployment.xml
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\System.Web.WebPages.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\System.Web.WebPages.Razor.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\System.Web.WebPages.Razor.xml
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\System.Web.WebPages.xml
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\tr\Microsoft.QualityTools.Testing.Fakes.resources.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\WebGrease.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\zh-CHS\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\zh-CHS\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\zh-CHS\Microsoft.ReportViewer.WebDesign.resources.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\zh-CHS\Microsoft.ReportViewer.WebForms.resources.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\zh-CHT\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\zh-CHT\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\zh-CHT\Microsoft.ReportViewer.WebDesign.resources.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\zh-CHT\Microsoft.ReportViewer.WebForms.resources.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\zh-Hans\Microsoft.QualityTools.Testing.Fakes.resources.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\zh-Hant\Microsoft.QualityTools.Testing.Fakes.resources.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\f.ah
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\f.ch
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\f.cs
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\f.csproj
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\f.fakes
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\f.fakesconfig
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\f.snk
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\o\.NETFramework,Version=v4.7.2.AssemblyAttributes.cs
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\o\f.csproj.AssemblyReference.cache
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\o\f.csproj.CopyComplete
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\o\f.csproj.CoreCompileInputs.cache
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\o\f.csproj.FileListAbsolute.txt
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\o\System.Web.Razor.Fakes.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\o\System.Web.Razor.Fakes.pdb
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\bin\Microsoft.SqlServer.Types.dll
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\obj\Debug\RdlCompile.cache
+C:\Users\Pc\Documents\GitHub\SMSERP\Report\obj\Debug\RdlCompile.compiled
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\obj\Debug\Report.csprojFakesResolveAssemblyReference.cache
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\bin\Reports\ProductWiseLedger.rdlc
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\obj\Debug\Report.csproj.AssemblyReference.cache
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\bin\SqlServerTypes\x64\msvcr120.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\bin\SqlServerTypes\x64\SqlServerSpatial140.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\bin\SqlServerTypes\x86\msvcr120.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\bin\SqlServerTypes\x86\SqlServerSpatial140.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\bin\Reports\GetReportsaledateWise.rdlc
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\bin\Reports\GetProductStockReport.rdlc
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\bin\Reports\BatchWiseReceivable.rdlc
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\bin\Reports\GetReportPurchasedateWise.rdlc
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\bin\Reports\ProductWiseLedger.rdlc
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\bin\Reports\SaleInvoice.rdlc
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\bin\Reports\AdmissionSummary.rdlc
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\bin\Reports\ReceivableSummary.rdlc
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\bin\Reports\StudentFeesLedger.rdlc
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\bin\Reports\AllowStatmentSummary.rdlc
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\bin\Reports\AllowStatment.rdlc
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\bin\Reports\FeeVoucherCus.rdlc
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\bin\Reports\FeeVoucher.rdlc
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\bin\Reports\StudentReceivable.rdlc
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\bin\Reports\PurchaseInward.rdlc
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\bin\Reports\PurchaseOrder.rdlc
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\bin\Reports\Issuance.rdlc
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\bin\Reports\GetAccStockReport.rdlc
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\bin\Reports\PurchaseDetails.rdlc
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\bin\Reports\StockStatusReport.rdlc
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\bin\Reports\StockReportQtyWise.rdlc
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\bin\Reports\Requisition.rdlc
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\bin\Reports\CPDForm.rdlc
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\bin\Report.dll.config
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\bin\Report.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\bin\Report.pdb
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\bin\roslyn\csc.exe
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\bin\roslyn\csc.exe.config
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\bin\roslyn\csc.rsp
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\bin\roslyn\csi.exe
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\bin\roslyn\csi.exe.config
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\bin\roslyn\csi.rsp
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\bin\roslyn\System.AppContext.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\bin\roslyn\System.Console.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\bin\roslyn\System.IO.Compression.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\bin\roslyn\System.IO.Pipes.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\bin\roslyn\System.Security.Claims.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\bin\roslyn\System.ValueTuple.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\bin\roslyn\System.Xml.XPath.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\bin\roslyn\vbc.exe
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\bin\roslyn\vbc.exe.config
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\bin\roslyn\vbc.rsp
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\bin\roslyn\VBCSCompiler.exe
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\bin\System.Web.Razor.Fakes.fakesconfig
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\bin\Microsoft.QualityTools.Testing.Fakes.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\bin\Microsoft.ReportViewer.Common.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\bin\Microsoft.ReportViewer.DataVisualization.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\bin\Microsoft.ReportViewer.Design.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\bin\Microsoft.ReportViewer.ProcessingObjectModel.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\bin\Microsoft.ReportViewer.WebDesign.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\bin\Microsoft.ReportViewer.WebForms.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\bin\Newtonsoft.Json.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\bin\System.Web.Helpers.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\bin\System.Web.Mvc.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\bin\System.Web.Optimization.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\bin\System.Web.Razor.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\bin\System.Web.WebPages.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\bin\System.Web.WebPages.Razor.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\bin\WebGrease.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\bin\Microsoft.ReportViewer.WinForms.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\bin\EnvDTE.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\bin\Microsoft.VisualStudio.Shell.Interop.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\bin\Microsoft.VisualStudio.Shell.Interop.8.0.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\bin\stdole.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\bin\Microsoft.VisualStudio.OLE.Interop.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\bin\Microsoft.VisualStudio.TextManager.Interop.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\bin\Microsoft.VisualStudio.TextManager.Interop.8.0.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\bin\Microsoft.MSXML.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\bin\Newtonsoft.Json.pdb
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\bin\Newtonsoft.Json.xml
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\bin\System.Web.Helpers.xml
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\bin\System.Web.Mvc.xml
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\bin\System.Web.Razor.xml
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\bin\System.Web.WebPages.xml
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\bin\System.Web.WebPages.Razor.xml
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\bin\cs\Microsoft.QualityTools.Testing.Fakes.resources.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\bin\de\Microsoft.QualityTools.Testing.Fakes.resources.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\bin\es\Microsoft.QualityTools.Testing.Fakes.resources.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\bin\fr\Microsoft.QualityTools.Testing.Fakes.resources.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\bin\it\Microsoft.QualityTools.Testing.Fakes.resources.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\bin\ja\Microsoft.QualityTools.Testing.Fakes.resources.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\bin\ko\Microsoft.QualityTools.Testing.Fakes.resources.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\bin\pl\Microsoft.QualityTools.Testing.Fakes.resources.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\bin\pt-BR\Microsoft.QualityTools.Testing.Fakes.resources.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\bin\ru\Microsoft.QualityTools.Testing.Fakes.resources.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\bin\tr\Microsoft.QualityTools.Testing.Fakes.resources.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\bin\zh-Hans\Microsoft.QualityTools.Testing.Fakes.resources.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\bin\zh-Hant\Microsoft.QualityTools.Testing.Fakes.resources.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\bin\de\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\bin\es\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\bin\fr\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\bin\it\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\bin\ja\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\bin\ko\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\bin\pt\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\bin\ru\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\bin\zh-CHS\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\bin\zh-CHT\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\bin\de\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\bin\es\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\bin\fr\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\bin\it\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\bin\ja\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\bin\ko\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\bin\pt\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\bin\ru\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\bin\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\bin\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\bin\de\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\bin\es\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\bin\fr\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\bin\it\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\bin\ja\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\bin\ko\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\bin\pt\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\bin\ru\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\bin\zh-CHS\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\bin\zh-CHT\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\bin\de\Microsoft.ReportViewer.WebDesign.resources.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\bin\es\Microsoft.ReportViewer.WebDesign.resources.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\bin\fr\Microsoft.ReportViewer.WebDesign.resources.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\bin\it\Microsoft.ReportViewer.WebDesign.resources.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\bin\ja\Microsoft.ReportViewer.WebDesign.resources.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\bin\ko\Microsoft.ReportViewer.WebDesign.resources.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\bin\pt\Microsoft.ReportViewer.WebDesign.resources.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\bin\ru\Microsoft.ReportViewer.WebDesign.resources.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\bin\zh-CHS\Microsoft.ReportViewer.WebDesign.resources.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\bin\zh-CHT\Microsoft.ReportViewer.WebDesign.resources.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\bin\de\Microsoft.ReportViewer.WebForms.resources.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\bin\es\Microsoft.ReportViewer.WebForms.resources.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\bin\fr\Microsoft.ReportViewer.WebForms.resources.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\bin\it\Microsoft.ReportViewer.WebForms.resources.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\bin\ja\Microsoft.ReportViewer.WebForms.resources.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\bin\ko\Microsoft.ReportViewer.WebForms.resources.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\bin\pt\Microsoft.ReportViewer.WebForms.resources.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\bin\ru\Microsoft.ReportViewer.WebForms.resources.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\bin\zh-CHS\Microsoft.ReportViewer.WebForms.resources.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\bin\zh-CHT\Microsoft.ReportViewer.WebForms.resources.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\bin\de\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\bin\es\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\bin\fr\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\bin\it\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\bin\ja\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\bin\ko\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\bin\pt\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\bin\ru\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\bin\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\bin\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\obj\Debug\Report.csprojFakesResolveAssemblyReference.cache
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\fakes.args
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\CInfo_Std.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\cs\Microsoft.QualityTools.Testing.Fakes.resources.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\DatabaseTVP.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\de\Microsoft.QualityTools.Testing.Fakes.resources.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\de\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\de\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\de\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\de\Microsoft.ReportViewer.WebDesign.resources.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\de\Microsoft.ReportViewer.WebForms.resources.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\de\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\EnvDTE.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\es\Microsoft.QualityTools.Testing.Fakes.resources.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\es\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\es\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\es\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\es\Microsoft.ReportViewer.WebDesign.resources.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\es\Microsoft.ReportViewer.WebForms.resources.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\es\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\fr\Microsoft.QualityTools.Testing.Fakes.resources.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\fr\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\fr\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\fr\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\fr\Microsoft.ReportViewer.WebDesign.resources.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\fr\Microsoft.ReportViewer.WebForms.resources.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\fr\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\it\Microsoft.QualityTools.Testing.Fakes.resources.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\it\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\it\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\it\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\it\Microsoft.ReportViewer.WebDesign.resources.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\it\Microsoft.ReportViewer.WebForms.resources.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\it\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\ja\Microsoft.QualityTools.Testing.Fakes.resources.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\ja\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\ja\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\ja\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\ja\Microsoft.ReportViewer.WebDesign.resources.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\ja\Microsoft.ReportViewer.WebForms.resources.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\ja\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\ko\Microsoft.QualityTools.Testing.Fakes.resources.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\ko\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\ko\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\ko\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\ko\Microsoft.ReportViewer.WebDesign.resources.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\ko\Microsoft.ReportViewer.WebForms.resources.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\ko\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\Logger.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\Microsoft.MSXML.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\Microsoft.QualityTools.Testing.Fakes.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\Microsoft.ReportViewer.Common.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\Microsoft.ReportViewer.DataVisualization.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\Microsoft.ReportViewer.Design.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\Microsoft.ReportViewer.ProcessingObjectModel.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\Microsoft.ReportViewer.WebDesign.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\Microsoft.ReportViewer.WebForms.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\Microsoft.ReportViewer.WinForms.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\Microsoft.SqlServer.Types.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\Microsoft.VisualStudio.OLE.Interop.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\Microsoft.VisualStudio.Shell.Interop.8.0.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\Microsoft.VisualStudio.Shell.Interop.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\Microsoft.VisualStudio.TextManager.Interop.8.0.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\Microsoft.VisualStudio.TextManager.Interop.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\Microsoft.Web.Infrastructure.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\Newtonsoft.Json.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\Newtonsoft.Json.pdb
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\Newtonsoft.Json.xml
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\pl\Microsoft.QualityTools.Testing.Fakes.resources.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\Proxy.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\pt-BR\Microsoft.QualityTools.Testing.Fakes.resources.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\pt\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\pt\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\pt\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\pt\Microsoft.ReportViewer.WebDesign.resources.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\pt\Microsoft.ReportViewer.WebForms.resources.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\pt\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\ru\Microsoft.QualityTools.Testing.Fakes.resources.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\ru\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\ru\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\ru\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\ru\Microsoft.ReportViewer.WebDesign.resources.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\ru\Microsoft.ReportViewer.WebForms.resources.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\ru\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\stdole.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\System.Web.Helpers.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\System.Web.Helpers.xml
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\System.Web.Mvc.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\System.Web.Mvc.xml
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\System.Web.Optimization.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\System.Web.Razor.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\System.Web.Razor.Fakes.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\System.Web.Razor.Fakes.fakesconfig
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\System.Web.Razor.Fakes.pdb
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\System.Web.Razor.Fakes.xml
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\System.Web.Razor.xml
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\System.Web.WebPages.Deployment.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\System.Web.WebPages.Deployment.xml
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\System.Web.WebPages.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\System.Web.WebPages.Razor.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\System.Web.WebPages.Razor.xml
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\System.Web.WebPages.xml
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\tr\Microsoft.QualityTools.Testing.Fakes.resources.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\WebGrease.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\zh-CHS\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\zh-CHS\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\zh-CHS\Microsoft.ReportViewer.WebDesign.resources.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\zh-CHS\Microsoft.ReportViewer.WebForms.resources.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\zh-CHT\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\zh-CHT\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\zh-CHT\Microsoft.ReportViewer.WebDesign.resources.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\zh-CHT\Microsoft.ReportViewer.WebForms.resources.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\zh-Hans\Microsoft.QualityTools.Testing.Fakes.resources.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\zh-Hant\Microsoft.QualityTools.Testing.Fakes.resources.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\f.ah
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\f.ch
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\f.cs
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\f.csproj
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\f.fakes
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\f.fakesconfig
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\f.snk
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\o\.NETFramework,Version=v4.7.2.AssemblyAttributes.cs
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\o\f.csproj.AssemblyReference.cache
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\o\f.csproj.CopyComplete
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\o\f.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\o\f.csproj.FileListAbsolute.txt
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\o\System.Web.Razor.Fakes.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\o\System.Web.Razor.Fakes.pdb
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\obj\Debug\Report.csproj.AssemblyReference.cache
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\obj\Debug\Report.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\obj\Debug\Report.csproj.CopyComplete
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\obj\Debug\Report.dll
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\obj\Debug\Report.pdb
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\fakes.args
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\CInfo_Std.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\cs\Microsoft.QualityTools.Testing.Fakes.resources.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\DatabaseTVP.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\de\Microsoft.QualityTools.Testing.Fakes.resources.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\de\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\de\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\de\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\de\Microsoft.ReportViewer.WebDesign.resources.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\de\Microsoft.ReportViewer.WebForms.resources.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\de\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\EnvDTE.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\es\Microsoft.QualityTools.Testing.Fakes.resources.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\es\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\es\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\es\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\es\Microsoft.ReportViewer.WebDesign.resources.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\es\Microsoft.ReportViewer.WebForms.resources.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\es\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\fr\Microsoft.QualityTools.Testing.Fakes.resources.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\fr\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\fr\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\fr\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\fr\Microsoft.ReportViewer.WebDesign.resources.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\fr\Microsoft.ReportViewer.WebForms.resources.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\fr\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\it\Microsoft.QualityTools.Testing.Fakes.resources.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\it\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\it\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\it\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\it\Microsoft.ReportViewer.WebDesign.resources.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\it\Microsoft.ReportViewer.WebForms.resources.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\it\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\ja\Microsoft.QualityTools.Testing.Fakes.resources.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\ja\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\ja\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\ja\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\ja\Microsoft.ReportViewer.WebDesign.resources.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\ja\Microsoft.ReportViewer.WebForms.resources.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\ja\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\ko\Microsoft.QualityTools.Testing.Fakes.resources.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\ko\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\ko\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\ko\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\ko\Microsoft.ReportViewer.WebDesign.resources.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\ko\Microsoft.ReportViewer.WebForms.resources.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\ko\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\Logger.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\Microsoft.MSXML.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\Microsoft.QualityTools.Testing.Fakes.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\Microsoft.ReportViewer.Common.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\Microsoft.ReportViewer.DataVisualization.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\Microsoft.ReportViewer.Design.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\Microsoft.ReportViewer.ProcessingObjectModel.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\Microsoft.ReportViewer.WebDesign.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\Microsoft.ReportViewer.WebForms.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\Microsoft.ReportViewer.WinForms.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\Microsoft.SqlServer.Types.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\Microsoft.VisualStudio.OLE.Interop.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\Microsoft.VisualStudio.Shell.Interop.8.0.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\Microsoft.VisualStudio.Shell.Interop.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\Microsoft.VisualStudio.TextManager.Interop.8.0.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\Microsoft.VisualStudio.TextManager.Interop.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\Microsoft.Web.Infrastructure.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\Newtonsoft.Json.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\Newtonsoft.Json.pdb
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\Newtonsoft.Json.xml
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\pl\Microsoft.QualityTools.Testing.Fakes.resources.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\Proxy.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\pt-BR\Microsoft.QualityTools.Testing.Fakes.resources.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\pt\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\pt\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\pt\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\pt\Microsoft.ReportViewer.WebDesign.resources.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\pt\Microsoft.ReportViewer.WebForms.resources.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\pt\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\ru\Microsoft.QualityTools.Testing.Fakes.resources.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\ru\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\ru\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\ru\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\ru\Microsoft.ReportViewer.WebDesign.resources.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\ru\Microsoft.ReportViewer.WebForms.resources.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\ru\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\stdole.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\System.Web.Helpers.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\System.Web.Helpers.xml
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\System.Web.Mvc.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\System.Web.Mvc.xml
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\System.Web.Optimization.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\System.Web.Razor.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\System.Web.Razor.Fakes.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\System.Web.Razor.Fakes.fakesconfig
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\System.Web.Razor.Fakes.pdb
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\System.Web.Razor.Fakes.xml
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\System.Web.Razor.xml
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\System.Web.WebPages.Deployment.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\System.Web.WebPages.Deployment.xml
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\System.Web.WebPages.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\System.Web.WebPages.Razor.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\System.Web.WebPages.Razor.xml
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\System.Web.WebPages.xml
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\tr\Microsoft.QualityTools.Testing.Fakes.resources.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\WebGrease.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\zh-CHS\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\zh-CHS\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\zh-CHS\Microsoft.ReportViewer.WebDesign.resources.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\zh-CHS\Microsoft.ReportViewer.WebForms.resources.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\zh-CHT\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\zh-CHT\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\zh-CHT\Microsoft.ReportViewer.WebDesign.resources.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\zh-CHT\Microsoft.ReportViewer.WebForms.resources.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\zh-Hans\Microsoft.QualityTools.Testing.Fakes.resources.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\b\zh-Hant\Microsoft.QualityTools.Testing.Fakes.resources.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\f.ah
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\f.ch
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\f.cs
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\f.csproj
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\f.fakes
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\f.fakesconfig
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\f.snk
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\o\.NETFramework,Version=v4.7.2.AssemblyAttributes.cs
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\o\f.csproj.AssemblyReference.cache
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\o\f.csproj.CopyComplete
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\o\f.csproj.CoreCompileInputs.cache
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\o\f.csproj.FileListAbsolute.txt
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\o\System.Web.Razor.Fakes.dll
+C:\Users\Abdul Latif\Documents\GitHub\SMSERP\Report\obj\Debug\Fakes\swr\o\System.Web.Razor.Fakes.pdb
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\bin\Reports\FeeVoucherSai.rdlc
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\bin\Reports\BatchWiseDetail.rdlc
+C:\Users\Administrator\Documents\GitHub\SMSERP\Report\bin\Reports\AdmissionReceivable.rdlc
+D:\ZCLINIC\ZCLINIC\Report\bin\SqlServerTypes\x64\msvcr120.dll
+D:\ZCLINIC\ZCLINIC\Report\bin\SqlServerTypes\x64\SqlServerSpatial140.dll
+D:\ZCLINIC\ZCLINIC\Report\bin\SqlServerTypes\x86\msvcr120.dll
+D:\ZCLINIC\ZCLINIC\Report\bin\SqlServerTypes\x86\SqlServerSpatial140.dll
+D:\ZCLINIC\ZCLINIC\Report\bin\Reports\BatchWiseDetail.rdlc
+D:\ZCLINIC\ZCLINIC\Report\bin\Reports\AdmissionReceivable.rdlc
+D:\ZCLINIC\ZCLINIC\Report\bin\Reports\FeeVoucherSai.rdlc
+D:\ZCLINIC\ZCLINIC\Report\bin\Reports\GetReportsaledateWise.rdlc
+D:\ZCLINIC\ZCLINIC\Report\bin\Reports\GetProductStockReport.rdlc
+D:\ZCLINIC\ZCLINIC\Report\bin\Reports\BatchWiseReceivable.rdlc
+D:\ZCLINIC\ZCLINIC\Report\bin\Reports\GetReportPurchasedateWise.rdlc
+D:\ZCLINIC\ZCLINIC\Report\bin\Reports\ProductWiseLedger.rdlc
+D:\ZCLINIC\ZCLINIC\Report\bin\Reports\SaleInvoice.rdlc
+D:\ZCLINIC\ZCLINIC\Report\bin\Reports\AdmissionSummary.rdlc
+D:\ZCLINIC\ZCLINIC\Report\bin\Reports\ReceivableSummary.rdlc
+D:\ZCLINIC\ZCLINIC\Report\bin\Reports\StudentFeesLedger.rdlc
+D:\ZCLINIC\ZCLINIC\Report\bin\Reports\AllowStatmentSummary.rdlc
+D:\ZCLINIC\ZCLINIC\Report\bin\Reports\AllowStatment.rdlc
+D:\ZCLINIC\ZCLINIC\Report\bin\Reports\FeeVoucherCus.rdlc
+D:\ZCLINIC\ZCLINIC\Report\bin\Reports\FeeVoucher.rdlc
+D:\ZCLINIC\ZCLINIC\Report\bin\Reports\StudentReceivable.rdlc
+D:\ZCLINIC\ZCLINIC\Report\bin\Reports\PurchaseInward.rdlc
+D:\ZCLINIC\ZCLINIC\Report\bin\Reports\PurchaseOrder.rdlc
+D:\ZCLINIC\ZCLINIC\Report\bin\Reports\Issuance.rdlc
+D:\ZCLINIC\ZCLINIC\Report\bin\Reports\GetAccStockReport.rdlc
+D:\ZCLINIC\ZCLINIC\Report\bin\Reports\PurchaseDetails.rdlc
+D:\ZCLINIC\ZCLINIC\Report\bin\Reports\StockStatusReport.rdlc
+D:\ZCLINIC\ZCLINIC\Report\bin\Reports\StockReportQtyWise.rdlc
+D:\ZCLINIC\ZCLINIC\Report\bin\Reports\Requisition.rdlc
+D:\ZCLINIC\ZCLINIC\Report\bin\Reports\CPDForm.rdlc
+D:\ZCLINIC\ZCLINIC\Report\bin\Report.dll.config
+D:\ZCLINIC\ZCLINIC\Report\bin\Report.dll
+D:\ZCLINIC\ZCLINIC\Report\bin\Report.pdb
+D:\ZCLINIC\ZCLINIC\Report\bin\roslyn\csc.exe
+D:\ZCLINIC\ZCLINIC\Report\bin\roslyn\csc.exe.config
+D:\ZCLINIC\ZCLINIC\Report\bin\roslyn\csc.rsp
+D:\ZCLINIC\ZCLINIC\Report\bin\roslyn\csi.exe
+D:\ZCLINIC\ZCLINIC\Report\bin\roslyn\csi.exe.config
+D:\ZCLINIC\ZCLINIC\Report\bin\roslyn\csi.rsp
+D:\ZCLINIC\ZCLINIC\Report\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\ZCLINIC\ZCLINIC\Report\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\ZCLINIC\ZCLINIC\Report\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\ZCLINIC\ZCLINIC\Report\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\ZCLINIC\ZCLINIC\Report\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\ZCLINIC\ZCLINIC\Report\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\ZCLINIC\ZCLINIC\Report\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\ZCLINIC\ZCLINIC\Report\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\ZCLINIC\ZCLINIC\Report\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\ZCLINIC\ZCLINIC\Report\bin\roslyn\Microsoft.Managed.Core.targets
+D:\ZCLINIC\ZCLINIC\Report\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\ZCLINIC\ZCLINIC\Report\bin\roslyn\System.AppContext.dll
+D:\ZCLINIC\ZCLINIC\Report\bin\roslyn\System.Collections.Immutable.dll
+D:\ZCLINIC\ZCLINIC\Report\bin\roslyn\System.Console.dll
+D:\ZCLINIC\ZCLINIC\Report\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\ZCLINIC\ZCLINIC\Report\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\ZCLINIC\ZCLINIC\Report\bin\roslyn\System.IO.Compression.dll
+D:\ZCLINIC\ZCLINIC\Report\bin\roslyn\System.IO.FileSystem.dll
+D:\ZCLINIC\ZCLINIC\Report\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\ZCLINIC\ZCLINIC\Report\bin\roslyn\System.IO.Pipes.AccessControl.dll
+D:\ZCLINIC\ZCLINIC\Report\bin\roslyn\System.IO.Pipes.dll
+D:\ZCLINIC\ZCLINIC\Report\bin\roslyn\System.Reflection.Metadata.dll
+D:\ZCLINIC\ZCLINIC\Report\bin\roslyn\System.Security.AccessControl.dll
+D:\ZCLINIC\ZCLINIC\Report\bin\roslyn\System.Security.Claims.dll
+D:\ZCLINIC\ZCLINIC\Report\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\ZCLINIC\ZCLINIC\Report\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\ZCLINIC\ZCLINIC\Report\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\ZCLINIC\ZCLINIC\Report\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\ZCLINIC\ZCLINIC\Report\bin\roslyn\System.Security.Principal.Windows.dll
+D:\ZCLINIC\ZCLINIC\Report\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\ZCLINIC\ZCLINIC\Report\bin\roslyn\System.ValueTuple.dll
+D:\ZCLINIC\ZCLINIC\Report\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\ZCLINIC\ZCLINIC\Report\bin\roslyn\System.Xml.XmlDocument.dll
+D:\ZCLINIC\ZCLINIC\Report\bin\roslyn\System.Xml.XPath.dll
+D:\ZCLINIC\ZCLINIC\Report\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\ZCLINIC\ZCLINIC\Report\bin\roslyn\vbc.exe
+D:\ZCLINIC\ZCLINIC\Report\bin\roslyn\vbc.exe.config
+D:\ZCLINIC\ZCLINIC\Report\bin\roslyn\vbc.rsp
+D:\ZCLINIC\ZCLINIC\Report\bin\roslyn\VBCSCompiler.exe
+D:\ZCLINIC\ZCLINIC\Report\bin\roslyn\VBCSCompiler.exe.config
+D:\ZCLINIC\ZCLINIC\Report\bin\System.Web.Razor.Fakes.fakesconfig
+D:\ZCLINIC\ZCLINIC\Report\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\ZCLINIC\ZCLINIC\Report\bin\Microsoft.QualityTools.Testing.Fakes.dll
+D:\ZCLINIC\ZCLINIC\Report\bin\Microsoft.ReportViewer.Common.dll
+D:\ZCLINIC\ZCLINIC\Report\bin\Microsoft.ReportViewer.DataVisualization.dll
+D:\ZCLINIC\ZCLINIC\Report\bin\Microsoft.ReportViewer.Design.dll
+D:\ZCLINIC\ZCLINIC\Report\bin\Microsoft.ReportViewer.ProcessingObjectModel.dll
+D:\ZCLINIC\ZCLINIC\Report\bin\Microsoft.ReportViewer.WebDesign.dll
+D:\ZCLINIC\ZCLINIC\Report\bin\Microsoft.ReportViewer.WebForms.dll
+D:\ZCLINIC\ZCLINIC\Report\bin\Microsoft.Web.Infrastructure.dll
+D:\ZCLINIC\ZCLINIC\Report\bin\Newtonsoft.Json.dll
+D:\ZCLINIC\ZCLINIC\Report\bin\System.Web.Helpers.dll
+D:\ZCLINIC\ZCLINIC\Report\bin\System.Web.Mvc.dll
+D:\ZCLINIC\ZCLINIC\Report\bin\System.Web.Optimization.dll
+D:\ZCLINIC\ZCLINIC\Report\bin\System.Web.Razor.dll
+D:\ZCLINIC\ZCLINIC\Report\bin\System.Web.WebPages.Deployment.dll
+D:\ZCLINIC\ZCLINIC\Report\bin\System.Web.WebPages.dll
+D:\ZCLINIC\ZCLINIC\Report\bin\System.Web.WebPages.Razor.dll
+D:\ZCLINIC\ZCLINIC\Report\bin\WebGrease.dll
+D:\ZCLINIC\ZCLINIC\Report\bin\Microsoft.ReportViewer.WinForms.dll
+D:\ZCLINIC\ZCLINIC\Report\bin\EnvDTE.dll
+D:\ZCLINIC\ZCLINIC\Report\bin\Microsoft.VisualStudio.Shell.Interop.dll
+D:\ZCLINIC\ZCLINIC\Report\bin\Microsoft.VisualStudio.Shell.Interop.8.0.dll
+D:\ZCLINIC\ZCLINIC\Report\bin\stdole.dll
+D:\ZCLINIC\ZCLINIC\Report\bin\Microsoft.VisualStudio.OLE.Interop.dll
+D:\ZCLINIC\ZCLINIC\Report\bin\Microsoft.VisualStudio.TextManager.Interop.dll
+D:\ZCLINIC\ZCLINIC\Report\bin\Microsoft.VisualStudio.TextManager.Interop.8.0.dll
+D:\ZCLINIC\ZCLINIC\Report\bin\Microsoft.MSXML.dll
+D:\ZCLINIC\ZCLINIC\Report\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\ZCLINIC\ZCLINIC\Report\bin\Newtonsoft.Json.pdb
+D:\ZCLINIC\ZCLINIC\Report\bin\Newtonsoft.Json.xml
+D:\ZCLINIC\ZCLINIC\Report\bin\System.Web.Helpers.xml
+D:\ZCLINIC\ZCLINIC\Report\bin\System.Web.Mvc.xml
+D:\ZCLINIC\ZCLINIC\Report\bin\System.Web.Razor.xml
+D:\ZCLINIC\ZCLINIC\Report\bin\System.Web.WebPages.xml
+D:\ZCLINIC\ZCLINIC\Report\bin\System.Web.WebPages.Deployment.xml
+D:\ZCLINIC\ZCLINIC\Report\bin\System.Web.WebPages.Razor.xml
+D:\ZCLINIC\ZCLINIC\Report\bin\cs\Microsoft.QualityTools.Testing.Fakes.resources.dll
+D:\ZCLINIC\ZCLINIC\Report\bin\de\Microsoft.QualityTools.Testing.Fakes.resources.dll
+D:\ZCLINIC\ZCLINIC\Report\bin\es\Microsoft.QualityTools.Testing.Fakes.resources.dll
+D:\ZCLINIC\ZCLINIC\Report\bin\fr\Microsoft.QualityTools.Testing.Fakes.resources.dll
+D:\ZCLINIC\ZCLINIC\Report\bin\it\Microsoft.QualityTools.Testing.Fakes.resources.dll
+D:\ZCLINIC\ZCLINIC\Report\bin\ja\Microsoft.QualityTools.Testing.Fakes.resources.dll
+D:\ZCLINIC\ZCLINIC\Report\bin\ko\Microsoft.QualityTools.Testing.Fakes.resources.dll
+D:\ZCLINIC\ZCLINIC\Report\bin\pl\Microsoft.QualityTools.Testing.Fakes.resources.dll
+D:\ZCLINIC\ZCLINIC\Report\bin\pt-BR\Microsoft.QualityTools.Testing.Fakes.resources.dll
+D:\ZCLINIC\ZCLINIC\Report\bin\ru\Microsoft.QualityTools.Testing.Fakes.resources.dll
+D:\ZCLINIC\ZCLINIC\Report\bin\tr\Microsoft.QualityTools.Testing.Fakes.resources.dll
+D:\ZCLINIC\ZCLINIC\Report\bin\zh-Hans\Microsoft.QualityTools.Testing.Fakes.resources.dll
+D:\ZCLINIC\ZCLINIC\Report\bin\zh-Hant\Microsoft.QualityTools.Testing.Fakes.resources.dll
+D:\ZCLINIC\ZCLINIC\Report\bin\de\Microsoft.ReportViewer.Common.resources.dll
+D:\ZCLINIC\ZCLINIC\Report\bin\es\Microsoft.ReportViewer.Common.resources.dll
+D:\ZCLINIC\ZCLINIC\Report\bin\fr\Microsoft.ReportViewer.Common.resources.dll
+D:\ZCLINIC\ZCLINIC\Report\bin\it\Microsoft.ReportViewer.Common.resources.dll
+D:\ZCLINIC\ZCLINIC\Report\bin\ja\Microsoft.ReportViewer.Common.resources.dll
+D:\ZCLINIC\ZCLINIC\Report\bin\ko\Microsoft.ReportViewer.Common.resources.dll
+D:\ZCLINIC\ZCLINIC\Report\bin\pt\Microsoft.ReportViewer.Common.resources.dll
+D:\ZCLINIC\ZCLINIC\Report\bin\ru\Microsoft.ReportViewer.Common.resources.dll
+D:\ZCLINIC\ZCLINIC\Report\bin\zh-CHS\Microsoft.ReportViewer.Common.resources.dll
+D:\ZCLINIC\ZCLINIC\Report\bin\zh-CHT\Microsoft.ReportViewer.Common.resources.dll
+D:\ZCLINIC\ZCLINIC\Report\bin\de\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\ZCLINIC\ZCLINIC\Report\bin\es\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\ZCLINIC\ZCLINIC\Report\bin\fr\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\ZCLINIC\ZCLINIC\Report\bin\it\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\ZCLINIC\ZCLINIC\Report\bin\ja\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\ZCLINIC\ZCLINIC\Report\bin\ko\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\ZCLINIC\ZCLINIC\Report\bin\pt\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\ZCLINIC\ZCLINIC\Report\bin\ru\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\ZCLINIC\ZCLINIC\Report\bin\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\ZCLINIC\ZCLINIC\Report\bin\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\ZCLINIC\ZCLINIC\Report\bin\de\Microsoft.ReportViewer.Design.resources.dll
+D:\ZCLINIC\ZCLINIC\Report\bin\es\Microsoft.ReportViewer.Design.resources.dll
+D:\ZCLINIC\ZCLINIC\Report\bin\fr\Microsoft.ReportViewer.Design.resources.dll
+D:\ZCLINIC\ZCLINIC\Report\bin\it\Microsoft.ReportViewer.Design.resources.dll
+D:\ZCLINIC\ZCLINIC\Report\bin\ja\Microsoft.ReportViewer.Design.resources.dll
+D:\ZCLINIC\ZCLINIC\Report\bin\ko\Microsoft.ReportViewer.Design.resources.dll
+D:\ZCLINIC\ZCLINIC\Report\bin\pt\Microsoft.ReportViewer.Design.resources.dll
+D:\ZCLINIC\ZCLINIC\Report\bin\ru\Microsoft.ReportViewer.Design.resources.dll
+D:\ZCLINIC\ZCLINIC\Report\bin\zh-CHS\Microsoft.ReportViewer.Design.resources.dll
+D:\ZCLINIC\ZCLINIC\Report\bin\zh-CHT\Microsoft.ReportViewer.Design.resources.dll
+D:\ZCLINIC\ZCLINIC\Report\bin\de\Microsoft.ReportViewer.WebDesign.resources.dll
+D:\ZCLINIC\ZCLINIC\Report\bin\es\Microsoft.ReportViewer.WebDesign.resources.dll
+D:\ZCLINIC\ZCLINIC\Report\bin\fr\Microsoft.ReportViewer.WebDesign.resources.dll
+D:\ZCLINIC\ZCLINIC\Report\bin\it\Microsoft.ReportViewer.WebDesign.resources.dll
+D:\ZCLINIC\ZCLINIC\Report\bin\ja\Microsoft.ReportViewer.WebDesign.resources.dll
+D:\ZCLINIC\ZCLINIC\Report\bin\ko\Microsoft.ReportViewer.WebDesign.resources.dll
+D:\ZCLINIC\ZCLINIC\Report\bin\pt\Microsoft.ReportViewer.WebDesign.resources.dll
+D:\ZCLINIC\ZCLINIC\Report\bin\ru\Microsoft.ReportViewer.WebDesign.resources.dll
+D:\ZCLINIC\ZCLINIC\Report\bin\zh-CHS\Microsoft.ReportViewer.WebDesign.resources.dll
+D:\ZCLINIC\ZCLINIC\Report\bin\zh-CHT\Microsoft.ReportViewer.WebDesign.resources.dll
+D:\ZCLINIC\ZCLINIC\Report\bin\de\Microsoft.ReportViewer.WebForms.resources.dll
+D:\ZCLINIC\ZCLINIC\Report\bin\es\Microsoft.ReportViewer.WebForms.resources.dll
+D:\ZCLINIC\ZCLINIC\Report\bin\fr\Microsoft.ReportViewer.WebForms.resources.dll
+D:\ZCLINIC\ZCLINIC\Report\bin\it\Microsoft.ReportViewer.WebForms.resources.dll
+D:\ZCLINIC\ZCLINIC\Report\bin\ja\Microsoft.ReportViewer.WebForms.resources.dll
+D:\ZCLINIC\ZCLINIC\Report\bin\ko\Microsoft.ReportViewer.WebForms.resources.dll
+D:\ZCLINIC\ZCLINIC\Report\bin\pt\Microsoft.ReportViewer.WebForms.resources.dll
+D:\ZCLINIC\ZCLINIC\Report\bin\ru\Microsoft.ReportViewer.WebForms.resources.dll
+D:\ZCLINIC\ZCLINIC\Report\bin\zh-CHS\Microsoft.ReportViewer.WebForms.resources.dll
+D:\ZCLINIC\ZCLINIC\Report\bin\zh-CHT\Microsoft.ReportViewer.WebForms.resources.dll
+D:\ZCLINIC\ZCLINIC\Report\bin\de\Microsoft.ReportViewer.WinForms.resources.dll
+D:\ZCLINIC\ZCLINIC\Report\bin\es\Microsoft.ReportViewer.WinForms.resources.dll
+D:\ZCLINIC\ZCLINIC\Report\bin\fr\Microsoft.ReportViewer.WinForms.resources.dll
+D:\ZCLINIC\ZCLINIC\Report\bin\it\Microsoft.ReportViewer.WinForms.resources.dll
+D:\ZCLINIC\ZCLINIC\Report\bin\ja\Microsoft.ReportViewer.WinForms.resources.dll
+D:\ZCLINIC\ZCLINIC\Report\bin\ko\Microsoft.ReportViewer.WinForms.resources.dll
+D:\ZCLINIC\ZCLINIC\Report\bin\pt\Microsoft.ReportViewer.WinForms.resources.dll
+D:\ZCLINIC\ZCLINIC\Report\bin\ru\Microsoft.ReportViewer.WinForms.resources.dll
+D:\ZCLINIC\ZCLINIC\Report\bin\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
+D:\ZCLINIC\ZCLINIC\Report\bin\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+D:\ZCLINIC\ZCLINIC\Report\obj\Debug\Report.csprojFakesResolveAssemblyReference.cache
+D:\ZCLINIC\ZCLINIC\Report\obj\Debug\Fakes\fakes.args
+D:\ZCLINIC\ZCLINIC\Report\obj\Debug\Fakes\swr\b\CInfo_Std.dll
+D:\ZCLINIC\ZCLINIC\Report\obj\Debug\Fakes\swr\b\cs\Microsoft.QualityTools.Testing.Fakes.resources.dll
+D:\ZCLINIC\ZCLINIC\Report\obj\Debug\Fakes\swr\b\DatabaseTVP.dll
+D:\ZCLINIC\ZCLINIC\Report\obj\Debug\Fakes\swr\b\de\Microsoft.QualityTools.Testing.Fakes.resources.dll
+D:\ZCLINIC\ZCLINIC\Report\obj\Debug\Fakes\swr\b\de\Microsoft.ReportViewer.Common.resources.dll
+D:\ZCLINIC\ZCLINIC\Report\obj\Debug\Fakes\swr\b\de\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\ZCLINIC\ZCLINIC\Report\obj\Debug\Fakes\swr\b\de\Microsoft.ReportViewer.Design.resources.dll
+D:\ZCLINIC\ZCLINIC\Report\obj\Debug\Fakes\swr\b\de\Microsoft.ReportViewer.WebDesign.resources.dll
+D:\ZCLINIC\ZCLINIC\Report\obj\Debug\Fakes\swr\b\de\Microsoft.ReportViewer.WebForms.resources.dll
+D:\ZCLINIC\ZCLINIC\Report\obj\Debug\Fakes\swr\b\de\Microsoft.ReportViewer.WinForms.resources.dll
+D:\ZCLINIC\ZCLINIC\Report\obj\Debug\Fakes\swr\b\EnvDTE.dll
+D:\ZCLINIC\ZCLINIC\Report\obj\Debug\Fakes\swr\b\es\Microsoft.QualityTools.Testing.Fakes.resources.dll
+D:\ZCLINIC\ZCLINIC\Report\obj\Debug\Fakes\swr\b\es\Microsoft.ReportViewer.Common.resources.dll
+D:\ZCLINIC\ZCLINIC\Report\obj\Debug\Fakes\swr\b\es\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\ZCLINIC\ZCLINIC\Report\obj\Debug\Fakes\swr\b\es\Microsoft.ReportViewer.Design.resources.dll
+D:\ZCLINIC\ZCLINIC\Report\obj\Debug\Fakes\swr\b\es\Microsoft.ReportViewer.WebDesign.resources.dll
+D:\ZCLINIC\ZCLINIC\Report\obj\Debug\Fakes\swr\b\es\Microsoft.ReportViewer.WebForms.resources.dll
+D:\ZCLINIC\ZCLINIC\Report\obj\Debug\Fakes\swr\b\es\Microsoft.ReportViewer.WinForms.resources.dll
+D:\ZCLINIC\ZCLINIC\Report\obj\Debug\Fakes\swr\b\fr\Microsoft.QualityTools.Testing.Fakes.resources.dll
+D:\ZCLINIC\ZCLINIC\Report\obj\Debug\Fakes\swr\b\fr\Microsoft.ReportViewer.Common.resources.dll
+D:\ZCLINIC\ZCLINIC\Report\obj\Debug\Fakes\swr\b\fr\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\ZCLINIC\ZCLINIC\Report\obj\Debug\Fakes\swr\b\fr\Microsoft.ReportViewer.Design.resources.dll
+D:\ZCLINIC\ZCLINIC\Report\obj\Debug\Fakes\swr\b\fr\Microsoft.ReportViewer.WebDesign.resources.dll
+D:\ZCLINIC\ZCLINIC\Report\obj\Debug\Fakes\swr\b\fr\Microsoft.ReportViewer.WebForms.resources.dll
+D:\ZCLINIC\ZCLINIC\Report\obj\Debug\Fakes\swr\b\fr\Microsoft.ReportViewer.WinForms.resources.dll
+D:\ZCLINIC\ZCLINIC\Report\obj\Debug\Fakes\swr\b\it\Microsoft.QualityTools.Testing.Fakes.resources.dll
+D:\ZCLINIC\ZCLINIC\Report\obj\Debug\Fakes\swr\b\it\Microsoft.ReportViewer.Common.resources.dll
+D:\ZCLINIC\ZCLINIC\Report\obj\Debug\Fakes\swr\b\it\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\ZCLINIC\ZCLINIC\Report\obj\Debug\Fakes\swr\b\it\Microsoft.ReportViewer.Design.resources.dll
+D:\ZCLINIC\ZCLINIC\Report\obj\Debug\Fakes\swr\b\it\Microsoft.ReportViewer.WebDesign.resources.dll
+D:\ZCLINIC\ZCLINIC\Report\obj\Debug\Fakes\swr\b\it\Microsoft.ReportViewer.WebForms.resources.dll
+D:\ZCLINIC\ZCLINIC\Report\obj\Debug\Fakes\swr\b\it\Microsoft.ReportViewer.WinForms.resources.dll
+D:\ZCLINIC\ZCLINIC\Report\obj\Debug\Fakes\swr\b\ja\Microsoft.QualityTools.Testing.Fakes.resources.dll
+D:\ZCLINIC\ZCLINIC\Report\obj\Debug\Fakes\swr\b\ja\Microsoft.ReportViewer.Common.resources.dll
+D:\ZCLINIC\ZCLINIC\Report\obj\Debug\Fakes\swr\b\ja\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\ZCLINIC\ZCLINIC\Report\obj\Debug\Fakes\swr\b\ja\Microsoft.ReportViewer.Design.resources.dll
+D:\ZCLINIC\ZCLINIC\Report\obj\Debug\Fakes\swr\b\ja\Microsoft.ReportViewer.WebDesign.resources.dll
+D:\ZCLINIC\ZCLINIC\Report\obj\Debug\Fakes\swr\b\ja\Microsoft.ReportViewer.WebForms.resources.dll
+D:\ZCLINIC\ZCLINIC\Report\obj\Debug\Fakes\swr\b\ja\Microsoft.ReportViewer.WinForms.resources.dll
+D:\ZCLINIC\ZCLINIC\Report\obj\Debug\Fakes\swr\b\ko\Microsoft.QualityTools.Testing.Fakes.resources.dll
+D:\ZCLINIC\ZCLINIC\Report\obj\Debug\Fakes\swr\b\ko\Microsoft.ReportViewer.Common.resources.dll
+D:\ZCLINIC\ZCLINIC\Report\obj\Debug\Fakes\swr\b\ko\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\ZCLINIC\ZCLINIC\Report\obj\Debug\Fakes\swr\b\ko\Microsoft.ReportViewer.Design.resources.dll
+D:\ZCLINIC\ZCLINIC\Report\obj\Debug\Fakes\swr\b\ko\Microsoft.ReportViewer.WebDesign.resources.dll
+D:\ZCLINIC\ZCLINIC\Report\obj\Debug\Fakes\swr\b\ko\Microsoft.ReportViewer.WebForms.resources.dll
+D:\ZCLINIC\ZCLINIC\Report\obj\Debug\Fakes\swr\b\ko\Microsoft.ReportViewer.WinForms.resources.dll
+D:\ZCLINIC\ZCLINIC\Report\obj\Debug\Fakes\swr\b\Logger.dll
+D:\ZCLINIC\ZCLINIC\Report\obj\Debug\Fakes\swr\b\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\ZCLINIC\ZCLINIC\Report\obj\Debug\Fakes\swr\b\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\ZCLINIC\ZCLINIC\Report\obj\Debug\Fakes\swr\b\Microsoft.MSXML.dll
+D:\ZCLINIC\ZCLINIC\Report\obj\Debug\Fakes\swr\b\Microsoft.QualityTools.Testing.Fakes.dll
+D:\ZCLINIC\ZCLINIC\Report\obj\Debug\Fakes\swr\b\Microsoft.ReportViewer.Common.dll
+D:\ZCLINIC\ZCLINIC\Report\obj\Debug\Fakes\swr\b\Microsoft.ReportViewer.DataVisualization.dll
+D:\ZCLINIC\ZCLINIC\Report\obj\Debug\Fakes\swr\b\Microsoft.ReportViewer.Design.dll
+D:\ZCLINIC\ZCLINIC\Report\obj\Debug\Fakes\swr\b\Microsoft.ReportViewer.ProcessingObjectModel.dll
+D:\ZCLINIC\ZCLINIC\Report\obj\Debug\Fakes\swr\b\Microsoft.ReportViewer.WebDesign.dll
+D:\ZCLINIC\ZCLINIC\Report\obj\Debug\Fakes\swr\b\Microsoft.ReportViewer.WebForms.dll
+D:\ZCLINIC\ZCLINIC\Report\obj\Debug\Fakes\swr\b\Microsoft.ReportViewer.WinForms.dll
+D:\ZCLINIC\ZCLINIC\Report\obj\Debug\Fakes\swr\b\Microsoft.SqlServer.Types.dll
+D:\ZCLINIC\ZCLINIC\Report\obj\Debug\Fakes\swr\b\Microsoft.VisualStudio.OLE.Interop.dll
+D:\ZCLINIC\ZCLINIC\Report\obj\Debug\Fakes\swr\b\Microsoft.VisualStudio.Shell.Interop.8.0.dll
+D:\ZCLINIC\ZCLINIC\Report\obj\Debug\Fakes\swr\b\Microsoft.VisualStudio.Shell.Interop.dll
+D:\ZCLINIC\ZCLINIC\Report\obj\Debug\Fakes\swr\b\Microsoft.VisualStudio.TextManager.Interop.8.0.dll
+D:\ZCLINIC\ZCLINIC\Report\obj\Debug\Fakes\swr\b\Microsoft.VisualStudio.TextManager.Interop.dll
+D:\ZCLINIC\ZCLINIC\Report\obj\Debug\Fakes\swr\b\Microsoft.Web.Infrastructure.dll
+D:\ZCLINIC\ZCLINIC\Report\obj\Debug\Fakes\swr\b\Newtonsoft.Json.dll
+D:\ZCLINIC\ZCLINIC\Report\obj\Debug\Fakes\swr\b\Newtonsoft.Json.pdb
+D:\ZCLINIC\ZCLINIC\Report\obj\Debug\Fakes\swr\b\Newtonsoft.Json.xml
+D:\ZCLINIC\ZCLINIC\Report\obj\Debug\Fakes\swr\b\pl\Microsoft.QualityTools.Testing.Fakes.resources.dll
+D:\ZCLINIC\ZCLINIC\Report\obj\Debug\Fakes\swr\b\Proxy.dll
+D:\ZCLINIC\ZCLINIC\Report\obj\Debug\Fakes\swr\b\pt-BR\Microsoft.QualityTools.Testing.Fakes.resources.dll
+D:\ZCLINIC\ZCLINIC\Report\obj\Debug\Fakes\swr\b\pt\Microsoft.ReportViewer.Common.resources.dll
+D:\ZCLINIC\ZCLINIC\Report\obj\Debug\Fakes\swr\b\pt\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\ZCLINIC\ZCLINIC\Report\obj\Debug\Fakes\swr\b\pt\Microsoft.ReportViewer.Design.resources.dll
+D:\ZCLINIC\ZCLINIC\Report\obj\Debug\Fakes\swr\b\pt\Microsoft.ReportViewer.WebDesign.resources.dll
+D:\ZCLINIC\ZCLINIC\Report\obj\Debug\Fakes\swr\b\pt\Microsoft.ReportViewer.WebForms.resources.dll
+D:\ZCLINIC\ZCLINIC\Report\obj\Debug\Fakes\swr\b\pt\Microsoft.ReportViewer.WinForms.resources.dll
+D:\ZCLINIC\ZCLINIC\Report\obj\Debug\Fakes\swr\b\ru\Microsoft.QualityTools.Testing.Fakes.resources.dll
+D:\ZCLINIC\ZCLINIC\Report\obj\Debug\Fakes\swr\b\ru\Microsoft.ReportViewer.Common.resources.dll
+D:\ZCLINIC\ZCLINIC\Report\obj\Debug\Fakes\swr\b\ru\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\ZCLINIC\ZCLINIC\Report\obj\Debug\Fakes\swr\b\ru\Microsoft.ReportViewer.Design.resources.dll
+D:\ZCLINIC\ZCLINIC\Report\obj\Debug\Fakes\swr\b\ru\Microsoft.ReportViewer.WebDesign.resources.dll
+D:\ZCLINIC\ZCLINIC\Report\obj\Debug\Fakes\swr\b\ru\Microsoft.ReportViewer.WebForms.resources.dll
+D:\ZCLINIC\ZCLINIC\Report\obj\Debug\Fakes\swr\b\ru\Microsoft.ReportViewer.WinForms.resources.dll
+D:\ZCLINIC\ZCLINIC\Report\obj\Debug\Fakes\swr\b\stdole.dll
+D:\ZCLINIC\ZCLINIC\Report\obj\Debug\Fakes\swr\b\System.Web.Helpers.dll
+D:\ZCLINIC\ZCLINIC\Report\obj\Debug\Fakes\swr\b\System.Web.Helpers.xml
+D:\ZCLINIC\ZCLINIC\Report\obj\Debug\Fakes\swr\b\System.Web.Mvc.dll
+D:\ZCLINIC\ZCLINIC\Report\obj\Debug\Fakes\swr\b\System.Web.Mvc.xml
+D:\ZCLINIC\ZCLINIC\Report\obj\Debug\Fakes\swr\b\System.Web.Optimization.dll
+D:\ZCLINIC\ZCLINIC\Report\obj\Debug\Fakes\swr\b\System.Web.Razor.dll
+D:\ZCLINIC\ZCLINIC\Report\obj\Debug\Fakes\swr\b\System.Web.Razor.Fakes.dll
+D:\ZCLINIC\ZCLINIC\Report\obj\Debug\Fakes\swr\b\System.Web.Razor.Fakes.fakesconfig
+D:\ZCLINIC\ZCLINIC\Report\obj\Debug\Fakes\swr\b\System.Web.Razor.Fakes.pdb
+D:\ZCLINIC\ZCLINIC\Report\obj\Debug\Fakes\swr\b\System.Web.Razor.Fakes.xml
+D:\ZCLINIC\ZCLINIC\Report\obj\Debug\Fakes\swr\b\System.Web.Razor.xml
+D:\ZCLINIC\ZCLINIC\Report\obj\Debug\Fakes\swr\b\System.Web.WebPages.Deployment.dll
+D:\ZCLINIC\ZCLINIC\Report\obj\Debug\Fakes\swr\b\System.Web.WebPages.Deployment.xml
+D:\ZCLINIC\ZCLINIC\Report\obj\Debug\Fakes\swr\b\System.Web.WebPages.dll
+D:\ZCLINIC\ZCLINIC\Report\obj\Debug\Fakes\swr\b\System.Web.WebPages.Razor.dll
+D:\ZCLINIC\ZCLINIC\Report\obj\Debug\Fakes\swr\b\System.Web.WebPages.Razor.xml
+D:\ZCLINIC\ZCLINIC\Report\obj\Debug\Fakes\swr\b\System.Web.WebPages.xml
+D:\ZCLINIC\ZCLINIC\Report\obj\Debug\Fakes\swr\b\tr\Microsoft.QualityTools.Testing.Fakes.resources.dll
+D:\ZCLINIC\ZCLINIC\Report\obj\Debug\Fakes\swr\b\WebGrease.dll
+D:\ZCLINIC\ZCLINIC\Report\obj\Debug\Fakes\swr\b\zh-CHS\Microsoft.ReportViewer.Common.resources.dll
+D:\ZCLINIC\ZCLINIC\Report\obj\Debug\Fakes\swr\b\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\ZCLINIC\ZCLINIC\Report\obj\Debug\Fakes\swr\b\zh-CHS\Microsoft.ReportViewer.Design.resources.dll
+D:\ZCLINIC\ZCLINIC\Report\obj\Debug\Fakes\swr\b\zh-CHS\Microsoft.ReportViewer.WebDesign.resources.dll
+D:\ZCLINIC\ZCLINIC\Report\obj\Debug\Fakes\swr\b\zh-CHS\Microsoft.ReportViewer.WebForms.resources.dll
+D:\ZCLINIC\ZCLINIC\Report\obj\Debug\Fakes\swr\b\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
+D:\ZCLINIC\ZCLINIC\Report\obj\Debug\Fakes\swr\b\zh-CHT\Microsoft.ReportViewer.Common.resources.dll
+D:\ZCLINIC\ZCLINIC\Report\obj\Debug\Fakes\swr\b\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\ZCLINIC\ZCLINIC\Report\obj\Debug\Fakes\swr\b\zh-CHT\Microsoft.ReportViewer.Design.resources.dll
+D:\ZCLINIC\ZCLINIC\Report\obj\Debug\Fakes\swr\b\zh-CHT\Microsoft.ReportViewer.WebDesign.resources.dll
+D:\ZCLINIC\ZCLINIC\Report\obj\Debug\Fakes\swr\b\zh-CHT\Microsoft.ReportViewer.WebForms.resources.dll
+D:\ZCLINIC\ZCLINIC\Report\obj\Debug\Fakes\swr\b\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+D:\ZCLINIC\ZCLINIC\Report\obj\Debug\Fakes\swr\b\zh-Hans\Microsoft.QualityTools.Testing.Fakes.resources.dll
+D:\ZCLINIC\ZCLINIC\Report\obj\Debug\Fakes\swr\b\zh-Hant\Microsoft.QualityTools.Testing.Fakes.resources.dll
+D:\ZCLINIC\ZCLINIC\Report\obj\Debug\Fakes\swr\f.ah
+D:\ZCLINIC\ZCLINIC\Report\obj\Debug\Fakes\swr\f.ch
+D:\ZCLINIC\ZCLINIC\Report\obj\Debug\Fakes\swr\f.cs
+D:\ZCLINIC\ZCLINIC\Report\obj\Debug\Fakes\swr\f.csproj
+D:\ZCLINIC\ZCLINIC\Report\obj\Debug\Fakes\swr\f.fakes
+D:\ZCLINIC\ZCLINIC\Report\obj\Debug\Fakes\swr\f.fakesconfig
+D:\ZCLINIC\ZCLINIC\Report\obj\Debug\Fakes\swr\f.snk
+D:\ZCLINIC\ZCLINIC\Report\obj\Debug\Fakes\swr\o\.NETFramework,Version=v4.7.2.AssemblyAttributes.cs
+D:\ZCLINIC\ZCLINIC\Report\obj\Debug\Fakes\swr\o\f.csproj.AssemblyReference.cache
+D:\ZCLINIC\ZCLINIC\Report\obj\Debug\Fakes\swr\o\f.csproj.CopyComplete
+D:\ZCLINIC\ZCLINIC\Report\obj\Debug\Fakes\swr\o\f.csproj.CoreCompileInputs.cache
+D:\ZCLINIC\ZCLINIC\Report\obj\Debug\Fakes\swr\o\f.csproj.FileListAbsolute.txt
+D:\ZCLINIC\ZCLINIC\Report\obj\Debug\Fakes\swr\o\System.Web.Razor.Fakes.dll
+D:\ZCLINIC\ZCLINIC\Report\obj\Debug\Fakes\swr\o\System.Web.Razor.Fakes.pdb
+D:\ZCLINIC\ZCLINIC\Report\obj\Debug\Report.csproj.AssemblyReference.cache
+D:\ZCLINIC\ZCLINIC\Report\obj\Debug\Report.csproj.CoreCompileInputs.cache
+D:\ZCLINIC\ZCLINIC\Report\obj\Debug\Report.csproj.CopyComplete
+D:\ZCLINIC\ZCLINIC\Report\obj\Debug\Report.dll
+D:\ZCLINIC\ZCLINIC\Report\obj\Debug\Report.pdb

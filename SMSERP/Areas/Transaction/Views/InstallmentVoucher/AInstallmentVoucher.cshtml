@@ -1,0 +1,233 @@
+﻿@using ZCLINIC
+@model ZCLINIC.Areas.Transaction.Models.InstallmentVoucher
+
+@{
+    string URL = Model == null ? "/Transaction/InstallmentVoucher/SaveInstallmentVoucher" : "/Transaction/InstallmentVoucher/UpdateInstallmentVoucher";
+    int counter = 0;
+}
+
+<style>
+    /*Remove Arrows/Spinners from type number*/
+    /* Chrome, Safari, Edge, Opera */
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+
+    /* Firefox */
+    input[type=number] {
+        -moz-appearance: textfield;
+    }
+</style>
+
+<form method="post" data-url="@URL" data-rurl="/Transaction/InstallmentVoucher" data-script="/assets/Areas/Transaction/InstallmentVoucher/Index.js" data-display="Bank Payment Voucher">
+
+
+
+    @Html.HiddenFor(m => m.InsId)
+
+    @Html.HiddenFor(m => m.GrId)
+
+
+
+    <div class="row">
+
+
+
+        <div class="form-group form-group-xs col-md-12">
+
+
+
+
+            <div class="form-group form-group-xs col-md-3">
+                <label>Receipt No<b class="wysiwyg-color-red"></b></label>
+                @Html.TextBoxFor(m => m.InsCode, new { @class = "form-control", type = "text", @readonly = "readonly" })
+
+            </div>
+            <div class="form-group form-group-xs col-md-4">
+                <label>Date<b class="wysiwyg-color-red"></b></label>
+                @Html.TextBoxFor(m => m.InsDate, new { @class = "form-control", type = "date" })
+
+            </div>
+
+            <div class="form-group form-group-xs col-md-4">
+                <label>Due Date<b class="wysiwyg-color-red"></b></label>
+                @Html.TextBoxFor(m => m.IntDueDate, new { @class = "form-control", type = "date" })
+
+            </div>
+
+
+
+
+
+
+
+
+        </div>
+    </div>
+
+
+    <div class="row">
+
+
+
+        <div class="form-group form-group-xs col-md-12">
+
+
+
+            <div class="form-group form-group-xs col-md-4">
+                <label>GRNO<b class="wysiwyg-color-red"></b></label>
+                @Html.TextBoxFor(m => m.Grno, new { @class = "form-control", type = "text", @readonly = "readonly" })
+
+            </div>
+
+            <div class="form-group form-group-xs col-md-4">
+                <label>Student Name<b class="wysiwyg-color-red"></b></label>
+                @Html.TextBoxFor(m => m.Name, new { @class = "form-control", type = "text", @readonly = "readonly" })
+
+            </div>
+
+
+
+
+            <div class="form-group form-group-xs mt-20 col-md-1">
+                <a class="btn btn-info btn-sm" id="AddItemBtn" data-script="#"><i class="icon-add mr-5"></i>Student</a>
+            </div>
+
+
+
+
+
+
+
+
+
+        </div>
+    </div>
+
+    <div class="row">
+
+
+
+        <div class="form-group form-group-xs col-md-12">
+
+
+
+            <div class="form-group form-group-xs col-md-4">
+                <label>Month<b class="wysiwyg-color-red"></b></label>
+                @Html.TextBoxFor(m => m.IntMonth, new { @class = "form-control", type = "text" })
+
+            </div>
+
+            <div class="form-group form-group-xs col-md-6">
+                <label>Discription <b class="wysiwyg-color-red"></b></label>
+                @Html.TextBoxFor(m => m.IntDiscription, new { @class = "form-control", type = "text" })
+
+            </div>
+
+
+
+            <div class="form-group form-group-xs col-md-2">
+                <label>Amount <b class="wysiwyg-color-red"></b></label>
+                @Html.TextBoxFor(m => m.IntAmt, new { @class = "form-control", type = "Number" })
+
+            </div>
+
+
+
+
+
+            <div class="row">
+
+
+
+                <div class="form-group form-group-xs col-md-12">
+
+                    <div class="form-group form-group-xs col-md-6">
+                        <label>Bank Name<b class="wysiwyg-color-red"></b></label>
+                        @{
+                            List<ZCLINIC.Areas.Master.Models.Master_SubAccount> SubAcc = new ZCLINIC.Areas.Master.Models.Master_SubAccount().Master_SubAccountGetBankMaster(Context.Session.GetBValues(), Context.GetIP(), Context.GetCInfo());
+
+                        }
+                        @Html.DropDownList("IntBankId", SubAcc.Select(s => new SelectListItem() { Text = s.Subacc_Name, Value = s.Com_id.ToString() }), new { @class = "form-control " })
+
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+        </div>
+    </div>
+    <div style="display:none;">
+
+
+        @*@{
+                List<SMCHSL.Areas.Master.Models.Master_SubAccount> SubAccount_ChartOfAccount = new SMCHSL.Areas.Master.Models..Master_SubAccountGetAll(Context.Session.GetBValues(), Context.GetIP(), Context.GetCInfo());
+
+            }*@
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="modal-footer mt-10 no-padding no-border">
+
+
+
+        <button type="button" class="btn btn-danger btn-xs" data-dismiss="modal"><i class="icon-cross"></i>Close</button>
+        <button type="button" data-submit="true" class="btn btn-primary  btn-xs "><i class="icon-floppy-disk position-left"></i>Save</button>
+        @* <button type="button" data-submit="" class="btn btn-primary btn-xs SaveBtn"><i class="icon-floppy-disk position-left"></i>Save</button>*@
+
+    </div>
+
+</form>

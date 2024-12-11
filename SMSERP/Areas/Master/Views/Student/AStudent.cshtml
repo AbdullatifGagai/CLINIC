@@ -1,0 +1,40 @@
+﻿@using ZCLINIC;
+@model ZCLINIC.Areas.Master.Models.Student
+
+@{
+    string URL = Model == null ? "/Master/Student/SaveStudent" : "/Master/Student/UpdateStudent";
+}
+
+<form class="form-horizontal" method="post" id="" data-url="@URL" data-display="Student" data-script="/assets/Areas/Master/Student/IndexSm.js" data-rurl="/Master/Student">
+    @Html.HiddenFor(m => m.GRId)
+    <div class="tabbable">
+        <ul class="nav nav-tabs nav-tabs-bottom">
+            <li class="active"><a href="#bottom-tab1" data-toggle="tab">Details</a></li>
+            <li><a href="#bottom-tab2" data-toggle="tab">Address/Further Info</a></li>
+
+        </ul>
+
+        <div class="tab-content">
+            <div class="tab-pane active" id="bottom-tab1">
+                @{
+                    await Html.RenderPartialAsync("DetailInfo", Model);
+                }
+
+            </div>
+
+            <div class="tab-pane" id="bottom-tab2">
+                @{
+                    await Html.RenderPartialAsync("ContactInfo", Model);
+                }
+
+            </div>
+
+
+        </div>
+    </div>
+    <div class="modal-footer no-padding no-border">
+        <button type="button" class="btn btn-danger btn-xs" data-dismiss="modal"><i class="icon-cross"></i> Close</button>
+        <button type="button" data-submit="true" class="btn btn-primary btn-xs"><i class="icon-floppy-disk position-left"></i> Save</button>
+    </div>
+</form>
+

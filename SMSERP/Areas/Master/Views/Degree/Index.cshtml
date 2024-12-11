@@ -1,0 +1,110 @@
+﻿@using ZCLINIC;
+
+@model IEnumerable<ZCLINIC.Areas.Master.Models.Degree>
+
+@{
+    bool addview = ZCLINIC.UserRights.URM_AddNew_IsAuthenticated(Context.Session.GetRoleId(), "88");
+    bool editview = ZCLINIC.UserRights.URM_Update_IsAuthenticated(Context.Session.GetRoleId(), "88");
+    bool delete = ZCLINIC.UserRights.URM_Delete_IsAuthenticated(Context.Session.GetRoleId(), "88");
+}
+
+
+
+
+<div class="page-header page-header-default">
+    <div class="breadcrumb-line">
+        <h6 class="text-semibold">Degree</h6>
+    </div>
+</div>
+
+<div class="content">
+    <div class="panel panel-flat">
+        <div class="panel-body">
+            <div class="row">
+                <div class="col-md-3 buttons-top">
+
+                    @if (addview)
+                    {
+                        <a class="btn btn-success btn-sm" data-modalhorizontal="true" data-modalsize="modal-sm" data-url="/Master/Degree/ADegree" data-heading="Degree" data-script="#"><i class="icon-add mr-5"></i> Add</a>
+                    }
+
+
+
+                </div>
+
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        @*<select class="bootstrap-select data-type" data-style="btn-primary" data-width="20%">
+                                <option value="0">All</option>
+                                <option value="1">Active</option>
+                                <option value="2">Inactive </option>
+                            </select>*@
+
+                        @*<select url="/Master/MasterReports/City" class="bootstrap-select" id="downloadBtn" data-style="btn-primary" data-width="30%">
+                                <option value="0">[SELECT Type]</option>
+                                <option value="1">PDF</option>
+                                <option value="2">EXCEL</option>
+                            </select>*@
+                    </div>
+
+                </div>
+
+                <div class="col-sm-3">
+                    <div class="input-group ">
+                        <input type="text" class="form-control" id="FilterInput">
+                        <span class="input-group-addon bg-blue-800"><i class="icon-search4"></i></span>
+                    </div>
+                </div>
+            </div>
+
+            <table class="table table-xxs table-md datatable-basic table-bordered table-striped table-hover bg-lightgray dataTables_scrollBody">
+                <thead>
+                    <tr class="bg-blue-800">
+                        <th>ID</th>
+                        <th>Degree Name</th>
+
+
+
+
+                        @*  <th>Status</th>*@
+                        <th>Actions</th>
+
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (ZCLINIC.Areas.Master.Models.Degree s in Model)
+                    {
+                        <tr data-rowid="@s.DegId">
+
+                            <td>@s.DegCode</td>
+                            <td>@s.DegName</td>
+
+
+
+                            <td>
+                                <ul class="icons-list">
+                                    @if (editview)
+                                    {
+                                        <li class="text-primary-600">
+
+                                            <a data-modalhorizontal="true" data-modalsize="modal-sm" data-heading="Edit Degree" data-script="#" data-url="/Master/Degree/ADegree?Id=@s.DegId "><i class="icon-pencil7"></i></a>
+                                        </li>
+                                    }
+                                    @if (delete)
+                                    {
+                                        <li class="text-danger-600"><a onclick="DeleteAlert({ 'Id':@s.DegId}, '/Master/Degree/DeleteDegree', 'Degree')"><i class="icon-trash"></i></a></li>
+                                    }
+
+
+
+
+
+                                </ul>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

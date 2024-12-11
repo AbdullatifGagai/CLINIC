@@ -1,0 +1,79 @@
+﻿
+
+@using ZCLINIC
+@model ZCLINIC.Areas.Master.Models.Services
+
+@{
+    string URL = Model == null ? "/Master/Services/SaveServices" : "/Master/Services/UpdateServices";
+}
+
+<form class="form-horizontal" method="post" id="" data-url="@URL" data-display="Master" data-rurl="/Master/Services">
+
+    @Html.HiddenFor(m => m.SerId)
+
+    <div class="row">
+
+
+        <div class="form-group form-group-xs">
+            <label class="control-label col-sm-4">Services Name<b class="wysiwyg-color-red">*</b></label>
+            <div class="form-group has-feedback col-sm-8">
+                @Html.TextBoxFor(m => m.ServicesName, new { @class = "form-control input-group", placeholder = "Services  Name", type = "text", required = "required" })
+                <div class="form-control-feedback"><i class=""></i></div>
+            </div>
+        </div>
+
+        <div class="form-group form-group-xs">
+            <label class="control-label col-sm-4">Account  Name<b class="wysiwyg-color-red">*</b></label>
+            <div class="form-group has-feedback col-sm-8">
+
+                @{
+                    List<ZCLINIC.Areas.Master.Models.Master_SubAccount> Master_SubAccount = new ZCLINIC.Areas.Master.Models.Master_SubAccount().Master_SubAccountGetAll(Context.Session.GetBValues(), Context.GetIP(), Context.GetCInfo());
+
+                }
+                @Html.DropDownList("Com_id", Master_SubAccount.Select(s => new SelectListItem() { Text = s.Subacc_Name, Value = s.Com_id.ToString() }), new { @class = "form-control " })
+
+
+
+                <div class="form-control-feedback"><i class=""></i></div>
+            </div>
+        </div>
+
+
+
+        <div class="form-group form-group-xs">
+            <label class="control-label col-sm-4">Account Code<b class="wysiwyg-color-red">*</b></label>
+            <div class="form-group has-feedback col-sm-8">
+                @Html.TextBoxFor(m => m.AccCode, new { @class = "form-control input-group", placeholder = "Account Code", type = "text", required = "required" })
+                <div class="form-control-feedback"><i class=""></i></div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="modal-footer no-padding no-border">
+            <button type="button" class="btn btn-danger btn-xs" data-dismiss="modal"><i class="icon-cross"></i>Close</button>
+            <button type="button" data-submit="true" class="btn btn-primary btn-xs"><i class="icon-floppy-disk position-left"></i>Save</button>
+        </div>
+
+    </div>
+
+</form>
+

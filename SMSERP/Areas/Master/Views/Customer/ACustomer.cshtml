@@ -1,0 +1,90 @@
+﻿
+
+@using ZCLINIC
+@model ZCLINIC.Areas.Master.Models.Customer
+
+@{
+    string URL = Model == null ? "/Master/Customer/SaveCustomer" : "/Master/Customer/UpdateCustomer";
+}
+
+<form class="form-horizontal" method="post" id="" data-url="@URL" data-display="Master" data-rurl="/Master/Customer">
+
+    @Html.HiddenFor(m => m.CusId)
+
+    <div class="row">
+
+        <div class="form-group form-group-xs">
+            <label class="control-label col-sm-4">Customer Id<b class="wysiwyg-color-red">*</b></label>
+            <div class="form-group has-feedback col-sm-4">
+                @Html.TextBoxFor(m => m.CusId, new { @class = "form-control input-group", type = "text", @readonly = "readonly" })
+                <div class="form-control-feedback"><i class=""></i></div>
+            </div>
+        </div>
+
+        <div class="form-group form-group-xs">
+            <label class="control-label col-sm-4">Customer Name <b class="wysiwyg-color-red">*</b></label>
+            <div class="form-group has-feedback col-sm-8">
+                @Html.TextBoxFor(m => m.CustomerName, new { @class = "form-control input-group", placeholder = "Customer Name", type = "text", required = "required" })
+                <div class="form-control-feedback"><i class=""></i></div>
+            </div>
+        </div>
+
+
+
+        <div class="form-group form-group-xs">
+            <label class="control-label col-sm-4">Address</label>
+            <div class="form-group has-feedback col-sm-8">
+                @Html.TextBoxFor(m => m.Address, new { @class = "form-control input-group", placeholder = "Address", type = "text" })
+                <div class="form-control-feedback"><i class=""></i></div>
+            </div>
+        </div>
+
+
+        <div class="form-group form-group-xs">
+            <label class="control-label col-sm-4">Mobile</label>
+            <div class="form-group has-feedback col-sm-8">
+                @Html.TextBoxFor(m => m.MobileNo, new { @class = "form-control input-group", placeholder = "MobileNo", type = "text" })
+                <div class="form-control-feedback"><i class=""></i></div>
+            </div>
+        </div>
+
+
+        <div class="form-group form-group-xs">
+            <label class="control-label col-sm-4">Phone</label>
+            <div class="form-group has-feedback col-sm-8">
+                @Html.TextBoxFor(m => m.PhoneNo, new { @class = "form-control input-group", placeholder = "PhoneNo", type = "text" })
+                <div class="form-control-feedback"><i class=""></i></div>
+            </div>
+        </div>
+
+
+        <div class="form-group form-group-xs">
+            <label class="control-label col-sm-4">NTN No</label>
+            <div class="form-group has-feedback col-sm-8">
+                @Html.TextBoxFor(m => m.NTNNo, new { @class = "form-control input-group", placeholder = "NTNNo", type = "text" })
+                <div class="form-control-feedback"><i class=""></i></div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="modal-footer no-padding no-border">
+            <button type="button" class="btn btn-danger btn-xs" data-dismiss="modal"><i class="icon-cross"></i>Close</button>
+            <button type="button" data-submit="true" class="btn btn-primary btn-xs"><i class="icon-floppy-disk position-left"></i>Save</button>
+        </div>
+
+    </div>
+
+</form>

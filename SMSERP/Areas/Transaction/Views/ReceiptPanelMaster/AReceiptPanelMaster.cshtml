@@ -1,0 +1,284 @@
+﻿@using ZCLINIC
+@model ZCLINIC.Areas.Transaction.Models.ReceiptPanelMaster
+
+@{
+    string URL = Model == null ? "/Transaction/ReceiptPanelMaster/SaveReceiptPanelMaster" : "/Transaction/ReceiptPanelMaster/UpdateReceiptPanelMaster";
+    int counter = 0;
+}
+
+<style>
+    /*Remove Arrows/Spinners from type number*/
+    /* Chrome, Safari, Edge, Opera */
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+
+    /* Firefox */
+    input[type=number] {
+        -moz-appearance: textfield;
+    }
+</style>
+
+<form method="post" data-url="@URL" data-rurl="/Transaction/ReceiptPanelMaster" data-display="FeeVoucher">
+
+
+
+    @Html.HiddenFor(m => m.ReceiptId)
+    <div class="row">
+
+
+
+        <div class="form-group form-group-xs col-md-12">
+
+            <div class="form-group form-group-xs col-md-2">
+                <label>Receipt  No<b class="wysiwyg-color-red"></b></label>
+                @Html.TextBoxFor(m => m.ReceiptCode, new { @class = "form-control", type = "text", @readonly = "readonly" })
+
+            </div>
+
+            <div class="form-group form-group-xs col-md-2">
+                <label>Receipt Date<b class="wysiwyg-color-red"></b></label>
+                @Html.TextBoxFor(m => m.RDate, new { @class = "form-control", type = "date" })
+
+            </div>
+
+
+            <div class="form-group form-group-xs col-md-4">
+                <label>Month Name<b class="wysiwyg-color-red"></b></label>
+                @{
+                    List<ZCLINIC.Areas.Master.Models.AcadmicYear> AcadmicYear = new ZCLINIC.Areas.Master.Models.AcadmicYear().Master_AcadmicYearGetAll(Context.Session.GetBValues(), Context.GetIP(), Context.GetCInfo());
+                    AcadmicYear.Insert(0, new ZCLINIC.Areas.Master.Models.AcadmicYear { Id = 0, FeesTerm = "Select Month  Name" });
+                }
+                @Html.DropDownList("MonId", AcadmicYear.Select(s => new SelectListItem() { Text = s.FeesTerm, Value = s.Id.ToString() }), new { @class = "form-control " })
+
+            </div>
+            <div class="form-group form-group-xs col-md-4">
+                <label>Panel  Name<b class="wysiwyg-color-red"></b></label>
+                @{
+                    List<ZCLINIC.Areas.Master.Models.Panel> Panel = new ZCLINIC.Areas.Master.Models.Panel().Master_PanelGetAll(Context.Session.GetBValues(), Context.GetIP(), Context.GetCInfo());
+
+                }
+                @Html.DropDownList("PanelId", Panel.Select(s => new SelectListItem() { Text = s.PName, Value = s.PId.ToString() }), new { @class = "form-control " })
+
+            </div>
+
+
+
+
+
+
+
+        </div>
+    </div>
+
+    <div class="row">
+
+
+
+        <div class="form-group form-group-xs col-md-12">
+
+
+
+
+
+
+
+            <div class="form-group form-group-xs col-md-2">
+                <label>RefId<b class="wysiwyg-color-red"></b></label>
+                @Html.TextBoxFor(m => m.RefId, new { @class = "form-control", type = "text", @readonly = "readonly" })
+
+            </div>
+
+
+            <div class="form-group form-group-xs col-md-4">
+                <label>Remarks<b class="wysiwyg-color-red"></b></label>
+                @Html.TextBoxFor(m => m.Remarks, new { @class = "form-control", type = "text" })
+
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <div class="form-group form-group-xs col-md-6">
+                <label>Student Name<b class="wysiwyg-color-red"></b></label>
+                <select class="form-control combo-box" id="StudentN" type=2 name="ModelId"></select>
+
+            </div>
+
+
+        </div>
+    </div>
+
+
+
+
+    <div class="row">
+
+
+
+        <div class="form-group form-group-xs col-md-12">
+
+
+
+
+
+
+
+          
+
+            <div class="form-group form-group-xs col-md-6">
+                <label>Account Name<b class="wysiwyg-color-red"></b></label>
+                @{
+                    List<ZCLINIC.Areas.Master.Models.Master_SubAccount> SubAcc = new ZCLINIC.Areas.Master.Models.Master_SubAccount().Master_SubAccountGetBankMaster(Context.Session.GetBValues(), Context.GetIP(), Context.GetCInfo());
+                    SubAcc.Insert(0, new ZCLINIC.Areas.Master.Models.Master_SubAccount { Com_id = 0, Subacc_Name = "Select Bank  Name" });
+                }
+                @Html.DropDownList("BankId", SubAcc.Select(s => new SelectListItem() { Text = s.Subacc_Name, Value = s.Com_id.ToString() }), new { @class = "form-control " })
+
+            </div>
+
+
+
+            <div class="form-group form-group-xs mt-20 col-md-1">
+                <a class="btn btn-info btn-sm" id="AddItemBtn" data-script="#"><i class="icon-add mr-5"></i>Add</a>
+            </div>
+
+
+
+
+        </div>
+    </div>
+
+
+
+
+    <div class="clearfix"></div>
+
+
+    <div class="panel-body form-group panel panel-flat mt-5" style="height:322px; width:100%; overflow-y:auto;" id="table-div">
+
+
+        <div class="table-responsive container-fluid quotaiontable">
+            <table class="table table-xxs table-md table-bordered table-striped table-hover bg-lightgray dataTables_scrollBody">
+
+
+
+
+                <thead>
+                    <tr class="bg-blue-800">
+
+                        <th class="col-lg-4">Student</th>
+
+
+
+
+                        <th class="col-lg-1">Amount</th>
+
+
+                        <th class="col-lg-1">Actions</th>
+
+
+
+                    </tr>
+
+
+
+                </thead>
+
+
+                <tbody class="VoucherDetail">
+                </tbody>
+
+
+
+
+
+
+
+
+
+
+                <tfoot>
+                    <tr>
+
+
+                        <td class="text-right">Total Amount</td>
+                        <td>@Html.TextBoxFor(m => m.Amt, new { @class = "form-control", type = "number", @readonly = "readonly" })</td>
+
+
+
+
+
+
+                    </tr>
+
+                </tfoot>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </table>
+
+
+
+
+        </div>
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="modal-footer mt-10 no-padding no-border">
+
+
+
+
+        <a data-url="/Transaction/ReceiptPanelMaster" data-script="#" class="btn btn-danger btn-xs  closeBtn" data-dismiss="modal"><i class="icon-cross"></i>Close</a>
+
+
+
+
+        <button type="button" data-submit="" class="btn btn-primary  btn-xs  SaveBtn"><i class="icon-floppy-disk position-left"></i>Save</button>
+        @* <button type="button" data-submit="" class="btn btn-primary btn-xs SaveBtn"><i class="icon-floppy-disk position-left"></i>Save</button>*@
+
+    </div>
+
+</form>

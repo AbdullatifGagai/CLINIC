@@ -1,0 +1,554 @@
+﻿@using ZCLINIC
+@model ZCLINIC.Areas.Transaction.Models.FeeVoucher
+
+@{
+    string URL = Model == null ? "/Transaction/FeeVoucher/SaveFeeVoucher" : "/Transaction/FeeVoucher/UpdateFeeVoucher";
+    int counter = 0;
+}
+
+<style>
+    /*Remove Arrows/Spinners from type number*/
+    /* Chrome, Safari, Edge, Opera */
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+
+    /* Firefox */
+    input[type=number] {
+        -moz-appearance: textfield;
+    }
+</style>
+
+<form method="post" data-url="@URL" data-rurl="/Transaction/CustomerFeeVoucher" data-display="FeeVoucher">
+
+
+
+    @Html.HiddenFor(m => m.FeeId)
+    <div class="row">
+
+
+
+        <div class="form-group form-group-xs col-md-12">
+
+            <div class="form-group form-group-xs col-md-2">
+                <label>Voucher No<b class="wysiwyg-color-red"></b></label>
+                @Html.TextBoxFor(m => m.FeeId, new { @class = "form-control", type = "text", @readonly = "readonly" })
+
+            </div>
+
+            <div class="form-group form-group-xs col-md-2">
+                <label>Voucher Date<b class="wysiwyg-color-red"></b></label>
+                @Html.TextBoxFor(m => m.VouDate, new { @class = "form-control", type = "date", @readonly = "readonly" })
+
+            </div>
+
+
+            <div class="form-group form-group-xs col-md-4">
+                <label>Month Name<b class="wysiwyg-color-red"></b></label>
+                @{
+                    List<ZCLINIC.Areas.Master.Models.AcadmicYear> AcadmicYear = new ZCLINIC.Areas.Master.Models.AcadmicYear().Master_AcadmicYearGetAll(Context.Session.GetBValues(), Context.GetIP(), Context.GetCInfo());
+                    AcadmicYear.Insert(0, new ZCLINIC.Areas.Master.Models.AcadmicYear { Id = 0, FeesTerm = "Select Month  Name" });
+                }
+                @Html.DropDownList("MonthId", AcadmicYear.Select(s => new SelectListItem() { Text = s.FeesTerm, Value = s.Id.ToString() }), new { @class = "form-control " })
+
+            </div>
+            
+
+
+
+
+
+        </div>
+    </div>
+
+    <div class="row">
+
+
+
+        <div class="form-group form-group-xs col-md-12">
+
+            @*<div class="form-group form-group-xs col-md-3">
+            <label>Student Name<b class="wysiwyg-color-red"></b></label>
+            <select class="form-control combo-box" id="StudentN" type=2 name="ModelId"></select>
+
+        </div>*@
+
+
+
+            <div class="form-group form-group-xs col-md-2">
+                <label>Due Date<b class="wysiwyg-color-red"></b></label>
+                @Html.TextBoxFor(m => m.DueDate, new { @class = "form-control", type = "date" })
+
+            </div>
+
+            <div class="form-group form-group-xs col-md-2">
+                <label>RefId<b class="wysiwyg-color-red"></b></label>
+                @Html.TextBoxFor(m => m.RefId, new { @class = "form-control", type = "text", @readonly = "readonly" })
+
+            </div>
+
+
+            <div class="form-group form-group-xs col-md-4">
+                <label>Bank Name<b class="wysiwyg-color-red"></b></label>
+                @{
+                    List<ZCLINIC.Areas.Master.Models.Master_SubAccount> SubAcc = new ZCLINIC.Areas.Master.Models.Master_SubAccount().Master_SubAccountGetBankMaster(Context.Session.GetBValues(), Context.GetIP(), Context.GetCInfo());
+                    SubAcc.Insert(0, new ZCLINIC.Areas.Master.Models.Master_SubAccount { Com_id = 0, Subacc_Name = "Select Bank  Name" });
+                }
+                @Html.DropDownList("BankId", SubAcc.Select(s => new SelectListItem() { Text = s.Subacc_Name, Value = s.Com_id.ToString() }), new { @class = "form-control " })
+
+            </div>
+
+
+
+            <div class="form-group form-group-xs col-md-2">
+                <label>SaleId<b class="wysiwyg-color-red"></b></label>
+                @Html.TextBoxFor(m => m.SalesId, new { @class = "form-control", type = "text", @readonly = "readonly" })
+
+            </div>
+
+
+
+
+
+        </div>
+    </div>
+
+    @*<div class="row">
+
+
+
+        <div class="form-group form-group-xs col-md-12">
+
+            <div class="form-group form-group-xs col-md-4">
+                <label>Account Name<b class="wysiwyg-color-red"></b></label>
+                @{
+                    List<ZCLINIC.Areas.Master.Models.Master_SubAccount> SubAccIncome = new ZCLINIC.Areas.Master.Models.Master_SubAccount().Master_SubAccountGetIncomeMaster(Context.Session.GetBValues(), Context.GetIP(), Context.GetCInfo());
+                    SubAccIncome.Insert(0, new ZCLINIC.Areas.Master.Models.Master_SubAccount { Com_id = 0, Subacc_Name = "Select Income  Head" });
+                }
+                @Html.DropDownList("ServicesId", SubAccIncome.Select(s => new SelectListItem() { Text = s.Subacc_Name, Value = s.Com_id.ToString() }), new { @class = "form-control " })
+
+            </div>
+
+        </div>
+    </div>*@
+
+
+    <div class="clearfix"></div>
+
+
+    <div class="panel-body form-group panel panel-flat mt-5" style="height:322px; width:100%; overflow-y:auto;" id="table-div">
+
+
+        <div class="table-responsive container-fluid quotaiontable">
+            <table class="table table-xxs table-md table-bordered table-striped table-hover bg-lightgray dataTables_scrollBody">
+
+
+
+
+                <thead>
+                    <tr class="bg-blue-800">
+
+                        <th class="col-lg-2">Student</th>
+                        <th class="col-lg-2">Panel Name</th>
+
+                        <th class="col-lg-1">GrNO</th>
+                        <th class="col-lg-1">TotalAmt</th>
+                        <th class="col-lg-1">ChNo</th>
+
+                        <th class="col-lg-1">Actions</th>
+
+
+
+                    </tr>
+
+                    @*<tr>
+
+
+
+
+
+                            <th class="col-md-5">
+
+
+                                <select class="form-control combo-box" id="SubAccountId" type=2 name="ModelId"></select>
+
+
+
+
+
+                            </th>
+
+
+                            <th class="col-lg-1"><a class="icon-add text-primary" id="AddItemBtn"></a></th>
+                        </tr>*@
+
+
+                </thead>
+
+
+                <tbody class="VoucherDetail">
+                    @*@if (Model != null)
+                        {
+                            foreach (var item in Model.FeeVoucherDetail)
+                            {
+                                counter++;
+
+
+                                <tr>
+
+
+
+
+
+
+                                    <td><input type="text" class="form-control Remarksfield" value="@item.GRId"></td>
+
+                                    <td><input type="text" class="form-control Debitfield" value="@item.GrNo"></td>
+                                    <td><input type="text" class="form-control Creditfield" value="@item.MontlyAmt"></td>
+
+
+                                    <td><a id=""><i class="icon-trash removeitem text-danger-600"></i></a></td>
+                                </tr>
+                            }
+                        }*@
+
+                </tbody>
+
+
+
+
+
+
+
+
+
+
+                <tfoot>
+                    <tr>
+
+                        <td colspan="2"></td>
+                        <td class="text-right">Total Amount</td>
+
+                        <td>@Html.TextBoxFor(m => m.TAmount, new { @class = "form-control", type = "number", @readonly = "readonly" })</td>
+
+
+
+                    </tr>
+
+                </tfoot>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </table>
+
+
+
+
+        </div>
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="modal-footer mt-10 no-padding no-border">
+
+
+
+
+        <a data-url="/Transaction/CustomerFeeVoucher" data-script="#" class="btn btn-danger btn-xs  closeBtn" data-dismiss="modal"><i class="icon-cross"></i>Close</a>
+
+
+
+
+        <button type="button" data-submit="" class="btn btn-primary  btn-xs  SaveBtn"><i class="icon-floppy-disk position-left"></i>Save</button>
+        @* <button type="button" data-submit="" class="btn btn-primary btn-xs SaveBtn"><i class="icon-floppy-disk position-left"></i>Save</button>*@
+
+    </div>
+
+</form>
+
+<script>
+
+
+    document.getElementById('VouDate').valueAsDate = new Date();
+    document.getElementById('DueDate').valueAsDate = new Date();
+
+
+    let Id = parseInt($('#SalesId').val());
+    debugger;
+
+    SaleInvoiceGetGRId(Id);
+
+    function SaleInvoiceGetGRId(id) {
+
+       
+
+        GetJSONRequest('/Transaction/FeeVoucherDetail/GetGrIdSaleId', 'GET', { id }, data => {
+            
+
+            debugger;
+            let i = 0;
+
+
+            if (data && data.length > 0) {
+                $('tbody.VoucherDetail').empty();
+                for (const item of data) {
+                    i++;
+                    const markup = `
+               <tr>
+
+
+                                <td>
+                                         <input type="hidden" class="form-control GRId" readonly value="${item.GRId}" />
+                                         <input type="text" class="form-control StudentName"  readonly value="${item.StudentName}" />
+                                </td>
+                                
+                                  <td>
+                                         <input type="hidden" class="form-control PanelId" readonly value="${item.PanelId}" />
+                                         <input type="text" class="form-control PanelN"  readonly value="${item.PanelN}" />
+                                </td>
+                                <td><input type="text" class="form-control Grno"  readonly value="${item.GrNo}" /></td>
+                                
+                                    <td><input type="text" class="form-control TotalAmt" readonly value="${item.TAmount}" /></td>
+                                     <td> </td>
+
+                                    <td><a id=""><i class="icon-trash removeitem text-danger-600"></i></a>
+
+
+
+                 </tr>`;
+
+                    $('tbody.VoucherDetail').append(markup);
+                    calculateTotalAmt();
+
+
+                }
+
+
+                debugger;
+
+                // console.log(data);
+                ///   DropDown2Initializers();
+                //    $('#Supcode').val(data[0].Supcode).change();
+
+                //$('#Remarks').val(data[0].Remarks);
+                //$('#ItemId').val(data[0].ItemId).change();
+                //$('#Category').val(data[0].Category).change();
+                //	$('#ReqDate').val(data[0].ReqDate);
+
+
+
+                return;
+            }
+            ErrorAlert('No Purchase Receive Found');
+        })
+
+    }
+
+
+
+    function calculateTotalAmt() {
+        var sum = 0;
+
+
+        let TotalAmount = 0;
+        $('.TotalAmt').each(function () {
+            TotalAmount += parseFloat($(this).val()) || 0;
+        })
+        $('#TAmount').val(TotalAmount);
+
+
+
+
+    }
+
+
+    $('.SaveBtn').on('click', function () {
+        var MonthId = $('#MonthId').val();
+        var LevelId = $('#LevelId').val();
+        var BankId = $('#BankId').val();
+        var ServicesId = $('#ServicesId').val();
+
+
+
+
+        var check = false;
+
+
+
+
+        if (MonthId == 0 || MonthId == null) {
+
+
+            ErrorAlert("Enter Month  Name");
+            check = true;
+
+        }
+
+        
+
+        if (BankId == 0 || BankId == null) {
+
+
+            ErrorAlert("Enter Bank Name");
+            check = true;
+
+        }
+
+      
+
+
+        if (!check) {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            var FeeVoucher = [], FeeVoucherDetail = [];
+
+
+
+            FeeVoucher = {
+                FeeId: $('#FeeId').val(),
+                voudate: $('#VouDate').val(),
+                DueDate: $('#DueDate').val(),
+
+                MonthId: parseInt($('#MonthId option:selected').val()),
+                LeaveF: parseInt(0),
+                LevelId: parseInt(0),
+                BankId: parseInt($('#BankId option:selected').val()),
+
+                AdAmt: 0,
+                AnnAmt: 0,
+                MontlyAmt: 0,
+                MDisAmt: 0,
+
+                OtherAmt: 0,
+                TAmount: $('#TAmount').val(),
+                RefId: $('#RefId').val(),
+                ServicesId: $('#ServicesId').val(),
+
+
+                VouMode: 2,
+
+
+
+
+
+
+                //  StudentN: parseInt($('#StudentN option:selected').val()),
+
+
+            }
+
+
+            $('tbody.VoucherDetail tr').each(function () {
+
+                FeeVoucherDetail.push({
+
+
+
+                    FeeId: $('#FeeId').val(),
+                    GRId: parseInt($(this).find(".GRId").val()),
+                    GrNo: parseInt($(this).find(".Grno").val()),
+                    PanelId: parseInt($(this).find(".PanelId").val()),
+                    AdAmt: 0,
+                    AnnAmt: 0,
+                    MontlyAmt: 0,
+                    MDisAmt: 0,
+
+                    TAmount: parseFloat($(this).find(".TotalAmt").val()),
+                    OtherAmt: parseFloat($(this).find(".TotalAmt").val()),
+                    ChallanNo: parseInt($(this).find(".ChallanNo").val()),
+
+
+
+
+
+                });
+
+
+
+            });
+
+
+
+
+
+
+           
+
+            let SaleId = parseInt($('#SalesId').val());
+
+           
+
+             
+            GetJSONRequest('/Transaction/FeeVoucher/SaveSaleInvoiveFeeVoucher', 'POST', { FeeVoucher, FeeVoucherDetail, SaleId}, function (data) {
+                    SuccessAlert("Data Saved");
+                    $('.closeBtn').trigger('click');
+                });
+          
+            
+
+
+
+        }
+        //else {
+        //    ErrorAlert("Miss value");
+        //}
+
+
+
+
+
+
+
+
+
+
+    });
+
+
+
+
+</script>

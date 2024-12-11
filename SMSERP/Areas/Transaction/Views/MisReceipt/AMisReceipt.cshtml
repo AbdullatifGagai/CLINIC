@@ -1,0 +1,255 @@
+﻿@using ZCLINIC
+@model ZCLINIC.Areas.Transaction.Models.MisReceipt
+
+@{
+    string URL = Model == null ? "/Transaction/MisReceipt/SaveMisReceipt" : "/Transaction/MisReceipt/UpdateMisReceipt";
+    int counter = 0;
+}
+
+<style>
+    /*Remove Arrows/Spinners from type number*/
+    /* Chrome, Safari, Edge, Opera */
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+
+    /* Firefox */
+    input[type=number] {
+        -moz-appearance: textfield;
+    }
+</style>
+
+<form method="post" data-url="@URL" data-rurl="/Transaction/MisReceipt" data-script="/assets/Areas/Transaction/Receipt/MisIndex.js" data-display="MisReceipt">
+
+
+
+    @*@Html.HiddenFor(m => m.rec)*@
+    <div class="row">
+
+
+
+        <div class="form-group form-group-xs col-md-12">
+
+            <div class="form-group form-group-xs col-md-6">
+                <label>Receipt No<b class="wysiwyg-color-red"></b></label>
+                @Html.TextBoxFor(m => m.Receipt_no, new { @class = "form-control", type = "text", @readonly = true })
+
+            </div>
+
+            <div class="form-group form-group-xs col-md-6">
+                <label>Receipt Date<b class="wysiwyg-color-red"></b></label>
+                @Html.TextBoxFor(m => m.ReceiptDate, new { @class = "form-control", type = "date", required = "required" })
+
+            </div>
+
+
+
+
+
+        </div>
+    </div>
+
+    <div class="row">
+
+
+
+        <div class="form-group form-group-xs col-md-12">
+
+
+            <div class="form-group form-group-xs col-md-6">
+                <label>Admission No<b class="wysiwyg-color-red"></b></label>
+                @Html.TextBoxFor(m => m.Admission_no, new { @class = "form-control", type = "text", required = "required" })
+
+            </div>
+            <div class="form-group form-group-xs col-md-6">
+                <label>Name<b class="wysiwyg-color-red"></b></label>
+                @Html.TextBoxFor(m => m.Name, new { @class = "form-control", type = "text", required = "required" })
+
+            </div>
+
+
+        </div>
+    </div>
+    <div class="row">
+        <div class="form-group form-group-xs col-md-12">
+            <div class="form-group form-group-xs col-md-6">
+                <label>Amount<b class="wysiwyg-color-red"></b></label>
+                @Html.TextBoxFor(m => m.Amt, new { @class = "form-control", type = "text", required = "required" })
+
+            </div>
+
+
+
+
+            <div class="form-group form-group-xs col-md-6">
+                <label>Income Account<b class="wysiwyg-color-red"></b></label>
+                @{
+                    List<ZCLINIC.Areas.Master.Models.Master_SubAccount> Master_SubAccount = new ZCLINIC.Areas.Master.Models.Master_SubAccount().Master_SubAccountGetIncomeMaster(Context.Session.GetBValues(), Context.GetIP(), Context.GetCInfo());
+
+
+                }
+                @Html.DropDownList("CreditId", Master_SubAccount.Select(s => new SelectListItem() { Text = s.Subacc_Name, Value = s.Com_id.ToString() }), new { @class = "form-control " })
+
+            </div>
+
+
+
+        </div>
+    </div>
+
+
+
+
+
+
+    <div class="row">
+        <div class="form-group form-group-xs col-md-12">
+
+
+
+            <div class="form-group form-group-xs col-md-6">
+                <label>Bank Account<b class="wysiwyg-color-red"></b></label>
+                @{
+                    List<ZCLINIC.Areas.Master.Models.Master_SubAccount> MasterSubAccount = new ZCLINIC.Areas.Master.Models.Master_SubAccount().Master_SubAccountGetBankMaster(Context.Session.GetBValues(), Context.GetIP(), Context.GetCInfo());
+
+
+                }
+                @Html.DropDownList("DebitId", MasterSubAccount.Select(s => new SelectListItem() { Text = s.Subacc_Name, Value = s.Com_id.ToString() }), new { @class = "form-control " })
+
+            </div>
+
+
+            <div class="form-group form-group-xs col-md-6">
+                <label>Ref No<b class="wysiwyg-color-red"></b></label>
+                @Html.TextBoxFor(m => m.RefId, new { @class = "form-control", type = "text", @readonly = true })
+
+            </div>
+
+
+        </div>
+    </div>
+
+
+    @*<div class="row">
+        <div class="form-group form-group-xs col-md-12">
+
+            <div class="form-group form-group-xs col-md-2">
+                <label>GroupId<b class="wysiwyg-color-red"></b></label>
+                @Html.TextBoxFor(m => m.group_id, new { @class = "form-control", type = "text", required = "required", @readonly = true })
+
+            </div>
+            <div class="form-group form-group-xs col-md-3">
+                <label>GroupName<b class="wysiwyg-color-red"></b></label>
+                @Html.TextBoxFor(m => m.group_name, new { @class = "form-control", type = "text", required = "required", @readonly = true })
+
+            </div>
+            <div class="form-group form-group-xs mt-20 col-md-1">
+                <a class="btn btn-info btn-sm" id="AddItemBtn"><i class="icon-add mr-5"></i>Add Group</a>
+            </div>
+
+
+        </div>
+    </div>*@
+
+
+
+  
+    <div class="modal-footer mt-10 no-padding no-border">
+
+
+
+        <button type="button" class="btn btn-danger btn-xs" data-dismiss="modal"><i class="icon-cross"></i>Close</button>
+        <button type="button" data-submit="true" class="btn btn-primary  btn-xs"><i class="icon-floppy-disk position-left"></i>Save</button>
+        @* <button type="button" data-submit="" class="btn btn-primary btn-xs SaveBtn"><i class="icon-floppy-disk position-left"></i>Save</button>*@
+
+    </div>
+
+</form>
+<script>
+
+   
+   // document.getElementById('Edate').valueAsDate = new Date();
+    $('#Admission_no').keyup(function (e) {
+
+
+        var id = $(this).val();
+
+
+        if (id != '' && e.keyCode == 13)
+            GetPurchaseByOrderNo(id);
+    })
+    function GetPurchaseByOrderNo(id) {
+
+        GetJSONRequest('/Master/Student/StudentGrId', 'GET', { id }, data => {
+      //  console.log(data);
+
+       
+        if (data && data.length > 0) {
+            
+          
+            
+            $('#Name').val(data[0].StudentName);
+         
+         //   $('#Name').attr('disabled', 'true');
+            //$('#Remarks').val(data[0].Remarks);
+
+            //const refid = data[0].RefId || 0;
+            //$('#RefId').val(refid).change();
+
+          //  return;
+        }
+
+        else {
+            ErrorAlert('No Record Found');
+        }
+
+    })
+
+
+    }
+
+
+    if ($('#Receipt_no').val() > 0) {
+
+
+
+
+
+           
+            //document.getElementById('OrderDate').valueAsDate = new Date();
+            //document.getElementById('Send_Date').valueAsDate = new Date();
+            //document.getElementById('Bill_Date').valueAsDate = new Date();
+
+
+
+        }
+        else {
+
+            document.getElementById('ReceiptDate').valueAsDate = new Date();
+         
+
+            //$('tbody.tbodytable tr').each(function () {
+            //    let store = $(this).children().eq(15);
+            //    $(store).find('.Store').val($(store).find('.StoreId').val()).change();
+            //})
+            //debugger;
+            //$('#UserName').val($('#personName').text());
+            //$('#UserId').val($('#personId').val())
+
+
+      }
+
+
+
+
+
+
+
+    
+
+
+
+
+</script>

@@ -1,0 +1,127 @@
+﻿
+
+@using ZCLINIC
+@model ZCLINIC.Areas.Master.Models.Product
+
+@{
+    string URL = Model == null ? "/Master/Product/SaveProduct" : "/Master/Product/UpdateProduct";
+}
+
+<form class="form-horizontal" method="post" id="" data-url="@URL" data-display="Master" data-rurl="/Master/Product">
+
+    @Html.HiddenFor(m => m.ProductId)
+
+    <div class="row">
+
+        <div class="form-group form-group-xs">
+            <label class="control-label col-sm-4">Product Id</label>
+            <div class="form-group has-feedback col-sm-4">
+                @Html.TextBoxFor(m => m.ProductId, new { @class = "form-control input-group", type = "text" })
+                <div class="form-control-feedback"><i class=""></i></div>
+            </div>
+        </div>
+
+        <div class="form-group form-group-xs">
+            <label class="control-label col-sm-4">Product  Name <b class="wysiwyg-color-red">*</b></label>
+            <div class="form-group has-feedback col-sm-8">
+                @Html.TextBoxFor(m => m.ProductName, new { @class = "form-control input-group", placeholder = "Product Name", type = "text", required = "required" })
+                <div class="form-control-feedback"><i class=""></i></div>
+            </div>
+        </div>
+
+
+        <div class="form-group form-group-xs">
+            <label class="control-label col-sm-4">Unit Name <b class="wysiwyg-color-red">*</b></label>
+            <div class="form-group has-feedback col-sm-8">
+                @{
+                    List<ZCLINIC.Areas.Master.Models.Unit> Unit = new ZCLINIC.Areas.Master.Models.Unit().Master_UnitGetAll(Context.Session.GetBValues(), Context.GetIP(), Context.GetCInfo());
+
+                }
+                @Html.DropDownList("UnitId", Unit.Select(s => new SelectListItem() { Text = s.UnitName, Value = s.UnitId.ToString() }), new { @class = "form-control " })
+                <div class="form-control-feedback"><i class=""></i></div>
+            </div>
+        </div>
+
+
+        <div class="form-group form-group-xs">
+            <label class="control-label col-sm-4">Category Name <b class="wysiwyg-color-red">*</b></label>
+            <div class="form-group has-feedback col-sm-8">
+                @{
+                    List<ZCLINIC.Areas.Master.Models.Category> Category = new ZCLINIC.Areas.Master.Models.Category().Master_CategoryGetAll(Context.Session.GetBValues(), Context.GetIP(), Context.GetCInfo());
+
+                }
+                @Html.DropDownList("CategoryId", Category.Select(s => new SelectListItem() { Text = s.CategoryName, Value = s.CategoryId.ToString() }), new { @class = "form-control " })
+
+
+
+                <div class="form-control-feedback"><i class=""></i></div>
+            </div>
+        </div>
+
+
+
+        <div class="form-group form-group-xs">
+            <label class="control-label col-sm-4">TP Rate<b class="wysiwyg-color-red">*</b></label>
+            <div class="form-group has-feedback col-sm-8">
+                @Html.TextBoxFor(m => m.TPRate, new { @class = "form-control input-group", placeholder = "TP Rate", type = "text", required = "required" })
+                <div class="form-control-feedback"><i class=""></i></div>
+            </div>
+        </div>
+
+        <div class="form-group form-group-xs">
+            <label class="control-label col-sm-4">Retail Rate<b class="wysiwyg-color-red">*</b></label>
+            <div class="form-group has-feedback col-sm-8">
+                @Html.TextBoxFor(m => m.RetailRate, new { @class = "form-control input-group", placeholder = "Retail Rate", type = "text", required = "required" })
+                <div class="form-control-feedback"><i class=""></i></div>
+            </div>
+        </div>
+
+        <div class="form-group form-group-xs">
+            <label class="control-label col-sm-4">Packet Qty<b class="wysiwyg-color-red">*</b></label>
+            <div class="form-group has-feedback col-sm-8">
+                @Html.TextBoxFor(m => m.PackQty, new { @class = "form-control input-group", placeholder = "Packet Qty", type = "text", required = "required" })
+                <div class="form-control-feedback"><i class=""></i></div>
+            </div>
+        </div>
+
+        <div class="form-group form-group-xs">
+            <label class="control-label col-sm-4">Company Product<b class="wysiwyg-color-red">*</b></label>
+            <div class="form-group has-feedback col-sm-8">
+                @{
+                    List<ZCLINIC.Areas.Master.Models.CompanyProduct> CompanyProduct = new ZCLINIC.Areas.Master.Models.CompanyProduct().Master_CompanyProductGetAll(Context.Session.GetBValues(), Context.GetIP(), Context.GetCInfo());
+
+                }
+                @Html.DropDownList("PComanyId", CompanyProduct.Select(s => new SelectListItem() { Text = s.CompName, Value = s.ComId.ToString() }), new { @class = "form-control " })
+                <div class="form-control-feedback"><i class=""></i></div>
+            </div>
+        </div>
+
+        <div class="form-group form-group-xs">
+            <label class="control-label col-sm-4">Product BarCode</label>
+            <div class="form-group has-feedback col-sm-8">
+                @Html.TextBoxFor(m => m.BarCode, new { @class = "form-control input-group", placeholder = "Product BarCode", type = "text"})
+                <div class="form-control-feedback"><i class=""></i></div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="modal-footer no-padding no-border">
+            <button type="button" class="btn btn-danger btn-xs" data-dismiss="modal"><i class="icon-cross"></i>Close</button>
+            <button type="button" data-submit="true" class="btn btn-primary btn-xs"><i class="icon-floppy-disk position-left"></i>Save</button>
+        </div>
+
+    </div>
+
+</form>
