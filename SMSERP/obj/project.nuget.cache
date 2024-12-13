@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Lj3zIfF5pKBg92MB473Yw0/iQqL2B3ggAS0Mc0ytC2v+87IifuBpqHqevZSYzZYGGiceoZJm+G7ITDaEje/XWQ==",
+  "dgSpecHash": "xn4wgQgZSF6jHkTGm0fsAplmvFj+zSfj0soPa8BD26qglnubkWwjxPjSBEUWmY1I/6cmwzNCecUf3wUrOcFbcA==",
   "success": true,
-  "projectFilePath": "D:\\ZCLINIC\\ZCLINIC\\SMSERP\\CLINIC.csproj",
+  "projectFilePath": "C:\\Users\\Administrator\\Documents\\GitHub\\CLINIC\\SMSERP\\CLINIC.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Administrator\\.nuget\\packages\\aspnetcore.reporting\\2.1.0\\aspnetcore.reporting.2.1.0.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\aspnetcore.reportingservices\\2.1.0\\aspnetcore.reportingservices.2.1.0.nupkg.sha512",

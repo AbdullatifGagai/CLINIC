@@ -9,7 +9,7 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>9.0.21022</ProductVersion>
-    <ProjectGuid>ad40234d-e6e4-4e4c-9193-206dc3cb6119</ProjectGuid>
+    <ProjectGuid>26e79a0b-c127-4a1d-aec1-f69cadaef744</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace />
@@ -51,7 +51,7 @@
       <Aliases>mqttf</Aliases>
     </Reference>
     <Reference Include="System.Web.Razor">
-      <HintPath>C:\Users\Administrator\Documents\GitHub\SMSERP\packages\Microsoft.AspNet.Razor.3.2.8\lib\net45\System.Web.Razor.dll</HintPath>
+      <HintPath>C:\Users\Administrator\Documents\GitHub\CLINIC\packages\Microsoft.AspNet.Razor.3.2.8\lib\net45\System.Web.Razor.dll</HintPath>
       <Aliases>swr</Aliases>
       <EmbedInteropTypes>False</EmbedInteropTypes>
     </Reference>
@@ -63,19 +63,19 @@
       <EmbedInteropTypes>False</EmbedInteropTypes>
     </Reference>
     <Reference Include="CInfo_Std">
-      <HintPath>C:\Users\Administrator\Documents\GitHub\SMSERP\Report\bin\CInfo_Std.dll</HintPath>
+      <HintPath>C:\Users\Administrator\Documents\GitHub\CLINIC\Report\bin\CInfo_Std.dll</HintPath>
       <EmbedInteropTypes>False</EmbedInteropTypes>
     </Reference>
     <Reference Include="DatabaseTVP">
-      <HintPath>C:\Users\Administrator\Documents\GitHub\SMSERP\Report\bin\DatabaseTVP.dll</HintPath>
+      <HintPath>C:\Users\Administrator\Documents\GitHub\CLINIC\Report\bin\DatabaseTVP.dll</HintPath>
       <EmbedInteropTypes>False</EmbedInteropTypes>
     </Reference>
     <Reference Include="Logger">
-      <HintPath>C:\Users\Administrator\Documents\GitHub\SMSERP\Report\bin\Logger.dll</HintPath>
+      <HintPath>C:\Users\Administrator\Documents\GitHub\CLINIC\Report\bin\Logger.dll</HintPath>
       <EmbedInteropTypes>False</EmbedInteropTypes>
     </Reference>
     <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
-      <HintPath>C:\Users\Administrator\Documents\GitHub\SMSERP\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+      <HintPath>C:\Users\Administrator\Documents\GitHub\CLINIC\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
       <EmbedInteropTypes>False</EmbedInteropTypes>
     </Reference>
     <Reference Include="Microsoft.CSharp">
@@ -83,43 +83,43 @@
       <EmbedInteropTypes>False</EmbedInteropTypes>
     </Reference>
     <Reference Include="Microsoft.ReportViewer.Common">
-      <HintPath>C:\Users\Administrator\Documents\GitHub\SMSERP\packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.150.900.148\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+      <HintPath>C:\Users\Administrator\Documents\GitHub\CLINIC\packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.150.900.148\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
       <EmbedInteropTypes>False</EmbedInteropTypes>
     </Reference>
     <Reference Include="Microsoft.ReportViewer.DataVisualization">
-      <HintPath>C:\Users\Administrator\Documents\GitHub\SMSERP\packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.150.900.148\lib\net40\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+      <HintPath>C:\Users\Administrator\Documents\GitHub\CLINIC\packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.150.900.148\lib\net40\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
       <EmbedInteropTypes>False</EmbedInteropTypes>
     </Reference>
     <Reference Include="Microsoft.ReportViewer.Design">
-      <HintPath>C:\Users\Administrator\Documents\GitHub\SMSERP\packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.150.900.148\lib\net40\Microsoft.ReportViewer.Design.dll</HintPath>
+      <HintPath>C:\Users\Administrator\Documents\GitHub\CLINIC\packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.150.900.148\lib\net40\Microsoft.ReportViewer.Design.dll</HintPath>
       <EmbedInteropTypes>False</EmbedInteropTypes>
     </Reference>
     <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel">
-      <HintPath>C:\Users\Administrator\Documents\GitHub\SMSERP\packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.150.900.148\lib\net40\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+      <HintPath>C:\Users\Administrator\Documents\GitHub\CLINIC\packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.150.900.148\lib\net40\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
       <EmbedInteropTypes>False</EmbedInteropTypes>
     </Reference>
     <Reference Include="Microsoft.ReportViewer.WebDesign">
-      <HintPath>C:\Users\Administrator\Documents\GitHub\SMSERP\packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.150.900.148\lib\net40\Microsoft.ReportViewer.WebDesign.dll</HintPath>
+      <HintPath>C:\Users\Administrator\Documents\GitHub\CLINIC\packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.150.900.148\lib\net40\Microsoft.ReportViewer.WebDesign.dll</HintPath>
       <EmbedInteropTypes>False</EmbedInteropTypes>
     </Reference>
     <Reference Include="Microsoft.ReportViewer.WebForms">
-      <HintPath>C:\Users\Administrator\Documents\GitHub\SMSERP\packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.150.900.148\lib\net40\Microsoft.ReportViewer.WebForms.dll</HintPath>
+      <HintPath>C:\Users\Administrator\Documents\GitHub\CLINIC\packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.150.900.148\lib\net40\Microsoft.ReportViewer.WebForms.dll</HintPath>
       <EmbedInteropTypes>False</EmbedInteropTypes>
     </Reference>
     <Reference Include="Microsoft.SqlServer.Types">
-      <HintPath>C:\Users\Administrator\Documents\GitHub\SMSERP\Report\bin\Microsoft.SqlServer.Types.dll</HintPath>
+      <HintPath>C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\MSBuild\Current\Bin\Microsoft.SqlServer.Types.dll</HintPath>
       <EmbedInteropTypes>False</EmbedInteropTypes>
     </Reference>
     <Reference Include="Microsoft.Web.Infrastructure">
-      <HintPath>C:\Users\Administrator\Documents\GitHub\SMSERP\packages\Microsoft.Web.Infrastructure.2.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+      <HintPath>C:\Users\Administrator\Documents\GitHub\CLINIC\packages\Microsoft.Web.Infrastructure.2.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
       <EmbedInteropTypes>False</EmbedInteropTypes>
     </Reference>
     <Reference Include="Newtonsoft.Json">
-      <HintPath>C:\Users\Administrator\Documents\GitHub\SMSERP\packages\Newtonsoft.Json.12.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <HintPath>C:\Users\Administrator\Documents\GitHub\CLINIC\packages\Newtonsoft.Json.12.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
       <EmbedInteropTypes>False</EmbedInteropTypes>
     </Reference>
     <Reference Include="Proxy">
-      <HintPath>C:\Users\Administrator\Documents\GitHub\SMSERP\Report\bin\Proxy.dll</HintPath>
+      <HintPath>C:\Users\Administrator\Documents\GitHub\CLINIC\Report\bin\Proxy.dll</HintPath>
       <EmbedInteropTypes>False</EmbedInteropTypes>
     </Reference>
     <Reference Include="System.ComponentModel.DataAnnotations">
@@ -179,15 +179,15 @@
       <EmbedInteropTypes>False</EmbedInteropTypes>
     </Reference>
     <Reference Include="System.Web.Helpers">
-      <HintPath>C:\Users\Administrator\Documents\GitHub\SMSERP\packages\Microsoft.AspNet.WebPages.3.2.8\lib\net45\System.Web.Helpers.dll</HintPath>
+      <HintPath>C:\Users\Administrator\Documents\GitHub\CLINIC\packages\Microsoft.AspNet.WebPages.3.2.8\lib\net45\System.Web.Helpers.dll</HintPath>
       <EmbedInteropTypes>False</EmbedInteropTypes>
     </Reference>
     <Reference Include="System.Web.Mvc">
-      <HintPath>C:\Users\Administrator\Documents\GitHub\SMSERP\packages\Microsoft.AspNet.Mvc.5.2.7\lib\net45\System.Web.Mvc.dll</HintPath>
+      <HintPath>C:\Users\Administrator\Documents\GitHub\CLINIC\packages\Microsoft.AspNet.Mvc.5.2.7\lib\net45\System.Web.Mvc.dll</HintPath>
       <EmbedInteropTypes>False</EmbedInteropTypes>
     </Reference>
     <Reference Include="System.Web.Optimization">
-      <HintPath>C:\Users\Administrator\Documents\GitHub\SMSERP\packages\Microsoft.AspNet.Web.Optimization.1.1.0\lib\net40\System.Web.Optimization.dll</HintPath>
+      <HintPath>C:\Users\Administrator\Documents\GitHub\CLINIC\packages\Microsoft.AspNet.Web.Optimization.1.1.0\lib\net40\System.Web.Optimization.dll</HintPath>
       <EmbedInteropTypes>False</EmbedInteropTypes>
     </Reference>
     <Reference Include="System.Web.Routing">
@@ -199,15 +199,15 @@
       <EmbedInteropTypes>False</EmbedInteropTypes>
     </Reference>
     <Reference Include="System.Web.WebPages.Deployment">
-      <HintPath>C:\Users\Administrator\Documents\GitHub\SMSERP\packages\Microsoft.AspNet.WebPages.3.2.8\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+      <HintPath>C:\Users\Administrator\Documents\GitHub\CLINIC\packages\Microsoft.AspNet.WebPages.3.2.8\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
       <EmbedInteropTypes>False</EmbedInteropTypes>
     </Reference>
     <Reference Include="System.Web.WebPages">
-      <HintPath>C:\Users\Administrator\Documents\GitHub\SMSERP\packages\Microsoft.AspNet.WebPages.3.2.8\lib\net45\System.Web.WebPages.dll</HintPath>
+      <HintPath>C:\Users\Administrator\Documents\GitHub\CLINIC\packages\Microsoft.AspNet.WebPages.3.2.8\lib\net45\System.Web.WebPages.dll</HintPath>
       <EmbedInteropTypes>False</EmbedInteropTypes>
     </Reference>
     <Reference Include="System.Web.WebPages.Razor">
-      <HintPath>C:\Users\Administrator\Documents\GitHub\SMSERP\packages\Microsoft.AspNet.WebPages.3.2.8\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+      <HintPath>C:\Users\Administrator\Documents\GitHub\CLINIC\packages\Microsoft.AspNet.WebPages.3.2.8\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
       <EmbedInteropTypes>False</EmbedInteropTypes>
     </Reference>
     <Reference Include="System.Xml">
@@ -219,7 +219,7 @@
       <EmbedInteropTypes>False</EmbedInteropTypes>
     </Reference>
     <Reference Include="WebGrease">
-      <HintPath>C:\Users\Administrator\Documents\GitHub\SMSERP\packages\WebGrease.1.6.0\lib\WebGrease.dll</HintPath>
+      <HintPath>C:\Users\Administrator\Documents\GitHub\CLINIC\packages\WebGrease.1.6.0\lib\WebGrease.dll</HintPath>
       <EmbedInteropTypes>False</EmbedInteropTypes>
     </Reference>
     <Reference Include="System.Runtime">
@@ -263,7 +263,7 @@
       <EmbedInteropTypes>False</EmbedInteropTypes>
     </Reference>
     <Reference Include="Microsoft.ReportViewer.WinForms">
-      <HintPath>C:\Users\Administrator\Documents\GitHub\SMSERP\packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.150.900.148\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
+      <HintPath>C:\Users\Administrator\Documents\GitHub\CLINIC\packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.150.900.148\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
       <EmbedInteropTypes>False</EmbedInteropTypes>
     </Reference>
     <Reference Include="EnvDTE">

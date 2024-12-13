@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\ZCLINIC\\ZCLINIC\\SMSERP\\CLINIC.csproj": {}
+    "C:\\Users\\Administrator\\Documents\\GitHub\\CLINIC\\SMSERP\\CLINIC.csproj": {}
   },
   "projects": {
-    "D:\\ZCLINIC\\ZCLINIC\\SMSERP\\CLINIC.csproj": {
+    "C:\\Users\\Administrator\\Documents\\GitHub\\CLINIC\\SMSERP\\CLINIC.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\ZCLINIC\\ZCLINIC\\SMSERP\\CLINIC.csproj",
+        "projectUniqueName": "C:\\Users\\Administrator\\Documents\\GitHub\\CLINIC\\SMSERP\\CLINIC.csproj",
         "projectName": "SMSERP",
-        "projectPath": "D:\\ZCLINIC\\ZCLINIC\\SMSERP\\CLINIC.csproj",
+        "projectPath": "C:\\Users\\Administrator\\Documents\\GitHub\\CLINIC\\SMSERP\\CLINIC.csproj",
         "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "D:\\ZCLINIC\\ZCLINIC\\SMSERP\\obj\\",
+        "outputPath": "C:\\Users\\Administrator\\Documents\\GitHub\\CLINIC\\SMSERP\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
