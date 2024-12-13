@@ -1,5 +1,0 @@
-DoctorId,DoctorCode,DoctorName,PhoneNo,MobileNo,Email,DesignationId,RID,Status,DesignationName,RefDescription,
-1,001,DR NAJEEB,43534,2134243,abv@435,1,,InActive,ENT,
-3,003,ZAFFAR MAHMOOD,,,,1,,Active,ENT,
-4,4004,Dr Saif,039393931001,1002338383,saif@gmmail.com,2,4,Active,PEEDS,ORGANIZATIONS
-5,2005,Naveed,123,123,,2,2,Active,PEEDS,MIX

@@ -1722,7 +1722,6 @@ C:\Users\Administrator\Documents\GitHub\CLINIC\Report\bin\Microsoft.ReportViewer
 C:\Users\Administrator\Documents\GitHub\CLINIC\Report\bin\Microsoft.ReportViewer.ProcessingObjectModel.dll
 C:\Users\Administrator\Documents\GitHub\CLINIC\Report\bin\Microsoft.ReportViewer.WebDesign.dll
 C:\Users\Administrator\Documents\GitHub\CLINIC\Report\bin\Microsoft.ReportViewer.WebForms.dll
-C:\Users\Administrator\Documents\GitHub\CLINIC\Report\bin\Microsoft.SqlServer.Types.dll
 C:\Users\Administrator\Documents\GitHub\CLINIC\Report\bin\Microsoft.Web.Infrastructure.dll
 C:\Users\Administrator\Documents\GitHub\CLINIC\Report\bin\Newtonsoft.Json.dll
 C:\Users\Administrator\Documents\GitHub\CLINIC\Report\bin\System.Web.Helpers.dll
@@ -1959,8 +1958,6 @@ C:\Users\Administrator\Documents\GitHub\CLINIC\Report\obj\Debug\Fakes\swr\o\f.cs
 C:\Users\Administrator\Documents\GitHub\CLINIC\Report\obj\Debug\Fakes\swr\o\System.Web.Razor.Fakes.dll
 C:\Users\Administrator\Documents\GitHub\CLINIC\Report\obj\Debug\Fakes\swr\o\System.Web.Razor.Fakes.pdb
 C:\Users\Administrator\Documents\GitHub\CLINIC\Report\obj\Debug\Report.csproj.AssemblyReference.cache
-C:\Users\Administrator\Documents\GitHub\CLINIC\Report\obj\Debug\RdlCompile.cache
-C:\Users\Administrator\Documents\GitHub\CLINIC\Report\obj\Debug\RdlCompile.compiled
 C:\Users\Administrator\Documents\GitHub\CLINIC\Report\obj\Debug\Report.csproj.CoreCompileInputs.cache
 C:\Users\Administrator\Documents\GitHub\CLINIC\Report\obj\Debug\Report.csproj.CopyComplete
 C:\Users\Administrator\Documents\GitHub\CLINIC\Report\obj\Debug\Report.dll

@@ -1,0 +1,56 @@
+﻿
+
+@using ZCLINIC
+@model ZCLINIC.Areas.Master.Models.Panel
+
+@{
+    string URL = Model == null ? "/Master/Panel/SavePanel" : "/Master/Panel/UpdatePanel";
+}
+
+<form class="form-horizontal" method="post" id="" data-url="@URL" data-display="Master" data-rurl="/Master/Panel">
+
+    @Html.HiddenFor(m => m.PId)
+
+    <div class="row">
+
+
+        <div class="form-group form-group-xs">
+            <label class="control-label col-sm-4">Panel Name <b class="wysiwyg-color-red">*</b></label>
+            <div class="form-group has-feedback col-sm-8">
+                @Html.TextBoxFor(m => m.PName, new { @class = "form-control input-group", placeholder = "Panel  Name", type = "text", required = "required" })
+                <div class="form-control-feedback"><i class=""></i></div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="modal-footer no-padding no-border">
+            <button type="button" class="btn btn-danger btn-xs" data-dismiss="modal"><i class="icon-cross"></i>Close</button>
+            <button type="button" data-submit="true" class="btn btn-primary btn-xs"><i class="icon-floppy-disk position-left"></i>Save</button>
+        </div>
+
+    </div>
+
+</form>
+

@@ -1,0 +1,161 @@
+﻿@using ZCLINIC.Areas.URM.Models
+@using Microsoft.AspNetCore.Http
+@using Microsoft.AspNetCore.Html
+@inject IHttpContextAccessor HttpContextAccessor
+@*@model int;*@
+@{
+//List<ZCLINIC.Areas.URM.Models.USERAUTH> userModules = new ZCLINIC.Areas.URM.Models.USERAUTH().URM_USERAUTHGetAll(Context.Session.GetBValues(), Context.GetIP(), Context.GetCInfo());
+
+//var defaultModule = userModules.Where(d => d.User_id == Model).FirstOrDefault();
+//var branch = new ZCLINIC.Areas.Master.Models.Branch().Master_BranchGetById(Context.Session.GetBValues().TenantId,Context.Session.GetBValues(), Context.GetIP(), Context.GetCInfo());
+}
+
+<style>
+	.hover:hover {
+		background-color: #fafafa;
+	}
+</style>
+
+<div class="navbar navbar-inverse">
+	<div class="navbar-header">
+		@*<a class="navbar-brand" href="index.html"><img src="assets/images/logo_light.png" alt=""></a>*@
+
+		<ul class="nav navbar-nav visible-xs-block">
+			@*<li><a data-toggle="collapse" data-target="#navbar-mobile"><i class="icon-tree5"></i></a></li>*@
+			<li><a class="sidebar-mobile-main-toggle"><i class="icon-paragraph-justify3"></i></a></li>
+			<li>
+
+			</li>
+		</ul>
+	</div>
+	<div class="navbar-collapse collapse" id="navbar-mobile">
+
+        <ul class="nav navbar-nav">
+
+            <li><a class="sidebar-control sidebar-main-toggle hidden-xs"><i class="icon-paragraph-justify3"></i></a></li>
+            <li>
+
+                <h6 class="text-semibold">GAGAI WORKS</h6>
+
+                @*<div class="navbar-brand" style="width: auto; height: 40px; position: relative; overflow: hidden; border-radius: 50%;"><img class="rounded" style="display: inline; margin: 0 auto; height: 100%; width: auto;" src="#"></div>*@
+            </li>
+
+
+        </ul>
+
+		<div class="navbar-right">
+			<p class="navbar-text">
+					@*<span id="" class="label bg-primary">@branch.BranchName</span>
+					<span hidden id="BranchId">@branch.BranchId</span>*@
+			</p>
+            <ul class="nav navbar-nav">
+
+                <li class="dropdown dropdown-user">
+                    @*<a class="dropdown-toggle" data-toggle="dropdown">
+                <img src="https://ui-avatars.com/api/?name=@defaultModule.ModuleShortName&background=random&rounded=true" class="rounded" alt="@defaultModule.ModuleShortName" />
+                <span>@defaultModule.ModuleName</span>
+                <i class="caret"></i>
+            </a>*@
+                    @*<div class="dropdown-menu dropdown-content">
+                <ul class="media-list dropdown-content-body width-300">
+                    @foreach (ZCLINIC.Areas.URM.Models.UserModule item in userModules)
+                    {
+                        <li class="media hover">
+
+                            <div class="media-left "><img class="mt-5" src="https://ui-avatars.com/api/?name=@item.ModuleShortName&background=random&rounded=true" alt="Avatar" /></div>
+                            @*<div class="media-body">
+                                <a href="/Master/Dashboard?ModuleId=@item.NameId" class="media-heading mt-10 text-bold text-blue-800"> @item.ModuleName.ToUpper()</a>
+
+                            </div>
+
+                        </li>
+                    }
+                </ul>
+            </div>*@
+
+
+                </li>
+                <li>
+
+                    @{
+
+                      
+
+                        var person = new USERAUTH().URM_USERAUTHGetById(Context.Session.GetBValues(), Context.GetIP(), Context.GetCInfo());
+                    }
+
+
+
+                 
+
+                    @*<div class="navbar-brand" style="width: auto; height: 40px; position: relative; overflow: hidden; border-radius: 50%;"><img class="rounded" style="display: inline; margin: 0 auto; height: 100%; width: auto;" src="#"></div>*@
+                </li>
+
+
+
+                <p class="navbar-text">
+                    <span id="CompanyName" class="label bg-success">@person.CompanyName</span>
+                   
+                </p>
+
+
+
+
+
+
+
+                <p class="navbar-text">
+                    <span id="online" class="label bg-success">Online</span>
+                    <span id="offline" style="display:none;" class="label bg-danger">Offline</span>
+                </p>
+
+
+
+
+
+
+
+
+                <li class="dropdown dropdown-user">
+                    <a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                        @*<img src="~/assets/images/placeholder.jpg" alt="">*@
+                        <span id="personName"><input type="hidden" value="@person.User_id" id="personId" />@person.USER_NAME </span>
+                        <i class="caret"></i>
+                    </a>
+
+  
+
+
+
+
+                     <ul class="dropdown-menu dropdown-menu-right">
+                        <li><a data-modalhorizontal="true" data-url="/URM/Authentication/AChangePassword" data-heading="Change Password" data-modalsize="modal-sm" data-script="/Areas/URM/AChangePassword.js"><i class="icon-cog2"> Change Password</i></a></li>
+                        
+                         <li><a data-modalhorizontal="true" data-url="/URM/USERAUTH/AComoanySwitch?id=@person.User_id" data-heading="Switch company" data-modalsize="modal-sm" data-script="#"><i class="icon-exit3"> Switch Company</i></a></li>
+                        
+                      
+                         <li><a href="~/URM/Authentication/Logout"><i class="icon-switch2"></i> Logout</a></li>
+                      
+                   
+                     
+                     </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                </li>
+            </ul>
+		</div>
+	</div>
+</div>
+
+

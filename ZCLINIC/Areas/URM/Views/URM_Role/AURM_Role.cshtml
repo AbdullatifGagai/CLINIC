@@ -1,0 +1,319 @@
+﻿
+@using ZCLINIC
+@model ZCLINIC.Areas.URM.Models.URM_Role
+
+@{
+    string URL = Model == null ? "/URM/URM_Role/SaveURM_Role" : "/URM/URM_Role/UpdateURM_Role";
+
+    int counter = 0;
+    
+    
+
+
+}
+
+<form class="form-horizontal" method="post" id="" data-url="@URL" data-display="URM" data-rurl="/URM/URM_Role">
+
+    @Html.HiddenFor(m => m.Roles_ID)
+
+    <div class="row">
+
+        <div class="form-group form-group-xs col-md-12">
+
+
+            <div class="form-group form-group-xs col-md-2">
+                <label>RoleId<b class="wysiwyg-color-red"></b></label>
+                @Html.TextBoxFor(m => m.Roles_ID, new { @class = "form-control", type = "text", @readonly = "readonly" })
+
+            </div>
+
+            <div class="form-group form-group-xs col-md-4">
+                <label>Role Name<b class="wysiwyg-color-red"></b></label>
+                @Html.TextBoxFor(m => m.Roles_Name, new { @class = "form-control", type = "text" })
+
+            </div>
+
+
+
+            @*<div class="form-group form-group-xs col-md-4">
+                    <div class="input-group ">
+                        <input type="text" class="form-control" id="FilterInputpages">
+                        <span class="input-group-addon bg-danger-800"><i class="icon-search4"></i></span>
+                    </div>
+                </div>*@
+
+
+        </div>
+
+    </div>
+
+
+
+
+
+    <div class="row">
+
+        <div class="form-group form-group-xs col-md-12">
+
+
+            <div class="form-group form-group-xs col-md-2">
+
+                <input type="checkbox",  id="SaveAll" >
+                SaveAll
+
+
+            </div>
+
+           
+
+
+            @*<div class="form-group form-group-xs col-md-4">
+                    <div class="input-group ">
+                        <input type="text" class="form-control" id="FilterInputpages">
+                        <span class="input-group-addon bg-danger-800"><i class="icon-search4"></i></span>
+                    </div>
+                </div>*@
+
+
+        </div>
+
+    </div>
+
+
+
+
+    <div class="panel-body form-group panel panel-flat mt-5" style="height:322px; width:100%; overflow-y:auto;" id="table-div">
+
+
+        <div class="table-responsive container-fluid quotaiontable">
+
+
+
+            @*<table class="table table-xxs table-md datatable-basic table-bordered table-striped table-hover bg-lightgray dataTables_scrollBody">*@
+            <table class="table table-xxs table-md table-bordered table-striped table-hover bg-lightgray dataTables_scrollBody">
+                <thead>
+                    <tr class="bg-blue-800">
+                        <th>Menu Name</th>
+                        <th>Privileges</th>
+                        <th>Save</th>
+                        <th>Update</th>
+                        <th>Delete</th>
+                        <th>Print</th>
+                    </tr>
+
+                </thead>
+                <tbody class="MenuLists">
+
+                    @if (Model != null)
+                    {
+
+
+                        foreach (var item in Model.MenuList)
+                        {
+                            counter++;
+
+
+                            <tr>
+
+
+
+
+                                <td>
+                                    <input type="hidden" class="form-control MuneIdfield" readonly value="@item.MuneId">
+                                    <input type="text" class="form-control MenuNamefield" readonly value="@item.MenuName">
+
+
+
+                                </td>
+
+
+                                @if (item.R_Privileges == 1)
+                                {
+                                    <td><input type="checkbox" class="R_Privileges" checked value="@item.R_Privileges" id="R_Privileges" /></td>
+                                }
+                                else
+                                {
+                                    <td><input type="checkbox" class="R_Privileges" value="@item.R_Privileges" id="R_Privileges" /></td>
+                                }
+                                @if (item.R_save == 1)
+                                {
+                                    <td><input type="checkbox" class="R_save" checked value="@item.R_save" id="R_save" /></td>
+                                }
+                                else
+                                {
+                                    <td><input type="checkbox" class="R_save" value="@item.R_save" id="R_save" /></td>
+                                }
+
+                                @if (item.R_Update == 1)
+                                {
+                                    <td><input type="checkbox" class="R_Update" checked value="@item.R_Update" id="R_Update" /></td>
+                                }
+                                else
+                                {
+                                    <td><input type="checkbox" class="R_Update" value="@item.R_Update" id="R_Update" /></td>
+                                }
+
+
+                                @if (item.R_delete == 1)
+                                {
+                                    <td><input type="checkbox" class="R_delete" checked value="@item.R_delete" id="R_delete" /></td>
+                                }
+                                else
+                                {
+                                    <td><input type="checkbox" class="R_delete" value="@item.R_delete" id="R_delete" /></td>
+                                }
+
+
+                                @if (item.R_Print == 1)
+                                {
+                                    <td><input type="checkbox" class="R_Print" checked value="@item.R_Print" id="R_Print" /></td>
+                                }
+                                else
+                                {
+                                    <td><input type="checkbox" class="R_Print" value="@item.R_Print" id="R_Print" /></td>
+                                }
+
+
+
+
+
+
+
+
+
+
+                                @*<td><a id=""><i class="icon-trash removeitem text-danger-600"></i></a></td>*@
+                            </tr>
+                        }
+                    }
+
+                    else
+                    {
+                        List<ZCLINIC.Areas.URM.Models.URM_RoleDetail> MenuList = new ZCLINIC.Areas.URM.Models.URM_Role().GetMenuNew(Context.Session.GetBValues(), Context.GetIP(), Context.GetCInfo());
+
+                        foreach (var item in MenuList)
+                        {
+                            counter++;
+
+
+                            <tr>
+
+
+
+
+                                <td>
+                                    <input type="hidden" class="form-control MuneIdfield" readonly value="@item.MuneId">
+                                    <input type="text" class="form-control MenuNamefield" readonly value="@item.MenuName">
+
+
+
+                                </td>
+
+
+                                @if (item.R_Privileges == 1)
+                                {
+                                    <td><input type="checkbox" class="R_Privileges" checked value="@item.R_Privileges" id="R_Privileges" /></td>
+                                }
+                                else
+                                {
+                                    <td><input type="checkbox" class="R_Privileges" value="@item.R_Privileges" id="R_Privileges" /></td>
+                                }
+                                @if (item.R_save == 1)
+                                {
+                                    <td><input type="checkbox" class="R_save" checked value="@item.R_save" id="R_save" /></td>
+                                }
+                                else
+                                {
+                                    <td><input type="checkbox" class="R_save" value="@item.R_save" id="R_save" /></td>
+                                }
+
+                                @if (item.R_Update == 1)
+                                {
+                                    <td><input type="checkbox" class="R_Update" checked value="@item.R_Update" id="R_Update" /></td>
+                                }
+                                else
+                                {
+                                    <td><input type="checkbox" class="R_Update" value="@item.R_Update" id="R_Update" /></td>
+                                }
+
+
+                                @if (item.R_delete == 1)
+                                {
+                                    <td><input type="checkbox" class="R_delete" checked value="@item.R_delete" id="R_delete" /></td>
+                                }
+                                else
+                                {
+                                    <td><input type="checkbox" class="R_delete" value="@item.R_delete" id="R_delete" /></td>
+                                }
+
+
+                                @if (item.R_Print == 1)
+                                {
+                                    <td><input type="checkbox" class="R_Print" checked value="@item.R_Print" id="R_Print" /></td>
+                                }
+                                else
+                                {
+                                    <td><input type="checkbox" class="R_Print" value="@item.R_Print" id="R_Print" /></td>
+                                }
+
+
+
+
+
+
+
+
+
+
+                                @*<td><a id=""><i class="icon-trash removeitem text-danger-600"></i></a></td>*@
+                            </tr>
+                        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    }
+
+
+                </tbody>
+
+            </table>
+
+
+
+
+        </div>
+
+
+
+    </div>
+
+    <div class="modal-footer no-padding no-border">
+        <button type="button" class="btn btn-danger btn-xs" data-dismiss="modal"><i class="icon-cross"></i>Close</button>
+        <button type="button" data-submit="" class="btn btn-primary  btn-xs  SaveBtn"><i class="icon-floppy-disk position-left"></i>Save</button>
+    </div>
+
+
+</form>

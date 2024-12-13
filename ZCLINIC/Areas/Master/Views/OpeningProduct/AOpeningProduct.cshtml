@@ -1,0 +1,108 @@
+﻿
+
+@using ZCLINIC
+@model ZCLINIC.Areas.Master.Models.OpeningProduct
+
+@{
+    string URL = Model == null ? "/Master/OpeningProduct/SaveOpeningProduct" : "/Master/OpeningProduct/UpdateOpeningProduct";
+}
+
+<form class="form-horizontal" method="post" id="" data-url="@URL" data-display="Master" data-rurl="/Master/OpeningProduct">
+
+    @Html.HiddenFor(m => m.Id)
+
+    <div class="row">
+
+        <div class="form-group form-group-xs">
+            <label class="control-label col-sm-4">Opening Id</label>
+            <div class="form-group has-feedback col-sm-4">
+                @Html.TextBoxFor(m => m.Id, new { @class = "form-control input-group", type = "text", @readonly = "readonly" })
+                <div class="form-control-feedback"><i class=""></i></div>
+            </div>
+        </div>
+
+
+        <div class="form-group form-group-xs">
+            <label class="control-label col-sm-4">Product Name<b class="wysiwyg-color-red">*</b></label>
+            <div class="form-group has-feedback col-sm-8">
+                @{
+                    List<ZCLINIC.Areas.Master.Models.Product> ProductName = new ZCLINIC.Areas.Master.Models.Product().Master_ProductGetAll(Context.Session.GetBValues(), Context.GetIP(), Context.GetCInfo());
+
+                }
+                @Html.DropDownList("ProductId", ProductName.Select(s => new SelectListItem() { Text = s.ProductName, Value = s.ProductId.ToString() }), new { @class = "form-control " })
+                <div class="form-control-feedback"><i class=""></i></div>
+            </div>
+        </div>
+
+
+        <div class="form-group form-group-xs">
+            <label class="control-label col-sm-4">Store Name<b class="wysiwyg-color-red">*</b></label>
+            <div class="form-group has-feedback col-sm-8">
+                @{
+                    List<ZCLINIC.Areas.Master.Models.Store> Store = new ZCLINIC.Areas.Master.Models.Store().Master_StoreGetAll(Context.Session.GetBValues(), Context.GetIP(), Context.GetCInfo());
+
+                }
+                @Html.DropDownList("StoreId", Store.Select(s => new SelectListItem() { Text = s.Storename, Value = s.storeId.ToString() }), new { @class = "form-control " })
+                <div class="form-control-feedback"><i class=""></i></div>
+            </div>
+
+        </div>
+
+
+        <div class="form-group form-group-xs">
+            <label class="control-label col-sm-4">Qty<b class="wysiwyg-color-red">*</b></label>
+            <div class="form-group has-feedback col-sm-4">
+                @Html.TextBoxFor(m => m.OpQty, new { @class = "form-control input-group", type = "number" })
+                <div class="form-control-feedback"><i class=""></i></div>
+            </div>
+        </div>
+
+
+         <div class="form-group form-group-xs">
+            <label class="control-label col-sm-4">Rate<b class="wysiwyg-color-red">*</b></label>
+            <div class="form-group has-feedback col-sm-4">
+                @Html.TextBoxFor(m => m.Rate, new { @class = "form-control input-group", type = "number" })
+                <div class="form-control-feedback"><i class=""></i></div>
+            </div>
+        </div>
+
+        
+         <div class="form-group form-group-xs">
+            <label class="control-label col-sm-4">Amount<b class="wysiwyg-color-red">*</b></label>
+            <div class="form-group has-feedback col-sm-4">
+                @Html.TextBoxFor(m => m.Amt, new { @class = "form-control input-group", type = "number", @readonly = "readonly" })
+                <div class="form-control-feedback"><i class=""></i></div>
+            </div>
+        </div>
+
+
+         
+         <div class="form-group form-group-xs">
+            <label class="control-label col-sm-4">Ref Id</label>
+            <div class="form-group has-feedback col-sm-4">
+                @Html.TextBoxFor(m => m.RefId, new { @class = "form-control input-group", type = "text", @readonly = "readonly" })
+                <div class="form-control-feedback"><i class=""></i></div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="modal-footer no-padding no-border">
+            <button type="button" class="btn btn-danger btn-xs" data-dismiss="modal"><i class="icon-cross"></i>Close</button>
+            <button type="button" data-submit="true" class="btn btn-primary btn-xs"><i class="icon-floppy-disk position-left"></i>Save</button>
+        </div>
+
+    </div>
+
+</form>

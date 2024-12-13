@@ -1,0 +1,242 @@
+﻿
+@using ZCLINIC
+@model ZCLINIC.Areas.URM.Models.UserCompany
+
+@{
+    string URL = "/URM/UserCompany/SaveUserCompany";
+}
+
+<form class="form-horizontal" method="post" id="" data-url="@URL" data-display="URM" data-rurl="URM/USERAUTH">
+
+    @Html.HiddenFor(m => m.UserId)
+
+    <div class="row">
+
+        <div class="form-group form-group-xs">
+            <label class="control-label col-sm-4">User Id</label>
+            <div class="form-group has-feedback col-sm-8">
+                @Html.TextBoxFor(m => m.UserId, new { @class = "form-control input-group", @readonly = "readonly", placeholder = "", type = "text" })
+                <div class="form-control-feedback"><i class=""></i></div>
+            </div>
+        </div>
+
+
+
+
+        <div class="form-group form-group-xs">
+            <label class="control-label col-sm-4">User Name</label>
+            <div class="form-group has-feedback col-sm-8">
+                @Html.TextBoxFor(m => m.Usname, new { @class = "form-control input-group", @readonly = "readonly", placeholder = "", type = "text" })
+                <div class="form-control-feedback"><i class=""></i></div>
+            </div>
+        </div>
+
+
+        <div class="form-group form-group-xs">
+            <label class="control-label col-sm-4">Company Name<b class="wysiwyg-color-red">*</b></label>
+            <div class="form-group has-feedback col-sm-8">
+                @{
+                    List<ZCLINIC.Areas.URM.Models.Company> Company = new ZCLINIC.Areas.URM.Models.Company().URM_CompanyGetAll(Context.Session.GetBValues(), Context.GetIP(), Context.GetCInfo());
+
+                }
+                @Html.DropDownList("TenantId", Company.Select(s => new SelectListItem() { Text = s.CompanyName, Value = s.TenantId.ToString() }), new { @class = "form-control " })
+                <div class="form-control-feedback"><i class=""></i></div>
+            </div>
+
+        </div>
+
+
+
+
+
+        <div class="table-responsive container-fluid quotaiontable">
+            <table class="table table-xxs table-md table-bordered table-striped table-hover bg-lightgray dataTables_scrollBody">
+
+
+
+
+                <thead>
+                    <tr class="bg-blue-800">
+
+                        <th>Id</th>
+                        <th>Company Name</th>
+                        <th>Action</th>
+
+
+
+
+                    </tr>
+
+
+
+                </thead>
+
+
+                <tbody class="CompanyDetail">
+                </tbody>    
+
+
+
+
+
+
+
+
+
+
+            </table>
+
+
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="modal-footer mt-10 no-padding no-border">
+            <button type="button" class="btn btn-danger btn-xs closeBtn" data-dismiss="modal"><i class="icon-cross"></i>Close</button>
+            <button type="button" data-submit="true" class="btn btn-primary btn-xs"><i class="icon-floppy-disk position-left"></i>Save</button>
+        </div>
+
+    </div>
+
+</form>
+<script>
+
+
+
+    if ($('#UserId').val() > 0) {
+
+
+       
+
+        var Id = $('#UserId').val()
+
+
+        GetJSONRequest('/URM/UserCompany/URM_UserCompanyGetAll', 'GET', { Id }, data => {
+
+            if (data && data.length > 0) {
+
+                debugger;
+                console.log(data);
+                $('tbody.CompanyDetail').empty();
+                for (var item of data) {
+
+                    /// var Total = item.AdmissionFee + item.MonthlyFee;
+
+                    
+
+
+
+
+
+
+
+
+                    const markup = `
+                            <tr>
+                              
+                              
+                                <td>
+                                       
+                                         <input type="text" class="form-control ComId"  readonly value="${item.ComId}" />
+                                </td>
+                                <td>
+                                        
+                                         <input type="text" class="form-control CompName"  readonly value="${item.CompName}" />
+                                </td>
+
+
+
+                            
+
+                            
+                            
+                                
+                                
+
+                                 
+                                   
+                              
+                                <td><a id=""><i class="icon-trash removeitem text-danger-600"></i></a>
+
+
+
+                 </tr>`;
+                    $('tbody.CompanyDetail').append(markup);
+                  
+
+                }
+
+
+
+            }
+            else {
+
+                ErrorAlert("No Data Found");
+            }
+
+        })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    }
+
+
+    $("tbody.CompanyDetail").delegate(".removeitem", "click", function () {
+
+
+        debugger;
+        var row = $(this).closest("tr");
+        var id = parseFloat(row.find(".ComId").val() || 0);
+
+
+        GetJSONRequest('/URM/UserCompany/DeleteUserCompany', 'Post', { id }, data => {
+
+          
+
+        })
+       $('.closeBtn').trigger('click');
+       
+        debugger;
+
+
+       
+    });
+
+
+
+
+
+
+
+
+
+
+
+
+</script>    
