@@ -428,3 +428,7 @@ C:\Users\Administrator\Documents\GitHub\CLINIC\ZCLINIC\obj\Debug\netcoreapp2.1\R
 C:\Users\Administrator\Documents\GitHub\CLINIC\ZCLINIC\obj\Debug\netcoreapp2.1\Razor\Areas\Master\Views\ClinicCategory\AClinicCategory.cshtml.g.cs
 C:\Users\Administrator\Documents\GitHub\CLINIC\ZCLINIC\obj\Debug\netcoreapp2.1\Razor\Areas\Master\Views\ClinicServices\Index.cshtml.g.cs
 C:\Users\Administrator\Documents\GitHub\CLINIC\ZCLINIC\obj\Debug\netcoreapp2.1\Razor\Areas\Master\Views\ClinicServices\AClinicServices.cshtml.g.cs
+C:\Users\Administrator\Documents\GitHub\CLINIC\ZCLINIC\obj\Debug\netcoreapp2.1\Razor\Areas\Master\Views\Specialist\Index.cshtml.g.cs
+C:\Users\Administrator\Documents\GitHub\CLINIC\ZCLINIC\obj\Debug\netcoreapp2.1\Razor\Areas\Master\Views\Specialist\ASpecialist.cshtml.g.cs
+C:\Users\Administrator\Documents\GitHub\CLINIC\ZCLINIC\obj\Debug\netcoreapp2.1\Razor\Areas\Master\Views\Doctor\Index.cshtml.g.cs
+C:\Users\Administrator\Documents\GitHub\CLINIC\ZCLINIC\obj\Debug\netcoreapp2.1\Razor\Areas\Master\Views\Doctor\ADoctor.cshtml.g.cs

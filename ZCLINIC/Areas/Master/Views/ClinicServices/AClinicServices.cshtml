@@ -9,7 +9,7 @@
 
 <form class="form-horizontal" method="post" id="" data-url="@URL" data-display="Master" data-rurl="/Master/ClinicServices">
 
-    @Html.HiddenFor(m => m.CategoryId)
+    @Html.HiddenFor(m => m.ServicesId)
 
     <div class="row">
 
@@ -33,10 +33,11 @@
             <label class="control-label col-sm-4">Category  Name <b class="wysiwyg-color-red">*</b></label>
             <div class="form-group has-feedback col-sm-8">
                 @{
-                    List<ZCLINIC.Areas.Master.Models.ClinicCategory> ClinicCategory = new ZCLINIC.Areas.Master.Models.ClinicCategory().Master_ClinicCategoryGetAll(Context.Session.GetBValues(), Context.GetIP(), Context.GetCInfo());
+                    List<ZCLINIC.Areas.Master.Models.ClinicCategory> Category = new ZCLINIC.Areas.Master.Models.ClinicCategory().Master_ClinicCategoryGetAll(Context.Session.GetBValues(), Context.GetIP(), Context.GetCInfo());
 
                 }
-                @Html.DropDownList("CategoryId", ClinicCategory.Select(s => new SelectListItem() { Text = s.CategoryName, Value = s.CategoryId.ToString() }), new { @class = "form-control " })
+                @Html.DropDownList("CateId", Category.Select(s => new SelectListItem() { Text = s.CategoryName, Value = s.CategoryId.ToString()}), new { @class = "form-control " })
+
 
 
 

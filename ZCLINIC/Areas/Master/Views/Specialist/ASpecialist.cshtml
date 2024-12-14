@@ -1,0 +1,34 @@
+﻿
+
+@using ZCLINIC
+@model ZCLINIC.Areas.Master.Models.Specialist
+
+@{
+    string URL = Model == null ? "/Master/Specialist/SaveSpecialist" : "/Master/Specialist/UpdateSpecialist";
+}
+
+<form class="form-horizontal" method="post" id="" data-url="@URL" data-display="Master" data-rurl="/Master/Specialist">
+
+    @Html.HiddenFor(m => m.Id)
+
+    <div class="row">
+
+        <label class="control-label col-sm-4">Specialist<b class="wysiwyg-color-red">*</b></label>
+        <div class="form-group has-feedback col-sm-8">
+            @Html.TextBoxFor(m => m.SpecialistName, new { @class = "form-control input-group", placeholder = "Specialist Name", type = "text", required = "required" })
+            <div class="form-control-feedback"><i class=""></i></div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <div class="modal-footer no-padding no-border">
+        <button type="button" class="btn btn-danger btn-xs" data-dismiss="modal"><i class="icon-cross"></i>Close</button>
+        <button type="button" data-submit="true" class="btn btn-primary btn-xs"><i class="icon-floppy-disk position-left"></i>Save</button>
+    </div>
+
+  
+</form>

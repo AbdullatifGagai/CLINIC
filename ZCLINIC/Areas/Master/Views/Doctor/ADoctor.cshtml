@@ -1,0 +1,290 @@
+﻿@using ZCLINIC
+@model ZCLINIC.Areas.Master.Models.Doctor
+
+@{
+    string URL = Model == null ? "/Transaction/Doctor/SaveDoctor" : "/Transaction/Doctor/UpdateDoctor";
+    int counter = 0;
+
+    List<ZCLINIC.Areas.Master.Models.Days> Days = new ZCLINIC.Areas.Master.Models.Days().Master_DaysGetAll(Context.Session.GetBValues(), Context.GetIP(), Context.GetCInfo());
+
+
+
+}
+
+<style>
+    /*Remove Arrows/Spinners from type number*/
+    /* Chrome, Safari, Edge, Opera */
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+
+    /* Firefox */
+    input[type=number] {
+        -moz-appearance: textfield;
+    }
+</style>
+
+<form method="post" data-url="@URL" data-rurl="/Transaction/FeeVoucher" data-display="FeeVoucher">
+
+
+
+    @Html.HiddenFor(m => m.DocId)
+    <div class="row">
+
+
+
+        <div class="form-group form-group-xs col-md-12">
+
+            <div class="form-group form-group-xs col-md-2">
+                <label>Doctor Id<b class="wysiwyg-color-red"></b></label>
+                @Html.TextBoxFor(m => m.DocCode, new { @class = "form-control", type = "text", @readonly = "readonly" })
+
+            </div>
+
+
+            <div class="form-group form-group-xs col-md-6">
+                <label>Doctor Name<b class="wysiwyg-color-red"></b></label>
+                @Html.TextBoxFor(m => m.DoctorName, new { @class = "form-control", type = "text" })
+
+            </div>
+
+
+            <div class="form-group form-group-xs col-md-4">
+                <label>Specialist<b class="wysiwyg-color-red"></b></label>
+                @{
+                    List<ZCLINIC.Areas.Master.Models.Specialist> Specialist = new ZCLINIC.Areas.Master.Models.Specialist().Master_SpecialistGetAll(Context.Session.GetBValues(), Context.GetIP(), Context.GetCInfo());
+
+                }
+                @Html.DropDownList("SpId", Specialist.Select(s => new SelectListItem() { Text = s.SpecialistName, Value = s.Id.ToString() }), new { @class = "form-control " })
+
+            </div>
+
+
+
+
+
+
+
+        </div>
+    </div>
+
+    <div class="row">
+
+
+
+        <div class="form-group form-group-xs col-md-12">
+
+
+
+            <div class="form-group form-group-xs col-md-2">
+                <label>OPD Share<b class="wysiwyg-color-red"></b></label>
+                @Html.TextBoxFor(m => m.DocOPDShare, new { @class = "form-control", type = "text" })
+
+            </div>
+
+            <div class="form-group form-group-xs col-md-2">
+                <label>OPD Limit<b class="wysiwyg-color-red"></b></label>
+                @Html.TextBoxFor(m => m.LPatient, new { @class = "form-control", type = "text" })
+
+            </div>
+
+             <div class="form-group form-group-xs col-md-2">
+                <label>OPD Rate<b class="wysiwyg-color-red"></b></label>
+                @Html.TextBoxFor(m => m.OPDRate, new { @class = "form-control", type = "text" })
+
+            </div>
+
+             <div class="form-group form-group-xs col-md-6">
+                <label>Remarks<b class="wysiwyg-color-red"></b></label>
+                @Html.TextBoxFor(m => m.Remarks, new { @class = "form-control", type = "text" })
+
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+    </div>
+
+    <div class="clearfix"></div>
+
+
+    
+
+        <div class="table-responsive container-fluid quotaiontable">
+            <table class="table table-xxs table-md table-bordered table-striped table-hover bg-lightgray dataTables_scrollBody">
+
+
+
+
+                <thead>
+                    <tr class="bg-blue-800">
+
+                        <th class="col-lg-2">Days</th>
+                        <th class="col-lg-2">TimeIn</th>
+                        <th class="col-lg-2">TimeOut</th>
+
+
+
+                        <th class="col-lg-1">Actions</th>
+
+
+
+                    </tr>
+
+                    <tr>
+
+
+
+
+
+
+                        <th class="col-md-3">
+                            @Html.DropDownList("DId", Days.Select(p => new SelectListItem() { Text = p.DayName.ToString(), Value = p.DId.ToString() }), new { @class = "bootstrap-select vatratecal", data_live_search = "true", data_width = "100%" })
+
+                        </th>
+
+
+
+                        <th class="col-md-1"><input type="time" class="form-control TimeIn TxtBox" , id="TimeIn" /></th>
+                        <th class="col-md-1"><input type="time" class="form-control TimeOut TxtBox" id="TimeOut" /></th>
+                       
+
+
+
+
+                        <th class="col-lg-1"><a class="icon-add text-primary" id="AddItemBtn"></a></th>
+                    </tr>
+
+
+
+                </thead>
+
+
+                <tbody class="VoucherDetail">
+                    @*@if (Model != null)
+                        {
+                            foreach (var item in Model.FeeVoucherDetail)
+                            {
+                                counter++;
+
+
+                                <tr>
+
+
+
+
+
+
+                                    <td><input type="text" class="form-control Remarksfield" value="@item.GRId"></td>
+
+                                    <td><input type="text" class="form-control Debitfield" value="@item.GrNo"></td>
+                                    <td><input type="text" class="form-control Creditfield" value="@item.MontlyAmt"></td>
+
+
+                                    <td><a id=""><i class="icon-trash removeitem text-danger-600"></i></a></td>
+                                </tr>
+                            }
+                        }*@
+
+                </tbody>
+
+
+
+
+
+
+
+
+
+
+                <tfoot>
+                    <tr>
+
+                        @*<td colspan="2"></td>
+                            <td class="text-right">Total Amount</td>
+                            <td>@Html.TextBoxFor(m => m.AdAmt, new { @class = "form-control", type = "number", @readonly = "readonly" })</td>
+
+
+
+                            <td>@Html.TextBoxFor(m => m.AnnAmt, new { @class = "form-control", type = "number", @readonly = "readonly" })</td>
+                            <td>@Html.TextBoxFor(m => m.MontlyAmt, new { @class = "form-control", type = "number", @readonly = "readonly" })</td>
+                            <td>@Html.TextBoxFor(m => m.MDisAmt, new { @class = "form-control", type = "number", @readonly = "readonly" })</td>
+
+                            <td>@Html.TextBoxFor(m => m.TAmount, new { @class = "form-control", type = "number", @readonly = "readonly" })</td>*@
+
+
+
+                    </tr>
+
+                </tfoot>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </table>
+
+
+
+
+        </div>
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="modal-footer mt-10 no-padding no-border">
+
+
+
+
+        <a data-url="/Transaction/FeeVoucher" data-script="#" class="btn btn-danger btn-xs  closeBtn" data-dismiss="modal"><i class="icon-cross"></i>Close</a>
+
+
+
+
+        <button type="button" data-submit="" class="btn btn-primary  btn-xs  SaveBtn"><i class="icon-floppy-disk position-left"></i>Save</button>
+        @* <button type="button" data-submit="" class="btn btn-primary btn-xs SaveBtn"><i class="icon-floppy-disk position-left"></i>Save</button>*@
+
+    </div>
+
+</form>

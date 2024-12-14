@@ -7,23 +7,28 @@ using System.Linq;
 
 namespace ZCLINIC.Areas.Master.Models
 {
-    public class ClinicServices
+    public class Doctor
     {
         private const string MODULE = "Master";
+        [TVP]
+        public int DocId { get; set; }
+        [TVP]
+        public int DocCode { get; set; }
+        [TVP]
+        public string  DoctorName { get; set; }
+        [TVP]
+        public int SpId { get; set; }
 
         [TVP]
-        public int ServicesId { get; set; }
+        public decimal DocOPDShare { get; set; }
         [TVP]
-        public int ServicesCode { get; set; }
+        public decimal LPatient { get; set; }
         [TVP]
-        public string  ServicesName { get; set; }
-        [TVP]
-        public int CateId { get; set; }
+        public decimal OPDRate { get; set; }
 
-        
+        [TVP]
+        public string Remarks { get; set; }
 
-    [TVP]
-        public decimal Rate { get; set; }
 
 
 
@@ -40,14 +45,10 @@ namespace ZCLINIC.Areas.Master.Models
         [TVP]
         public int ModifiedBy { get; set; }
 
-
-
-        public string  CategoryName { get; set; }
-
         //View only properties
         public string ReturnMessage { get; set; }
 
-        public string Master_ClinicServicesSave(BValues bv, string ip, string cInfo)
+        public string Master_DoctorSave(BValues bv, string ip, string cInfo)
         {
             var parameters = new { x = this };
 
@@ -55,7 +56,7 @@ namespace ZCLINIC.Areas.Master.Models
             {
                 TenantId = bv.TenantId; AppId = bv.AppId; CreatedBy = bv.UserId; ModifiedBy = bv.UserId;
 
-                string message = DataBase.ExecuteQuery<ClinicServices>(parameters, Connection.GetConnection()).FirstOrDefault().ReturnMessage;
+                string message = DataBase.ExecuteQuery<Doctor>(parameters, Connection.GetConnection()).FirstOrDefault().ReturnMessage;
 
                 Loging.DB_Log(eLogType.Log_Posetive, "", parameters, "", MODULE, Connection.GetLogConnection(), cInfo, ip, bv.UserId);
 
@@ -69,7 +70,7 @@ namespace ZCLINIC.Areas.Master.Models
             }
         }
 
-        public string Master_ClinicServicesUpdate(BValues bv, string ip, string cInfo)
+        public string Master_DoctorUpdate(BValues bv, string ip, string cInfo)
         {
             var parameters = new { x = this };
 
@@ -77,7 +78,7 @@ namespace ZCLINIC.Areas.Master.Models
             {
                 TenantId = bv.TenantId; AppId = bv.AppId; ModifiedBy = bv.UserId;
 
-                string message = DataBase.ExecuteQuery<ClinicServices>(parameters, Connection.GetConnection()).FirstOrDefault().ReturnMessage;
+                string message = DataBase.ExecuteQuery<Doctor>(parameters, Connection.GetConnection()).FirstOrDefault().ReturnMessage;
 
                 Loging.DB_Log(eLogType.Log_Posetive, "", parameters, "", MODULE, Connection.GetLogConnection(), cInfo, ip, bv.UserId);
 
@@ -91,13 +92,13 @@ namespace ZCLINIC.Areas.Master.Models
             }
         }
 
-        public ClinicServices Master_ClinicServicesGetById(int id, BValues bv, string ip, string cInfo)
+        public Doctor Master_DoctorGetById(int id, BValues bv, string ip, string cInfo)
         {
             var parameters = new { bv.UserId, bv.TenantId, bv.AppId, Id = id };
 
             try
             {
-                ClinicServices record = DataBase.ExecuteQuery<ClinicServices>(parameters, Connection.GetConnection()).FirstOrDefault();
+                Doctor record = DataBase.ExecuteQuery<Doctor>(parameters, Connection.GetConnection()).FirstOrDefault();
 
                 Loging.DB_Log(eLogType.Log_Posetive, "", parameters, "", MODULE, Connection.GetLogConnection(), cInfo, ip, bv.UserId);
 
@@ -111,13 +112,13 @@ namespace ZCLINIC.Areas.Master.Models
             }
         }
 
-        public List<ClinicServices> Master_ClinicServicesGetAll(BValues bv, string ip, string cInfo)
+        public List<Doctor> Master_DoctorGetAll(BValues bv, string ip, string cInfo)
         {
             var parameters = new { bv.UserId, bv.TenantId, bv.AppId };
 
             try
             {
-                List<ClinicServices> records = DataBase.ExecuteQuery<ClinicServices>(parameters, Connection.GetConnection());
+                List<Doctor> records = DataBase.ExecuteQuery<Doctor>(parameters, Connection.GetConnection());
 
                 Loging.DB_Log(eLogType.Log_Posetive, "", parameters, "", MODULE, Connection.GetLogConnection(), cInfo, ip, bv.UserId);
 
@@ -131,13 +132,13 @@ namespace ZCLINIC.Areas.Master.Models
             }
         }
 
-        public DataTable Master_ClinicServicesGetAllTable(BValues bv, string ip, string cInfo)
+        public DataTable Master_DoctorGetAllTable(BValues bv, string ip, string cInfo)
         {
             var parameters = new { bv.UserId, bv.TenantId, bv.AppId };
 
             try
             {
-                DataTable dataTable = DataBase.ExecuteforReport(parameters, Connection.GetConnection(), "Master_ClinicServicesGetAllTable");
+                DataTable dataTable = DataBase.ExecuteforReport(parameters, Connection.GetConnection(), "Master_DoctorGetAllTable");
 
                 Loging.DB_Log(eLogType.Log_Posetive, "", parameters, "", MODULE, Connection.GetLogConnection(), cInfo, ip, bv.UserId);
 
@@ -151,13 +152,13 @@ namespace ZCLINIC.Areas.Master.Models
             }
         }
 
-        public string Master_ClinicServicesDelete(int id, BValues bv, string ip, string cInfo)
+        public string Master_DoctorDelete(int id, BValues bv, string ip, string cInfo)
         {
             var parameters = new { bv.UserId, bv.TenantId, bv.AppId, Id = id };
 
             try
             {
-                string message = DataBase.ExecuteQuery<ClinicServices>(parameters, Connection.GetConnection()).FirstOrDefault().ReturnMessage;
+                string message = DataBase.ExecuteQuery<Doctor>(parameters, Connection.GetConnection()).FirstOrDefault().ReturnMessage;
 
                 Loging.DB_Log(eLogType.Log_Posetive, "", parameters, "", MODULE, Connection.GetLogConnection(), cInfo, ip, bv.UserId);
 

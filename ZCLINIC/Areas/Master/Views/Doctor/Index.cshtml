@@ -1,11 +1,11 @@
 ﻿@using ZCLINIC;
 
-@model IEnumerable<ZCLINIC.Areas.Master.Models.ClinicServices>
+@model IEnumerable<ZCLINIC.Areas.Master.Models.Doctor>
 
 @{
-    bool addview = ZCLINIC.UserRights.URM_AddNew_IsAuthenticated(Context.Session.GetRoleId(), "96");
-    bool editview = ZCLINIC.UserRights.URM_Update_IsAuthenticated(Context.Session.GetRoleId(), "96");
-    bool delete = ZCLINIC.UserRights.URM_Delete_IsAuthenticated(Context.Session.GetRoleId(), "96");
+    bool addview = ZCLINIC.UserRights.URM_AddNew_IsAuthenticated(Context.Session.GetRoleId(), "98");
+    bool editview = ZCLINIC.UserRights.URM_Update_IsAuthenticated(Context.Session.GetRoleId(), "98");
+    bool delete = ZCLINIC.UserRights.URM_Delete_IsAuthenticated(Context.Session.GetRoleId(), "98");
 }
 
 
@@ -13,7 +13,7 @@
 
 <div class="page-header page-header-default">
     <div class="breadcrumb-line">
-        <h6 class="text-semibold">Services</h6>
+        <h6 class="text-semibold">Doctor</h6>
     </div>
 </div>
 
@@ -25,7 +25,7 @@
 
                     @if (addview)
                     {
-                        <a class="btn btn-success btn-sm" data-modalhorizontal="true" data-modalsize="modal-sm" data-url="/Master/ClinicServices/AClinicServices" data-heading="Services" data-script="#"><i class="icon-add mr-5"></i> Add</a>
+                        <a class="btn btn-success btn-sm" data-modalhorizontal="true" data-modalsize="modal-lg" data-url="/Master/Doctor/ADoctor" data-heading="Doctor" data-script="/assets/Areas/Master/Doctor/Doctor.js"><i class="icon-add mr-5"></i> Add</a>
                     }
 
 
@@ -60,10 +60,8 @@
             <table class="table table-xxs table-md datatable-basic table-bordered table-striped table-hover bg-lightgray dataTables_scrollBody">
                 <thead>
                     <tr class="bg-blue-800">
-                        <th>ID</th>
-                        <th>Servics Name</th>
-                        <th>Category Name</th>
-                        <th>Rate</th>
+                        <th>Doctor ID</th>
+                        <th>Doctor Name</th>
 
 
 
@@ -74,15 +72,13 @@
                     </tr>
                 </thead>
                 <tbody>
-                    @foreach (ZCLINIC.Areas.Master.Models.ClinicServices s in Model)
+                    @foreach (ZCLINIC.Areas.Master.Models.Doctor s in Model)
                     {
-                        <tr data-rowid="@s.ServicesId">
+                        <tr data-rowid="@s.DocId">
 
-                            <td>@s.ServicesCode</td>
-                            <td>@s.ServicesName</td>
-                            <td>@s.CategoryName</td>
-                            <td>@s.Rate</td>
-
+                            <td>@s.DocCode</td>
+                            <td>@s.DoctorName</td>
+                            
 
 
 
@@ -92,12 +88,12 @@
                                     {
                                         <li class="text-primary-600">
 
-                                            <a data-modalhorizontal="true" data-modalsize="modal-sm" data-heading="Edit Services" data-script="#" data-url="/Master/ClinicServices/AClinicServices?Id=@s.ServicesId "><i class="icon-pencil7"></i></a>
+                                            <a data-modalhorizontal="true" data-modalsize="modal-sm" data-heading="Edit Panel" data-script="#" data-url="/Master/ClinicCategory/AClinicCategory?Id=@s.DocId "><i class="icon-pencil7"></i></a>
                                         </li>
                                     }
                                     @if (delete)
                                     {
-                                        <li class="text-danger-600"><a onclick="DeleteAlert({ 'Id':@s.ServicesId}, '/Master/ClinicServices/DeleteClinicServices', 'Services')"><i class="icon-trash"></i></a></li>
+                                        <li class="text-danger-600"><a onclick="DeleteAlert({ 'Id':@s.DocId}, '/Master/ClinicCategory/DeleteClinicCategory', 'Category')"><i class="icon-trash"></i></a></li>
                                     }
 
 
