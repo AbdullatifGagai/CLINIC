@@ -9,7 +9,7 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>9.0.21022</ProductVersion>
-    <ProjectGuid>eb9a5124-426a-4f40-bda0-2b1342f46688</ProjectGuid>
+    <ProjectGuid>4cb2f57a-abf4-450d-8fd3-23ee344b4c86</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace />
@@ -107,7 +107,7 @@
       <EmbedInteropTypes>False</EmbedInteropTypes>
     </Reference>
     <Reference Include="Microsoft.SqlServer.Types">
-      <HintPath>C:\Users\Administrator\Documents\GitHub\CLINIC\Report\bin\Microsoft.SqlServer.Types.dll</HintPath>
+      <HintPath>C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\MSBuild\Current\Bin\Microsoft.SqlServer.Types.dll</HintPath>
       <EmbedInteropTypes>False</EmbedInteropTypes>
     </Reference>
     <Reference Include="Microsoft.Web.Infrastructure">

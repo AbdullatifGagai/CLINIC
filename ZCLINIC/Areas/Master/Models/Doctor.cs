@@ -48,9 +48,28 @@ namespace ZCLINIC.Areas.Master.Models
         //View only properties
         public string ReturnMessage { get; set; }
 
-        public string Master_DoctorSave(BValues bv, string ip, string cInfo)
+        
+
+        public string Master_DoctorSave(BValues bv, string ip, string cInfo, Doctor Doctor, List<DoctorDayDatails> DoctorDayDatails)
         {
-            var parameters = new { x = this };
+            var parameters = new { x = Doctor, DoctorDayDatails };
+
+
+
+            foreach (var item in DoctorDayDatails)
+            {
+
+
+
+                item.TenantId = bv.TenantId; item.AppId = bv.AppId; item.CreatedBy = bv.UserId;
+            }
+
+
+
+
+
+
+            Doctor.TenantId = bv.TenantId; Doctor.AppId = bv.AppId; Doctor.CreatedBy = bv.UserId;
 
             try
             {
@@ -69,6 +88,18 @@ namespace ZCLINIC.Areas.Master.Models
                 return ex.Message;
             }
         }
+
+
+
+
+
+
+
+
+
+
+
+
 
         public string Master_DoctorUpdate(BValues bv, string ip, string cInfo)
         {

@@ -18,11 +18,11 @@ namespace ZCLINIC.Areas.Master.APIControllers
             return new Doctor().Master_DoctorGetById(id, bv, ip, cInfo);
         }
 
-        [HttpPost]
-        public string DoctorSave(List<object> objList, string ip, string cInfo)
-        {
-            return ((Doctor)objList[0]).Master_DoctorSave((BValues)objList[1], ip, cInfo);
-        }
+        //[HttpPost]
+        //public string DoctorSave(List<object> objList, string ip, string cInfo)
+        //{
+        //    return ((Doctor)objList[0]).Master_DoctorSave((BValues)objList[1], ip, cInfo);
+        //}
 
         [HttpPost]
         public string DoctorUpdate(List<object> objList, string ip, string cInfo)

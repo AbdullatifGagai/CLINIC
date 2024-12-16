@@ -20,9 +20,9 @@ namespace ZCLINIC.Areas.Master.Controllers
         }
 
         [HttpPost]
-        public string SaveDoctor(Doctor model)
+        public string SaveDoctor(Doctor Doctor, List<DoctorDayDatails> DoctorDayDatails)
         {
-            return new DoctorApiController().DoctorSave(new List<object>() { model, HttpContext.Session.GetBValues() }, HttpContext.GetIP(), HttpContext.GetCInfo());
+            return new Doctor().Master_DoctorSave(HttpContext.Session.GetBValues(), HttpContext.GetIP(), HttpContext.GetCInfo(), Doctor, DoctorDayDatails);
         }
 
         [HttpPost]

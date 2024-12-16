@@ -1,5 +1,6 @@
 ﻿
 
+
 debugger;
 
 
@@ -139,14 +140,14 @@ $('#AddItemBtn').click(function () {
     {
         let markup = `<tr>
                       <td><input hidden class="DId" readonly value="${$('#DId').val()}"/>${$('#DId option:selected').text()}</td>
-                       <td><input class="TimeIn form-control" readonly value="${$('#TimeIn').val()}" /></td>
-                       <td><input class="TimeOut form-control" readonly value="${$('#TimeOut').val()}" /></td>
+                       <td><input type="time" class="TimeIn form-control" readonly value="${$('#TimeIn').val()}" /></td>
+                       <td><input  type="time"  class="TimeOut form-control"  readonly value="${$('#TimeOut').val()}" /></td>
                       
 
                    
                       <td><a class="btn_delete text-danger-600"><i class="icon-trash"></i></a></td>
                       </tr>`
-        $('.VoucherDetail').append(markup)
+        $('tbody.VoucherDetail').append(markup)
 
      
        
@@ -272,42 +273,25 @@ $('tbody.VoucherDetail').delegate(".removeitem", "click", function () {
 
 
 $('.SaveBtn').on('click', function () {
-    var MonthId = $('#MonthId').val();
-    var LevelId = $('#LevelId').val();
-    var BankId = $('#BankId').val();
+    var DoctorName = $('#DoctorName').val();
    
-   
-
 
     var check = false;
 
 
 
 
-    if (MonthId == 0 || MonthId == null) {
+    if (DoctorName == 0 || DoctorName == null) {
 
 
-        ErrorAlert("Enter Month  Name");
+        ErrorAlert("Enter DoctorName  Name");
         check = true;
 
     }
 
-    if (LevelId == 0 || LevelId == null) {
+    
 
-
-        ErrorAlert("Enter Level   Name");
-        check = true;
-
-    }
-
-    if (BankId == 0 || BankId == null) {
-
-
-        ErrorAlert("Enter Bank Name");
-        check = true;
-
-    }
-
+    
    
 
 
@@ -327,62 +311,45 @@ $('.SaveBtn').on('click', function () {
 
 
 
-        var FeeVoucher = [], FeeVoucherDetail = [];
+        var Doctor = [], DoctorDayDatails = [];
 
 
 
-        FeeVoucher = {
-            FeeId: $('#FeeId').val(),
-            voudate: $('#VouDate').val(),
-            DueDate: $('#DueDate').val(),
+        Doctor = {
+            DocId: $('#DocId').val(),
+            DocCode: $('#DocCode').val(),
+            DoctorName: $('#DoctorName').val(),
 
-            MonthId: parseInt($('#MonthId option:selected').val()),
-            LeaveF: parseInt($('#LeaveF option:selected').val()),
-            LevelId: parseInt($('#LevelId option:selected').val()),
-            BankId: parseInt($('#BankId option:selected').val()),
-
-            AdAmt: $('#AdAmt').val(),
-            AnnAmt: $('#AnnAmt').val(),
-            MontlyAmt: $('#MontlyAmt').val(),
-            MDisAmt: $('#MDisAmt').val(),
-
-            OtherAmt: 0,
-            TAmount: $('#TAmount').val(),
-            RefId: $('#RefId').val(),
-            penaltyAmt: $('#penaltyAmt').val(),
-            VouMode: 1,
-
-
-
-
-
-
-            //  StudentN: parseInt($('#StudentN option:selected').val()),
-          
+            SpId: parseInt($('#SpId option:selected').val()),
+         
+            DocOPDShare: $('#DocOPDShare').val(),
+            LPatient: $('#LPatient').val(),
+            OPDRate: $('#OPDRate').val(),
+            Remarks: $('#Remarks').val(),
+         
 
         }
 
 
         $('tbody.VoucherDetail tr').each(function () {
 
-            FeeVoucherDetail.push({
+            DoctorDayDatails.push({
 
 
 
-                FeeId: $('#FeeId').val(),
-                GRId: parseInt($(this).find(".GRId").val()),
-                GrNo: parseInt($(this).find(".Grno").val()),
-                PanelId: parseInt($(this).find(".PanelId").val()),
-                AdAmt: parseFloat($(this).find(".AdmAmt").val()),
-                AnnAmt: parseFloat($(this).find(".AnnualAmt").val()),
-                MontlyAmt: parseFloat($(this).find(".MonthlyAmt").val()),
-                MDisAmt: parseFloat($(this).find(".MDisAmt").val()),
+                DocId: $('#DocId').val(),
+                DId: $(this).find(".DId").val(),
 
-                TAmount: parseFloat($(this).find(".TotalAmt").val()),
-                ChallanNo: parseInt($(this).find(".ChallanNo").val()),
+                TimeIn: $(this).find(".TimeIn").val(),
+                TimeOut: $(this).find(".TimeOut").val(),
+
+               
+
+               // TimeIn: Moment($(this).find(".TimeIn").val(), 'HH:mm:ss'),
+              
               
 
-
+              
 
 
             });
@@ -396,29 +363,29 @@ $('.SaveBtn').on('click', function () {
 
 
        
-        console.log(FeeVoucher);
-        console.log(FeeVoucherDetail);
+        //console.log(DoctorMaster);
+        //console.log(DoctorDetails);
 
 
 
         debugger;
 
-        var FeeId = $('#FeeId').val();
+        var DocId = $('#DocId').val();
 
-        if (FeeId > 0) {
+        if (DocId > 0) {
 
-            debugger;
-            GetJSONRequest('/Transaction/FeeVoucher/UpdateFeeVoucher', 'POST', { FeeVoucher, FeeVoucherDetail }, function (data) {
+
+            GetJSONRequest('/Master/Doctor/UpdateDoctor', 'POST', { Doctor, DoctorDayDatails }, function (data) {
                 SuccessAlert("Data Saved");
                 $('.closeBtn').trigger('click');
             });
         }
         else {
 
-            debugger;
 
 
-            GetJSONRequest('/Transaction/FeeVoucher/SaveFeeVoucher', 'POST', { FeeVoucher, FeeVoucherDetail }, function (data) {
+
+            GetJSONRequest('/Master/Doctor/SaveDoctor', 'POST', { Doctor, DoctorDayDatails }, function (data) {
                 SuccessAlert("Data Saved");
                 $('.closeBtn').trigger('click');
 
@@ -431,11 +398,7 @@ $('.SaveBtn').on('click', function () {
 
 
     }
-    //else {
-    //    ErrorAlert("Miss value");
-    //}
-
-
+    
 
 
 
