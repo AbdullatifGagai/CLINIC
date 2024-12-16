@@ -105,6 +105,23 @@ namespace ZCLINIC.Areas.Master.Models
         {
             var parameters = new { x = Doctor, DoctorDayDatails };
 
+
+
+            foreach (var item in DoctorDayDatails)
+            {
+
+
+
+                item.TenantId = bv.TenantId; item.AppId = bv.AppId; item.CreatedBy = bv.UserId;
+            }
+
+
+
+
+
+
+            Doctor.TenantId = bv.TenantId; Doctor.AppId = bv.AppId; Doctor.CreatedBy = bv.UserId;
+
             try
             {
                 TenantId = bv.TenantId; AppId = bv.AppId; ModifiedBy = bv.UserId;
@@ -122,6 +139,7 @@ namespace ZCLINIC.Areas.Master.Models
                 return ex.Message;
             }
         }
+
 
         public Doctor Master_DoctorGetById(int id, BValues bv, string ip, string cInfo)
         {
@@ -142,6 +160,8 @@ namespace ZCLINIC.Areas.Master.Models
                 return null;
             }
         }
+
+
 
         public List<Doctor> Master_DoctorGetAll(BValues bv, string ip, string cInfo)
         {

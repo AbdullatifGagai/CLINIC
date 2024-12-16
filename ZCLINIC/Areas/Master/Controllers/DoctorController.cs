@@ -16,7 +16,7 @@ namespace ZCLINIC.Areas.Master.Controllers
         // create/edit view for Doctor
         public IActionResult ADoctor(int id = 0)
         {
-            return View(new DoctorApiController().DoctorGetById(id, HttpContext.Session.GetBValues(), HttpContext.GetIP(), HttpContext.GetCInfo()));
+            return View(new Doctor().Master_DoctorGetById(id, HttpContext.Session.GetBValues(), HttpContext.GetIP(), HttpContext.GetCInfo()));
         }
 
         [HttpPost]
@@ -26,9 +26,9 @@ namespace ZCLINIC.Areas.Master.Controllers
         }
 
         [HttpPost]
-        public string UpdateDoctor(Doctor model)
+        public string UpdateDoctor(Doctor Doctor, List<DoctorDayDatails> DoctorDayDatails)
         {
-            return new DoctorApiController().DoctorUpdate(new List<object>() { model, HttpContext.Session.GetBValues() }, HttpContext.GetIP(), HttpContext.GetCInfo());
+            return new Doctor().Master_DoctorUpdate(HttpContext.Session.GetBValues(), HttpContext.GetIP(), HttpContext.GetCInfo(), Doctor, DoctorDayDatails);
         }
 
         [HttpPost]

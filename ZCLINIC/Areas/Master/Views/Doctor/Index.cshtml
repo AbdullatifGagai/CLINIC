@@ -88,12 +88,12 @@
                                     {
                                         <li class="text-primary-600">
 
-                                            <a data-modalhorizontal="true" data-modalsize="modal-sm" data-heading="Edit Panel" data-script="#" data-url="/Master/ClinicCategory/AClinicCategory?Id=@s.DocId "><i class="icon-pencil7"></i></a>
+                                            <a data-modalhorizontal="true" data-modalsize="modal-lg" data-heading="Edit Panel" data-script="/assets/Areas/Master/Doctor/Doctor.js" data-url="/Master/Doctor/ADoctor?Id=@s.DocId "><i class="icon-pencil7"></i></a>
                                         </li>
                                     }
                                     @if (delete)
                                     {
-                                        <li class="text-danger-600"><a onclick="DeleteAlert({ 'Id':@s.DocId}, '/Master/ClinicCategory/DeleteClinicCategory', 'Category')"><i class="icon-trash"></i></a></li>
+                                        <li class="text-danger-600"><a onclick="DeleteAlert({ 'Id':@s.DocId}, '/Master/Doctor/DeleteDoctor', 'Doctor')"><i class="icon-trash"></i></a></li>
                                     }
 
 

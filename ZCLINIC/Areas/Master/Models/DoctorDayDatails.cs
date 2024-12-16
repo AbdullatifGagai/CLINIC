@@ -55,6 +55,10 @@ namespace ZCLINIC.Areas.Master.Models
         [TVP]
         public int ModifiedBy { get; set; }
 
+
+
+        public string  DaysName { get; set; }
+
         //View only properties
         public string ReturnMessage { get; set; }
 
@@ -122,9 +126,9 @@ namespace ZCLINIC.Areas.Master.Models
             }
         }
 
-        public List<DoctorDayDatails> Master_DoctorDayDatailsGetAll(BValues bv, string ip, string cInfo)
+        public List<DoctorDayDatails> Master_DoctorDayDatailsGetAll(int  Id,BValues bv, string ip, string cInfo)
         {
-            var parameters = new { bv.UserId, bv.TenantId, bv.AppId };
+            var parameters = new { bv.UserId, bv.TenantId, bv.AppId, Id };
 
             try
             {

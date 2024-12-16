@@ -10,7 +10,7 @@ namespace ZCLINIC.Areas.Master.Controllers
     {
         public IActionResult Index()
         {
-            return View(new DoctorDayDatailsApiController().DoctorDayDatailsGetAll(HttpContext.Session.GetBValues(), HttpContext.GetIP(), HttpContext.GetCInfo()));
+            return View();
         }
 
         // create/edit view for DoctorDayDatails
@@ -36,5 +36,22 @@ namespace ZCLINIC.Areas.Master.Controllers
         {
             return new DoctorDayDatailsApiController().DoctorDayDatailsDelete(id, HttpContext.Session.GetBValues(), HttpContext.GetIP(), HttpContext.GetCInfo());
         }
+ 
+        [HttpGet]
+        public List<DoctorDayDatails> GetDoctorIdDaysDetail(int id)
+        {
+            return new DoctorDayDatails().Master_DoctorDayDatailsGetAll(id, HttpContext.Session.GetBValues(), HttpContext.GetIP(), HttpContext.GetCInfo());
+        }
+ 
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     }
 }

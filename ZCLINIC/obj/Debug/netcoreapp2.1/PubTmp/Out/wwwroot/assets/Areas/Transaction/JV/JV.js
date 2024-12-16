@@ -30,6 +30,14 @@ if ($('#VOUCHER_NO').val() > 0) {
 }
 else {
 
+
+
+
+
+
+
+
+
     document.getElementById('VOUCHAR_DATE').valueAsDate = new Date();
 
 

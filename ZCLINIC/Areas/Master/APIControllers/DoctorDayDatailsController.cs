@@ -8,10 +8,7 @@ namespace ZCLINIC.Areas.Master.APIControllers
     [ApiController]
     public class DoctorDayDatailsController : Controller
     {
-        public List<DoctorDayDatails> DoctorDayDatailsGetAll(BValues bv, string ip, string cInfo)
-        {
-            return new DoctorDayDatails().Master_DoctorDayDatailsGetAll(bv, ip, cInfo);
-        }
+    
 
         public DoctorDayDatails DoctorDayDatailsGetById(int id, BValues bv, string ip, string cInfo)
         {
