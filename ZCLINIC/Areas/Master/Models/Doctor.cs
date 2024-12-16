@@ -101,9 +101,9 @@ namespace ZCLINIC.Areas.Master.Models
 
 
 
-        public string Master_DoctorUpdate(BValues bv, string ip, string cInfo)
+        public string Master_DoctorUpdate(BValues bv, string ip, string cInfo,Doctor Doctor, List<DoctorDayDatails> DoctorDayDatails)
         {
-            var parameters = new { x = this };
+            var parameters = new { x = Doctor, DoctorDayDatails };
 
             try
             {
