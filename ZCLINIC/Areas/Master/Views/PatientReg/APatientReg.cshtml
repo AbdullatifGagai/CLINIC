@@ -1,0 +1,225 @@
+﻿@using ZCLINIC
+@model ZCLINIC.Areas.Master.Models.PatientReg
+
+@{
+    string URL = Model == null ? "/Transaction/PatientReg/SavePatientReg" : "/Transaction/PatientReg/UpdatePatientReg";
+    int counter = 0;
+}
+
+<style>
+    /*Remove Arrows/Spinners from type number*/
+    /* Chrome, Safari, Edge, Opera */
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+
+    /* Firefox */
+    input[type=number] {
+        -moz-appearance: textfield;
+    }
+</style>
+
+<form method="post" data-url="@URL" data-rurl="/Transaction/PatientReg" data-display="FeeVoucher">
+
+
+
+    @Html.HiddenFor(m => m.MRId)
+    <div class="row">
+
+
+
+        <div class="form-group form-group-xs col-md-12">
+
+            <div class="form-group form-group-xs col-md-2">
+                <label>MR No<b class="wysiwyg-color-red"></b></label>
+                @Html.TextBoxFor(m => m.MrGr, new { @class = "form-control", type = "text", @readonly = "readonly" })
+
+            </div>
+
+            <div class="form-group form-group-xs col-md-4">
+                <label>Name<b class="wysiwyg-color-red"></b></label>
+                @Html.TextBoxFor(m => m.Name, new { @class = "form-control", type = "text" })
+
+            </div>
+
+
+            <div class="form-group form-group-xs col-md-2">
+                <label>*<b class="wysiwyg-color-red"></b></label>
+                @{
+
+                    var Status = new List<(int Id, string Name)>();
+                    Status.Add((Id: 0, Name: "S/O"));
+                    Status.Add((Id: 1, Name: "D/O"));
+                    Status.Add((Id: 2, Name: "W/O"));
+
+
+
+                }
+                @Html.DropDownList("LeaveF", Status.Select(p => new SelectListItem() { Text = p.Name, Value = p.Name.ToString() }), new { @class = "form-control", data_style = "btn-default btn-xs", tabindex = '4', data_search = "true", data_width = "100%" })
+
+            </div>
+
+
+
+
+            <div class="form-group form-group-xs col-md-4">
+                <label>Father Name<b class="wysiwyg-color-red"></b></label>
+                @Html.TextBoxFor(m => m.Fname, new { @class = "form-control", type = "text" })
+
+            </div>
+
+
+
+
+
+
+        </div>
+    </div>
+
+
+    <div class="row">
+
+
+
+        <div class="form-group form-group-xs col-md-12">
+
+
+            <div class="form-group form-group-xs col-md-4">
+                <label>Gender<b class="wysiwyg-color-red"></b></label>
+                @{
+
+                    var MStatus = new List<(int Id, string Name)>();
+                    MStatus.Add((Id: 0, Name: "Male"));
+                    MStatus.Add((Id: 1, Name: "Female"));
+
+
+
+
+                }
+                @Html.DropDownList("LeaveF", MStatus.Select(p => new SelectListItem() { Text = p.Name, Value = p.Name.ToString() }), new { @class = "form-control", data_style = "btn-default btn-xs", tabindex = '4', data_search = "true", data_width = "100%" })
+
+            </div>
+
+            <div class="form-group form-group-xs col-md-4">
+                <label>Cell  No<b class="wysiwyg-color-red"></b></label>
+                @Html.TextBoxFor(m => m.Cellno, new { @class = "form-control", type = "text" })
+
+            </div>
+
+            <div class="form-group form-group-xs col-md-4">
+                <label>Phone No<b class="wysiwyg-color-red"></b></label>
+                @Html.TextBoxFor(m => m.Phone, new { @class = "form-control", type = "text" })
+
+            </div>
+
+
+
+
+
+
+
+        </div>
+    </div>
+
+    <div class="row">
+
+
+
+        <div class="form-group form-group-xs col-md-12">
+            <div class="form-group form-group-xs col-md-2">
+                <label>CNIC No<b class="wysiwyg-color-red"></b></label>
+                @Html.TextBoxFor(m => m.Phone, new { @class = "form-control", type = "text" })
+
+            </div>
+
+            <div class="form-group form-group-xs col-md-2">
+                <label>Date Of Birth<b class="wysiwyg-color-red"></b></label>
+                @Html.TextBoxFor(m => m.Bdate, new { @class = "form-control", type = "date" })
+
+            </div>
+
+
+
+
+
+            <div class="form-group form-group-xs col-md-2">
+                <label>Age<b class="wysiwyg-color-red"></b></label>
+                @Html.TextBoxFor(m => m.Age, new { @class = "form-control", type = "text" })
+
+            </div>
+
+
+            <div class="form-group form-group-xs col-md-6">
+                <label>Address<b class="wysiwyg-color-red"></b></label>
+                @Html.TextBoxFor(m => m.RAdd, new { @class = "form-control", type = "text" })
+
+            </div>
+
+
+
+
+        </div>
+    </div>
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+    <div class="modal-footer mt-10 no-padding no-border">
+
+
+
+
+        <a data-url="/Transaction/FeeVoucher" data-script="#" class="btn btn-danger btn-xs  closeBtn" data-dismiss="modal"><i class="icon-cross"></i>Close</a>
+
+
+
+
+        <button type="button" data-submit="" class="btn btn-primary  btn-xs  SaveBtn"><i class="icon-floppy-disk position-left"></i>Save</button>
+        @* <button type="button" data-submit="" class="btn btn-primary btn-xs SaveBtn"><i class="icon-floppy-disk position-left"></i>Save</button>*@
+
+    </div>
+
+</form>
+
+
+
+
+
+<script>
+
+
+
+    document.getElementById('Bdate').valueAsDate = new Date();
+
+
+
+ 
+
+
+
+    $('#Age').change(function () {
+
+
+        debugger;
+        calculateAge() = $('#Bdate').val();
+      
+
+})
+
+
+
+
+</script>
