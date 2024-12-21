@@ -128,9 +128,9 @@
 
 
         <div class="form-group form-group-xs col-md-12">
-            <div class="form-group form-group-xs col-md-2">
+            <div class="form-group form-group-xs col-md-3">
                 <label>CNIC No<b class="wysiwyg-color-red"></b></label>
-                @Html.TextBoxFor(m => m.Phone, new { @class = "form-control", type = "text" })
+                @Html.TextBoxFor(m => m.CNic, new { @class = "form-control", type = "text" })
 
             </div>
 
@@ -151,7 +151,7 @@
             </div>
 
 
-            <div class="form-group form-group-xs col-md-6">
+            <div class="form-group form-group-xs col-md-5">
                 <label>Address<b class="wysiwyg-color-red"></b></label>
                 @Html.TextBoxFor(m => m.RAdd, new { @class = "form-control", type = "text" })
 
@@ -167,13 +167,9 @@
 
 
 
- 
 
 
-
-
-
-
+  
 
 
 
@@ -182,12 +178,8 @@
 
 
 
-        <a data-url="/Transaction/FeeVoucher" data-script="#" class="btn btn-danger btn-xs  closeBtn" data-dismiss="modal"><i class="icon-cross"></i>Close</a>
-
-
-
-
-        <button type="button" data-submit="" class="btn btn-primary  btn-xs  SaveBtn"><i class="icon-floppy-disk position-left"></i>Save</button>
+        <button type="button" class="btn btn-danger btn-xs" data-dismiss="modal"><i class="icon-cross"></i>Close</button>
+        <button type="button" data-submit="true" class="btn btn-primary btn-xs"><i class="icon-floppy-disk position-left"></i>Save</button>
         @* <button type="button" data-submit="" class="btn btn-primary btn-xs SaveBtn"><i class="icon-floppy-disk position-left"></i>Save</button>*@
 
     </div>
@@ -210,14 +202,9 @@
 
 
 
-    $('#Age').change(function () {
+  
 
 
-        debugger;
-        calculateAge() = $('#Bdate').val();
-      
-
-})
 
 
 
