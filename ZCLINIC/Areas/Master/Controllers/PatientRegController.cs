@@ -36,5 +36,16 @@ namespace ZCLINIC.Areas.Master.Controllers
         {
             return new PatientRegApiController().PatientRegDelete(id, HttpContext.Session.GetBValues(), HttpContext.GetIP(), HttpContext.GetCInfo());
         }
+    
+      [HttpGet]
+        public List<PatientReg> Master_Daysbrith(string PAge)
+        {
+            return new PatientReg().Master_Daysbrith(PAge, HttpContext.Session.GetBValues(), HttpContext.GetIP(), HttpContext.GetCInfo());
+        }
+    
+    
+    
+    
+    
     }
 }

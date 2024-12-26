@@ -71,6 +71,10 @@ namespace ZCLINIC.Areas.Master.Models
         [TVP]
         public int ModifiedBy { get; set; }
 
+
+
+
+        public string DBrith { get; set; }
         //View only properties
         public string ReturnMessage { get; set; }
 
@@ -157,6 +161,51 @@ namespace ZCLINIC.Areas.Master.Models
                 return null;
             }
         }
+
+
+
+
+
+         public List<PatientReg> Master_Daysbrith(string PAge, BValues bv, string ip, string cInfo)
+        {
+            var parameters = new { bv.UserId, bv.TenantId, bv.AppId , PAge};
+
+            try
+            {
+                List<PatientReg> records = DataBase.ExecuteQuery<PatientReg>(parameters, Connection.GetConnection());
+
+                Loging.DB_Log(eLogType.Log_Posetive, "", parameters, "", MODULE, Connection.GetLogConnection(), cInfo, ip, bv.UserId);
+
+                return records;
+            }
+            catch (Exception ex)
+            {
+                Loging.DB_Log(eLogType.Log_Negative, ex.Message, parameters, "", MODULE, Connection.GetLogConnection(), cInfo, ip, bv.UserId);
+
+                return null;
+            }
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
         public DataTable Master_PatientRegGetAllTable(BValues bv, string ip, string cInfo)
         {
