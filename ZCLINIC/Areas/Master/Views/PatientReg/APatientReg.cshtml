@@ -46,20 +46,20 @@
 
 
             @*<div class="form-group form-group-xs col-md-2">
-                <label>*<b class="wysiwyg-color-red"></b></label>
-                @{
+            <label>*<b class="wysiwyg-color-red"></b></label>
+            @{
 
-                    var Status = new List<(int Id, string Name)>();
-                    Status.Add((Id: 0, Name: "S/O"));
-                    Status.Add((Id: 1, Name: "D/O"));
-                    Status.Add((Id: 2, Name: "W/O"));
+                var Status = new List<(int Id, string Name)>();
+                Status.Add((Id: 0, Name: "S/O"));
+                Status.Add((Id: 1, Name: "D/O"));
+                Status.Add((Id: 2, Name: "W/O"));
 
 
 
-                }
-                @Html.DropDownList("LeaveF", Status.Select(p => new SelectListItem() { Text = p.Name, Value = p.Name.ToString() }), new { @class = "form-control", data_style = "btn-default btn-xs", tabindex = '4', data_search = "true", data_width = "100%" })
+            }
+            @Html.DropDownList("LeaveF", Status.Select(p => new SelectListItem() { Text = p.Name, Value = p.Name.ToString() }), new { @class = "form-control", data_style = "btn-default btn-xs", tabindex = '4', data_search = "true", data_width = "100%" })
 
-            </div>*@
+        </div>*@
 
 
 
@@ -72,21 +72,7 @@
 
 
 
-
-
-
-        </div>
-    </div>
-
-
-    <div class="row">
-
-
-
-        <div class="form-group form-group-xs col-md-12">
-
-
-            <div class="form-group form-group-xs col-md-4">
+            <div class="form-group form-group-xs col-md-2">
                 <label>Gender<b class="wysiwyg-color-red"></b></label>
                 @{
 
@@ -102,6 +88,20 @@
 
             </div>
 
+
+
+        </div>
+    </div>
+
+
+    <div class="row">
+
+
+
+        <div class="form-group form-group-xs col-md-12">
+
+
+           
             <div class="form-group form-group-xs col-md-4">
                 <label>Cell  No<b class="wysiwyg-color-red"></b></label>
                 @Html.TextBoxFor(m => m.Cellno, new { @class = "form-control", type = "text" })
@@ -194,6 +194,7 @@
 
 
 
+
     document.getElementById('Bdate').valueAsDate = new Date();
 
 
@@ -234,13 +235,13 @@ $('#Age').change(function () {
 
 
 
-
+           
      
 
+         
 
 
 
-          
             $('#Bdate').val(data[0].Bdate);
 
 
@@ -255,7 +256,7 @@ $('#Age').change(function () {
 
 
 
-            //ErrorAlert("No Data Found");
+            ErrorAlert("No Data Found");
 
 
             //$('#Unit').val('');
