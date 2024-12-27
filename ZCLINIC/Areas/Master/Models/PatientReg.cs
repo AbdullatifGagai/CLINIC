@@ -20,12 +20,27 @@ namespace ZCLINIC.Areas.Master.Models
         public int MRId { get; set; }
         [TVP]
         public int MrGr { get; set; }
+
+        [TVP]
+        public string MrNo { get; set; }
+
+
         [TVP]
         public string Name { get; set; }
         [TVP]
         public string Sint { get; set; }
         [TVP]
         public string  Fname { get; set; }
+
+        [TVP]
+        public string  Gender { get; set; }
+
+        [TVP]
+        public string Bdate { get; set; }
+        [TVP]
+        public string Age { get; set; }
+
+
 
         [TVP]
         public string  Cellno { get; set; }
@@ -41,11 +56,7 @@ namespace ZCLINIC.Areas.Master.Models
         
         [TVP]
         public string  RAdd { get; set; }
-        [TVP]
-        public string  Bdate { get; set; }
-        [TVP]
-        public string  Age { get; set; }
-
+       
 
 
 
@@ -74,7 +85,7 @@ namespace ZCLINIC.Areas.Master.Models
 
 
 
-        public string DBrith { get; set; }
+       
         //View only properties
         public string ReturnMessage { get; set; }
 

@@ -1962,6 +1962,3 @@ C:\Users\Administrator\Documents\GitHub\CLINIC\Report\obj\Debug\Report.csproj.Co
 C:\Users\Administrator\Documents\GitHub\CLINIC\Report\obj\Debug\Report.csproj.CopyComplete
 C:\Users\Administrator\Documents\GitHub\CLINIC\Report\obj\Debug\Report.dll
 C:\Users\Administrator\Documents\GitHub\CLINIC\Report\obj\Debug\Report.pdb
-C:\Users\Administrator\Documents\GitHub\CLINIC\Report\bin\Microsoft.SqlServer.Types.dll
-C:\Users\Administrator\Documents\GitHub\CLINIC\Report\obj\Debug\RdlCompile.cache
-C:\Users\Administrator\Documents\GitHub\CLINIC\Report\obj\Debug\RdlCompile.compiled
