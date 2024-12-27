@@ -1,0 +1,290 @@
+﻿@using ZCLINIC
+@model ZCLINIC.Areas.Master.Models.PatientReg
+
+@{
+    string URL = Model == null ? "/Master/PatientReg/SavePatientReg" : "/Master/PatientReg/UpdatePatientReg";
+    int counter = 0;
+}
+
+<style>
+    /*Remove Arrows/Spinners from type number*/
+    /* Chrome, Safari, Edge, Opera */
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+
+    /* Firefox */
+    input[type=number] {
+        -moz-appearance: textfield;
+    }
+</style>
+
+<form method="post" data-url="@URL" data-rurl="/Master/PatientReg" data-display="FeeVoucher">
+
+
+
+    @Html.HiddenFor(m => m.MRId)
+    <div class="row">
+
+
+
+        <div class="form-group form-group-xs col-md-12">
+
+            <div class="form-group form-group-xs col-md-2">
+                <label>MR No<b class="wysiwyg-color-red"></b></label>
+                @Html.TextBoxFor(m => m.MrGr, new { @class = "form-control", type = "text", @readonly = "readonly" })
+
+            </div>
+
+            <div class="form-group form-group-xs col-md-4">
+                <label>Name<b class="wysiwyg-color-red"></b></label>
+                @Html.TextBoxFor(m => m.Name, new { @class = "form-control", type = "text" })
+
+            </div>
+
+
+            @*<div class="form-group form-group-xs col-md-2">
+                <label>*<b class="wysiwyg-color-red"></b></label>
+                @{
+
+                    var Status = new List<(int Id, string Name)>();
+                    Status.Add((Id: 0, Name: "S/O"));
+                    Status.Add((Id: 1, Name: "D/O"));
+                    Status.Add((Id: 2, Name: "W/O"));
+
+
+
+                }
+                @Html.DropDownList("LeaveF", Status.Select(p => new SelectListItem() { Text = p.Name, Value = p.Name.ToString() }), new { @class = "form-control", data_style = "btn-default btn-xs", tabindex = '4', data_search = "true", data_width = "100%" })
+
+            </div>*@
+
+
+
+
+            <div class="form-group form-group-xs col-md-4">
+                <label>Father Name<b class="wysiwyg-color-red"></b></label>
+                @Html.TextBoxFor(m => m.Fname, new { @class = "form-control", type = "text" })
+
+            </div>
+
+
+
+
+
+
+        </div>
+    </div>
+
+
+    <div class="row">
+
+
+
+        <div class="form-group form-group-xs col-md-12">
+
+
+            <div class="form-group form-group-xs col-md-4">
+                <label>Gender<b class="wysiwyg-color-red"></b></label>
+                @{
+
+                    var MStatus = new List<(int Id, string Name)>();
+                    MStatus.Add((Id: 0, Name: "Male"));
+                    MStatus.Add((Id: 1, Name: "Female"));
+
+
+
+
+                }
+                @Html.DropDownList("LeaveF", MStatus.Select(p => new SelectListItem() { Text = p.Name, Value = p.Name.ToString() }), new { @class = "form-control", data_style = "btn-default btn-xs", tabindex = '4', data_search = "true", data_width = "100%" })
+
+            </div>
+
+            <div class="form-group form-group-xs col-md-4">
+                <label>Cell  No<b class="wysiwyg-color-red"></b></label>
+                @Html.TextBoxFor(m => m.Cellno, new { @class = "form-control", type = "text" })
+
+            </div>
+
+            <div class="form-group form-group-xs col-md-4">
+                <label>Phone No<b class="wysiwyg-color-red"></b></label>
+                @Html.TextBoxFor(m => m.Phone, new { @class = "form-control", type = "text" })
+
+            </div>
+
+
+
+
+
+
+
+        </div>
+    </div>
+
+    <div class="row">
+
+
+
+        <div class="form-group form-group-xs col-md-12">
+            <div class="form-group form-group-xs col-md-3">
+                <label>CNIC No<b class="wysiwyg-color-red"></b></label>
+                @Html.TextBoxFor(m => m.CNic, new { @class = "form-control", type = "text" })
+
+            </div>
+
+            <div class="form-group form-group-xs col-md-2">
+                <label>Date Of Birth<b class="wysiwyg-color-red"></b></label>
+                @Html.TextBoxFor(m => m.Bdate, new { @class = "form-control", type = "date", @readonly = "readonly" })
+
+            </div>
+
+
+
+
+
+            <div class="form-group form-group-xs col-md-2">
+                <label>Age<b class="wysiwyg-color-red"></b></label>
+                @Html.TextBoxFor(m => m.Age, new { @class = "form-control", type = "text" })
+
+            </div>
+
+
+            <div class="form-group form-group-xs col-md-5">
+                <label>Address<b class="wysiwyg-color-red"></b></label>
+                @Html.TextBoxFor(m => m.RAdd, new { @class = "form-control", type = "text" })
+
+            </div>
+
+
+
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+  
+
+
+
+    <div class="modal-footer mt-10 no-padding no-border">
+
+
+
+
+        <button type="button" class="btn btn-danger btn-xs" data-dismiss="modal"><i class="icon-cross"></i>Close</button>
+        <button type="button" data-submit="true" class="btn btn-primary btn-xs"><i class="icon-floppy-disk position-left"></i>Save</button>
+        @* <button type="button" data-submit="" class="btn btn-primary btn-xs SaveBtn"><i class="icon-floppy-disk position-left"></i>Save</button>*@
+
+    </div>
+
+</form>
+
+
+
+
+
+<script>
+
+
+
+    document.getElementById('Bdate').valueAsDate = new Date();
+
+
+    $('#CNic').formatter({
+        pattern: '{{99999}}-{{9999999}}-{{9}}'
+    });
+    $('#Cellno').formatter({
+        pattern: '{{9999}}-{{9999999}}'
+    });
+    $('#Phone').formatter({
+        pattern: '{{9999}}-{{9999999}}'
+    });
+ 
+
+
+
+$('#Age').change(function () {
+
+
+
+  
+    
+
+    
+
+
+
+    var PAge = $('#Age').val();
+
+    GetJSONRequest('/Master/PatientReg/Master_Daysbrith', 'GET', { PAge }, function (data) {
+
+
+
+        if (data && data.length > 0) {
+
+
+
+
+
+
+
+     
+
+
+
+
+          
+            $('#Bdate').val(data[0].Bdate);
+
+
+
+            //      $('#ProductId').val(data[0].ProductId);
+
+
+
+
+        }
+        else {
+
+
+
+            //ErrorAlert("No Data Found");
+
+
+            //$('#Unit').val('');
+            //$('#TPRate').val('');
+            //$('#RetailRate').val('');
+
+        }
+    })
+
+
+    
+
+
+
+
+    //$('#Amount').val(parseInt(tAmt) - parseInt(Discout));
+    //$('#OrderAmt').val(parseInt(tAmt));
+
+
+})
+
+
+
+
+  
+
+
+
+
+
+
+</script>
