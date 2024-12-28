@@ -1,21 +1,30 @@
 ﻿@using ZCLINIC;
 
-@model IEnumerable<ZCLINIC.Areas.Master.Models.PatientReg>
+
+
+@model IEnumerable<ZCLINIC.Areas.Transaction.Models.Appointment>
 
 @{
-    bool addview = ZCLINIC.UserRights.URM_AddNew_IsAuthenticated(Context.Session.GetRoleId(), "99");
-    bool editview = ZCLINIC.UserRights.URM_Update_IsAuthenticated(Context.Session.GetRoleId(), "99");
-    bool delete = ZCLINIC.UserRights.URM_Delete_IsAuthenticated(Context.Session.GetRoleId(), "99");
+    bool addview = ZCLINIC.UserRights.URM_AddNew_IsAuthenticated(Context.Session.GetRoleId(), "100");
+    bool editview = ZCLINIC.UserRights.URM_Update_IsAuthenticated(Context.Session.GetRoleId(), "100");
+    bool delete = ZCLINIC.UserRights.URM_Delete_IsAuthenticated(Context.Session.GetRoleId(), "100");
+    bool Print = ZCLINIC.UserRights.URM_Print_IsAuthenticated(Context.Session.GetRoleId(), "100");
+
 }
 
+
+@{
+    string a = string.Empty;
+}
 
 
 
 <div class="page-header page-header-default">
     <div class="breadcrumb-line">
-        <h6 class="text-semibold">Patient Registration</h6>
+        <h6 class="text-semibold">Customized  Fee Voucher</h6>
     </div>
 </div>
+
 
 <div class="content">
     <div class="panel panel-flat">
@@ -23,11 +32,13 @@
             <div class="row">
                 <div class="col-md-3 buttons-top">
 
-
                     @if (addview)
                     {
-                        <a class="btn btn-success btn-sm" data-modalhorizontal="true" data-modalsize="modal-lg" data-url="/Master/PatientReg/APatientReg" data-heading="Patient Registration" data-script="#"><i class="icon-add mr-5"></i> Add</a>
+                        <a class="btn btn-success btn-sm" data-modalhorizontal="true" data-modalsize="modal-full" data-url="/Transaction/Appointment/AAppointment" data-heading="Appointment" data-script="#"><i class="icon-add mr-5"></i> Add</a>
                     }
+
+
+
 
                 </div>
 
@@ -57,17 +68,18 @@
             </div>
 
             <table class="table table-xxs table-md datatable-basic table-bordered table-striped table-hover bg-lightgray dataTables_scrollBody">
+
                 <thead>
                     <tr class="bg-blue-800">
+                        <th>Fee VoucherId</th>
 
-                        <th>MrNo</th>
-                        <th>Name</th>
-                        <th>Father Name</th>
-                       
-                        
-                        
-                        <th>Cell No</th>
-                        <th>Phone</th>
+                        <th>Voucher Date</th>
+
+                        <th>Month Name</th>
+                        <th>Level Name</th>
+                        <th>Total  Amount</th>
+                        <th>RefId</th>
+
 
 
 
@@ -78,29 +90,29 @@
                     </tr>
                 </thead>
                 <tbody>
-                    @foreach (ZCLINIC.Areas.Master.Models.PatientReg s in Model)
+                    @foreach (ZCLINIC.Areas.Transaction.Models.Appointment s in Model)
                     {
-                        <tr data-rowid="@s.MRId">
-
-                            <td>@s.MrNo</td>
-                            <td>@s.Name</td>
-                            <td>@s.Fname</td>
+                        <tr data-rowid="@s.AppomentId">
+                            <td>@s.AppomentId</td>
                            
-                            <td>@s.Cellno</td>
-                            <td>@s.Phone</td>
-
                             <td>
                                 <ul class="icons-list">
 
                                     @if (editview)
                                     {
-                                        <li class="text-primary-600"><a data-modalhorizontal="true" data-modalsize="modal-lg" data-heading="Edit Patient Registration" data-script="#" data-url="/Master/PatientReg/APatientReg?Id=@s.MRId"><i class="icon-pencil7"></i></a></li>
+                                        <li class="text-primary-600"><a data-modalhorizontal="true" data-modalsize="modal-lg" data-heading="Edit Appointment" data-script="#" data-url="/Transaction/Appointment/AAppointment?Id=@s.AppomentId"><i class="icon-pencil7"></i></a></li>
                                     }
 
 
                                     @if (delete)
                                     {
-                                        <li class="text-danger-600"><a onclick="DeleteAlert({ 'Id':@s.MRId}, '/Master/PatientReg/DeletePatientReg', 'Patient Registration')"><i class="icon-trash"></i></a></li>
+                                        <li class="text-danger-600"><a onclick="DeleteAlert({ 'Id':@s.AppomentId}, '/Transaction/Appointment/DeleteAppointment', 'Appointment')"><i class="icon-trash"></i></a></li>
+                                    }
+
+
+                                    @if (Print)
+                                    {
+                                        <li class="text-primary-600"><a data-toggle="tooltip" title="Report" href="/Report/Reportrdlc/AReport?rvalues.Name=20&rvalues.Value[0]=@s.AppomentId&rvalues.Value[1]=@a&rvalues.Value[2]=@a&rvalues.Value[3]=@a&rvalues.Value[4]=@a&rvalues.Value[5]=@a&rvalues.Value[6]=@a" data-heading="CPD Form" target="_blank"><i class="icon-printer"></i></a></li>
                                     }
 
 

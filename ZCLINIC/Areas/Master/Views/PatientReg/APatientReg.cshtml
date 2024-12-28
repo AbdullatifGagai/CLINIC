@@ -105,7 +105,7 @@
 
             <div class="form-group form-group-xs col-md-2">
                 <label>Date Of Birth<b class="wysiwyg-color-red"></b></label>
-                @Html.TextBoxFor(m => m.Bdate, new { @class = "form-control", type = "date", @readonly = "readonly" })
+                @Html.TextBoxFor(m => m.Bdate, new { @class = "form-control", type = "date" })
 
             </div>
             <div class="form-group form-group-xs col-md-1">
@@ -196,10 +196,14 @@
 <script>
 
 
+    if ($('#MRId').val() > 0) {
+        
+        
+    }
 
-
-    document.getElementById('Bdate').valueAsDate = new Date();
-
+    else {
+        document.getElementById('Bdate').valueAsDate = new Date();
+    }
 
     $('#CNic').formatter({
         pattern: '{{99999}}-{{9999999}}-{{9}}'
