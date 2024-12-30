@@ -75,6 +75,21 @@ namespace ZCLINIC.Areas.Transaction.Models
         [TVP]
         public int ModifiedBy { get; set; }
 
+
+
+
+        public string DoctorName { get; set; }
+
+        public string  Name { get; set; }
+
+        public string  Fname { get; set; }
+
+
+        public string  Cellno { get; set; }
+
+
+
+
         //View only properties
         public string ReturnMessage { get; set; }
 

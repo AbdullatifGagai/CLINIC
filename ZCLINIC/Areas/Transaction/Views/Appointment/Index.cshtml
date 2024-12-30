@@ -76,9 +76,9 @@
                         <th>AppomentDate Date</th>
 
                         <th>Doctor Name</th>
-                        <th>Level Name</th>
-                        <th>Total  Amount</th>
-                        <th>RefId</th>
+                        <th>Patient Name </th>
+                        <th>Cell No</th>
+                        <th>ReceiptId</th>
 
 
 
@@ -93,7 +93,12 @@
                     @foreach (ZCLINIC.Areas.Transaction.Models.Appointment s in Model)
                     {
                         <tr data-rowid="@s.AppomentId">
-                            <td>@s.AppomentId</td>
+                            <td>@s.AppomentCode</td>
+                            <td>@s.AppomentDate</td>
+                            <td>@s.DoctorName</td>
+                            <td>@s.PatientName</td>
+                            <td>@s.Cellno</td>
+                            <td>@s.ReceiptId</td>
                            
                             <td>
                                 <ul class="icons-list">
