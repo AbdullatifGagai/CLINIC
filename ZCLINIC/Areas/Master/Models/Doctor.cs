@@ -45,6 +45,10 @@ namespace ZCLINIC.Areas.Master.Models
         [TVP]
         public int ModifiedBy { get; set; }
 
+
+
+        public string SpecialistName { get; set; }
+
         //View only properties
         public string ReturnMessage { get; set; }
 
@@ -182,6 +186,49 @@ namespace ZCLINIC.Areas.Master.Models
                 return null;
             }
         }
+
+
+
+
+
+         public List<Doctor> Master_DoctorInfo(int Id,BValues bv, string ip, string cInfo)
+        {
+            var parameters = new { bv.UserId, bv.TenantId, bv.AppId,Id };
+
+            try
+            {
+                List<Doctor> records = DataBase.ExecuteQuery<Doctor>(parameters, Connection.GetConnection());
+
+                Loging.DB_Log(eLogType.Log_Posetive, "", parameters, "", MODULE, Connection.GetLogConnection(), cInfo, ip, bv.UserId);
+
+                return records;
+            }
+            catch (Exception ex)
+            {
+                Loging.DB_Log(eLogType.Log_Negative, ex.Message, parameters, "", MODULE, Connection.GetLogConnection(), cInfo, ip, bv.UserId);
+
+                return null;
+            }
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
         public DataTable Master_DoctorGetAllTable(BValues bv, string ip, string cInfo)
         {

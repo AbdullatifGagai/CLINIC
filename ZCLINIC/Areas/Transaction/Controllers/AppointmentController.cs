@@ -36,5 +36,20 @@ namespace ZCLINIC.Areas.Transaction.Controllers
         {
             return new AppointmentApiController().AppointmentDelete(id, HttpContext.Session.GetBValues(), HttpContext.GetIP(), HttpContext.GetCInfo());
         }
+    
+    
+       
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     }
 }

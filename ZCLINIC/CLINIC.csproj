@@ -48,6 +48,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Content Remove="wwwroot\assets\Areas\Transaction\Appointment\Appointment.js" />
     <Content Remove="wwwroot\assets\Areas\Transaction\InstallmentVoucher\InstallmentVoucher.js" />
   </ItemGroup>
 
@@ -107,6 +108,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Include="wwwroot\assets\Areas\Transaction\Appointment\Appointment.js" />
     <None Include="wwwroot\assets\Areas\Transaction\InstallmentVoucher\InstallmentVoucher.js" />
     <None Include="wwwroot\assets\Areas\Transaction\Receipt\AdReceipt.js" />
     <None Include="wwwroot\assets\Areas\Transaction\Receipt\Receipt.js" />

@@ -42,10 +42,16 @@ namespace ZCLINIC.Areas.Master.Controllers
         {
             return new PatientReg().Master_Daysbrith(PAge, HttpContext.Session.GetBValues(), HttpContext.GetIP(), HttpContext.GetCInfo());
         }
-    
-    
-    
-    
-    
+
+        [HttpGet]
+        public List<PatientReg> GetPatientName(string PatientName)
+        {
+            return new PatientReg().GetPatientName(PatientName, HttpContext.Session.GetBValues(), HttpContext.GetIP(), HttpContext.GetCInfo());
+        }
+
+        
+
+
+
     }
 }

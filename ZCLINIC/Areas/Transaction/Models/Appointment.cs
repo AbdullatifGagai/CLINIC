@@ -17,10 +17,29 @@ namespace ZCLINIC.Areas.Transaction.Models
         public int AppomentCode { get; set; }
 
         [TVP]
+        public string AppomentDate { get; set; }
+
+
+
+        [TVP]
         public int DocId  { get; set; }
 
         [TVP]
-        public string AppomentDate { get; set; }
+        public int MrId  { get; set; }
+        [TVP]
+        public string  MrNo { get; set; }
+
+        [TVP]
+        public string  PatientName  { get; set; }
+        [TVP]
+
+        public decimal Amount { get; set; }
+
+        [TVP]
+        public int Paymenttype { get; set; }
+
+        [TVP]
+        public string  ReceiptId { get; set; }
 
 
 

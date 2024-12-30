@@ -197,6 +197,26 @@ namespace ZCLINIC.Areas.Master.Models
             }
         }
 
+         public List<PatientReg> GetPatientName(string PatientName, BValues bv, string ip, string cInfo)
+        {
+            var parameters = new { bv.UserId, bv.TenantId, bv.AppId , PatientName };
+
+            try
+            {
+                List<PatientReg> records = DataBase.ExecuteQuery<PatientReg>(parameters, Connection.GetConnection());
+
+                Loging.DB_Log(eLogType.Log_Posetive, "", parameters, "", MODULE, Connection.GetLogConnection(), cInfo, ip, bv.UserId);
+
+                return records;
+            }
+            catch (Exception ex)
+            {
+                Loging.DB_Log(eLogType.Log_Negative, ex.Message, parameters, "", MODULE, Connection.GetLogConnection(), cInfo, ip, bv.UserId);
+
+                return null;
+            }
+        }
+
 
 
 

@@ -2,7 +2,7 @@
 @model ZCLINIC.Areas.Transaction.Models.Appointment
 
 @{
-    string URL = Model == null ? "/Transaction/FeeVoucher/SaveFeeVoucher" : "/Transaction/FeeVoucher/UpdateFeeVoucher";
+    string URL = Model == null ? "/Transaction/Appointment/SaveAppointment" : "/Transaction/Appointment/UpdateAppointment";
     int counter = 0;
 }
 
@@ -21,7 +21,7 @@
     }
 </style>
 
-<form method="post" data-url="@URL" data-rurl="/Transaction/CustomerFeeVoucher" data-display="FeeVoucher">
+<form method="post" data-url="@URL" data-rurl="/Transaction/Appointment" data-display="Appointment">
 
 
 
@@ -38,32 +38,47 @@
 
             </div>
 
-            <div class="form-group form-group-xs col-md-2">
+            <div class="form-group form-group-xs col-md-3">
                 <label>Appoment Date<b class="wysiwyg-color-red"></b></label>
                 @Html.TextBoxFor(m => m.AppomentDate, new { @class = "form-control", type = "date" })
 
             </div>
 
 
-            <div class="form-group form-group-xs col-md-4">
+            <div class="form-group form-group-xs col-md-5">
                 <label>Doctor Name<b class="wysiwyg-color-red"></b></label>
                 @{
                     List<ZCLINIC.Areas.Master.Models.Doctor> Doctor = new ZCLINIC.Areas.Master.Models.Doctor().Master_DoctorGetAll(Context.Session.GetBValues(), Context.GetIP(), Context.GetCInfo());
 
                 }
-                @Html.DropDownList("MonthId", Doctor.Select(s => new SelectListItem() { Text = s.DoctorName, Value = s.DocId.ToString() }), new { @class = "form-control " })
+                @Html.DropDownList("DocId", Doctor.Select(s => new SelectListItem() { Text = s.DoctorName, Value = s.DocId.ToString() }), new { @class = "form-control " })
 
             </div>
+
+
+
+
+
+
+
+
+
+
+
 
             <div class="form-group form-group-xs mt-20 col-lg-2">
                 <a class="btn btn-info btn-sm" data-modalhorizontal="true" data-modalsize="modal-lg" data-smodal="true" data-url="/Master/PatientReg/APatientReg" data-heading="Patient Registration" data-script="#"><i class="icon-add mr-5"></i>Patient Registration</a>
             </div>
 
 
-           
+
 
         </div>
     </div>
+
+
+
+
 
 
     <div class="row">
@@ -73,24 +88,32 @@
         <div class="form-group form-group-xs col-md-12">
 
 
-            <div class="form-group form-group-xs col-md-1">
-                <label>MrId<b class="wysiwyg-color-red"></b></label>
-                <input type="text"  readonly class="form-control" id="MrId" />
+            <div class="form-group form-group-xs col-md-2">
+                <label>Mr Id<b class="wysiwyg-color-red"></b></label>
+                @Html.TextBoxFor(m => m.MrId, new { @class = "form-control", type = "text", @readonly = "readonly" })
+
+            </div>
+
+
+
+            <div class="form-group form-group-xs col-md-2">
+                <label>Mr No<b class="wysiwyg-color-red"></b></label>
+                @Html.TextBoxFor(m => m.MrNo, new { @class = "form-control", type = "text", @readonly = "readonly" })
+
+            </div>
+            <div class="form-group form-group-xs col-md-6">
+                <label>Patient Name<b class="wysiwyg-color-red"></b></label>
+                @Html.TextBoxFor(m => m.PatientName, new { @class = "form-control", type = "text" })
 
             </div>
 
 
 
 
-            <div class="form-group form-group-xs col-md-1">
-                <label>MrNo.<b class="wysiwyg-color-red"></b></label>
-                <input type="text" readonly  class="form-control" id="MrNo" />
 
-            </div>
-
-            <div class="form-group form-group-xs col-md-4">
-                <label>Name<b class="wysiwyg-color-red"></b></label>
-                <input type="text"  class="form-control" id="Name" />
+            <div class="form-group form-group-xs col-md-2">
+                <label>Amount<b class="wysiwyg-color-red"></b></label>
+                @Html.TextBoxFor(m => m.Amount, new { @class = "form-control", type = "text", @readonly = "readonly" })
 
             </div>
 
@@ -103,13 +126,6 @@
 
 
 
-
-
-
-
-            <div class="form-group form-group-xs mt-20 col-md-1">
-                <a class="btn btn-info btn-sm" id="AddItemBtn" data-script="#"><i class="icon-add mr-5"></i>Add</a>
-            </div>
 
         </div>
     </div>
@@ -140,15 +156,11 @@
 
 
 
-
-        <a data-url="/Transaction/CustomerFeeVoucher" data-script="#" class="btn btn-danger btn-xs  closeBtn" data-dismiss="modal"><i class="icon-cross"></i>Close</a>
-
-
-
-
-        <button type="button" data-submit="" class="btn btn-primary  btn-xs  SaveBtn"><i class="icon-floppy-disk position-left"></i>Save</button>
+        <button type="button" class="btn btn-danger btn-xs" data-dismiss="modal"><i class="icon-cross"></i>Close</button>
+        <button type="button" data-submit="true" class="btn btn-primary  btn-xs"><i class="icon-floppy-disk position-left"></i>Save</button>
         @* <button type="button" data-submit="" class="btn btn-primary btn-xs SaveBtn"><i class="icon-floppy-disk position-left"></i>Save</button>*@
 
     </div>
+
 
 </form>

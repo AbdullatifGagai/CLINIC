@@ -36,5 +36,15 @@ namespace ZCLINIC.Areas.Master.Controllers
         {
             return new DoctorApiController().DoctorDelete(id, HttpContext.Session.GetBValues(), HttpContext.GetIP(), HttpContext.GetCInfo());
         }
+
+        [HttpGet]
+        public List<Doctor> Master_DoctorInfo(int Id)
+        {
+            return new Doctor().Master_DoctorInfo(Id, HttpContext.Session.GetBValues(), HttpContext.GetIP(), HttpContext.GetCInfo());
+        }
+
+
+
+
     }
 }
