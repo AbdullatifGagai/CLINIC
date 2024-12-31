@@ -1,7 +1,7 @@
 ﻿
 
 
-if ($('#AppomentId').val() > 0) {
+if ($('#ReceiptId').val() > 0) {
 
     //$('tbody.MonthlyProDetails tr').each(function () {
 
@@ -26,7 +26,7 @@ if ($('#AppomentId').val() > 0) {
 }
 else {
 
-    document.getElementById('AppomentDate').valueAsDate = new Date();
+    document.getElementById('ReceiptDate').valueAsDate = new Date();
   
 
 
@@ -252,28 +252,28 @@ $('tbody.ChaDetails').delegate(".VoucherNO", "click", function () {
 });
 
 
-$('#DocId').change(function () {
-    let Id = parseInt($('#DocId').val());
+//$('#DocId').change(function () {
+//    let Id = parseInt($('#DocId').val());
 
-    //debugger;
+//    //debugger;
 
    
 
-    GetJSONRequest('/Master/Doctor/Master_DoctorInfo', 'GET', { Id }, function (data) {
-        debugger;
-        if (data && data.length > 0) {
+//    GetJSONRequest('/Master/Doctor/Master_DoctorInfo', 'GET', { Id }, function (data) {
+//        debugger;
+//        if (data && data.length > 0) {
            
                
-            $('#Amount').val(data[0].OPDRate);
+//            $('#Amount').val(data[0].OPDRate);
 
 
            
-        }
-        else
+//        }
+//        else
 
-            ErrorAlert("No Data Found");
+//            ErrorAlert("No Data Found");
 
-    })
+//    })
 
 
-})
+//})
