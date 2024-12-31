@@ -27,6 +27,26 @@ namespace ZCLINIC.Areas.Transaction.Models
         public int PanelId { get; set; }
         [TVP]
         public string  ReceiptDate { get; set; }
+        
+        [TVP]
+        public int DocId { get; set; }
+        
+        
+        
+        
+        
+        
+        [TVP]
+        public string  DateOfBirth { get; set; }
+        
+          [TVP]
+        public string  age { get; set; }
+        
+        
+        
+        
+        
+        
         [TVP]
         public int MrId { get; set; }
         [TVP]
@@ -46,6 +66,9 @@ namespace ZCLINIC.Areas.Transaction.Models
         public decimal RemaingAmt { get; set; }
         [TVP]
         public decimal  NetReceivable { get; set; }
+
+        [TVP]
+        public int  PaymentM { get; set; }
 
 
 
