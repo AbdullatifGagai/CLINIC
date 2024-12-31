@@ -73,9 +73,11 @@
                     <tr class="bg-blue-800">
                         <th>Appointment Code</th>
 
-                        <th>AppomentDate Date</th>
+                        <th>Appointment Date</th>
 
                         <th>Doctor Name</th>
+                        <th>MR NO</th>
+                      
                         <th>Patient Name </th>
                         <th>Cell No</th>
                         <th>ReceiptId</th>
@@ -92,42 +94,45 @@
                 <tbody>
                     @foreach (ZCLINIC.Areas.Transaction.Models.Appointment s in Model)
                     {
-                        <tr data-rowid="@s.AppomentId">
-                            <td>@s.AppomentCode</td>
-                            <td>@s.AppomentDate</td>
-                            <td>@s.DoctorName</td>
-                            <td>@s.PatientName</td>
-                            <td>@s.Cellno</td>
-                            <td>@s.ReceiptId</td>
-                           
-                            <td>
-                                <ul class="icons-list">
-
-                                    @if (editview)
-                                    {
-                                        <li class="text-primary-600"><a data-modalhorizontal="true" data-modalsize="modal-lg" data-heading="Edit Appointment" data-script="#" data-url="/Transaction/Appointment/AAppointment?Id=@s.AppomentId"><i class="icon-pencil7"></i></a></li>
-                                    }
+                    <tr data-rowid="@s.AppomentId">
+                        <td>@s.AppomentCode</td>
+                        <td>@s.AppomentDate</td>
+                        <td>@s.DoctorName</td>
+                        <td>@s.MrNo</td>
 
 
-                                    @if (delete)
-                                    {
-                                        <li class="text-danger-600"><a onclick="DeleteAlert({ 'Id':@s.AppomentId}, '/Transaction/Appointment/DeleteAppointment', 'Appointment')"><i class="icon-trash"></i></a></li>
-                                    }
+                        <td>@s.PatientName</td>
+                        <td>@s.Cellno</td>
+                        <td>@s.ReceiptId</td>
+
+                        <td>
+                            <ul class="icons-list">
+
+                                @if (editview)
+                                {
+                                    <li class="text-primary-600"><a data-modalhorizontal="true" data-modalsize="modal-lg" data-heading="Edit Appointment" data-script="/assets/Areas/Transaction/Appointment/Appointment.js" data-url="/Transaction/Appointment/AAppointment?Id=@s.AppomentId"><i class="icon-pencil7"></i></a></li>
+                                }
 
 
-                                    @if (Print)
-                                    {
-                                        <li class="text-primary-600"><a data-toggle="tooltip" title="Report" href="/Report/Reportrdlc/AReport?rvalues.Name=20&rvalues.Value[0]=@s.AppomentId&rvalues.Value[1]=@a&rvalues.Value[2]=@a&rvalues.Value[3]=@a&rvalues.Value[4]=@a&rvalues.Value[5]=@a&rvalues.Value[6]=@a" data-heading="CPD Form" target="_blank"><i class="icon-printer"></i></a></li>
-                                    }
+                                @if (delete)
+                                {
+                                    <li class="text-danger-600"><a onclick="DeleteAlert({ 'Id':@s.AppomentId}, '/Transaction/Appointment/DeleteAppointment', 'Appointment')"><i class="icon-trash"></i></a></li>
+                                }
+
+
+                                @if (Print)
+                                {
+                                    <li class="text-primary-600"><a data-toggle="tooltip" title="Report" href="/Report/Reportrdlc/AReport?rvalues.Name=20&rvalues.Value[0]=@s.AppomentId&rvalues.Value[1]=@a&rvalues.Value[2]=@a&rvalues.Value[3]=@a&rvalues.Value[4]=@a&rvalues.Value[5]=@a&rvalues.Value[6]=@a" data-heading="CPD Form" target="_blank"><i class="icon-printer"></i></a></li>
+                                }
 
 
 
 
 
 
-                                </ul>
-                            </td>
-                        </tr>
+                            </ul>
+                        </td>
+                    </tr>
                     }
                 </tbody>
             </table>

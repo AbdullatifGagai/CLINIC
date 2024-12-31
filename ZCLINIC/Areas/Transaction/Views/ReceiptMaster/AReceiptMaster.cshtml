@@ -1,8 +1,8 @@
 ﻿@using ZCLINIC
-@model ZCLINIC.Areas.Transaction.Models.Appointment
+@model ZCLINIC.Areas.Transaction.Models.ReceiptMaster
 
 @{
-    string URL = Model == null ? "/Transaction/Appointment/SaveAppointment" : "/Transaction/Appointment/UpdateAppointment";
+    string URL = Model == null ? "/Transaction/ReceiptMaster/SaveReceiptMaster" : "/Transaction/ReceiptMaster/UpdateReceiptMaster";
     int counter = 0;
 }
 
@@ -21,11 +21,11 @@
     }
 </style>
 
-<form method="post" data-url="@URL" data-rurl="/Transaction/Appointment" data-display="Appointment">
+<form method="post" data-url="@URL" data-rurl="/Transaction/ReceiptMaster" data-display="ReceiptMaster">
 
 
 
-    @Html.HiddenFor(m => m.AppomentId)
+    @Html.HiddenFor(m => m.ReceiptId)
     <div class="row">
 
 
@@ -34,13 +34,13 @@
 
             <div class="form-group form-group-xs col-md-2">
                 <label>Appoment Id<b class="wysiwyg-color-red"></b></label>
-                @Html.TextBoxFor(m => m.AppomentCode, new { @class = "form-control", type = "text", @readonly = "readonly" })
+                @Html.TextBoxFor(m => m.ReceiptNo, new { @class = "form-control", type = "text", @readonly = "readonly" })
 
             </div>
 
             <div class="form-group form-group-xs col-md-3">
                 <label>Appoment Date<b class="wysiwyg-color-red"></b></label>
-                @Html.TextBoxFor(m => m.AppomentDate, new { @class = "form-control", type = "date" })
+                @Html.TextBoxFor(m => m.ReceiptDate, new { @class = "form-control", type = "date" })
 
             </div>
 
@@ -111,17 +111,7 @@
 
 
 
-            <div class="form-group form-group-xs col-md-2">
-                <label>Amount<b class="wysiwyg-color-red"></b></label>
-                @Html.TextBoxFor(m => m.Amount, new { @class = "form-control", type = "text", @readonly = "readonly" })
-
-            </div>
-
-            <div class="form-group form-group-xs col-md-2">
-                <label>Receipt No<b class="wysiwyg-color-red"></b></label>
-                @Html.TextBoxFor(m => m.ReceiptId, new { @class = "form-control", type = "text", @readonly = "readonly" })
-
-            </div>
+           
 
 
 
@@ -170,3 +160,4 @@
 
 
 </form>
+

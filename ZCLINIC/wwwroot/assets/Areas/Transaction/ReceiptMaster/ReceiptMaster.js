@@ -1,7 +1,7 @@
 ﻿
 
 
-if ($('#ReceiptCode').val() > 0) {
+if ($('#AppomentId').val() > 0) {
 
     //$('tbody.MonthlyProDetails tr').each(function () {
 
@@ -26,8 +26,11 @@ if ($('#ReceiptCode').val() > 0) {
 }
 else {
 
-    document.getElementById('RDate').valueAsDate = new Date();
-   /// document.getElementById('FMonth').valueAsDate = new Date();
+    document.getElementById('AppomentDate').valueAsDate = new Date();
+  
+
+
+    /// document.getElementById('FMonth').valueAsDate = new Date();
    // document.getElementById('TMonth').valueAsDate = new Date();
 
 
@@ -40,38 +43,50 @@ else {
 
 
 
-
-
-
-$('#AddItemBtn').click(() => {
-
-
-
-    debugger;
-
-    GetJSONRequest('/Master/Student/StudentGetReceipt', 'GET', '', function (data) {
-
-        if (data && data.length > 0) {
-
-
-            debugger;
-
-            AllowSearch(data);
-
-
-        }
-        else
-
-            ErrorAlert("No Data Found");
-    })
+$('#PatientName').keyup(function (e) {
+    if (e.keyCode == 13) {
 
 
 
 
-})
+        var PatientName = $('#PatientName').val();
 
 
 
+        GetJSONRequest('/Master/PatientReg/GetPatientName', 'GET', { PatientName}, function (data) {
+
+            if (data && data.length > 0) {
+
+
+                debugger;
+
+
+
+               
+
+
+                AllowSearch(data);
+
+
+            }
+            else
+
+                ErrorAlert("No Data Found");
+        })
+
+
+
+
+
+
+
+
+
+
+
+
+    }
+});
 
 
 
@@ -89,7 +104,7 @@ function AllowSearch(data) {
     $('#SModal').modal('show');
     $('.modal-dialog').addClass('modal-lg');
 
-    $('#SModalTitle').text('Student List');
+    $('#SModalTitle').text('Patient  List');
     let markup = `<div class="row">
          
                    <div class="col-sm-3">
@@ -100,11 +115,11 @@ function AllowSearch(data) {
                 </div></div><table id="myTable" class="table datatable-basic table-xxs table-md table-bordered table-striped table-hover bg-lightgray dataTables_scrollBody">
 				<thead>
 					<tr class="bg-blue-800">
-                        <th>GrNo</th>
-                        <th>Student Name</th>
-                        <th>Class Name</th>
-                        <th>Shift</th>
-                        <th>SeatNo</th>
+                        <th>MRId</th>
+                        <th>MrNo</th>
+                        <th>Patient Name</th>
+                        <th>Father Name</th>
+                        <th>Cell no</th>
 						
 						
 
@@ -118,7 +133,7 @@ function AllowSearch(data) {
 				</thead><tbody>`;
 
     data.forEach((item) => {
-        markup += `<tr><td>${item.Grno}</td><td>${item.StudentName}</td><td>${item.LevelName}</td><td>${item.Shift}</td><td>${item.SeatNo}</td><td><button type="button" class="selectAllowId btn btn-primary" id=${item.GRId}>Select</button></td></tr>`
+        markup += `<tr><td>${item.MRId}</td><td>${item.MrNo}</td><td>${item.Name}</td><td>${item.Fname}</td><td>${item.Cellno}</td><td><button type="button" class="selectAllowId btn btn-primary" id=${item.MRId}>Select</button></td></tr>`
 
     })
     markup += `</tbody>`;
@@ -183,122 +198,17 @@ function AllowSearch(data) {
 $('#SModalBody').delegate('.selectAllowId', 'click', function () {
 
 
-    var GrId = $(this).attr('id');
-
-
-    // $('#AllowID').val($(this).closest('tr').children().eq(0).text());
-
-    console.log(GrId);
-
-    GetJSONRequest('/Master/Student/StudentGetVoucher', 'GET', { GrId }, function (data) {
-
-        if (data && data.length > 0) {
-
-            debugger;
-            console.log(data);
-          /*  $('tbody.ChaDetails').empty();*/
-           /* for (var item of data) {*/
-
-              
-
-
-                //const markup = `
-                //            <tr>
-                              
-                              
-                //                <td>
-                //                         <input type="text" class="form-control ChallanNo" readonly value="${item.ChallanNo}"/>
-                                         
-                //                </td>
-                              
-
-                                        
-                            
-
-                //              <td><input type="text" class="form-control MonthName"  readonly value="${item.MonthName}" /></td>
-                //              <td><input type="text" class="form-control VMode"  readonly value="${item.VMode}" /></td>
-                //              <td><input type="text" class="form-control Amount"  readonly value="${item.Amount}" /></td>
-                             
-                                
-                                
-
-                                 
-                                   
-                              
-                //                <td><a id=""><i class="icon-circle-right2 VoucherNO text-primary-600"></i></a>
+    
+    $('#MrId').val('');
+    $('#MrNo').val('');
+    $('#PatientName').val('');
+       
 
 
 
-                // </tr>`;
-                //$('tbody.ChaDetails').append(markup);
-
-            $('#Name').val(data[0].StudentName);
-            $('#PName').val(data[0].PanelN);
-             $('#PanelId').val(data[0].PanelId);
-            $('#GRNo').val(data[0].Grno);
-            $('#GrId').val(data[0].GRId);
-
-
-                //calculateAdmAmt()
-                //calculateAnnAmt()
-                //calculateMonthlyAmt()
-                //calculateDisTotalAmt()
-                //calculateTotalAmt()
-
-           /* }*/
-
-
-
-        }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        else {
-
-            ErrorAlert("No Data Found");
-
-            //$('#DebitAcc').val('')
-            //$('#CrditAcc').val('')
-            //$('#CreditAccName').val('')
-            //$('#DebitAccName').val('')
-
-
-        }
-
-                    //$('#Name').val(data[0].StudentName);
-            //$('#PName').val(data[0].PanelN);
-            //$('#GRNo').val(data[0].Grno);
-            //$('#GrId').val(data[0].GRId);
-
-    })
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        $('#MrId').val($(this).closest('tr').children().eq(0).text());
+        $('#MrNo').val($(this).closest('tr').children().eq(1).text());
+        $('#PatientName').val($(this).closest('tr').children().eq(2).text());
 
 
 
@@ -340,3 +250,30 @@ $('tbody.ChaDetails').delegate(".VoucherNO", "click", function () {
   
 
 });
+
+
+$('#DocId').change(function () {
+    let Id = parseInt($('#DocId').val());
+
+    //debugger;
+
+   
+
+    GetJSONRequest('/Master/Doctor/Master_DoctorInfo', 'GET', { Id }, function (data) {
+        debugger;
+        if (data && data.length > 0) {
+           
+               
+            $('#Amount').val(data[0].OPDRate);
+
+
+           
+        }
+        else
+
+            ErrorAlert("No Data Found");
+
+    })
+
+
+})
