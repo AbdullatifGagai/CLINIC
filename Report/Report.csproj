@@ -171,6 +171,11 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <EmbeddedResource Include="Reports\AccountLedger.rdlc" />
+    <EmbeddedResource Include="Reports\BankReceiptVoucher.rdlc" />
+    <EmbeddedResource Include="Reports\CashPaymentVoucher.rdlc" />
+    <EmbeddedResource Include="Reports\CashReceiptVoucher.rdlc" />
+    <EmbeddedResource Include="Reports\GetReportBankPayment.rdlc" />
+    <EmbeddedResource Include="Reports\JournalVoucher.rdlc" />
     <EmbeddedResource Include="Reports\UkitMisreceipt.rdlc" />
     <EmbeddedResource Include="Reports\TrialBalance.rdlc" />
     <Fakes Include="Fakes\System.Web.Razor.fakes" />

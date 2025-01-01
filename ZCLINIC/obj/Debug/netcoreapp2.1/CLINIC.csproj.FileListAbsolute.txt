@@ -434,3 +434,5 @@ C:\Users\Administrator\Documents\GitHub\CLINIC\ZCLINIC\obj\Debug\netcoreapp2.1\R
 C:\Users\Administrator\Documents\GitHub\CLINIC\ZCLINIC\obj\Debug\netcoreapp2.1\Razor\Areas\Transaction\Views\Appointment\AAppointment.cshtml.g.cs
 C:\Users\Administrator\Documents\GitHub\CLINIC\ZCLINIC\obj\Debug\netcoreapp2.1\Razor\Areas\Transaction\Views\ReceiptMaster\Index.cshtml.g.cs
 C:\Users\Administrator\Documents\GitHub\CLINIC\ZCLINIC\obj\Debug\netcoreapp2.1\Razor\Areas\Transaction\Views\ReceiptMaster\AReceiptMaster.cshtml.g.cs
+C:\Users\Administrator\Documents\GitHub\CLINIC\ZCLINIC\obj\Debug\netcoreapp2.1\Razor\Areas\Master\Views\DayEnd\Index.cshtml.g.cs
+C:\Users\Administrator\Documents\GitHub\CLINIC\ZCLINIC\obj\Debug\netcoreapp2.1\Razor\Areas\Master\Views\DayEnd\ADayEnd.cshtml.g.cs

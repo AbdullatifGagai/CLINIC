@@ -94,6 +94,73 @@
             </xs:sequence>
           </xs:complexType>
         </xs:element>
+        <xs:element name="GetReportBankPayment" msprop:Generator_TableClassName="GetReportBankPaymentDataTable" msprop:Generator_TableVarName="tableGetReportBankPayment" msprop:Generator_TablePropName="GetReportBankPayment" msprop:Generator_RowDeletingName="GetReportBankPaymentRowDeleting" msprop:Generator_RowChangingName="GetReportBankPaymentRowChanging" msprop:Generator_RowEvHandlerName="GetReportBankPaymentRowChangeEventHandler" msprop:Generator_RowDeletedName="GetReportBankPaymentRowDeleted" msprop:Generator_UserTableName="GetReportBankPayment" msprop:Generator_RowChangedName="GetReportBankPaymentRowChanged" msprop:Generator_RowEvArgName="GetReportBankPaymentRowChangeEvent" msprop:Generator_RowClassName="GetReportBankPaymentRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="REF_ID" msprop:Generator_ColumnVarNameInTable="columnREF_ID" msprop:Generator_ColumnPropNameInRow="REF_ID" msprop:Generator_ColumnPropNameInTable="REF_IDColumn" msprop:Generator_UserColumnName="REF_ID" type="xs:int" />
+              <xs:element name="VOUCHER_NO" msprop:Generator_ColumnVarNameInTable="columnVOUCHER_NO" msprop:Generator_ColumnPropNameInRow="VOUCHER_NO" msprop:Generator_ColumnPropNameInTable="VOUCHER_NOColumn" msprop:Generator_UserColumnName="VOUCHER_NO" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TOTAL_AMOUNT" msprop:Generator_ColumnVarNameInTable="columnTOTAL_AMOUNT" msprop:Generator_ColumnPropNameInRow="TOTAL_AMOUNT" msprop:Generator_ColumnPropNameInTable="TOTAL_AMOUNTColumn" msprop:Generator_UserColumnName="TOTAL_AMOUNT" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Nurration" msprop:Generator_ColumnVarNameInTable="columnNurration" msprop:Generator_ColumnPropNameInRow="Nurration" msprop:Generator_ColumnPropNameInTable="NurrationColumn" msprop:Generator_UserColumnName="Nurration" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="500" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CHQ" msprop:Generator_ColumnVarNameInTable="columnCHQ" msprop:Generator_ColumnPropNameInRow="CHQ" msprop:Generator_ColumnPropNameInTable="CHQColumn" msprop:Generator_UserColumnName="CHQ" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Che_pay" msprop:Generator_ColumnVarNameInTable="columnChe_pay" msprop:Generator_ColumnPropNameInRow="Che_pay" msprop:Generator_ColumnPropNameInTable="Che_payColumn" msprop:Generator_UserColumnName="Che_pay" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="USER_NAME" msprop:Generator_ColumnVarNameInTable="columnUSER_NAME" msprop:Generator_ColumnPropNameInRow="USER_NAME" msprop:Generator_ColumnPropNameInTable="USER_NAMEColumn" msprop:Generator_UserColumnName="USER_NAME" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SUB_CODE" msprop:Generator_ColumnVarNameInTable="columnSUB_CODE" msprop:Generator_ColumnPropNameInRow="SUB_CODE" msprop:Generator_ColumnPropNameInTable="SUB_CODEColumn" msprop:Generator_UserColumnName="SUB_CODE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SUB_NAME" msprop:Generator_ColumnVarNameInTable="columnSUB_NAME" msprop:Generator_ColumnPropNameInRow="SUB_NAME" msprop:Generator_ColumnPropNameInTable="SUB_NAMEColumn" msprop:Generator_UserColumnName="SUB_NAME" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Remarks" msprop:Generator_ColumnVarNameInTable="columnRemarks" msprop:Generator_ColumnPropNameInRow="Remarks" msprop:Generator_ColumnPropNameInTable="RemarksColumn" msprop:Generator_UserColumnName="Remarks" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DEBIT" msprop:Generator_ColumnVarNameInTable="columnDEBIT" msprop:Generator_ColumnPropNameInRow="DEBIT" msprop:Generator_ColumnPropNameInTable="DEBITColumn" msprop:Generator_UserColumnName="DEBIT" type="xs:decimal" minOccurs="0" />
+              <xs:element name="CREDIT" msprop:Generator_ColumnVarNameInTable="columnCREDIT" msprop:Generator_ColumnPropNameInRow="CREDIT" msprop:Generator_ColumnPropNameInTable="CREDITColumn" msprop:Generator_UserColumnName="CREDIT" type="xs:decimal" minOccurs="0" />
+              <xs:element name="VOUCHAR_DATE" msprop:Generator_ColumnVarNameInTable="columnVOUCHAR_DATE" msprop:Generator_ColumnPropNameInRow="VOUCHAR_DATE" msprop:Generator_ColumnPropNameInTable="VOUCHAR_DATEColumn" msprop:Generator_UserColumnName="VOUCHAR_DATE" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
       </xs:choice>
     </xs:complexType>
   </xs:element>

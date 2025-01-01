@@ -1,0 +1,51 @@
+﻿
+
+@using ZCLINIC
+@model ZCLINIC.Areas.Master.Models.DayEnd
+
+@{
+    string URL = Model == null ? "/Master/DayEnd/SaveDayEnd" : "/Master/DayEnd/UpdateDayEnd";
+}
+
+<form class="form-horizontal" method="post" id="" data-url="@URL" data-display="Master" data-rurl="/Master/DayEnd">
+
+    @Html.HiddenFor(m => m.Id)
+
+    <div class="row">
+
+        <div class="form-group form-group-xs">
+            <label class="control-label col-sm-4">Id<b class="wysiwyg-color-red">*</b></label>
+            <div class="form-group has-feedback col-sm-4">
+                @Html.TextBoxFor(m => m.Code, new { @class = "form-control input-group", type = "text", @readonly = "readonly" })
+                <div class="form-control-feedback"><i class=""></i></div>
+            </div>
+        </div>
+
+        <div class="form-group form-group-xs">
+            <label class="control-label col-sm-4">Working Date<b class="wysiwyg-color-red">*</b></label>
+            <div class="form-group has-feedback col-sm-8">
+                @Html.TextBoxFor(m => m.Wdate, new { @class = "form-control input-group", placeholder = "Category Name", type = "text", required = "required", @readonly = "readonly" })
+                <div class="form-control-feedback"><i class=""></i></div>
+            </div>
+        </div>
+
+
+         <div class="form-group form-group-xs">
+            <label class="control-label col-sm-4">Shift Name <b class="wysiwyg-color-red">*</b></label>
+            <div class="form-group has-feedback col-sm-8">
+                @Html.TextBoxFor(m => m.Shift, new { @class = "form-control input-group", placeholder = "Category Name", type = "text", required = "required", @readonly = "readonly" })
+                <div class="form-control-feedback"><i class=""></i></div>
+            </div>
+        </div>
+
+
+
+
+        <div class="modal-footer no-padding no-border">
+            <button type="button" class="btn btn-danger btn-xs" data-dismiss="modal"><i class="icon-cross"></i>Close</button>
+            <button type="button" data-submit="true" class="btn btn-primary btn-xs"><i class="icon-floppy-disk position-left"></i>Save</button>
+        </div>
+
+    </div>
+
+</form>
