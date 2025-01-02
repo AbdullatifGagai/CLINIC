@@ -56,7 +56,7 @@ $(document).ready(() => {
         "filter": true,
         "ajax": {
      
-            "url": "/Transaction/Receipt/Transaction_ReceiptGetAll",
+            "url": "/Transaction/InstallmentVoucher/Transaction_InstallmentVoucherGetAll",
             "type": "POST",
             "datatype": "json",
             "data": function (d) { d.Status = $('#StatusFilter option:selected').val() }
@@ -69,13 +69,13 @@ $(document).ready(() => {
         }],
         "columns": [
 
-            { "data": "ReceiptCode", "autoWidth": true },
-            { "data": "RDate", "autoWidth": true },
-            { "data": "GRNo", "autoWidth": true },
+            { "data": "InsCode", "autoWidth": true },
+            { "data": "InsDate", "autoWidth": true },
+            { "data": "Grno", "autoWidth": true },
             { "data": "Name", "autoWidth": true },
-            { "data": "ChaNo", "autoWidth": true },
-            { "data": "Amt", "autoWidth": true },
-            { "data": "VOUCHER_NO", "autoWidth": true },
+            { "data": "IntMonth", "autoWidth": true },
+            { "data": "IntAmt", "autoWidth": true },
+            
 
 
 
@@ -129,7 +129,7 @@ $(document).ready(() => {
                     
 
                     if (deleteview) {
-                        markup += `<li class="text-danger-600"><a onclick="DeleteAlert({ 'Id':${full.ReceiptId}}, '/Transaction/Receipt/DeleteReceipt', 'Fee Receipt')"><i class="icon-trash"></i></a></li>`
+                        markup += `<li class="text-danger-600"><a onclick="DeleteAlert({ 'Id':${full.InsId}}, '/Transaction/InstallmentVoucher/DeleteInstallmentVoucher', 'Installment Voucher')"><i class="icon-trash"></i></a></li>`
                            
 
 
@@ -141,7 +141,7 @@ $(document).ready(() => {
 
 
                     if (editview) {
-                        markup += `<li class="text-primary-600"><a data-modalhorizontal="true" data-modalsize="modal-lg" data-heading="Edit Fees Receipt" data-script="/assets/Areas/Transaction/Receipt/Receipt.js" data-url="/Transaction/Receipt/AReceipt?Id=${full.ReceiptId}"><i class="icon-pencil7"></i></a></li>`
+                        markup += `<li class="text-primary-600"><a data-modalhorizontal="true" data-modalsize="modal-lg" data-heading="Edit Installment Voucher" data-script="/assets/Areas/Transaction/InstallmentVoucher/InstallmentVoucher.js" data-url="/Transaction/InstallmentVoucher/AInstallmentVoucher?Id=${full.InsId}"><i class="icon-pencil7"></i></a></li>`
 
 
 
@@ -150,7 +150,7 @@ $(document).ready(() => {
 
 
                     if (Printview) {
-                        markup += `<li class="text-primary-600"><a id="${full.ReceiptId}"  class="PrintBtn"><i class="icon-printer"></i></a></li>`
+                        markup += `<li class="text-primary-600"><a id="${full.InsId}"  class="PrintBtn"><i class="icon-printer"></i></a></li>`
                     }
 
 
@@ -249,7 +249,7 @@ $('#body').delegate('.PrintBtn', 'click', function () {
     debugger;
     const id = $(this).attr('id');
 
-    var value = `/Report/Reportrdlc/AReport?rvalues.Name=38&rvalues.Value[0]=${id}&rvalues.Value[1]=''&rvalues.Value[2]=''&rvalues.Value[3]=''&rvalues.Value[4]=1&rvalues.Value[5]=''&rvalues.Value[6]=''`
+    var value = `/Report/Reportrdlc/AReport?rvalues.Name=47&rvalues.Value[0]=${id}&rvalues.Value[1]=''&rvalues.Value[2]=''&rvalues.Value[3]=''&rvalues.Value[4]=1&rvalues.Value[5]=''&rvalues.Value[6]=''`
    
 
 

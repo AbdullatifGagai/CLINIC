@@ -280,14 +280,39 @@ $('.SaveBtn').on('click', function () {
     if (DoctorName == 0 || DoctorName == null) {
 
 
-        ErrorAlert("Enter DoctorName  Name");
+        ErrorAlert("Enter Doctor Name");
         check = true;
 
     }
 
     
+    if ($('#DocOPDShare').val() == '') {
+
+
+        ErrorAlert("Enter Share OPD");
+        check = true;
+
+    }
+    if ($('#OPDRate').val() == '') {
+
+
+        ErrorAlert("Enter OPD Rate");
+        check = true;
+
+    }
+
 
     
+    if ($('#LPatient').val() == '') {
+
+
+        ErrorAlert("Enter Patient Limit");
+        check = true;
+
+    }
+
+    
+  
    
 
 

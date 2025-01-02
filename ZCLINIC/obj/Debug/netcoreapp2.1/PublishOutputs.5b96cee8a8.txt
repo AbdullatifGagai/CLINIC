@@ -11,6 +11,7 @@ C:\Users\Administrator\Documents\GitHub\CLINIC\ZCLINIC\obj\Debug\netcoreapp2.1\P
 C:\Users\Administrator\Documents\GitHub\CLINIC\ZCLINIC\obj\Debug\netcoreapp2.1\PubTmp\Out\wwwroot\assets\Areas\Report\StudentLedger.js
 C:\Users\Administrator\Documents\GitHub\CLINIC\ZCLINIC\obj\Debug\netcoreapp2.1\PubTmp\Out\wwwroot\assets\Areas\Report\TrialBalance.js
 C:\Users\Administrator\Documents\GitHub\CLINIC\ZCLINIC\obj\Debug\netcoreapp2.1\PubTmp\Out\wwwroot\assets\Areas\Report\UnitStatment.js
+C:\Users\Administrator\Documents\GitHub\CLINIC\ZCLINIC\obj\Debug\netcoreapp2.1\PubTmp\Out\wwwroot\assets\Areas\Transaction\Appointment\Index.js
 C:\Users\Administrator\Documents\GitHub\CLINIC\ZCLINIC\obj\Debug\netcoreapp2.1\PubTmp\Out\wwwroot\assets\Areas\Transaction\BankPayment\BankPayment.js
 C:\Users\Administrator\Documents\GitHub\CLINIC\ZCLINIC\obj\Debug\netcoreapp2.1\PubTmp\Out\wwwroot\assets\Areas\Transaction\FeeVoucher\CusVoucher.js
 C:\Users\Administrator\Documents\GitHub\CLINIC\ZCLINIC\obj\Debug\netcoreapp2.1\PubTmp\Out\wwwroot\assets\Areas\Transaction\FeeVoucher\FeeVoucher.js
@@ -21,12 +22,8 @@ C:\Users\Administrator\Documents\GitHub\CLINIC\ZCLINIC\obj\Debug\netcoreapp2.1\P
 C:\Users\Administrator\Documents\GitHub\CLINIC\ZCLINIC\obj\Debug\netcoreapp2.1\PubTmp\Out\wwwroot\assets\Areas\Transaction\PlanMaster\PlanMaster.js
 C:\Users\Administrator\Documents\GitHub\CLINIC\ZCLINIC\obj\Debug\netcoreapp2.1\PubTmp\Out\wwwroot\assets\Areas\Transaction\PurchaseInward\PurchaseInward.js
 C:\Users\Administrator\Documents\GitHub\CLINIC\ZCLINIC\obj\Debug\netcoreapp2.1\PubTmp\Out\wwwroot\assets\Areas\Transaction\PurchaseOrder\PurchaseOrder.js
+C:\Users\Administrator\Documents\GitHub\CLINIC\ZCLINIC\obj\Debug\netcoreapp2.1\PubTmp\Out\wwwroot\assets\Areas\Transaction\ReceiptMaster\Index.js
 C:\Users\Administrator\Documents\GitHub\CLINIC\ZCLINIC\obj\Debug\netcoreapp2.1\PubTmp\Out\wwwroot\assets\Areas\Transaction\ReceiptPanelMaster\ReceiptPanelMaster.js
-C:\Users\Administrator\Documents\GitHub\CLINIC\ZCLINIC\obj\Debug\netcoreapp2.1\PubTmp\Out\wwwroot\assets\Areas\Transaction\Receipt\AdReceipt.js
-C:\Users\Administrator\Documents\GitHub\CLINIC\ZCLINIC\obj\Debug\netcoreapp2.1\PubTmp\Out\wwwroot\assets\Areas\Transaction\Receipt\Indexsm.js
-C:\Users\Administrator\Documents\GitHub\CLINIC\ZCLINIC\obj\Debug\netcoreapp2.1\PubTmp\Out\wwwroot\assets\Areas\Transaction\Receipt\MisIndex.js
-C:\Users\Administrator\Documents\GitHub\CLINIC\ZCLINIC\obj\Debug\netcoreapp2.1\PubTmp\Out\wwwroot\assets\Areas\Transaction\Receipt\MisIndexUKIT.js
-C:\Users\Administrator\Documents\GitHub\CLINIC\ZCLINIC\obj\Debug\netcoreapp2.1\PubTmp\Out\wwwroot\assets\Areas\Transaction\Receipt\Receipt.js
 C:\Users\Administrator\Documents\GitHub\CLINIC\ZCLINIC\obj\Debug\netcoreapp2.1\PubTmp\Out\wwwroot\assets\Areas\Transaction\Requisition\Requisition.js
 C:\Users\Administrator\Documents\GitHub\CLINIC\ZCLINIC\obj\Debug\netcoreapp2.1\PubTmp\Out\wwwroot\assets\Areas\Transaction\Sales\Sales.js
 C:\Users\Administrator\Documents\GitHub\CLINIC\ZCLINIC\obj\Debug\netcoreapp2.1\PubTmp\Out\wwwroot\assets\Areas\Transaction\Transaction_CPDForm\Transaction_CPDForm.js
