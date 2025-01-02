@@ -36,5 +36,25 @@ namespace ZCLINIC.Areas.Master.Controllers
         {
             return new ClinicServicesApiController().ClinicServicesDelete(id, HttpContext.Session.GetBValues(), HttpContext.GetIP(), HttpContext.GetCInfo());
         }
+    
+        [HttpGet]
+        public List<ClinicServices> Master_ClinicServicesGetServicesName(int Id)
+        {
+            return new ClinicServices().Master_ClinicServicesGetServicesName(Id, HttpContext.Session.GetBValues(), HttpContext.GetIP(), HttpContext.GetCInfo());
+        }
+    
+      [HttpGet]
+        public List<ClinicServices> Master_ClinicServicesGetIdServices(int Id)
+        {
+            return new ClinicServices().Master_ClinicServicesGetIdServices(Id, HttpContext.Session.GetBValues(), HttpContext.GetIP(), HttpContext.GetCInfo());
+        }
+    
+    
+    
+    
+    
+    
+    
+    
     }
 }

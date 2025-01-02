@@ -85,7 +85,10 @@ namespace ZCLINIC.Areas.Master.Models
 
 
 
-       
+
+
+        public int PAge { get; set; }
+
         //View only properties
         public string ReturnMessage { get; set; }
 

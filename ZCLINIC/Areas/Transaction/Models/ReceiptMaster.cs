@@ -68,7 +68,11 @@ namespace ZCLINIC.Areas.Transaction.Models
         public decimal  NetReceivable { get; set; }
 
         [TVP]
-        public int  PaymentM { get; set; }
+        public decimal BalanceAmt { get; set; }
+
+
+           [TVP]
+        public decimal DisAmt { get; set; }
 
 
 

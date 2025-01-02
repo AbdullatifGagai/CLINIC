@@ -27,6 +27,7 @@ if ($('#ReceiptId').val() > 0) {
 else {
 
     document.getElementById('ReceiptDate').valueAsDate = new Date();
+    document.getElementById('DateOfBirth').valueAsDate = new Date();
   
 
 
@@ -120,6 +121,8 @@ function AllowSearch(data) {
                         <th>Patient Name</th>
                         <th>Father Name</th>
                         <th>Cell no</th>
+                        <th>Date Of Birth</th>
+                        <th>Age</th>
 						
 						
 
@@ -133,7 +136,7 @@ function AllowSearch(data) {
 				</thead><tbody>`;
 
     data.forEach((item) => {
-        markup += `<tr><td>${item.MRId}</td><td>${item.MrNo}</td><td>${item.Name}</td><td>${item.Fname}</td><td>${item.Cellno}</td><td><button type="button" class="selectAllowId btn btn-primary" id=${item.MRId}>Select</button></td></tr>`
+        markup += `<tr><td>${item.MRId}</td><td>${item.MrNo}</td><td>${item.Name}</td><td>${item.Fname}</td><td>${item.Cellno}</td><td>${item.Bdate}</td><td>${item.PAge}</td><td><button type="button" class="selectAllowId btn btn-primary" id=${item.MRId}>Select</button></td></tr>`
 
     })
     markup += `</tbody>`;
@@ -202,6 +205,8 @@ $('#SModalBody').delegate('.selectAllowId', 'click', function () {
     $('#MrId').val('');
     $('#MrNo').val('');
     $('#PatientName').val('');
+    $('#DateOfBirth').val('');
+    $('#Age').val('');
        
 
 
@@ -209,6 +214,8 @@ $('#SModalBody').delegate('.selectAllowId', 'click', function () {
         $('#MrId').val($(this).closest('tr').children().eq(0).text());
         $('#MrNo').val($(this).closest('tr').children().eq(1).text());
         $('#PatientName').val($(this).closest('tr').children().eq(2).text());
+        $('#DateOfBirth').val($(this).closest('tr').children().eq(5).text());
+        $('#age').val($(this).closest('tr').children().eq(6).text());
 
 
 
@@ -234,7 +241,7 @@ $('tbody.ChaDetails').delegate(".VoucherNO", "click", function () {
             $('#MonthName').val(data[0].MonthName);
             $('#Amt').val(data[0].VoucherAmt);
             $('#MonId').val(data[0].MonthId);
-            $('#ChaNo').val(data[0].ChallanNo);
+           
             
 
             
@@ -252,28 +259,246 @@ $('tbody.ChaDetails').delegate(".VoucherNO", "click", function () {
 });
 
 
-//$('#DocId').change(function () {
-//    let Id = parseInt($('#DocId').val());
-
-//    //debugger;
-
-   
-
-//    GetJSONRequest('/Master/Doctor/Master_DoctorInfo', 'GET', { Id }, function (data) {
-//        debugger;
-//        if (data && data.length > 0) {
-           
-               
-//            $('#Amount').val(data[0].OPDRate);
 
 
-           
-//        }
-//        else
-
-//            ErrorAlert("No Data Found");
-
-//    })
 
 
-//})
+
+
+
+$('#CategoryId').change(function () {
+    let Id = parseInt($('#CategoryId').val());
+
+    //debugger;
+
+    $('#CategoryId').val(Id)
+
+
+    GetJSONRequest('/Master/ClinicServices/Master_ClinicServicesGetServicesName', 'GET', { Id }, data => {
+
+        if (data && data.length > 0) {
+            $('#SevicesId').empty();
+            $('#SevicesId').append(`<option value="0">Select Services</option>`);
+            for (const model of data) {
+
+                $('#SevicesId').append(`<option value="${model.ServicesId}">${model.ServicesName}</option>`);
+
+            }
+
+
+
+             $('#CategoryId').attr('disabled', 'true')
+            $('#SevicesId').select2()
+          
+
+
+            return;
+
+
+
+        }
+        ErrorAlert("No Records Found");
+        $('#SevicesId').empty();
+       
+
+        /// $('#Comp_id').attr('disabled', 'true')
+
+    })
+
+
+})
+
+
+$('#SevicesId').change(function () {
+    let Id = parseInt($('#SevicesId').val());
+
+    //debugger;
+
+    $('#SevicesId').val(Id)
+
+
+    GetJSONRequest('/Master/ClinicServices/Master_ClinicServicesGetIdServices', 'GET', { Id }, data => {
+
+        if (data && data.length > 0) {
+            
+
+
+
+            $('#Rate').val(data[0].Rate);
+
+
+
+        }
+
+        else {
+            ErrorAlert("No Records Found");
+        }
+
+
+    
+
+
+        /// $('#Comp_id').attr('disabled', 'true')
+
+    })
+
+
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+$('#age').change(function () {
+
+
+
+
+
+
+
+
+
+
+    var PAge = $('#age').val();
+
+    GetJSONRequest('/Master/PatientReg/Master_Daysbrith', 'GET', { PAge }, function (data) {
+
+
+
+        if (data && data.length > 0) {
+
+
+
+
+
+
+
+
+
+
+
+
+
+            $('#DateOfBirth').val(data[0].Bdate);
+
+
+
+            //      $('#ProductId').val(data[0].ProductId);
+
+
+
+
+        }
+        else {
+
+
+
+            ErrorAlert("No Data Found");
+
+
+            //$('#Unit').val('');
+            //$('#TPRate').val('');
+            //$('#RetailRate').val('');
+
+        }
+    })
+
+
+
+
+
+
+
+    //$('#Amount').val(parseInt(tAmt) - parseInt(Discout));
+    //$('#OrderAmt').val(parseInt(tAmt));
+
+
+})
+
+
+$('#AddItemBtn').click(function () {
+
+
+
+
+    if ($('#SevicesId option:selected').val() == "0") {
+        ErrorAlert("SevicesId Name is Required")
+
+
+        debugger;
+    }
+
+
+
+
+    //else if ($('#StoreName').val() == "0") {
+    //    ErrorAlert("Store  is Required")
+    //}
+
+    else if ($('#Rate').val() == '') {
+        ErrorAlert("Miss Value")
+    }
+
+
+
+    else {
+        let markup = `<tr>
+                     
+                     <td><input type="hidden" class="SevicesId" value="${$('#SevicesId option:selected').val()}"/>${$('#SevicesId option:selected').text()}</td>
+                 
+                     <td><input type="text" class="form-control read Rate"  readonly value="${$('#Rate').val()}"></td>
+                    
+                    
+                  
+
+                     
+                      <td><a class="btn_delete text-danger-600"><i class="icon-trash"></i></a></td>
+                      </tr>`
+        $('#tbodytable').append(markup)
+
+     
+
+        //Total_DisAmt();
+        //Total_Saletex();
+        //Total_Amount();
+
+
+    }
+})
+$('#tbodytable').delegate('.btn_delete', 'click', function () {
+
+    debugger;
+
+
+
+    ///lstif
+    $(this).closest('tr').remove();
+
+})

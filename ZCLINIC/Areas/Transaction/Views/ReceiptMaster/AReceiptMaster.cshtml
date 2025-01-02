@@ -110,7 +110,7 @@
                 @Html.TextBoxFor(m => m.MrNo, new { @class = "form-control", type = "text", @readonly = "readonly" })
 
             </div>
-            <div class="form-group form-group-xs col-md-6">
+            <div class="form-group form-group-xs col-md-4">
                 <label>Patient Name<b class="wysiwyg-color-red"></b></label>
                 @Html.TextBoxFor(m => m.PatientName, new { @class = "form-control", type = "text" })
 
@@ -119,7 +119,22 @@
 
 
 
+            <div class="form-group form-group-xs col-md-4">
+                <label>Payment Id<b class="wysiwyg-color-red"></b></label>
+                @{
 
+                    var Status = new List<(int Id, string Name)>();
+                   
+                    Status.Add((Id: 1, Name: "Cash"));
+                    Status.Add((Id: 2, Name: "Credit"));
+                  
+
+
+
+                }
+                @Html.DropDownList("LeaveF", Status.Select(p => new SelectListItem() { Text = p.Name, Value = p.Id.ToString() }), new { @class = "form-control", data_style = "btn-default btn-xs", tabindex = '4', data_search = "true", data_width = "100%" })
+
+            </div>
 
 
 
@@ -179,7 +194,7 @@
 
             <div class="form-group form-group-xs col-md-2">
                 <label>DOB<b class="wysiwyg-color-red"></b></label>
-                @Html.TextBoxFor(m => m.DateOfBirth, new { @class = "form-control", type = "date" })
+                @Html.TextBoxFor(m => m.DateOfBirth, new { @class = "form-control", type = "date", @readonly = "readonly" })
 
             </div>
 
@@ -198,69 +213,84 @@
 
 
 
-    
 
 
-    
 
 
-        <div class="table-responsive container-fluid quotaiontable">
-            <table class=" table table-xxs table-md table-bordered table-striped table-hover bg-lightgray dataTables_scrollBody">
-                <thead>
-                    <tr class="bg-blue-800">
-
-                        <th>Services  Name</th>
-                        <th>Rate</th>
-                    
 
 
-                        <th></th>
+    <div class="table-responsive container-fluid quotaiontable">
+        <table class=" table table-xxs table-md table-bordered table-striped table-hover bg-lightgray dataTables_scrollBody">
+            <thead>
+                <tr class="bg-blue-800">
+
+                    <th>Services  Name</th>
+                    <th>Rate</th>
 
 
-                    </tr>
+
+                    <th></th>
+
+
+                </tr>
+                <tr>
+
+
+
+
+
+                    <th class="col-md-6">
+                        <select class="form-control combo-box" id="SevicesId" type=2 name="ModelId"></select>
+
+                    </th>
+                    <th class="col-md-2"><input type="text" class="form-control Rate TxtBox" , id="Rate" readonly /></th>
+
+                    <th class="col-lg-1"><a class="icon-add text-primary" id="AddItemBtn"></a></th>
+                </tr>
+
+
+            </thead>
+
+
+            <tbody id="tbodytable">
+            </tbody>
+
+
+
+
+
+
+
+
+
+
+            @*<tfoot>
                     <tr>
 
+                        <td>
+                            @Html.TextBoxFor(m => m.ServicesAmt, new { @class = "form-control", type = "number", @readonly = "readonly" })
+
+                            @Html.TextBoxFor(m => m.CashAmt, new { @class = "form-control", type = "number", @readonly = "readonly" })
+
+
+
+                        </td>
+
+                        <td>
 
 
 
 
-                        <th class="col-md-6">
-                            <select class="form-control combo-box" id="StudentN" type=2 name="ModelId"></select>
+                            @Html.TextBoxFor(m => m.ServicesAmt, new { @class = "form-control", type = "number", @readonly = "readonly" })
 
-                        </th>
-                        <th class="col-md-2"><input type="text" class="form-control Rate TxtBox" , id="Rate" /></th>
-                   
-                        <th class="col-lg-1"><a class="icon-add text-primary" id="AddItemBtn"></a></th>
-                    </tr>
+                            @Html.TextBoxFor(m => m.CashAmt, new { @class = "form-control", type = "number", @readonly = "readonly" })
 
 
-                </thead>
-
-
-                <tbody class="BankVoucherDetails">
-                  
-
-                </tbody>
+                        </td>
 
 
 
 
-
-
-
-
-
-
-                @*<tfoot>
-                    <tr>
-
-                        <td colspan="1"></td>
-                        <td class="text-right">Total Amount</td>
-                        <td>@Html.TextBoxFor(m => m.TDebitAmt, new { @class = "form-control", type = "number", @readonly = "readonly" })</td>
-
-
-
-                        <td>@Html.TextBoxFor(m => m.TCreditAmt, new { @class = "form-control", type = "number", @readonly = "readonly" })</td>
 
 
 
@@ -283,20 +313,66 @@
 
 
 
-            </table>
+        </table>
+
+
+
+
+    </div>
+
+
+
+    <div class="row">
+
+
+
+        <div class="form-group form-group-xs col-md-12">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <div class="form-group form-group-xs col-md-2">
+                <label>Services Amt<b class="wysiwyg-color-red"></b></label>
+                @Html.TextBoxFor(m => m.ServicesAmt, new { @class = "form-control", type = "text", @readonly = "readonly" })
+
+            </div>
+
+            <div class="form-group form-group-xs col-md-2">
+                <label>Discount Amt<b class="wysiwyg-color-red"></b></label>
+                @Html.TextBoxFor(m => m.DisAmt, new { @class = "form-control", type = "text" })
+
+            </div>
+
+
+
+            <div class="form-group form-group-xs col-md-2">
+                <label>Cash Amt<b class="wysiwyg-color-red"></b></label>
+                @Html.TextBoxFor(m => m.CashAmt, new { @class = "form-control", type = "text"})
+
+            </div>
+            <div class="form-group form-group-xs col-md-2">
+                <label>Balance  Amt<b class="wysiwyg-color-red"></b></label>
+                @Html.TextBoxFor(m => m.BalanceAmt, new { @class = "form-control", type = "text", @readonly = "readonly" })
+
+            </div>
+
 
 
 
 
         </div>
-
-
-
-
-
-
-
-
+    </div>
 
 
 
@@ -310,7 +386,6 @@
         @* <button type="button" data-submit="" class="btn btn-primary btn-xs SaveBtn"><i class="icon-floppy-disk position-left"></i>Save</button>*@
 
     </div>
-
 
 </form>
 
