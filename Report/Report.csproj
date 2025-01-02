@@ -172,59 +172,11 @@
     <Content Include="Global.asax" />
     <EmbeddedResource Include="Reports\AccountLedger.rdlc" />
     <EmbeddedResource Include="Reports\BankReceiptVoucher.rdlc" />
-    <EmbeddedResource Include="Reports\BatchWiseDetail.rdlc">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Reports\AdmissionReceivable.rdlc">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Reports\rptInstallmentVoucher.rdlc" />
-    <EmbeddedResource Include="Reports\rptPanelDetail.rdlc" />
-    <EmbeddedResource Include="Reports\UkitMisreceipt.rdlc" />
-    <EmbeddedResource Include="Reports\FeeVoucherSai.rdlc">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Reports\LevelWiseStudentListWithSeats.rdlc" />
-    <EmbeddedResource Include="Reports\LevelWiseStudentList.rdlc" />
-    <EmbeddedResource Include="Reports\Receipt.rdlc" />
-    <EmbeddedResource Include="Reports\CCMisReceipt.rdlc" />
-    <EmbeddedResource Include="Reports\CCReceiptOneCopy.rdlc" />
-    <EmbeddedResource Include="Reports\CCReceipt.rdlc" />
-    <EmbeddedResource Include="Reports\GetReportsaledateWise.rdlc">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Reports\GetProductStockReport.rdlc">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Reports\BatchWiseReceivable.rdlc">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Reports\GetReportPurchasedateWise.rdlc">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Reports\ProductWiseLedger.rdlc">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Reports\SaleInvoice.rdlc">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Reports\ReceiptRegisterSummary.rdlc" />
-    <EmbeddedResource Include="Reports\CCReceiptRegister.rdlc" />
-    <EmbeddedResource Include="Reports\FeesReceiptRegister.rdlc" />
-    <EmbeddedResource Include="Reports\FeesVoucherRegister.rdlc" />
     <EmbeddedResource Include="Reports\CashPaymentVoucher.rdlc" />
     <EmbeddedResource Include="Reports\CashReceiptVoucher.rdlc" />
     <EmbeddedResource Include="Reports\GetReportBankPayment.rdlc" />
     <EmbeddedResource Include="Reports\JournalVoucher.rdlc" />
-    <EmbeddedResource Include="Reports\AdmissionSummary.rdlc">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Reports\ReceivableSummary.rdlc">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Reports\StudentFeesLedger.rdlc">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\UkitMisreceipt.rdlc" />
     <EmbeddedResource Include="Reports\TrialBalance.rdlc" />
     <Fakes Include="Fakes\System.Web.Razor.fakes" />
     <Content Include="Content\bootstrap-theme.css.map" />
@@ -244,45 +196,6 @@
     <Content Include="Reports\DataReport.xss">
       <DependentUpon>DataReport.xsd</DependentUpon>
     </Content>
-    <EmbeddedResource Include="Reports\AllowStatmentSummary.rdlc">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Reports\AllowStatment.rdlc">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Reports\FeeVoucherCus.rdlc">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Reports\FeeVoucher.rdlc">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Reports\StudentReceivable.rdlc">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Reports\PurchaseInward.rdlc">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Reports\PurchaseOrder.rdlc">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Reports\Issuance.rdlc">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Reports\GetAccStockReport.rdlc">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Reports\PurchaseDetails.rdlc">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Reports\StockStatusReport.rdlc">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Reports\StockReportQtyWise.rdlc">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Reports\Requisition.rdlc">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </EmbeddedResource>
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
@@ -337,11 +250,6 @@
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Reports\CPDForm.rdlc">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
