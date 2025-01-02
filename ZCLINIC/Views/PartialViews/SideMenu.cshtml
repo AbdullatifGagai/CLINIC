@@ -11,7 +11,10 @@
             <div class="category-content">
                 <div class="media">
                     @*<a href="#" class="media-left"><img src="~/assets/images/Words/@(new AccountTech.Areas.Master.Models.Person().Master_GetPersonBYUserId(Context.Session.GetUserId(), Context.GetIP(), Context.GetCInfo()).FirstName[0]).png" class="img-circle img-sm" alt=""></a>*@
-                    <a href="#" class="media-left"><img src="~/assets/images/Logo.png" /></a>
+                    @*<a href="#" class="media-left"><img src="~/assets/images/Logo.png" /></a>*@
+                    <a href="#" class="media-left"><img src="#" /></a>
+                   
+                    
                     <div class="media-body">
                         <span class="media-heading text-semibold">@(new ZCLINIC.Areas.URM.Models.USERAUTH().URM_USERAUTHGetById(Context.Session.GetBValues(), Context.GetIP(), Context.GetCInfo()).FullName)</span>
                         <span class="media-heading text-semibold">Administrator</span>
