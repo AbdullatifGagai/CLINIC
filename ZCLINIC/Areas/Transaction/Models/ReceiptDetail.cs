@@ -11,6 +11,19 @@ namespace ZCLINIC.Areas.Transaction.Models
     {
         private const string MODULE = "Transaction";
 
+
+        [TVP]
+        public int ReceiptId { get; set; }
+
+        [TVP]
+
+        public int ServicesId { get; set; }
+        [TVP]
+        public int CategoryId { get; set; }
+
+        [TVP]
+        public decimal Rate { get; set; }
+
         //properties for model
         [TVP]
         public int TenantId { get; set; }
@@ -23,6 +36,11 @@ namespace ZCLINIC.Areas.Transaction.Models
 
         [TVP]
         public int ModifiedBy { get; set; }
+
+
+
+        public string ServicesName { get; set; }
+
 
         //View only properties
         public string ReturnMessage { get; set; }
@@ -91,9 +109,9 @@ namespace ZCLINIC.Areas.Transaction.Models
             }
         }
 
-        public List<ReceiptDetail> Transaction_ReceiptDetailGetAll(BValues bv, string ip, string cInfo)
+        public List<ReceiptDetail> Transaction_ReceiptDetailGetAll(int Id,BValues bv, string ip, string cInfo)
         {
-            var parameters = new { bv.UserId, bv.TenantId, bv.AppId };
+            var parameters = new { bv.UserId, bv.TenantId, bv.AppId,Id };
 
             try
             {

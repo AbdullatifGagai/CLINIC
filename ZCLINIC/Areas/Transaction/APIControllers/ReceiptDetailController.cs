@@ -8,10 +8,10 @@ namespace ZCLINIC.Areas.Transaction.APIControllers
     [ApiController]
     public class ReceiptDetailController : Controller
     {
-        public List<ReceiptDetail> ReceiptDetailGetAll(BValues bv, string ip, string cInfo)
-        {
-            return new ReceiptDetail().Transaction_ReceiptDetailGetAll(bv, ip, cInfo);
-        }
+        //public List<ReceiptDetail> ReceiptDetailGetAll(BValues bv, string ip, string cInfo)
+        //{
+        //    return new ReceiptDetail().Transaction_ReceiptDetailGetAll(bv, ip, cInfo);
+        //}
 
         public ReceiptDetail ReceiptDetailGetById(int id, BValues bv, string ip, string cInfo)
         {

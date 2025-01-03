@@ -18,17 +18,17 @@ namespace ZCLINIC.Areas.Transaction.APIControllers
             return new ReceiptMaster().Transaction_ReceiptMasterGetById(id, bv, ip, cInfo);
         }
 
-        [HttpPost]
-        public string ReceiptMasterSave(List<object> objList, string ip, string cInfo)
-        {
-            return ((ReceiptMaster)objList[0]).Transaction_ReceiptMasterSave((BValues)objList[1], ip, cInfo);
-        }
+        //[HttpPost]
+        //public string ReceiptMasterSave(List<object> objList, string ip, string cInfo)
+        //{
+        //    return ((ReceiptMaster)objList[0]).Transaction_ReceiptMasterSave((BValues)objList[1], ip, cInfo);
+        //}
 
-        [HttpPost]
-        public string ReceiptMasterUpdate(List<object> objList, string ip, string cInfo)
-        {
-            return ((ReceiptMaster)objList[0]).Transaction_ReceiptMasterUpdate((BValues)objList[1], ip, cInfo);
-        }
+        //[HttpPost]
+        //public string ReceiptMasterUpdate(List<object> objList, string ip, string cInfo)
+        //{
+        //    return ((ReceiptMaster)objList[0]).Transaction_ReceiptMasterUpdate((BValues)objList[1], ip, cInfo);
+        //}
 
         [HttpPost]
         public string ReceiptMasterDelete(int id, BValues bv, string ip, string cInfo)

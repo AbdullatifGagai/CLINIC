@@ -20,16 +20,37 @@ namespace ZCLINIC.Areas.Transaction.Models
         public int ReceiptCode { get; set; }
         [TVP]
         public string ReceiptNo { get; set; }
+
+        [TVP]
+        public string ReceiptDate { get; set; }
+
+
         [TVP]
         public string  RefNo { get; set; }
 
-        [TVP]
-        public int PanelId { get; set; }
-        [TVP]
-        public string  ReceiptDate { get; set; }
-        
+
         [TVP]
         public int DocId { get; set; }
+        [TVP]
+        public int MrId { get; set; }
+        [TVP]
+        public string MrNo { get; set; }
+        [TVP]
+        public string PatientName { get; set; }
+
+        [TVP]
+        public int PaymentM { get; set; }
+       
+        
+       
+        [TVP]
+        public int PanelId { get; set; }
+       
+        [TVP]
+        public int CategoryId { get; set; }
+       
+        
+       
         
         
         
@@ -47,39 +68,38 @@ namespace ZCLINIC.Areas.Transaction.Models
         
         
         
-        [TVP]
-        public int MrId { get; set; }
-        [TVP]
-        public string  MrNo { get; set; }
-        [TVP]
-        public string PatientName { get; set; }
-        [TVP]
-        public int CategoryId { get; set; }
+       
+       
 
         [TVP]
         public decimal ServicesAmt { get; set; }
-        [TVP]
-        public decimal  AdvanAmt { get; set; }
-        [TVP]
-        public decimal  CashAmt { get; set; }
-        [TVP]
-        public decimal RemaingAmt { get; set; }
-        [TVP]
-        public decimal  NetReceivable { get; set; }
-
-        [TVP]
-        public decimal BalanceAmt { get; set; }
 
 
-           [TVP]
+        [TVP]
         public decimal DisAmt { get; set; }
 
 
 
+        [TVP]
+        public decimal  CashAmt { get; set; }
+     
+        [TVP]
+        public decimal BalanceAmt { get; set; }
 
 
 
 
+
+        [TVP]
+        public int TokenNo { get; set; }
+
+        [TVP]
+        public decimal HosShare { get; set; }
+        [TVP]
+        public decimal  DocShare { get; set; }
+
+        [TVP]
+        public string  Shift { get; set; }
 
 
 
@@ -101,13 +121,23 @@ namespace ZCLINIC.Areas.Transaction.Models
         //View only properties
         public string ReturnMessage { get; set; }
 
-        public string Transaction_ReceiptMasterSave(BValues bv, string ip, string cInfo)
+        public string Transaction_ReceiptMasterSave(BValues bv, string ip, string cInfo, ReceiptMaster ReceiptMaster, List<ReceiptDetail> ReceiptDetail)
         {
-            var parameters = new { x = this };
+            var parameters = new { x = ReceiptMaster, ReceiptDetail };
 
             try
             {
-                TenantId = bv.TenantId; AppId = bv.AppId; CreatedBy = bv.UserId; ModifiedBy = bv.UserId;
+
+                foreach (var item in ReceiptDetail)
+                {
+
+
+
+                    item.TenantId = bv.TenantId; item.AppId = bv.AppId; item.CreatedBy = bv.UserId;
+                }
+
+
+                ReceiptMaster.TenantId = bv.TenantId; ReceiptMaster.AppId = bv.AppId; ReceiptMaster.CreatedBy = bv.UserId;
 
                 string message = DataBase.ExecuteQuery<ReceiptMaster>(parameters, Connection.GetConnection()).FirstOrDefault().ReturnMessage;
 
@@ -123,13 +153,23 @@ namespace ZCLINIC.Areas.Transaction.Models
             }
         }
 
-        public string Transaction_ReceiptMasterUpdate(BValues bv, string ip, string cInfo)
+        public string Transaction_ReceiptMasterUpdate(BValues bv, string ip, string cInfo, ReceiptMaster ReceiptMaster, List<ReceiptDetail> ReceiptDetail)
         {
-            var parameters = new { x = this };
+            var parameters = new { x = ReceiptMaster, ReceiptDetail };
 
             try
             {
-                TenantId = bv.TenantId; AppId = bv.AppId; ModifiedBy = bv.UserId;
+
+                foreach (var item in ReceiptDetail)
+                {
+
+
+
+                    item.TenantId = bv.TenantId; item.AppId = bv.AppId; item.CreatedBy = bv.UserId;
+                }
+
+
+                ReceiptMaster.TenantId = bv.TenantId; ReceiptMaster.AppId = bv.AppId; ReceiptMaster.CreatedBy = bv.UserId;
 
                 string message = DataBase.ExecuteQuery<ReceiptMaster>(parameters, Connection.GetConnection()).FirstOrDefault().ReturnMessage;
 

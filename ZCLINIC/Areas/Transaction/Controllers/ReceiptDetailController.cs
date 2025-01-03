@@ -8,10 +8,10 @@ namespace ZCLINIC.Areas.Transaction.Controllers
     [Area("Transaction")]
     public class ReceiptDetailController : Controller
     {
-        public IActionResult Index()
-        {
-            return View(new ReceiptDetailApiController().ReceiptDetailGetAll(HttpContext.Session.GetBValues(), HttpContext.GetIP(), HttpContext.GetCInfo()));
-        }
+        //public IActionResult Index()
+        //{
+        //    return View(new ReceiptDetailApiController().ReceiptDetailGetAll(HttpContext.Session.GetBValues(), HttpContext.GetIP(), HttpContext.GetCInfo()));
+        //}
 
         // create/edit view for ReceiptDetail
         public IActionResult AReceiptDetail(int id = 0)
@@ -36,5 +36,17 @@ namespace ZCLINIC.Areas.Transaction.Controllers
         {
             return new ReceiptDetailApiController().ReceiptDetailDelete(id, HttpContext.Session.GetBValues(), HttpContext.GetIP(), HttpContext.GetCInfo());
         }
+   
+        [HttpGet]
+        public List<ReceiptDetail> ReceiptDetailGetAll(int id)
+        {
+            return new ReceiptDetail().Transaction_ReceiptDetailGetAll(id, HttpContext.Session.GetBValues(), HttpContext.GetIP(), HttpContext.GetCInfo());
+        }
+   
+    
+    
+    
+    
+    
     }
 }

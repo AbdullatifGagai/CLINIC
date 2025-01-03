@@ -20,15 +20,15 @@ namespace ZCLINIC.Areas.Transaction.Controllers
         }
 
         [HttpPost]
-        public string SaveReceiptMaster(ReceiptMaster model)
+        public string SaveReceiptMaster(ReceiptMaster ReceiptMaster, List<ReceiptDetail> ReceiptDetail)
         {
-            return new ReceiptMasterApiController().ReceiptMasterSave(new List<object>() { model, HttpContext.Session.GetBValues() }, HttpContext.GetIP(), HttpContext.GetCInfo());
+            return new ReceiptMaster().Transaction_ReceiptMasterSave(HttpContext.Session.GetBValues(), HttpContext.GetIP(), HttpContext.GetCInfo(),ReceiptMaster,ReceiptDetail);
         }
 
         [HttpPost]
-        public string UpdateReceiptMaster(ReceiptMaster model)
+        public string UpdateReceiptMaster(ReceiptMaster ReceiptMaster, List<ReceiptDetail> ReceiptDetail)
         {
-            return new ReceiptMasterApiController().ReceiptMasterUpdate(new List<object>() { model, HttpContext.Session.GetBValues() }, HttpContext.GetIP(), HttpContext.GetCInfo());
+            return new ReceiptMaster().Transaction_ReceiptMasterUpdate(HttpContext.Session.GetBValues(), HttpContext.GetIP(), HttpContext.GetCInfo(), ReceiptMaster, ReceiptDetail);
         }
 
         [HttpPost]

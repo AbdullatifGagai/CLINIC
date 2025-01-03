@@ -22,14 +22,16 @@ if ($('#ReceiptId').val() > 0) {
     //    //document.getElementById('Bill_Date').valueAsDate = new Date();
 
 
+    ReceiptDetail($('#ReceiptId').val());
+
     //})
 }
 else {
 
     document.getElementById('ReceiptDate').valueAsDate = new Date();
     document.getElementById('DateOfBirth').valueAsDate = new Date();
-  
 
+   
 
     /// document.getElementById('FMonth').valueAsDate = new Date();
    // document.getElementById('TMonth').valueAsDate = new Date();
@@ -41,7 +43,68 @@ else {
 
 }
 
+function  ReceiptDetail(id) {
 
+
+
+    GetJSONRequest('/Transaction/ReceiptDetail/ReceiptDetailGetAll', 'GET', { id }, data => {
+
+
+        debugger;
+        let i = 0;
+
+
+        if (data && data.length > 0) {
+            $('#tbodytable').empty();
+            for (const item of data) {
+                i++;
+                const markup = `
+               <tr>
+
+
+                                <td>
+                                         <input type="hidden" class="form-control ServicesId" readonly value="${item.ServicesId}" />
+                                         <input type="text" class="form-control ServicesName"  readonly value="${item.ServicesName}" />
+                                </td>
+                                
+                                
+                                    <td><input type="text" class="form-control Rate" readonly value="${item.Rate}" /></td>
+
+                                    <td><a id=""><i class="icon-trash btn_delete text-danger-600"></i></a>
+
+
+
+                 </tr>`;
+
+                $('#tbodytable').append(markup);
+                //calculateAdmAmt()
+                //calculateAnnAmt()
+                //calculateMonthlyAmt()
+                //calculateDisTotalAmt()
+                //calculateTotalAmt()
+
+            }
+
+
+            debugger;
+
+            // console.log(data);
+            ///   DropDown2Initializers();
+            //    $('#Supcode').val(data[0].Supcode).change();
+
+            //$('#Remarks').val(data[0].Remarks);
+            //$('#ItemId').val(data[0].ItemId).change();
+            //$('#Category').val(data[0].Category).change();
+            //	$('#ReqDate').val(data[0].ReqDate);
+
+
+
+            return;
+        }
+        ErrorAlert('No Purchase Receive Found');
+    })
+
+}
 
 
 $('#PatientName').keyup(function (e) {
@@ -471,9 +534,9 @@ $('#AddItemBtn').click(function () {
     else {
         let markup = `<tr>
                      
-                     <td><input type="hidden" class="SevicesId" value="${$('#SevicesId option:selected').val()}"/>${$('#SevicesId option:selected').text()}</td>
+                     <td><input type="hidden" class="form-control ServicesId" value="${$('#SevicesId option:selected').val()}"/>${$('#SevicesId option:selected').text()}</td>
                  
-                     <td><input type="text" class="form-control read Rate"  readonly value="${$('#Rate').val()}"></td>
+                     <td><input type="text" class="form-control  Rate"  readonly value="${$('#Rate').val()}"></td>
                     
                     
                   
@@ -483,9 +546,15 @@ $('#AddItemBtn').click(function () {
                       </tr>`
         $('#tbodytable').append(markup)
 
+        TotalSevAmt();
+      
+        $('#Rate').val('');
+      
+        $('#SevicesId').val(0)
      
+        $('#SevicesId').select2()
 
-        //Total_DisAmt();
+        //  Total_DisAmt();
         //Total_Saletex();
         //Total_Amount();
 
@@ -500,5 +569,222 @@ $('#tbodytable').delegate('.btn_delete', 'click', function () {
 
     ///lstif
     $(this).closest('tr').remove();
+    TotalSevAmt();
+})
+
+function TotalSevAmt() {
+    var sum = 0;
+
+
+    let TotalAmount = 0;
+    $('.Rate').each(function () {
+        TotalAmount += parseFloat($(this).val()) || 0;
+    })
+    $('#ServicesAmt').val(TotalAmount);
+    $('#CashAmt').val(TotalAmount);
+    $('#DisAmt ').val(0);
+    $('#BalanceAmt').val(0);
+
+
+
+
+}
+
+
+
+
+$('#DisAmt,#CashAmt,#BalanceAmt').change (function () {
+
+
+
+    debugger;
+
+    const ServicesAmt = $('#ServicesAmt').val() || 0;
+    const DisAmt = $('#DisAmt').val() || 0;
+    const CashAmt = $('#CashAmt').val() || 0;
+  //  const BalanceAmt = $('#BalanceAmt').val() || 0;
+
+    //var row = $(this).closest("tr");
+    //var qty = parseFloat(row.find(".Qtyfield").val() || 0);
+    //var price = parseFloat(row.find(".Pricefield").val() || 0);
+    //var Discount = parseFloat(row.find(".Discountfield").val() || 0);
+
+    var totalAmt = ServicesAmt - DisAmt - CashAmt ;
+    //var Sumtotal = total - Discount;
+
+    $('#BalanceAmt').val(parseFloat(totalAmt).toFixed(2));
+
+    //row.find(".OrderAmtfield").val(isNaN(total) ? "" : total);
+    //row.find(".Amountfield").val(isNaN(Sumtotal) ? "" : Sumtotal);
+
+
+    //calculateDebitSumAmount();
+    //calculateCrditSumAmount();
+
+
+
 
 })
+
+
+
+
+
+
+
+$('.SaveBtn').on('click', function () {
+    var PaymentM = $('#PaymentM').val();
+
+
+
+
+    var check = false;
+
+
+
+
+    if (PaymentM == 0 || PaymentM == null) {
+
+
+        ErrorAlert("Enter Payment Mode");
+        check = true;
+
+    }
+
+    if (PanelId == 0 || PanelId == null) {
+
+
+        ErrorAlert("Enter Panel    Name");
+        check = true;
+
+    }
+
+   
+
+
+
+
+    if (!check) {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        var ReceiptMaster = [], ReceiptDetail = [];
+
+
+
+        ReceiptMaster = {
+            ReceiptId: $('#ReceiptId').val(),
+            ReceiptNo: $('#ReceiptNo').val(),
+            RefNo: $('#RefNo').val(),
+            RefNo: $('#RefNo').val(),
+            DocId: parseInt($('#DocId option:selected').val()),
+            MrId: $('#MrId').val(),
+            MrNo: $('#MrNo').val(),
+            PatientName: $('#PatientName').val(),
+            PaymentM: parseInt($('#PaymentM option:selected').val()),
+            PanelId: parseInt($('#PanelId option:selected').val()),
+            CategoryId: parseInt($('#CategoryId option:selected').val()),
+          
+
+
+
+            DateOfBirth: $('#DateOfBirth').val(),
+            age: $('#age').val(),
+            ServicesAmt: $('#ServicesAmt').val(),
+            DisAmt: $('#DisAmt').val(),
+            CashAmt: $('#CashAmt').val(),
+            BalanceAmt: $('#BalanceAmt').val(),
+            age: $('#age').val(),
+
+
+
+            
+
+
+
+
+
+            //  StudentN: parseInt($('#StudentN option:selected').val()),
+
+
+        }
+
+
+        $('#tbodytable tr').each(function () {
+
+            ReceiptDetail.push({
+
+
+
+                ReceiptId: $('#ReceiptId').val(),
+                ServicesId: parseInt($(this).find(".ServicesId").val()),
+                Rate: parseFloat($(this).find(".Rate").val()),
+                CategoryId: parseInt($('#CategoryId option:selected').val()),
+
+              
+
+
+
+
+            });
+
+
+
+        });
+      
+
+
+
+
+        console.log(ReceiptMaster);
+        console.log(ReceiptDetail);
+
+
+
+        debugger;
+
+        var ReceiptId = $('#ReceiptId').val();
+
+        if (ReceiptId > 0) {
+
+            debugger;
+            GetJSONRequest('/Transaction/ReceiptMaster/UpdateReceiptMaster', 'POST', { ReceiptMaster, ReceiptDetail }, function (data) {
+                SuccessAlert("Data Saved");
+                $('.closeBtn').trigger('click');
+            });
+        }
+        else {
+
+            debugger;
+
+
+            GetJSONRequest('/Transaction/ReceiptMaster/SaveReceiptMaster', 'POST', { ReceiptMaster, ReceiptDetail }, function (data) {
+                SuccessAlert("Data Saved");
+                $('.closeBtn').trigger('click');
+
+
+
+            });
+        }
+
+
+
+    }
+
+
+
+
+
+});

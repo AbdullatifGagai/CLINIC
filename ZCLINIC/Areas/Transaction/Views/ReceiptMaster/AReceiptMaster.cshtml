@@ -124,15 +124,15 @@
                 @{
 
                     var Status = new List<(int Id, string Name)>();
-                   
+
                     Status.Add((Id: 1, Name: "Cash"));
                     Status.Add((Id: 2, Name: "Credit"));
-                  
+
 
 
 
                 }
-                @Html.DropDownList("LeaveF", Status.Select(p => new SelectListItem() { Text = p.Name, Value = p.Id.ToString() }), new { @class = "form-control", data_style = "btn-default btn-xs", tabindex = '4', data_search = "true", data_width = "100%" })
+                @Html.DropDownList("PaymentM", Status.Select(p => new SelectListItem() { Text = p.Name, Value = p.Id.ToString() }), new { @class = "form-control", data_style = "btn-default btn-xs", tabindex = '4', data_search = "true", data_width = "100%" })
 
             </div>
 
@@ -240,10 +240,10 @@
 
 
                     <th class="col-md-6">
-                        <select class="form-control combo-box" id="SevicesId" type=2 name="ModelId"></select>
+                        <select class="form-control   combo-box" id="SevicesId" type=2 name="ModelId"></select>
 
                     </th>
-                    <th class="col-md-2"><input type="text" class="form-control Rate TxtBox" , id="Rate" readonly /></th>
+                    <th class="col-md-2"><input type="text" class="form-control TxtBox" , id="Rate" readonly /></th>
 
                     <th class="col-lg-1"><a class="icon-add text-primary" id="AddItemBtn"></a></th>
                 </tr>
@@ -253,6 +253,21 @@
 
 
             <tbody id="tbodytable">
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
             </tbody>
 
 
@@ -319,18 +334,14 @@
 
 
     </div>
+    <fieldset>
+        <legend style="border-bottom:1px solid grey" class="text-bold"></legend>
+
+        <div class="row">
 
 
 
-    <div class="row">
-
-
-
-        <div class="form-group form-group-xs col-md-12">
-
-
-
-
+            <div class="form-group form-group-xs col-md-12">
 
 
 
@@ -342,47 +353,55 @@
 
 
 
-            <div class="form-group form-group-xs col-md-2">
-                <label>Services Amt<b class="wysiwyg-color-red"></b></label>
-                @Html.TextBoxFor(m => m.ServicesAmt, new { @class = "form-control", type = "text", @readonly = "readonly" })
+
+
+
+
+                <div class="form-group form-group-xs col-md-2">
+                    <label>Services Amt<b class="wysiwyg-color-red"></b></label>
+                    @Html.TextBoxFor(m => m.ServicesAmt, new { @class = "form-control", type = "text", @readonly = "readonly" })
+
+                </div>
+
+                <div class="form-group form-group-xs col-md-2">
+                    <label>Discount Amt<b class="wysiwyg-color-red"></b></label>
+                    @Html.TextBoxFor(m => m.DisAmt, new { @class = "form-control", type = "text" })
+
+                </div>
+
+
+
+                <div class="form-group form-group-xs col-md-2">
+                    <label>Cash Amt<b class="wysiwyg-color-red"></b></label>
+                    @Html.TextBoxFor(m => m.CashAmt, new { @class = "form-control", type = "text" })
+
+                </div>
+                <div class="form-group form-group-xs col-md-2">
+                    <label>Balance  Amt<b class="wysiwyg-color-red"></b></label>
+                    @Html.TextBoxFor(m => m.BalanceAmt, new { @class = "form-control", type = "text", @readonly = "readonly" })
+
+                </div>
+
+
+
+
 
             </div>
-
-            <div class="form-group form-group-xs col-md-2">
-                <label>Discount Amt<b class="wysiwyg-color-red"></b></label>
-                @Html.TextBoxFor(m => m.DisAmt, new { @class = "form-control", type = "text" })
-
-            </div>
-
-
-
-            <div class="form-group form-group-xs col-md-2">
-                <label>Cash Amt<b class="wysiwyg-color-red"></b></label>
-                @Html.TextBoxFor(m => m.CashAmt, new { @class = "form-control", type = "text"})
-
-            </div>
-            <div class="form-group form-group-xs col-md-2">
-                <label>Balance  Amt<b class="wysiwyg-color-red"></b></label>
-                @Html.TextBoxFor(m => m.BalanceAmt, new { @class = "form-control", type = "text", @readonly = "readonly" })
-
-            </div>
-
-
-
-
-
         </div>
-    </div>
 
-
+    </fieldset>
 
 
     <div class="modal-footer mt-10 no-padding no-border">
 
 
 
-        <button type="button" class="btn btn-danger btn-xs" data-dismiss="modal"><i class="icon-cross"></i>Close</button>
-        <button type="button" data-submit="true" class="btn btn-primary  btn-xs"><i class="icon-floppy-disk position-left"></i>Save</button>
+        <a data-url="/Transaction/ReceiptMaster" data-script="#" class="btn btn-danger btn-xs  closeBtn" data-dismiss="modal"><i class="icon-cross"></i>Close</a>
+
+
+
+
+        <button type="button" data-submit="" class="btn btn-primary  btn-xs  SaveBtn"><i class="icon-floppy-disk position-left"></i>Save</button>
         @* <button type="button" data-submit="" class="btn btn-primary btn-xs SaveBtn"><i class="icon-floppy-disk position-left"></i>Save</button>*@
 
     </div>
