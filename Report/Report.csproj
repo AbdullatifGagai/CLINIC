@@ -171,6 +171,7 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <EmbeddedResource Include="Reports\AccountLedger.rdlc" />
+    <EmbeddedResource Include="Reports\Receipt.rdlc" />
     <EmbeddedResource Include="Reports\BankReceiptVoucher.rdlc" />
     <EmbeddedResource Include="Reports\CashPaymentVoucher.rdlc" />
     <EmbeddedResource Include="Reports\CashReceiptVoucher.rdlc" />

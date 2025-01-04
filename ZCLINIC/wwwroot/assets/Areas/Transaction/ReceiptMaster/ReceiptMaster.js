@@ -107,6 +107,300 @@ function  ReceiptDetail(id) {
 }
 
 
+
+
+
+function  ReceiptDetail(id) {
+
+
+
+    GetJSONRequest('/Transaction/ReceiptDetail/ReceiptDetailGetAll', 'GET', { id }, data => {
+
+
+        debugger;
+        let i = 0;
+
+
+        if (data && data.length > 0) {
+            $('#tbodytable').empty();
+            for (const item of data) {
+                i++;
+                const markup = `
+               <tr>
+
+
+                                <td>
+                                         <input type="hidden" class="form-control ServicesId" readonly value="${item.ServicesId}" />
+                                         <input type="text" class="form-control ServicesName"  readonly value="${item.ServicesName}" />
+                                </td>
+                                
+                                
+                                    <td><input type="text" class="form-control Rate" readonly value="${item.Rate}" /></td>
+
+                                    <td><a id=""><i class="icon-trash btn_delete text-danger-600"></i></a>
+
+
+
+                 </tr>`;
+
+                $('#tbodytable').append(markup);
+                //calculateAdmAmt()
+                //calculateAnnAmt()
+                //calculateMonthlyAmt()
+                //calculateDisTotalAmt()
+                //calculateTotalAmt()
+
+            }
+
+
+            debugger;
+
+            // console.log(data);
+            ///   DropDown2Initializers();
+            //    $('#Supcode').val(data[0].Supcode).change();
+
+            //$('#Remarks').val(data[0].Remarks);
+            //$('#ItemId').val(data[0].ItemId).change();
+            //$('#Category').val(data[0].Category).change();
+            //	$('#ReqDate').val(data[0].ReqDate);
+
+
+
+            return;
+        }
+        ErrorAlert('No Purchase Receive Found');
+    })
+
+}
+
+
+
+
+
+
+
+
+
+
+
+function ReceiptDetail(id) {
+
+
+
+    GetJSONRequest('/Transaction/ReceiptDetail/ReceiptDetailGetAll', 'GET', { id }, data => {
+
+
+        debugger;
+        let i = 0;
+
+
+        if (data && data.length > 0) {
+            $('#tbodytable').empty();
+            for (const item of data) {
+                i++;
+                const markup = `
+               <tr>
+
+
+                                <td>
+                                         <input type="hidden" class="form-control ServicesId" readonly value="${item.ServicesId}" />
+                                         <input type="text" class="form-control ServicesName"  readonly value="${item.ServicesName}" />
+                                </td>
+                                
+                                
+                                    <td><input type="text" class="form-control Rate" readonly value="${item.Rate}" /></td>
+
+                                    <td><a id=""><i class="icon-trash btn_delete text-danger-600"></i></a>
+
+
+
+                 </tr>`;
+
+                $('#tbodytable').append(markup);
+                //calculateAdmAmt()
+                //calculateAnnAmt()
+                //calculateMonthlyAmt()
+                //calculateDisTotalAmt()
+                //calculateTotalAmt()
+
+            }
+
+
+            debugger;
+
+            // console.log(data);
+            ///   DropDown2Initializers();
+            //    $('#Supcode').val(data[0].Supcode).change();
+
+            //$('#Remarks').val(data[0].Remarks);
+            //$('#ItemId').val(data[0].ItemId).change();
+            //$('#Category').val(data[0].Category).change();
+            //	$('#ReqDate').val(data[0].ReqDate);
+
+
+
+            return;
+        }
+        ErrorAlert('No Purchase Receive Found');
+    })
+
+}
+
+
+function ReceiptRefno(Id) {
+
+
+
+    GetJSONRequest('/Transaction/ReceiptMaster/Transaction_ReceiptMasterGetRefNO', 'GET', { Id }, data => {
+
+
+        debugger;
+        let i = 0;
+
+
+        if (data && data.length > 0) {
+            $('#tbodytable').empty();
+            for (const item of data) {
+                i++;
+                const markup = `
+               <tr>
+
+
+                                <td>
+                                         <input type="hidden" class="form-control ServicesId" readonly value="${item.ServicesId}" />
+                                         <input type="text" class="form-control ServicesName"  readonly value="${item.ServicesName}" />
+                                </td>
+                                
+                                
+                                    <td><input type="text" class="form-control Rate" readonly value="${item.Rate}" /></td>
+
+                                
+
+
+                 </tr>`;
+
+                $('#tbodytable').append(markup);
+                //calculateAdmAmt()
+                //calculateAnnAmt()
+                //calculateMonthlyAmt()
+                //calculateDisTotalAmt()
+                //calculateTotalAmt()
+
+            }
+
+
+            debugger;
+
+            // console.log(data);
+            ///   DropDown2Initializers();
+            //    $('#Supcode').val(data[0].Supcode).change();
+
+            $('#DocId').val(data[0].DocId);
+
+
+
+            $('#DocId').val(data[0].DocId).change();
+            $('#MrId').val(data[0].MrId);
+            $('#MrNo').val(data[0].MrNo);
+            $('#PatientName').val(data[0].PatientName);
+            $('#PanelId').val(data[0].PanelId);
+            $('#CategoryId').val(data[0].CategoryId).change();
+            $('#DateOfBirth').val(data[0].DateOfBirth);
+            $('#age').val(data[0].age);
+            $('#ServicesAmt').val(data[0].ServicesAmt);
+            $('#DisAmt').val(data[0].DisAmt);
+            $('#BalanceAmt').val(data[0].BalanceAmt);
+            $('#CashAmt').val(data[0].CashAmt);
+
+
+
+
+
+
+
+
+            $('#CategoryId').attr('disabled', 'true')
+
+            $('#DocId').attr('disabled', 'true');
+            $('#MrId').attr('disabled', 'true');
+            $('#MrNo').attr('disabled', 'true');
+            $('#PatientName').attr('disabled', 'true');
+            $('#PanelId').attr('disabled', 'true');
+            $('#CategoryId').attr('disabled', 'true');
+            $('#DateOfBirth').attr('disabled', 'true');
+            $('#age').attr('disabled', 'true');
+            $('#ServicesAmt').attr('disabled', 'true');
+            $('#DisAmt').attr('disabled', 'true');
+            $('#BalanceAmt').attr('disabled', 'true');
+            $('#CashAmt').attr('disabled', 'true');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            //$('#ItemId').val(data[0].ItemId).change();
+            //$('#Category').val(data[0].Category).change();
+            //	$('#ReqDate').val(data[0].ReqDate);
+
+
+
+            return;
+        }
+        ErrorAlert('No Record Found');
+    })
+
+}
+
+
+
+
+
+$('#RefNo').keyup(function (e) {
+    if (e.keyCode == 13) {
+
+
+
+
+        var Id = $('#RefNo').val();
+
+
+        ReceiptRefno(Id);
+       
+
+
+
+
+
+
+
+
+
+
+
+    }
+});
+
+
+
+
+
+
+
+
 $('#PatientName').keyup(function (e) {
     if (e.keyCode == 13) {
 

@@ -75,7 +75,8 @@
                         <th>Receipt Date</th>
                         <th>MR No</th>
                         <th>Patient Name</th>
-                        <th>Services Amt</th>
+                        <th>Cash</th>
+                        <th>Shift</th>
                         
                         
                         
@@ -97,7 +98,8 @@
                             <td>@s.ReceiptDate</td>
                             <td>@s.MrNo</td>
                             <td>@s.PatientName</td>
-                            <td>@s.ServicesAmt</td>
+                            <td>@s.CashAmt</td>
+                            <td>@s.Shift</td>
 
 
                             
@@ -119,7 +121,7 @@
 
                                     @if (Print)
                                     {
-                                        <li class="text-primary-600"><a data-toggle="tooltip" title="Report" href="/Report/Reportrdlc/AReport?rvalues.Name=20&rvalues.Value[0]=@s.ReceiptId&rvalues.Value[1]=@a&rvalues.Value[2]=@a&rvalues.Value[3]=@a&rvalues.Value[4]=@a&rvalues.Value[5]=@a&rvalues.Value[6]=@a" data-heading="CPD Form" target="_blank"><i class="icon-printer"></i></a></li>
+                                        <li class="text-primary-600"><a data-toggle="tooltip" title="Report" href="/Report/Reportrdlc/AReport?rvalues.Name=49&rvalues.Value[0]=@s.ReceiptId&rvalues.Value[1]=@a&rvalues.Value[2]=@a&rvalues.Value[3]=@a&rvalues.Value[4]=@a&rvalues.Value[5]=@a&rvalues.Value[6]=@a" data-heading="CPD Form" target="_blank"><i class="icon-printer"></i></a></li>
                                     }
 
 

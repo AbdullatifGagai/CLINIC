@@ -36,5 +36,17 @@ namespace ZCLINIC.Areas.Transaction.Controllers
         {
             return new ReceiptMasterApiController().ReceiptMasterDelete(id, HttpContext.Session.GetBValues(), HttpContext.GetIP(), HttpContext.GetCInfo());
         }
+ 
+        [HttpGet]
+        public List<ReceiptMaster> Transaction_ReceiptMasterGetRefNO(string  id)
+        {
+            return new ReceiptMaster().Transaction_ReceiptMasterGetRefNO(id, HttpContext.Session.GetBValues(), HttpContext.GetIP(), HttpContext.GetCInfo());
+        }
+ 
+    
+    
+    
+    
+    
     }
 }
