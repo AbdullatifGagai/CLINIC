@@ -26,7 +26,7 @@
   },
   "targets": {
     ".NETCoreApp,Version=v2.1": {
-      "SMSERP/1.0.0": {
+      "CLINIC/1.0.0": {
         "dependencies": {
           "AspNetCore.Reporting": "2.1.0",
           "ClientInfo": "1.0.0",
@@ -54,10 +54,10 @@
           "DatabaseTVP_Core": "1.0.0.0"
         },
         "runtime": {
-          "SMSERP.dll": {}
+          "CLINIC.dll": {}
         },
         "compile": {
-          "SMSERP.dll": {}
+          "CLINIC.dll": {}
         }
       },
       "AspNetCore.Reporting/2.1.0": {
@@ -4088,7 +4088,7 @@
     }
   },
   "libraries": {
-    "SMSERP/1.0.0": {
+    "CLINIC/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

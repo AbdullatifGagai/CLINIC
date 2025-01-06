@@ -1,0 +1,244 @@
+﻿
+@using ZCLINIC
+<div class="page-header page-header-default">
+    <div class="breadcrumb-line">
+        <h5 class="text-semibold">Level Wise Student List</h5>
+    </div>
+</div>
+
+@{
+    string a = string.Empty;
+}
+
+
+
+<div class="content">
+    <div class="panel panel-flat">
+        <div class="panel-body">
+
+
+
+
+
+
+            <div class="row">
+
+
+                <div class="form-group form-group-xs col-md-12">
+
+                    <div class="form-group form-group-xs col-md-2">
+                        <label>From  Date<b class="wysiwyg-color-red"></b></label>
+                        <input type="date" class="form-control" id="FromDate" />
+
+                    </div>
+
+
+
+
+                    <div class="form-group form-group-xs col-md-2">
+                        <label>To Date<b class="wysiwyg-color-red"></b></label>
+                        <input type="date" class="form-control" id="ToDate" />
+
+                    </div>
+
+
+
+
+
+
+
+                </div>
+
+
+
+
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <div class="row">
+
+
+                <div class="form-group form-group-xs col-md-12">
+
+
+
+
+                    <div class="form-group form-group-xs col-md-6">
+                        <label>Level<b class="wysiwyg-color-red"></b></label>
+                        <div>
+                            @{
+                                List<ZCLINIC.Areas.Master.Models.Levels> Levels = new ZCLINIC.Areas.Master.Models.Levels().Master_LevelsGetAll(Context.Session.GetBValues(), Context.GetIP(), Context.GetCInfo());
+                                Levels.Insert(0, new ZCLINIC.Areas.Master.Models.Levels { LId = 0, LevelName = "ALL" });
+
+                            }
+                            @Html.DropDownList("LId", Levels.Select(p => new SelectListItem() { Text = p.LevelName, Value = p.LId.ToString() }), new { @class = "form-control", data_style = "btn-default btn-xs", tabindex = '4', data_search = "true", data_width = "100%" })
+
+                        </div>
+                    </div>
+
+                    <div class="form-group form-group-xs col-md-2">
+                        <label>Status<b class="wysiwyg-color-red"></b></label>
+                        @{
+
+                            var Status = new List<(int Id, string Name)>();
+                            Status.Add((Id: 0, Name: "All"));
+                            Status.Add((Id: 1, Name: "Present"));
+                            Status.Add((Id: 2, Name: "Left"));
+
+
+
+                        }
+                        @Html.DropDownList("LeaveF", Status.Select(p => new SelectListItem() { Text = p.Name, Value = p.Id.ToString() }), new { @class = "form-control", data_style = "btn-default btn-xs", tabindex = '4', data_search = "true", data_width = "100%" })
+
+                    </div>
+
+
+
+
+                    <div class="form-group form-group-xs col-md-2">
+                        <label>Shift<b class="wysiwyg-color-red"></b></label>
+                        @{
+
+                            var shift = new List<(int Id, string Name)>();
+                            shift.Add((Id: 0, Name: "All"));
+                            shift.Add((Id: 1, Name: "MOR"));
+                            shift.Add((Id: 2, Name: "EVE"));
+
+
+                        }
+                        @Html.DropDownList("Shift", shift.Select(p => new SelectListItem() { Text = p.Name, Value = p.Name.ToString() }), new { @class = "form-control", data_style = "btn-default btn-xs", tabindex = '4', data_search = "true", data_width = "100%" })
+
+                    </div>
+
+
+
+
+
+
+
+
+
+                </div>
+
+
+
+
+
+
+
+
+
+            </div>
+
+            <div class="row">
+
+
+                <div class="form-group form-group-xs col-md-6">
+
+                    <div class="form-group form-group-xs col-md-4">
+                        <a id="SPrint" class="btn btn-primary btn-xs"><i class="position-left"></i>Generate Report</a>
+
+
+
+                    </div>
+
+
+                    <div class="form-group form-group-xs col-md-4">
+                        <a id="SeatPrint" class="btn btn-primary btn-xs"><i class="position-left"></i>Generate Report With  Seats </a>
+
+
+
+                    </div>
+
+
+
+
+
+
+                </div>
+
+
+
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+<script>
+
+
+
+
+document.getElementById('FromDate').valueAsDate = new Date();
+document.getElementById('ToDate').valueAsDate = new Date();
+
+
+    $('#SPrint').click(function (e) {
+
+
+
+        var Date = 'Form Date: ' + moment($("#FromDate").val()).format('DD/MM/YYYY') +
+            ' Up to Date: ' + moment($("#ToDate").val()).format('DD/MM/YYYY');
+
+
+
+
+
+
+
+        var value = `/Report/Reportrdlc/AReport?rvalues.Name=39&rvalues.Value[0]=${$('#LId').val()}&rvalues.Value[1]=${$('#LeaveF').val()}&rvalues.Value[2]=${$('#Shift').val()}&rvalues.Value[3]=''&rvalues.Value[4]=''&rvalues.Value[5]=''&rvalues.Value[6]=''`
+        $(this).attr('href', value)
+        $(this).attr('target', "_blank")
+
+
+
+
+    })
+
+
+
+    $('#SeatPrint').click(function (e) {
+
+
+
+        var Date = 'Form Date: ' + moment($("#FromDate").val()).format('DD/MM/YYYY') +
+            ' Up to Date: ' + moment($("#ToDate").val()).format('DD/MM/YYYY');
+
+
+
+
+
+
+
+        var value = `/Report/Reportrdlc/AReport?rvalues.Name=41&rvalues.Value[0]=${$('#LId').val()}&rvalues.Value[1]=${$('#LeaveF').val()}&rvalues.Value[2]=${$('#Shift').val()}&rvalues.Value[3]=''&rvalues.Value[4]=''&rvalues.Value[5]=''&rvalues.Value[6]=''`
+        $(this).attr('href', value)
+        $(this).attr('target', "_blank")
+
+
+
+
+    })
+
+
+
+
+
+
+
+
+</script>
+

@@ -115,7 +115,14 @@ namespace ZCLINIC.Areas.Report.Controllers
 
 
         
-           public IActionResult PanelWiseDetail()
+         public IActionResult PanelWiseDetail()
+        {
+            return View();
+        }
+
+
+
+          public IActionResult DailyCollectionReport()
         {
             return View();
         }

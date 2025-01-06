@@ -30,6 +30,15 @@ namespace ZCLINIC.Areas.Transaction.APIControllers
             return ((Appointment)objList[0]).Transaction_AppointmentUpdate((BValues)objList[1], ip, cInfo);
         }
 
+          [HttpPost]
+        public string UpdateGetReceiptId(List<object> objList, string ip, string cInfo)
+        {
+            return ((Appointment)objList[0]).UpdateGetReceiptId((BValues)objList[1], ip, cInfo);
+        }
+
+
+
+
         [HttpPost]
         public string AppointmentDelete(int id, BValues bv, string ip, string cInfo)
         {

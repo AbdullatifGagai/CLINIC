@@ -1,0 +1,214 @@
+﻿
+
+
+
+@using ZCLINIC
+@model ZCLINIC.Areas.Transaction.Models.Appointment
+
+@{
+    string URL = Model == null ? "" : "/Transaction/Appointment/UpdateGetReceiptId";
+    int counter = 0;
+}
+
+<style>
+    /*Remove Arrows/Spinners from type number*/
+    /* Chrome, Safari, Edge, Opera */
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+
+    /* Firefox */
+    input[type=number] {
+        -moz-appearance: textfield;
+    }
+</style>
+
+<form method="post" data-url="@URL" data-rurl="/Transaction/Appointment" data-display="Appointment">
+
+
+
+    @Html.HiddenFor(m => m.AppomentId)
+    <div class="row">
+
+
+
+        <div class="form-group form-group-xs col-md-12">
+
+            <div class="form-group form-group-xs col-md-2">
+                <label>Appoment Id<b class="wysiwyg-color-red"></b></label>
+                @Html.TextBoxFor(m => m.AppomentCode, new { @class = "form-control", type = "text", @readonly = "readonly" })
+
+            </div>
+
+            <div class="form-group form-group-xs col-md-3">
+                <label>Appoment Date<b class="wysiwyg-color-red"></b></label>
+                @Html.TextBoxFor(m => m.AppomentDate, new { @class = "form-control", type = "date" })
+
+            </div>
+
+
+            <div class="form-group form-group-xs col-md-5">
+                <label>Doctor Name<b class="wysiwyg-color-red"></b></label>
+                @{
+                    List<ZCLINIC.Areas.Master.Models.Doctor> Doctor = new ZCLINIC.Areas.Master.Models.Doctor().Master_DoctorGetAll(Context.Session.GetBValues(), Context.GetIP(), Context.GetCInfo());
+
+                }
+                @Html.DropDownList("DocId", Doctor.Select(s => new SelectListItem() { Text = s.DoctorName, Value = s.DocId.ToString() }), new { @class = "form-control " })
+
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+    </div>
+
+
+
+
+
+
+    <div class="row">
+
+
+
+        <div class="form-group form-group-xs col-md-12">
+
+
+            <div class="form-group form-group-xs col-md-2">
+                <label>Mr Id<b class="wysiwyg-color-red"></b></label>
+                @Html.TextBoxFor(m => m.MrId, new { @class = "form-control", type = "text", @readonly = "readonly" })
+
+            </div>
+
+
+
+            <div class="form-group form-group-xs col-md-2">
+                <label>Mr No<b class="wysiwyg-color-red"></b></label>
+                @Html.TextBoxFor(m => m.MrNo, new { @class = "form-control", type = "text", @readonly = "readonly" })
+
+            </div>
+            <div class="form-group form-group-xs col-md-6">
+                <label>Patient Name<b class="wysiwyg-color-red"></b></label>
+                @Html.TextBoxFor(m => m.PatientName, new { @class = "form-control", type = "text", @readonly = "readonly" })
+
+            </div>
+
+
+
+
+
+            <div class="form-group form-group-xs col-md-2">
+                <label>Amount<b class="wysiwyg-color-red"></b></label>
+                @Html.TextBoxFor(m => m.Amount, new { @class = "form-control", type = "text", @readonly = "readonly" })
+
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+    </div>
+
+
+
+
+    <div class="row">
+
+
+
+        <div class="form-group form-group-xs col-md-12">
+
+            <div class="form-group form-group-xs col-md-2">
+                <label>Receipt No<b class="wysiwyg-color-red"></b></label>
+                @Html.TextBoxFor(m => m.ReceiptId, new { @class = "form-control", type = "text", @readonly = "readonly" })
+
+            </div>
+
+
+
+            <div class="form-group form-group-xs col-md-4">
+                <label>Payment Id<b class="wysiwyg-color-red"></b></label>
+                @{
+
+                    var Status = new List<(int Id, string Name)>();
+
+                    Status.Add((Id: 1, Name: "Cash"));
+                    Status.Add((Id: 2, Name: "Credit"));
+
+
+
+
+                }
+                @Html.DropDownList("PaymentM", Status.Select(p => new SelectListItem() { Text = p.Name, Value = p.Id.ToString() }), new { @class = "form-control", data_style = "btn-default btn-xs", tabindex = '4', data_search = "true", data_width = "100%" })
+
+            </div>
+
+
+            <div class="form-group form-group-xs col-md-4">
+                <label>Panel  Name<b class="wysiwyg-color-red"></b></label>
+                @{
+                    List<ZCLINIC.Areas.Master.Models.Panel> Panel = new ZCLINIC.Areas.Master.Models.Panel().Master_PanelGetAll(Context.Session.GetBValues(), Context.GetIP(), Context.GetCInfo());
+
+                }
+                @Html.DropDownList("PanelId", Panel.Select(s => new SelectListItem() { Text = s.PName, Value = s.PId.ToString() }), new { @class = "form-control " })
+
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="modal-footer mt-10 no-padding no-border">
+
+
+
+        <button type="button" class="btn btn-danger btn-xs" data-dismiss="modal"><i class="icon-cross"></i>Close</button>
+        <button type="button" data-submit="true" class="btn btn-primary  btn-xs"><i class="icon-floppy-disk position-left"></i>Save</button>
+        @* <button type="button" data-submit="" class="btn btn-primary btn-xs SaveBtn"><i class="icon-floppy-disk position-left"></i>Save</button>*@
+
+    </div>
+
+
+</form>
+
+<script>
+
+
+
+ 
+
+</script>

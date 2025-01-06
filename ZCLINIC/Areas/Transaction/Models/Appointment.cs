@@ -88,7 +88,14 @@ namespace ZCLINIC.Areas.Transaction.Models
         public string  Cellno { get; set; }
 
 
+        public int PaymentM { get; set; }
 
+
+        public int PanelId { get; set; }
+
+
+
+        public string ReceiptNo { get; set; }
 
         //View only properties
         public string ReturnMessage { get; set; }
@@ -136,6 +143,42 @@ namespace ZCLINIC.Areas.Transaction.Models
                 return ex.Message;
             }
         }
+
+
+
+        public string UpdateGetReceiptId(BValues bv, string ip, string cInfo)
+        {
+            var parameters = new { x = this,PaymentM,PanelId };
+
+            try
+            {
+                TenantId = bv.TenantId; AppId = bv.AppId; ModifiedBy = bv.UserId;
+
+                string message = DataBase.ExecuteQuery<Appointment>(parameters, Connection.GetConnection()).FirstOrDefault().ReturnMessage;
+
+                Loging.DB_Log(eLogType.Log_Posetive, "", parameters, "", MODULE, Connection.GetLogConnection(), cInfo, ip, bv.UserId);
+
+                return message;
+            }
+            catch (Exception ex)
+            {
+                Loging.DB_Log(eLogType.Log_Negative, ex.Message, parameters, "", MODULE, Connection.GetLogConnection(), cInfo, ip, bv.UserId);
+
+                return ex.Message;
+            }
+        }
+
+
+
+
+
+
+
+
+
+
+
+
 
         public Appointment Transaction_AppointmentGetById(int id, BValues bv, string ip, string cInfo)
         {

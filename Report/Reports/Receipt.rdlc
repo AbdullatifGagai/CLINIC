@@ -236,7 +236,6 @@
                                   <Style>
                                     <FontFamily>arial</FontFamily>
                                     <FontSize>7pt</FontSize>
-                                    <FontWeight>Bold</FontWeight>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
