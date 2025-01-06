@@ -36,20 +36,32 @@ namespace ZCLINIC.Areas.Transaction.Controllers
         {
             return new AppointmentApiController().AppointmentDelete(id, HttpContext.Session.GetBValues(), HttpContext.GetIP(), HttpContext.GetCInfo());
         }
-    
-    
-       
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
+
+        public IActionResult AAppointmentReceiptId(int id = 0)
+        {
+            return View(new Appointment().Transaction_AppointmentGetById(id, HttpContext.Session.GetBValues(), HttpContext.GetIP(), HttpContext.GetCInfo()));
+        }
+
+
+
+
+
+
+        [HttpPost]
+        public string UpdateGetReceiptId(Appointment model)
+        {
+            return new AppointmentApiController().UpdateGetReceiptId(new List<object>() { model, HttpContext.Session.GetBValues() }, HttpContext.GetIP(), HttpContext.GetCInfo());
+        }
+
+
+
+
+
+
+
+
+
+
     }
 }
