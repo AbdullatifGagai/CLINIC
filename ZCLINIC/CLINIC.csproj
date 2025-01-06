@@ -109,8 +109,12 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Include="wwwroot\assets\Areas\Transaction\ReceiptMaster\ReceiptMaster.js" />
-    <None Include="wwwroot\assets\Areas\Transaction\Appointment\Appointment.js" />
+    <None Include="wwwroot\assets\Areas\Transaction\ReceiptMaster\ReceiptMaster.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="wwwroot\assets\Areas\Transaction\Appointment\Appointment.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="wwwroot\assets\Areas\Transaction\InstallmentVoucher\InstallmentVoucher.js" />
   </ItemGroup>
 
@@ -124,6 +128,18 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>DataReport.xsd</DependentUpon>
     </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Update="wwwroot\assets\Areas\Transaction\Appointment\Index.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="wwwroot\assets\Areas\Transaction\ReceiptMaster\Index.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="wwwroot\assets\Areas\Transaction\ReceiptPanelMaster\ReceiptPanelMaster.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
 
   <ItemGroup>
