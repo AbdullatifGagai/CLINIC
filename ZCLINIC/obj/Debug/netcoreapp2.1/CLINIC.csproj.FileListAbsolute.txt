@@ -442,3 +442,4 @@ C:\Users\Administrator\Documents\GitHub\CLINIC\ZCLINIC\bin\Debug\netcoreapp2.1\w
 C:\Users\Administrator\Documents\GitHub\CLINIC\ZCLINIC\bin\Debug\netcoreapp2.1\wwwroot\assets\Areas\Transaction\ReceiptPanelMaster\ReceiptPanelMaster.js
 C:\Users\Administrator\Documents\GitHub\CLINIC\ZCLINIC\bin\Debug\netcoreapp2.1\wwwroot\assets\Areas\Transaction\ReceiptMaster\ReceiptMaster.js
 C:\Users\Administrator\Documents\GitHub\CLINIC\ZCLINIC\bin\Debug\netcoreapp2.1\wwwroot\assets\Areas\Transaction\Appointment\Appointment.js
+C:\Users\Administrator\Documents\GitHub\CLINIC\ZCLINIC\obj\Debug\netcoreapp2.1\Razor\Areas\Report\Views\ReportDetail\DailyCollectionReport.cshtml.g.cs
