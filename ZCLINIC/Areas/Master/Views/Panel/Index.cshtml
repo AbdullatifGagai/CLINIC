@@ -90,6 +90,17 @@
                                             <a data-modalhorizontal="true" data-modalsize="modal-sm" data-heading="Edit Panel" data-script="#" data-url="/Master/Panel/APanel?Id=@s.PId "><i class="icon-pencil7"></i></a>
                                         </li>
                                     }
+                                  
+                                    @if (editview)
+                                    {
+                                        <li class="text-primary-600">
+
+                                            <a data-modalhorizontal="true" data-modalsize="modal-lg" data-heading="Edit Panel Rate" data-script="#" data-url="/Master/Panel/PanelRateAdd?Id=@s.PId "><i class="icon-pencil7" ></i></a>
+                                        </li>
+                                    }
+                                  
+                                    
+                                    
                                     @if (delete)
                                     {
                                         <li class="text-danger-600"><a onclick="DeleteAlert({ 'Id':@s.PId}, '/Master/Panel/DeletePanel', 'Panel')"><i class="icon-trash"></i></a></li>

@@ -19,6 +19,31 @@ namespace ZCLINIC.Areas.Master.Controllers
             return View(new PanelApiController().PanelGetById(id, HttpContext.Session.GetBValues(), HttpContext.GetIP(), HttpContext.GetCInfo()));
         }
 
+        
+        
+        public IActionResult PanelRateAdd(int id = 0)
+        {
+            return View(new PanelRate().Master_PanelRateGetById(id, HttpContext.Session.GetBValues(), HttpContext.GetIP(), HttpContext.GetCInfo()));
+        }
+
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         [HttpPost]
         public string SavePanel(Panel model)
         {
@@ -35,6 +60,23 @@ namespace ZCLINIC.Areas.Master.Controllers
         public string DeletePanel(int id)
         {
             return new PanelApiController().PanelDelete(id, HttpContext.Session.GetBValues(), HttpContext.GetIP(), HttpContext.GetCInfo());
+    
+        
         }
+   
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     }
 }
