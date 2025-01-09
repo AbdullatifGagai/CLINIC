@@ -8,10 +8,10 @@ namespace ZCLINIC.Areas.Transaction.APIControllers
     [ApiController]
     public class AppointmentController : Controller
     {
-        public List<Appointment> AppointmentGetAll(BValues bv, string ip, string cInfo)
-        {
-            return new Appointment().Transaction_AppointmentGetAll(bv, ip, cInfo);
-        }
+        //public List<Appointment> AppointmentGetAll(BValues bv, string ip, string cInfo)
+        //{
+        //    return new Appointment().Transaction_AppointmentGetAll(bv, ip, cInfo);
+        //}
 
         public Appointment AppointmentGetById(int id, BValues bv, string ip, string cInfo)
         {

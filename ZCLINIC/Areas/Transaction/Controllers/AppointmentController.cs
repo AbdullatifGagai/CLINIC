@@ -2,6 +2,8 @@ using ZCLINIC.Areas.Transaction.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
 using AppointmentApiController = ZCLINIC.Areas.Transaction.APIControllers.AppointmentController;
+using System.Linq;
+using System;
 
 namespace ZCLINIC.Areas.Transaction.Controllers
 {
@@ -10,7 +12,7 @@ namespace ZCLINIC.Areas.Transaction.Controllers
     {
         public IActionResult Index()
         {
-            return View(new AppointmentApiController().AppointmentGetAll(HttpContext.Session.GetBValues(), HttpContext.GetIP(), HttpContext.GetCInfo()));
+            return View();
         }
 
         // create/edit view for Appointment
@@ -60,6 +62,14 @@ namespace ZCLINIC.Areas.Transaction.Controllers
 
 
 
+        public JsonResult Transaction_AppointmentGetAll()
+        {
+
+            List<Appointment> data = new Appointment().Transaction_AppointmentGetAll(HttpContext.Session.GetBValues(), HttpContext.GetIP(), HttpContext.GetCInfo(), Convert.ToInt32(Request.Form["length"]), Convert.ToInt32(Request.Form["start"]), Request.Form["search[value]"].ToString(), Convert.ToInt32(Request.Form["Status"]));
+            var a = data.FirstOrDefault();
+            int TotalRecords = a != null ? a.TotalCount : 0;
+            return Json(new { data, recordsFiltered = TotalRecords, recordsTotal = data.Count, draw = Convert.ToInt32(Request.Form["draw"]) });
+        }
 
 
 

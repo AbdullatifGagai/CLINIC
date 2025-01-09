@@ -128,6 +128,9 @@ namespace ZCLINIC.Areas.Transaction.Models
 
         public int TotalCount { get; set; }
 
+
+
+        public string Cellno { get; set; }
         //View only properties
         public string ReturnMessage { get; set; }
 

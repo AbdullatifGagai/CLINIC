@@ -96,6 +96,8 @@ namespace ZCLINIC.Areas.Transaction.Models
 
 
         public string ReceiptNo { get; set; }
+        public int TotalCount { get; set; }
+
 
         //View only properties
         public string ReturnMessage { get; set; }
@@ -200,9 +202,17 @@ namespace ZCLINIC.Areas.Transaction.Models
             }
         }
 
-        public List<Appointment> Transaction_AppointmentGetAll(BValues bv, string ip, string cInfo)
+
+
+
+
+        public List<Appointment> Transaction_AppointmentGetAll(BValues bv, string ip, string cInfo, int length, int offset, string searchtext, int status)
         {
-            var parameters = new { bv.UserId, bv.TenantId, bv.AppId };
+
+
+            var parameters = new { bv.UserId, bv.TenantId, bv.AppId, offset, length, searchtext, status };
+
+
 
             try
             {
@@ -219,6 +229,10 @@ namespace ZCLINIC.Areas.Transaction.Models
                 return null;
             }
         }
+
+
+
+    
 
         public DataTable Transaction_AppointmentGetAllTable(BValues bv, string ip, string cInfo)
         {

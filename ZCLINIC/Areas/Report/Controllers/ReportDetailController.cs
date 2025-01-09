@@ -132,6 +132,16 @@ namespace ZCLINIC.Areas.Report.Controllers
 
 
 
+          public IActionResult CollectionDetail()
+        {
+            return View();
+        }
+
+
+
+
+
+
 
 
 

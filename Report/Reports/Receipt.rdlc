@@ -221,7 +221,7 @@
                   </TablixCells>
                 </TablixRow>
                 <TablixRow>
-                  <Height>0.67067cm</Height>
+                  <Height>0.9088cm</Height>
                   <TablixCells>
                     <TablixCell>
                       <CellContents>
@@ -633,7 +633,7 @@
             <DataSetName>GetReportMasterReceipt</DataSetName>
             <Top>0.25706cm</Top>
             <Left>0.09525cm</Left>
-            <Height>3.67067cm</Height>
+            <Height>3.90879cm</Height>
             <Width>6.79814cm</Width>
             <Style>
               <Border>
@@ -748,7 +748,7 @@
                     <TextRun>
                       <Value>=Parameters!prmCompanyName.Value</Value>
                       <Style>
-                        <FontSize>8pt</FontSize>
+                        <FontSize>12pt</FontSize>
                         <FontWeight>Bold</FontWeight>
                       </Style>
                     </TextRun>
@@ -757,9 +757,9 @@
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>prmCompanyName</rd:DefaultName>
-              <Top>0.44662cm</Top>
-              <Left>0.03175cm</Left>
-              <Height>0.6cm</Height>
+              <Top>0.22437cm</Top>
+              <Left>0.09474cm</Left>
+              <Height>0.7179cm</Height>
               <Width>6.79814cm</Width>
               <Style>
                 <Border>
@@ -789,7 +789,7 @@
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>prmComAdd</rd:DefaultName>
-              <Top>1.14335cm</Top>
+              <Top>1.0481cm</Top>
               <Left>0.03175cm</Left>
               <Height>0.6cm</Height>
               <Width>6.79814cm</Width>
@@ -822,7 +822,7 @@
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>prmComPhone</rd:DefaultName>
-              <Top>1.80416cm</Top>
+              <Top>1.70891cm</Top>
               <Left>0.03637cm</Left>
               <Height>0.6cm</Height>
               <Width>6.79814cm</Width>
@@ -855,9 +855,9 @@
               </Paragraphs>
               <rd:DefaultName>PatientName</rd:DefaultName>
               <Top>4.56112cm</Top>
-              <Left>2.35206cm</Left>
+              <Left>2.4967cm</Left>
               <Height>0.6cm</Height>
-              <Width>4.47452cm</Width>
+              <Width>4.32988cm</Width>
               <ZIndex>3</ZIndex>
               <Style>
                 <Border>
@@ -887,9 +887,9 @@
               </Paragraphs>
               <rd:DefaultName>ReceiptNo</rd:DefaultName>
               <Top>2.54527cm</Top>
-              <Left>2.35536cm</Left>
+              <Left>2.5cm</Left>
               <Height>0.6cm</Height>
-              <Width>4.47452cm</Width>
+              <Width>4.32988cm</Width>
               <ZIndex>4</ZIndex>
               <Style>
                 <Border>
@@ -908,7 +908,7 @@
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value>Receipt No</Value>
+                      <Value>Receipt No :</Value>
                       <Style>
                         <FontSize>8pt</FontSize>
                         <FontWeight>Bold</FontWeight>
@@ -922,7 +922,7 @@
               <Top>2.52327cm</Top>
               <Left>0.15875cm</Left>
               <Height>0.57447cm</Height>
-              <Width>2.0555cm</Width>
+              <Width>2.30244cm</Width>
               <ZIndex>5</ZIndex>
               <Style>
                 <Border>
@@ -941,7 +941,7 @@
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value>Patient Name </Value>
+                      <Value>Patient Name :</Value>
                       <Style>
                         <FontSize>8pt</FontSize>
                         <FontWeight>Bold</FontWeight>
@@ -955,7 +955,7 @@
               <Top>4.55471cm</Top>
               <Left>0.11363cm</Left>
               <Height>0.57447cm</Height>
-              <Width>2.0555cm</Width>
+              <Width>2.30244cm</Width>
               <ZIndex>6</ZIndex>
               <Style>
                 <Border>
@@ -974,7 +974,7 @@
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value>S/O,D/O,W/O </Value>
+                      <Value>S/O,D/O,W/O :</Value>
                       <Style>
                         <FontSize>8pt</FontSize>
                         <FontWeight>Bold</FontWeight>
@@ -988,7 +988,7 @@
               <Top>5.2611cm</Top>
               <Left>0.11363cm</Left>
               <Height>0.50391cm</Height>
-              <Width>2.0555cm</Width>
+              <Width>2.30244cm</Width>
               <ZIndex>7</ZIndex>
               <Style>
                 <Border>
@@ -1021,9 +1021,9 @@
               </Paragraphs>
               <rd:DefaultName>ReceiptNo</rd:DefaultName>
               <Top>3.89056cm</Top>
-              <Left>2.35536cm</Left>
+              <Left>2.5cm</Left>
               <Height>0.6cm</Height>
-              <Width>4.47453cm</Width>
+              <Width>4.32989cm</Width>
               <ZIndex>8</ZIndex>
               <Style>
                 <Border>
@@ -1042,7 +1042,7 @@
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value>Receipt Date</Value>
+                      <Value>Receipt Date :</Value>
                       <Style>
                         <FontSize>8pt</FontSize>
                         <FontWeight>Bold</FontWeight>
@@ -1056,7 +1056,7 @@
               <Top>3.91089cm</Top>
               <Left>0.14868cm</Left>
               <Height>0.57447cm</Height>
-              <Width>2.02375cm</Width>
+              <Width>2.27069cm</Width>
               <ZIndex>9</ZIndex>
               <Style>
                 <Border>
@@ -1075,7 +1075,7 @@
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value>Mr. No</Value>
+                      <Value>Mr. No :</Value>
                       <Style>
                         <FontSize>8pt</FontSize>
                         <FontWeight>Bold</FontWeight>
@@ -1089,7 +1089,7 @@
               <Top>3.26355cm</Top>
               <Left>0.15875cm</Left>
               <Height>0.54151cm</Height>
-              <Width>2.01037cm</Width>
+              <Width>2.25731cm</Width>
               <ZIndex>10</ZIndex>
               <Style>
                 <Border>
@@ -1119,9 +1119,9 @@
               </Paragraphs>
               <rd:DefaultName>ReceiptNo</rd:DefaultName>
               <Top>3.26791cm</Top>
-              <Left>2.35536cm</Left>
+              <Left>2.5cm</Left>
               <Height>0.6cm</Height>
-              <Width>4.44578cm</Width>
+              <Width>4.30114cm</Width>
               <ZIndex>11</ZIndex>
               <Style>
                 <Border>
@@ -1151,9 +1151,9 @@
               </Paragraphs>
               <rd:DefaultName>PatientName</rd:DefaultName>
               <Top>5.22462cm</Top>
-              <Left>2.32824cm</Left>
+              <Left>2.47288cm</Left>
               <Height>0.6cm</Height>
-              <Width>4.47452cm</Width>
+              <Width>4.32988cm</Width>
               <ZIndex>12</ZIndex>
               <Style>
                 <Border>
@@ -1183,9 +1183,9 @@
               </Paragraphs>
               <rd:DefaultName>PatientName</rd:DefaultName>
               <Top>6.62023cm</Top>
-              <Left>2.32662cm</Left>
+              <Left>2.47126cm</Left>
               <Height>0.6cm</Height>
-              <Width>4.47452cm</Width>
+              <Width>4.32988cm</Width>
               <ZIndex>13</ZIndex>
               <Style>
                 <Border>
@@ -1204,7 +1204,7 @@
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value>Doctor Name </Value>
+                      <Value>Doctor Name  :</Value>
                       <Style>
                         <FontSize>8pt</FontSize>
                         <FontWeight>Bold</FontWeight>
@@ -1218,7 +1218,7 @@
               <Top>6.65198cm</Top>
               <Left>0.13354cm</Left>
               <Height>0.50391cm</Height>
-              <Width>2.0555cm</Width>
+              <Width>2.30244cm</Width>
               <ZIndex>14</ZIndex>
               <Style>
                 <Border>
@@ -1248,9 +1248,9 @@
               </Paragraphs>
               <rd:DefaultName>PatientName</rd:DefaultName>
               <Top>5.91439cm</Top>
-              <Left>2.32662cm</Left>
+              <Left>2.47126cm</Left>
               <Height>0.6cm</Height>
-              <Width>4.47452cm</Width>
+              <Width>4.32988cm</Width>
               <ZIndex>15</ZIndex>
               <Style>
                 <Border>
@@ -1269,7 +1269,7 @@
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value>Gender</Value>
+                      <Value>Gender :</Value>
                       <Style>
                         <FontSize>8pt</FontSize>
                         <FontWeight>Bold</FontWeight>
@@ -1283,7 +1283,7 @@
               <Top>5.97168cm</Top>
               <Left>0.09474cm</Left>
               <Height>0.50391cm</Height>
-              <Width>2.0555cm</Width>
+              <Width>2.30244cm</Width>
               <ZIndex>16</ZIndex>
               <Style>
                 <Border>

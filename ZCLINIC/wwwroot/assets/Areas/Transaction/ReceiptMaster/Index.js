@@ -75,6 +75,7 @@ $(document).ready(() => {
             { "data": "PatientName", "autoWidth": true },
             { "data": "CashAmt", "autoWidth": true },
             { "data": "Shift", "autoWidth": true },
+            { "data": "Cellno", "autoWidth": true },
             //{ "data": "VOUCHER_NO", "autoWidth": true },
 
 
