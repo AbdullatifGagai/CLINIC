@@ -1,6 +1,6 @@
 ﻿
 
-
+debugger;
 
 
 $(document).ready(() => {
@@ -55,8 +55,8 @@ $(document).ready(() => {
         "serverSide": true,
         "filter": true,
         "ajax": {
-     
-            "url": "/Transaction/InstallmentVoucher/Transaction_InstallmentVoucherGetAll",
+
+            "url": "/Transaction/ReceiptMaster/Transaction_ReceiptGetAll",
             "type": "POST",
             "datatype": "json",
             "data": function (d) { d.Status = $('#StatusFilter option:selected').val() }
@@ -69,13 +69,14 @@ $(document).ready(() => {
         }],
         "columns": [
 
-            { "data": "InsCode", "autoWidth": true },
-            { "data": "InsDate", "autoWidth": true },
-            { "data": "Grno", "autoWidth": true },
-            { "data": "Name", "autoWidth": true },
-            { "data": "IntMonth", "autoWidth": true },
-            { "data": "IntAmt", "autoWidth": true },
-            
+            { "data": "ReceiptNo", "autoWidth": true },
+            { "data": "ReceiptDate", "autoWidth": true },
+            { "data": "MrNo", "autoWidth": true },
+            { "data": "PatientName", "autoWidth": true },
+            { "data": "CashAmt", "autoWidth": true },
+            { "data": "Shift", "autoWidth": true },
+            { "data": "Cellno", "autoWidth": true },
+            //{ "data": "VOUCHER_NO", "autoWidth": true },
 
 
 
@@ -92,7 +93,7 @@ $(document).ready(() => {
             //{ "data": "Name", "autoWidth": true },
             //{ "data": "ReceiptDate", "autoWidth": true },
             //{ "data": "Amt", "autoWidth": true },
-           
+
 
 
             // { "data": "LevelName", "autoWidth": true },
@@ -126,11 +127,11 @@ $(document).ready(() => {
                 "render": (data, row, full) => {
                     let markup = `<ul class="icons-list">`;
 
-                    
+
 
                     if (deleteview) {
-                        markup += `<li class="text-danger-600"><a onclick="DeleteAlert({ 'Id':${full.InsId}}, '/Transaction/InstallmentVoucher/DeleteInstallmentVoucher', 'Installment Voucher')"><i class="icon-trash"></i></a></li>`
-                           
+                        markup += `<li class="text-danger-600"><a onclick="DeleteAlert({ 'Id':${full.ReceiptId}}, '/Transaction/ReceiptMaster/DeleteReceiptMaster', 'Receipt')"><i class="icon-trash"></i></a></li>`
+
 
 
                     }
@@ -141,16 +142,16 @@ $(document).ready(() => {
 
 
                     if (editview) {
-                        markup += `<li class="text-primary-600"><a data-modalhorizontal="true" data-modalsize="modal-lg" data-heading="Edit Installment Voucher" data-script="/assets/Areas/Transaction/InstallmentVoucher/InstallmentVoucher.js" data-url="/Transaction/InstallmentVoucher/AInstallmentVoucher?Id=${full.InsId}"><i class="icon-pencil7"></i></a></li>`
+                        markup += `<li class="text-primary-600"><a data-modalhorizontal="true" data-modalsize="modal-lg" data-heading="Edit Fees Receipt" data-script="/assets/Areas/Transaction/ReceiptMaster/ReceiptMaster.js" data-url="/Transaction/ReceiptMaster/AReceiptMaster?Id=${full.ReceiptId}"><i class="icon-pencil7"></i></a></li>`
 
-
+                          
 
                     }
 
 
 
                     if (Printview) {
-                        markup += `<li class="text-primary-600"><a id="${full.InsId}"  class="PrintBtn"><i class="icon-printer"></i></a></li>`
+                        markup += `<li class="text-primary-600"><a id="${full.ReceiptId}"  class="PrintBtn"><i class="icon-printer"></i></a></li>`
                     }
 
 
@@ -249,8 +250,8 @@ $('#body').delegate('.PrintBtn', 'click', function () {
     debugger;
     const id = $(this).attr('id');
 
-    var value = `/Report/Reportrdlc/AReport?rvalues.Name=47&rvalues.Value[0]=${id}&rvalues.Value[1]=''&rvalues.Value[2]=''&rvalues.Value[3]=''&rvalues.Value[4]=1&rvalues.Value[5]=''&rvalues.Value[6]=''`
-   
+    var value = `/Report/Reportrdlc/AReport?rvalues.Name=49&rvalues.Value[0]=${id}&rvalues.Value[1]=''&rvalues.Value[2]=''&rvalues.Value[3]=''&rvalues.Value[4]=1&rvalues.Value[5]=''&rvalues.Value[6]=''`
+
 
 
     $(this).attr('href', value)
@@ -262,11 +263,11 @@ $('#body').delegate('.PrintBtn', 'click', function () {
 
 
 
-$('#body').delegate('.smsBtn', 'click', function () {
+//$('#body').delegate('.smsBtn', 'click', function () {
 
-    SmsAlert({ 'AllowId': $(this).attr('id'), 'RId': $(this).attr('Rid'), 'ValdationId': 1 }, '/Transaction/Transaction_Receipt/SendSms', 'Receipt');
+//    SmsAlert({ 'AllowId': $(this).attr('id'), 'RId': $(this).attr('Rid'), 'ValdationId': 1 }, '/Transaction/Transaction_Receipt/SendSms', 'Receipt');
 
-});
+//});
 
 
 
