@@ -154,7 +154,7 @@ namespace ZCLINIC.Areas.Transaction.Models
 
             try
             {
-                TenantId = bv.TenantId; AppId = bv.AppId; ModifiedBy = bv.UserId;
+                TenantId = bv.TenantId; AppId = bv.AppId; CreatedBy = bv.UserId;
 
                 string message = DataBase.ExecuteQuery<Appointment>(parameters, Connection.GetConnection()).FirstOrDefault().ReturnMessage;
 
