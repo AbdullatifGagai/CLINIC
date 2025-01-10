@@ -625,13 +625,14 @@ $('tbody.ChaDetails').delegate(".VoucherNO", "click", function () {
 
 $('#CategoryId').change(function () {
     let Id = parseInt($('#CategoryId').val());
+    let PId = parseInt($('#PanelId').val());
 
     //debugger;
 
-    $('#CategoryId').val(Id)
+   
 
 
-    GetJSONRequest('/Master/ClinicServices/Master_ClinicServicesGetServicesName', 'GET', { Id }, data => {
+    GetJSONRequest('/Master/ClinicServices/Master_ClinicServicesGetServicesName', 'GET', { Id, PId }, data => {
 
         if (data && data.length > 0) {
             $('#SevicesId').empty();
@@ -670,13 +671,13 @@ $('#CategoryId').change(function () {
 
 $('#SevicesId').change(function () {
     let Id = parseInt($('#SevicesId').val());
-
+    let PId = parseInt($('#PanelId').val());
     //debugger;
 
     $('#SevicesId').val(Id)
 
 
-    GetJSONRequest('/Master/ClinicServices/Master_ClinicServicesGetIdServices', 'GET', { Id }, data => {
+    GetJSONRequest('/Master/ClinicServices/Master_ClinicServicesGetIdServices', 'GET', { Id, PId }, data => {
 
         if (data && data.length > 0) {
             
@@ -930,6 +931,10 @@ $('#DisAmt,#CashAmt,#BalanceAmt').change (function () {
 
 $('.SaveBtn').on('click', function () {
     var PaymentM = $('#PaymentM').val();
+    var MrId = $('#MrId').val();
+    var MrNo = $('#MrNo').val();
+    var PatientName = $('#PatientName').val();
+    var age = $('#age').val();
 
 
 
@@ -947,14 +952,16 @@ $('.SaveBtn').on('click', function () {
 
     }
 
-    if (PanelId == 0 || PanelId == null) {
+    if (MrId ==  '' || MrNo == '' || PatientName == '', age == '') {
 
 
-        ErrorAlert("Enter Panel    Name");
+        ErrorAlert("Miss Value");
         check = true;
 
     }
 
+   
+   
    
 
 

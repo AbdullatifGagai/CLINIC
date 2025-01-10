@@ -2,6 +2,8 @@ using ZCLINIC.Areas.Transaction.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
 using ReceiptMasterApiController = ZCLINIC.Areas.Transaction.APIControllers.ReceiptMasterController;
+using System.Linq;
+using System;
 
 namespace ZCLINIC.Areas.Transaction.Controllers
 {
@@ -10,7 +12,7 @@ namespace ZCLINIC.Areas.Transaction.Controllers
     {
         public IActionResult Index()
         {
-            return View(new ReceiptMasterApiController().ReceiptMasterGetAll(HttpContext.Session.GetBValues(), HttpContext.GetIP(), HttpContext.GetCInfo()));
+            return View();
         }
 
         // create/edit view for ReceiptMaster
@@ -42,11 +44,20 @@ namespace ZCLINIC.Areas.Transaction.Controllers
         {
             return new ReceiptMaster().Transaction_ReceiptMasterGetRefNO(id, HttpContext.Session.GetBValues(), HttpContext.GetIP(), HttpContext.GetCInfo());
         }
- 
-    
-    
-    
-    
-    
+
+
+
+
+        public JsonResult Transaction_ReceiptGetAll()
+        {
+
+            List<ReceiptMaster> data = new ReceiptMaster().Transaction_ReceiptMasterGetAll(HttpContext.Session.GetBValues(), HttpContext.GetIP(), HttpContext.GetCInfo(), Convert.ToInt32(Request.Form["length"]), Convert.ToInt32(Request.Form["start"]), Request.Form["search[value]"].ToString(), Convert.ToInt32(Request.Form["Status"]));
+            var a = data.FirstOrDefault();
+            int TotalRecords = a != null ? a.TotalCount : 0;
+            return Json(new { data, recordsFiltered = TotalRecords, recordsTotal = data.Count, draw = Convert.ToInt32(Request.Form["draw"]) });
+        }
+
+
+
     }
 }

@@ -67,7 +67,7 @@
                 </div>
             </div>
 
-            <table class="table table-xxs table-md datatable-basic table-bordered table-striped table-hover bg-lightgray dataTables_scrollBody">
+            <table class="table table-xxs table-md ServerSidePagination table-bordered table-striped table-hover bg-lightgray dataTables_scrollBody table-responsive">
 
                 <thead>
                     <tr class="bg-blue-800">
@@ -77,9 +77,9 @@
                         <th>Patient Name</th>
                         <th>Cash</th>
                         <th>Shift</th>
-                        
-                        
-                        
+
+
+
 
 
 
@@ -90,51 +90,59 @@
                     </tr>
                 </thead>
                 <tbody>
-                    @foreach (ZCLINIC.Areas.Transaction.Models.ReceiptMaster s in Model)
-                    {
-                        <tr data-rowid="@s.ReceiptId">
-                            
-                            <td>@s.ReceiptNo</td>
-                            <td>@s.ReceiptDate</td>
-                            <td>@s.MrNo</td>
-                            <td>@s.PatientName</td>
-                            <td>@s.CashAmt</td>
-                            <td>@s.Shift</td>
+                    @*@foreach (ZCLINIC.Areas.Transaction.Models.ReceiptMaster s in Model)
+            {
+                <tr data-rowid="@s.ReceiptId">
 
-
-                            
-
-                            <td>
-                                <ul class="icons-list">
-
-                                    @if (editview)
-                                    {
-                                        <li class="text-primary-600"><a data-modalhorizontal="true" data-modalsize="modal-lg" data-heading="Edit Appointment" data-script="/assets/Areas/Transaction/ReceiptMaster/ReceiptMaster.js" data-url="/Transaction/ReceiptMaster/AReceiptMaster?Id=@s.ReceiptId"><i class="icon-pencil7"></i></a></li>
-                                    }
-
-
-                                    @if (delete)
-                                    {
-                                        <li class="text-danger-600"><a onclick="DeleteAlert({ 'Id':@s.ReceiptId}, '/Transaction/ReceiptMaster/DeleteReceiptMaster', 'Receipt')"><i class="icon-trash"></i></a></li>
-                                    }
-
-
-                                    @if (Print)
-                                    {
-                                        <li class="text-primary-600"><a data-toggle="tooltip" title="Report" href="/Report/Reportrdlc/AReport?rvalues.Name=49&rvalues.Value[0]=@s.ReceiptId&rvalues.Value[1]=@a&rvalues.Value[2]=@a&rvalues.Value[3]=@a&rvalues.Value[4]=@a&rvalues.Value[5]=@a&rvalues.Value[6]=@a" data-heading="CPD Form" target="_blank"><i class="icon-printer"></i></a></li>
-                                    }
+                    <td>@s.ReceiptNo</td>
+                    <td>@s.ReceiptDate</td>
+                    <td>@s.MrNo</td>
+                    <td>@s.PatientName</td>
+                    <td>@s.CashAmt</td>
+                    <td>@s.Shift</td>
 
 
 
 
+                    <td>
+                        <ul class="icons-list">
+
+                            @if (editview)
+                            {
+                                <li class="text-primary-600"><a data-modalhorizontal="true" data-modalsize="modal-lg" data-heading="Edit Appointment" data-script="/assets/Areas/Transaction/ReceiptMaster/ReceiptMaster.js" data-url="/Transaction/ReceiptMaster/AReceiptMaster?Id=@s.ReceiptId"><i class="icon-pencil7"></i></a></li>
+                            }
 
 
-                                </ul>
-                            </td>
-                        </tr>
-                    }
+                            @if (delete)
+                            {
+                                <li class="text-danger-600"><a onclick="DeleteAlert({ 'Id':@s.ReceiptId}, '/Transaction/ReceiptMaster/DeleteReceiptMaster', 'Receipt')"><i class="icon-trash"></i></a></li>
+                            }
+
+
+                            @if (Print)
+                            {
+                                <li class="text-primary-600"><a data-toggle="tooltip" title="Report" href="/Report/Reportrdlc/AReport?rvalues.Name=49&rvalues.Value[0]=@s.ReceiptId&rvalues.Value[1]=@a&rvalues.Value[2]=@a&rvalues.Value[3]=@a&rvalues.Value[4]=@a&rvalues.Value[5]=@a&rvalues.Value[6]=@a" data-heading="CPD Form" target="_blank"><i class="icon-printer"></i></a></li>
+                            }
+
+
+
+
+
+
+                        </ul>
+                    </td>
+                </tr>
+            }*@
                 </tbody>
             </table>
         </div>
     </div>
 </div>
+<script>
+
+    @*var addNew = @Html.Raw(Json.Serialize(addview));*@
+    var editview = @Html.Raw(Json.Serialize(editview));
+    var deleteview = @Html.Raw(Json.Serialize(delete));
+    var Printview = @Html.Raw(Json.Serialize(Print));
+
+</script>

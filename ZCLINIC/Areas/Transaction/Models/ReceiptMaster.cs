@@ -124,6 +124,10 @@ namespace ZCLINIC.Areas.Transaction.Models
         [TVP]
         public int ModifiedBy { get; set; }
 
+
+
+        public int TotalCount { get; set; }
+
         //View only properties
         public string ReturnMessage { get; set; }
 
@@ -211,9 +215,33 @@ namespace ZCLINIC.Areas.Transaction.Models
             }
         }
 
-        public List<ReceiptMaster> Transaction_ReceiptMasterGetAll(BValues bv, string ip, string cInfo)
+        //public List<ReceiptMaster> Transaction_ReceiptMasterGetAll(BValues bv, string ip, string cInfo)
+        //{
+        //    var parameters = new { bv.UserId, bv.TenantId, bv.AppId };
+
+        //    try
+        //    {
+        //        List<ReceiptMaster> records = DataBase.ExecuteQuery<ReceiptMaster>(parameters, Connection.GetConnection());
+
+        //        Loging.DB_Log(eLogType.Log_Posetive, "", parameters, "", MODULE, Connection.GetLogConnection(), cInfo, ip, bv.UserId);
+
+        //        return records;
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        Loging.DB_Log(eLogType.Log_Negative, ex.Message, parameters, "", MODULE, Connection.GetLogConnection(), cInfo, ip, bv.UserId);
+
+        //        return null;
+        //    }
+        //}
+
+        public List<ReceiptMaster> Transaction_ReceiptMasterGetAll(BValues bv, string ip, string cInfo, int length, int offset, string searchtext, int status)
         {
-            var parameters = new { bv.UserId, bv.TenantId, bv.AppId };
+
+
+            var parameters = new { bv.UserId, bv.TenantId, bv.AppId, offset, length, searchtext, status };
+
+
 
             try
             {
@@ -230,7 +258,6 @@ namespace ZCLINIC.Areas.Transaction.Models
                 return null;
             }
         }
-
 
 
 

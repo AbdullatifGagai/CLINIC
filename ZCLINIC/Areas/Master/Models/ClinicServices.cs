@@ -135,9 +135,9 @@ namespace ZCLINIC.Areas.Master.Models
 
 
 
-         public List<ClinicServices> Master_ClinicServicesGetServicesName(int Id, BValues bv, string ip, string cInfo)
+         public List<ClinicServices> Master_ClinicServicesGetServicesName(int Id,int PId, BValues bv, string ip, string cInfo)
         {
-            var parameters = new { bv.UserId, bv.TenantId, bv.AppId, Id};
+            var parameters = new { bv.UserId, bv.TenantId, bv.AppId, Id,PId};
 
             try
             {
@@ -155,9 +155,9 @@ namespace ZCLINIC.Areas.Master.Models
             }
         }
 
-        public List<ClinicServices> Master_ClinicServicesGetIdServices(int Id, BValues bv, string ip, string cInfo)
+        public List<ClinicServices> Master_ClinicServicesGetIdServices(int Id, int PId,BValues bv, string ip, string cInfo)
         {
-            var parameters = new { bv.UserId, bv.TenantId, bv.AppId, Id};
+            var parameters = new { bv.UserId, bv.TenantId, bv.AppId, Id,PId};
 
             try
             {

@@ -38,15 +38,15 @@ namespace ZCLINIC.Areas.Master.Controllers
         }
     
         [HttpGet]
-        public List<ClinicServices> Master_ClinicServicesGetServicesName(int Id)
+        public List<ClinicServices> Master_ClinicServicesGetServicesName(int Id,int  PId)
         {
-            return new ClinicServices().Master_ClinicServicesGetServicesName(Id, HttpContext.Session.GetBValues(), HttpContext.GetIP(), HttpContext.GetCInfo());
+            return new ClinicServices().Master_ClinicServicesGetServicesName(Id,PId, HttpContext.Session.GetBValues(), HttpContext.GetIP(), HttpContext.GetCInfo());
         }
     
       [HttpGet]
-        public List<ClinicServices> Master_ClinicServicesGetIdServices(int Id)
+        public List<ClinicServices> Master_ClinicServicesGetIdServices(int Id,int PId)
         {
-            return new ClinicServices().Master_ClinicServicesGetIdServices(Id, HttpContext.Session.GetBValues(), HttpContext.GetIP(), HttpContext.GetCInfo());
+            return new ClinicServices().Master_ClinicServicesGetIdServices(Id,PId ,HttpContext.Session.GetBValues(), HttpContext.GetIP(), HttpContext.GetCInfo());
         }
     
     
