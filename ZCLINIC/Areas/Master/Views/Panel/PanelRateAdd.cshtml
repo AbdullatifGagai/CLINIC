@@ -65,7 +65,7 @@
                     <tr>
                         <th class="col-lg-4">
                             <select id="ServicesId" class="form-control bootstrap-select" data-style="btn-default btn-xs" data-search="true" data-width="100%">
-                                <option value="0">--Select Product--</option>
+                                <option value="0">--Select Services--</option>
                                 @foreach (var item in ClinicServices)
                                 {
                                     <option value="@item.ServicesId">@item.ServicesName</option>
@@ -187,8 +187,8 @@
 
 
 
-    var classId = $('#classId').val();
-    productDetail(classId);
+    var PanelId = $('#PanelId').val();
+    ServicesDetail(PanelId);
 
 
 
@@ -285,14 +285,26 @@
 
             debugger;
             GetJSONRequest('/Master/PanelRate/SavePanelRate', 'POST', { model }, function (data) {
-                SuccessAlert("Data Saved");
-                //var classId = $('#classId').val();
-                //productDetail(classId);
 
 
-                $('#ServicesId').val('');
-             
+
+                if (data == "OK") {
+                 SuccessAlert("Data Saved");
+                var PanelId = $('#PanelId').val();
+                ServicesDetail(PanelId);
+
+
+                $('#ServicesId').val(0);
+
+                $('#ServicesId').select2();
+
+
                 $('#Rate').val('');
+                }
+                else {
+                    ErrorAlert(data);
+                }
+               
              
               
 
@@ -319,11 +331,11 @@
 
 
 
-    function productDetail(id) {
+    function ServicesDetail(id) {
 
 
 
-        GetJSONRequest('/Master/LevelDetails/GetProductList', 'GET', { id }, data => {
+        GetJSONRequest('/Master/PanelRate/GetAllPanelRate', 'GET', { id }, data => {
 
 
             debugger;
@@ -338,13 +350,9 @@
                     let markup = `<tr>
 
 	
-                     <td><input hidden class="ProductName" readonly value="${item.ProductId}" />${item.ProductName}</td>
-                     <td><input class="Qty form-control" readonly value="${item.Qty}" /></td>
-                     <td><input class="rate form-control" readonly value="${item.rate}" /></td>
-                     <td><input class="DisAmt form-control" readonly value="${item.DisAmt}" /></td>
-                     <td><input class="Amount form-control" readonly value="${item.Amount}" />
-                    <input type="hidden" class="form-control Id" readonly value="${item.Id}">
-
+                     <td><input hidden class="serId" readonly value="${item.serId}" />${item.ServicesName}</td>
+                     <td><input class="Rate form-control" readonly value="${item.Rate}" /></td>
+                     
                     </td>
                     
                     <td><a class="btn_delete text-danger-600"><i class="icon-trash"></i></a></td>
@@ -360,7 +368,7 @@
 
 
                 debugger;
-                CalculateTotalAmount();
+             ///   CalculateTotalAmount();
                 // console.log(data);
                 ///   DropDown2Initializers();
                 //    $('#Supcode').val(data[0].Supcode).change();
@@ -394,13 +402,18 @@
 
 
     $('#tbodytable').delegate('.btn_delete', 'click', function () {
-        const id = parseInt($(this).closest('tr').children().eq(4).find('.Id').val());
+        const SerId = parseInt($(this).closest('tr').children().eq(0).find('.serId').val());
+        const PId = $('#PanelId').val();
 
-        GetJSONRequest('/Master/LevelDetails/DeleteLevelDetails', 'POST', { id }, function (data) {
+
+
+
+        debugger
+        GetJSONRequest('/Master/PanelRate/DeletePanelRate', 'POST', { PId, SerId }, function (data) {
             SuccessAlert("Data Saved");
 
-            var classId = $('#classId').val();
-            productDetail(classId);
+           
+            ServicesDetail(PId);
 
 
 
@@ -418,7 +431,7 @@
         $('#SevicesId').val(Id)
 
 
-        GetJSONRequest('/Master/ClinicServices/Master_ClinicServicesGetIdServices', 'GET', { Id }, data => {
+        GetJSONRequest('/Master/ClinicServices/Master_ClinicServicesGetIdServicesPanel', 'GET', { Id }, data => {
 
             if (data && data.length > 0) {
 

@@ -178,7 +178,7 @@
                 <label>CategoryName<b class="wysiwyg-color-red"></b></label>
                 @{
                     List<ZCLINIC.Areas.Master.Models.ClinicCategory> ClinicCategory = new ZCLINIC.Areas.Master.Models.ClinicCategory().Master_ClinicCategoryGetAll(Context.Session.GetBValues(), Context.GetIP(), Context.GetCInfo());
-
+                    ClinicCategory.Insert(0, new ZCLINIC.Areas.Master.Models.ClinicCategory{ CategoryId = 0, CategoryName = "Select Category Name" });
                 }
                 @Html.DropDownList("CategoryId", ClinicCategory.Select(s => new SelectListItem() { Text = s.CategoryName, Value = s.CategoryId.ToString() }), new { @class = "form-control " })
 

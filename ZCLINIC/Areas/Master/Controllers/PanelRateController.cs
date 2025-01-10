@@ -32,9 +32,18 @@ namespace ZCLINIC.Areas.Master.Controllers
         }
 
         [HttpPost]
-        public string DeletePanelRate(int id)
+        public string DeletePanelRate(int PId,int SerId)
         {
-            return new PanelRateApiController().PanelRateDelete(id, HttpContext.Session.GetBValues(), HttpContext.GetIP(), HttpContext.GetCInfo());
+            return new PanelRate().Master_PanelRateDelete(PId, SerId, HttpContext.Session.GetBValues(), HttpContext.GetIP(), HttpContext.GetCInfo());
         }
+
+        [HttpGet]
+        public List<PanelRate> GetAllPanelRate(int  Id)
+        {
+            return (new PanelRate().GetAllPanelRate(Id,HttpContext.Session.GetBValues(), HttpContext.GetIP(), HttpContext.GetCInfo()));
+        }
+
+
+
     }
 }

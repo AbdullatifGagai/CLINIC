@@ -24,6 +24,11 @@ namespace ZCLINIC.Areas.Master.Models
 
         [TVP]
         public int serId { get; set; }
+
+
+
+
+        
         [TVP]
         public decimal  Rate { get; set; }
         [TVP]
@@ -60,6 +65,10 @@ namespace ZCLINIC.Areas.Master.Models
 
 
         public string   PanelName { get; set; }
+
+
+
+        public string ServicesName { get; set; }
 
         //View only properties
         public string ReturnMessage { get; set; }
@@ -148,6 +157,40 @@ namespace ZCLINIC.Areas.Master.Models
             }
         }
 
+
+         public List<PanelRate> GetAllPanelRate(int Id,BValues bv, string ip, string cInfo)
+        {
+            var parameters = new { bv.UserId, bv.TenantId, bv.AppId,id =Id };
+
+            try
+            {
+                List<PanelRate> records = DataBase.ExecuteQuery<PanelRate>(parameters, Connection.GetConnection());
+
+                Loging.DB_Log(eLogType.Log_Posetive, "", parameters, "", MODULE, Connection.GetLogConnection(), cInfo, ip, bv.UserId);
+
+                return records;
+            }
+            catch (Exception ex)
+            {
+                Loging.DB_Log(eLogType.Log_Negative, ex.Message, parameters, "", MODULE, Connection.GetLogConnection(), cInfo, ip, bv.UserId);
+
+                return null;
+            }
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         public DataTable Master_PanelRateGetAllTable(BValues bv, string ip, string cInfo)
         {
             var parameters = new { bv.UserId, bv.TenantId, bv.AppId };
@@ -168,9 +211,9 @@ namespace ZCLINIC.Areas.Master.Models
             }
         }
 
-        public string Master_PanelRateDelete(int id, BValues bv, string ip, string cInfo)
+        public string Master_PanelRateDelete(int PId,int SerId, BValues bv, string ip, string cInfo)
         {
-            var parameters = new { bv.UserId, bv.TenantId, bv.AppId, Id = id };
+            var parameters = new { bv.UserId, bv.TenantId, bv.AppId, PId = PId,serId = SerId };
 
             try
             {

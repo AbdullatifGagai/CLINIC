@@ -30,10 +30,10 @@ namespace ZCLINIC.Areas.Master.APIControllers
             return ((PanelRate)objList[0]).Master_PanelRateUpdate((BValues)objList[1], ip, cInfo);
         }
 
-        [HttpPost]
-        public string PanelRateDelete(int id, BValues bv, string ip, string cInfo)
-        {
-            return new PanelRate().Master_PanelRateDelete(id, bv, ip, cInfo);
-        }
+        //[HttpPost]
+        //public string PanelRateDelete(int id, BValues bv, string ip, string cInfo)
+        //{
+        //    return new PanelRate().Master_PanelRateDelete(id, bv, ip, cInfo);
+        //}
     }
 }

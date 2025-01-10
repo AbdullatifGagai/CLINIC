@@ -645,6 +645,8 @@ $('#CategoryId').change(function () {
 
 
              $('#CategoryId').attr('disabled', 'true')
+            $('#PanelId').attr('disabled', 'true')
+
             $('#SevicesId').select2()
           
 

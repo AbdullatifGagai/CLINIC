@@ -51,6 +51,14 @@ namespace ZCLINIC.Areas.Master.Controllers
     
     
     
+     [HttpGet]
+        public List<ClinicServices> Master_ClinicServicesGetIdServicesPanel(int Id)
+        {
+            return new ClinicServices().Master_ClinicServicesGetIdServicesPanel(Id, HttpContext.Session.GetBValues(), HttpContext.GetIP(), HttpContext.GetCInfo());
+        }
+    
+    
+    
     
     
     
