@@ -1,113 +1,46 @@
-﻿@using ZCLINIC
+﻿
+
+@using ZCLINIC
 @model ZCLINIC.Areas.Master.Models.PanelRate
 
 @{
     string URL = Model == null ? "/Master/PanelRate/SavePanelRate" : "/Master/PanelRate/UpdatePanelRate";
-    int counter = 0;
+
+    List<ZCLINIC.Areas.Master.Models.ClinicServices> ClinicServices = new ZCLINIC.Areas.Master.Models.ClinicServices().Master_ClinicServicesGetAll(Context.Session.GetBValues(), Context.GetIP(), Context.GetCInfo());
+
+
 }
 
-<style>
-    /*Remove Arrows/Spinners from type number*/
-    /* Chrome, Safari, Edge, Opera */
-    input::-webkit-outer-spin-button,
-    input::-webkit-inner-spin-button {
-        -webkit-appearance: none;
-        margin: 0;
-    }
-
-    /* Firefox */
-    input[type=number] {
-        -moz-appearance: textfield;
-    }
-</style>
-
-<form method="post" data-url="@URL" data-rurl="/Master/PatientReg" data-display="FeeVoucher">
-
-
+<form class="form-horizontal" method="post" id="" data-url="@URL" data-display="Master" data-rurl="/Master/Master_Deparment">
 
     @Html.HiddenFor(m => m.Id)
+
     <div class="row">
 
-
-
-        <div class="form-group form-group-xs col-md-12">
-
-
-
-
-
-
-
-
-
-
-
-
-            <div class="form-group form-group-xs col-md-6">
-                <label>Panel Id<b class="wysiwyg-color-red"></b></label>
-                @Html.TextBoxFor(m => m.PanelId, new { @class = "form-control", type = "text", @readonly = "readonly" })
-
+        <div class="form-group form-group-xs">
+            <label class="control-label col-sm-4">Panel Id<b class="wysiwyg-color-red">*</b></label>
+            <div class="form-group has-feedback col-sm-4">
+                @Html.TextBoxFor(m => m.PanelId, new { @class = "form-control input-group", type = "text", @readonly = "readonly" })
+                <div class="form-control-feedback"><i class=""></i></div>
             </div>
-
-
-
-
-            <div class="form-group form-group-xs col-md-6">
-                <label>Panel Name<b class="wysiwyg-color-red"></b></label>
-                @Html.TextBoxFor(m => m.PanelName, new { @class = "form-control", type = "text", @readonly = "readonly" })
-
-            </div>
-
-
-
-
-
-
-
-            @*<div class="form-group form-group-xs col-md-2">
-                    <label>*<b class="wysiwyg-color-red"></b></label>
-                    @{
-
-                        var Status = new List<(int Id, string Name)>();
-                        Status.Add((Id: 0, Name: "S/O"));
-                        Status.Add((Id: 1, Name: "D/O"));
-                        Status.Add((Id: 2, Name: "W/O"));
-
-
-
-                    }
-                    @Html.DropDownList("LeaveF", Status.Select(p => new SelectListItem() { Text = p.Name, Value = p.Name.ToString() }), new { @class = "form-control", data_style = "btn-default btn-xs", tabindex = '4', data_search = "true", data_width = "100%" })
-
-                </div>*@
-
-
-
-
-
-
-
-
-
-
-
-
         </div>
-    </div>
+
+        <div class="form-group form-group-xs">
+            <label class="control-label col-sm-4">Panel Name <b class="wysiwyg-color-red">*</b></label>
+            <div class="form-group has-feedback col-sm-8">
+                @Html.TextBoxFor(m => m.PanelName, new { @class = "form-control input-group", placeholder = "Panel Name", type = "text", required = "required", @readonly = "readonly" })
+                <div class="form-control-feedback"><i class=""></i></div>
+            </div>
+        </div>
 
 
-    @{
-        List<ZCLINIC.Areas.Master.Models.ClinicServices> ClinicServices = new ZCLINIC.Areas.Master.Models.ClinicServices().Master_ClinicServicesGetAll(Context.Session.GetBValues(), Context.GetIP(), Context.GetCInfo());
-        // Master_SubAccount.Insert(0, new ZCLINIC.Areas.Master.Models.Master_SubAccount { Sub_accountCode = "0", Subacc_Name = "Select Account Name" });
-    }
+        @*@{
+                List<SMSERP.Areas.Master.Models.Master_UnitRegistration> Master_UnitRegistration = new SMSERP.Areas.Master.Models.Master_UnitRegistration().Master_UnitRegistrationGetAll(Context.Session.GetBValues(), Context.GetIP(), Context.GetCInfo());
+                Master_UnitRegistration.Insert(0, new SMSERP.Areas.Master.Models.Master_UnitRegistration { UnitId = 0, UnitName = "Select Unit  Name" });
+            }*@
 
 
 
-
-
-    <div class="clearfix"></div>
-
-
-    <div class="panel-body form-group panel panel-flat mt-5" style="height:322px; width:100%; overflow-y:auto;" id="table-div">
 
 
         <div class="table-responsive container-fluid quotaiontable">
@@ -121,7 +54,7 @@
 
                         <th class="col-lg-3">Services  Name</th>
                         <th class="col-lg-1">Rate</th>
-
+                        
 
                         <th class="col-lg-1">Actions</th>
 
@@ -130,51 +63,56 @@
                     </tr>
 
                     <tr>
-
-
-
-
-
-                        <th class="col-md-5">
-                            @Html.DropDownList("serId", ClinicServices.Select(p => new SelectListItem() { Text = p.ServicesName.ToString(), Value = p.ServicesId.ToString() }), new { @class = "bootstrap-select vatratecal", data_live_search = "true", data_width = "100%" })
+                        <th class="col-lg-4">
+                            <select id="ServicesId" class="form-control bootstrap-select" data-style="btn-default btn-xs" data-search="true" data-width="100%">
+                                <option value="0">--Select Product--</option>
+                                @foreach (var item in ClinicServices)
+                                {
+                                    <option value="@item.ServicesId">@item.ServicesName</option>
+                                }
+                            </select>
 
                         </th>
-                        <th class="col-md-1"><input type="text" class="form-control Ratefield TxtBox" , id="Rate" /></th>
-                       
 
-                        <th class="col-lg-1"><a class="icon-add text-primary" id="AddItemBtn"></a></th>
+
+
+
+
+                        
+
+                        <th><input class="form-control" id="Rate" type="number" /></th>
+
+
+                        
+
+
+                        
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        <td>
+
+                            <a id="btn_add" class="text-primary-600"><i class="icon-add"></i></a>
+
+                        </td>
+
                     </tr>
 
 
                 </thead>
 
 
-                <tbody class="VoucherDetail">
-                    @*@if (Model != null)
-                        {
-                            foreach (var item in Model.FeeVoucherDetail)
-                            {
-                                counter++;
-
-
-                                <tr>
-
-
-
-
-
-
-                                    <td><input type="text" class="form-control Remarksfield" value="@item.GRId"></td>
-
-                                    <td><input type="text" class="form-control Debitfield" value="@item.GrNo"></td>
-                                    <td><input type="text" class="form-control Creditfield" value="@item.MontlyAmt"></td>
-
-
-                                    <td><a id=""><i class="icon-trash removeitem text-danger-600"></i></a></td>
-                                </tr>
-                            }
-                        }*@
-
+                <tbody id="tbodytable">
                 </tbody>
 
 
@@ -187,25 +125,18 @@
 
 
                 @*<tfoot>
-                        <tr>
+                    <tr>
 
-                            <td colspan="2"></td>
-                            <td class="text-right">Total Amount</td>
-                            <td>@Html.TextBoxFor(m => m.AdAmt, new { @class = "form-control", type = "number", @readonly = "readonly" })</td>
+                        <td colspan="3"></td>
+                        <td class="text-right">Total Amount</td>
 
-
-
-                            <td>@Html.TextBoxFor(m => m.AnnAmt, new { @class = "form-control", type = "number", @readonly = "readonly" })</td>
-                            <td>@Html.TextBoxFor(m => m.MontlyAmt, new { @class = "form-control", type = "number", @readonly = "readonly" })</td>
-                            <td>@Html.TextBoxFor(m => m.MDisAmt, new { @class = "form-control", type = "number", @readonly = "readonly" })</td>
-
-                            <td>@Html.TextBoxFor(m => m.TAmount, new { @class = "form-control", type = "number", @readonly = "readonly" })</td>
+                        <td>@Html.TextBoxFor(m => m.TAmt, new { @class = "form-control", type = "number", @readonly = "readonly" })</td>
 
 
 
-                        </tr>
+                    </tr>
 
-                    </tfoot>*@
+                </tfoot>*@
 
 
 
@@ -230,39 +161,261 @@
         </div>
 
 
-    </div>
 
 
 
 
 
-    <div class="modal-footer mt-10 no-padding no-border">
 
 
 
 
-        <button type="button" class="btn btn-danger btn-xs" data-dismiss="modal"><i class="icon-cross"></i>Close</button>
-        <button type="button" data-submit="true" class="btn btn-primary btn-xs"><i class="icon-floppy-disk position-left"></i>Save</button>
-        @* <button type="button" data-submit="" class="btn btn-primary btn-xs SaveBtn"><i class="icon-floppy-disk position-left"></i>Save</button>*@
+
+
+
+
+
+        @*<div class="modal-footer no-padding no-border">
+                <button type="button" class="btn btn-danger btn-xs" data-dismiss="modal"><i class="icon-cross"></i>Close</button>
+                <button type="button" data-submit="true" class="btn btn-primary btn-xs"><i class="icon-floppy-disk position-left"></i>Save</button>
+            </div>*@
 
     </div>
 
 </form>
-
-
-
-
-
 <script>
 
 
 
-    $('#serId').change(function () {
-        let Id = parseInt($('#serId').val());
+    var classId = $('#classId').val();
+    productDetail(classId);
+
+
+
+
+    $('#btn_add').on('click', function () {
+
+        var ServicesId = $('#ServicesId').val();
+        var Rate = $('#Rate').val();
+       
+
+        //var Session_ID = $('#Session_ID').val();
+
+
+        var check = false;
+
+
+
+
+
+
+        if (ServicesId == 0 || ServicesId == null) {
+            ErrorAlert("Enter Service  Name");
+            check = true;
+        }
+
+        if (Rate == null || Rate == 0) {
+            ErrorAlert("Enter Rate");
+            check = true;
+        }
+
+   
+
+
+        if (!check) {
+
+
+            // GetSchoolFee(Supcode, MonthID, Session_ID);
+
+
+
+
+
+
+
+
+
+
+
+
+            var model = []
+
+
+
+            model = {
+                PanelId: $('#PanelId').val(),
+                Id: "0",
+                Code: "0",
+
+                serId: parseInt($('#ServicesId option:selected').val()),
+                Rate: $('#Rate').val(),
+               
+
+
+
+
+
+
+
+
+
+            }
+
+
+
+
+
+
+
+
+            console.log(model);
+            ///console.log(PurchaseDetail);
+
+
+
+
+
+
+
+
+
+
+
+
+
+            debugger;
+            GetJSONRequest('/Master/PanelRate/SavePanelRate', 'POST', { model }, function (data) {
+                SuccessAlert("Data Saved");
+                //var classId = $('#classId').val();
+                //productDetail(classId);
+
+
+                $('#ServicesId').val('');
+             
+                $('#Rate').val('');
+             
+              
+
+
+
+            });
+
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+    });
+
+
+
+    function productDetail(id) {
+
+
+
+        GetJSONRequest('/Master/LevelDetails/GetProductList', 'GET', { id }, data => {
+
+
+            debugger;
+            let i = 0;
+
+
+            $('#tbodytable').empty();
+            if (data && data.length > 0) {
+
+                for (const item of data) {
+                    i++;
+                    let markup = `<tr>
+
+	
+                     <td><input hidden class="ProductName" readonly value="${item.ProductId}" />${item.ProductName}</td>
+                     <td><input class="Qty form-control" readonly value="${item.Qty}" /></td>
+                     <td><input class="rate form-control" readonly value="${item.rate}" /></td>
+                     <td><input class="DisAmt form-control" readonly value="${item.DisAmt}" /></td>
+                     <td><input class="Amount form-control" readonly value="${item.Amount}" />
+                    <input type="hidden" class="form-control Id" readonly value="${item.Id}">
+
+                    </td>
+                    
+                    <td><a class="btn_delete text-danger-600"><i class="icon-trash"></i></a></td>
+
+
+
+			
+                  </tr>`;
+
+                    $('#tbodytable').append(markup);
+
+                }
+
+
+                debugger;
+                CalculateTotalAmount();
+                // console.log(data);
+                ///   DropDown2Initializers();
+                //    $('#Supcode').val(data[0].Supcode).change();
+
+                //$('#Remarks').val(data[0].Remarks);
+                //$('#ItemId').val(data[0].ItemId).change();
+                //$('#Category').val(data[0].Category).change();
+                //	$('#ReqDate').val(data[0].ReqDate);
+
+
+
+                return;
+            }
+            ErrorAlert('No Record Found');
+        })
+
+    }
+
+
+
+    function CalculateTotalAmount() {
+        let TotalAmount = 0;
+        $('.Amount').each(function () {
+            TotalAmount += parseFloat($(this).val());
+        })
+        $('#TAmt').val(TotalAmount);
+    }
+
+
+
+
+
+    $('#tbodytable').delegate('.btn_delete', 'click', function () {
+        const id = parseInt($(this).closest('tr').children().eq(4).find('.Id').val());
+
+        GetJSONRequest('/Master/LevelDetails/DeleteLevelDetails', 'POST', { id }, function (data) {
+            SuccessAlert("Data Saved");
+
+            var classId = $('#classId').val();
+            productDetail(classId);
+
+
+
+        })
+
+
+    })
+
+
+    $('#ServicesId').change(function () {
+        let Id = parseInt($('#ServicesId').val());
 
         //debugger;
 
-        $('#serId').val(Id)
+        $('#SevicesId').val(Id)
 
 
         GetJSONRequest('/Master/ClinicServices/Master_ClinicServicesGetIdServices', 'GET', { Id }, data => {
@@ -292,7 +445,6 @@
 
 
     })
-
 
 
 
