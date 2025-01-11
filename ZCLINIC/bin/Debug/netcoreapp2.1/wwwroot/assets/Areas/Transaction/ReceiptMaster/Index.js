@@ -70,11 +70,11 @@ $(document).ready(() => {
         "columns": [
 
             { "data": "ReceiptNo", "autoWidth": true },
-            //{ "data": "RDate", "autoWidth": true },
-            //{ "data": "GRNo", "autoWidth": true },
-            //{ "data": "Name", "autoWidth": true },
-            //{ "data": "ChaNo", "autoWidth": true },
-            //{ "data": "Amt", "autoWidth": true },
+            { "data": "ReceiptDate", "autoWidth": true },
+            { "data": "MrNo", "autoWidth": true },
+            { "data": "PatientName", "autoWidth": true },
+            { "data": "CashAmt", "autoWidth": true },
+            { "data": "Shift", "autoWidth": true },
             //{ "data": "VOUCHER_NO", "autoWidth": true },
 
 
@@ -141,9 +141,9 @@ $(document).ready(() => {
 
 
                     if (editview) {
-                        markup += `<li class="text-primary-600"><a data-modalhorizontal="true" data-modalsize="modal-lg" data-heading="Edit Fees Receipt" data-script="/assets/Areas/Transaction/Receipt/Receipt.js" data-url="/Transaction/Receipt/AReceipt?Id=${full.ReceiptId}"><i class="icon-pencil7"></i></a></li>`
+                        markup += `<li class="text-primary-600"><a data-modalhorizontal="true" data-modalsize="modal-lg" data-heading="Edit Fees Receipt" data-script="/assets/Areas/Transaction/Receipt/Receipt.js" data-url="/Transaction/ReceiptMaster/AReceiptMaster?Id=${full.ReceiptId}"><i class="icon-pencil7"></i></a></li>`
 
-
+                          
 
                     }
 

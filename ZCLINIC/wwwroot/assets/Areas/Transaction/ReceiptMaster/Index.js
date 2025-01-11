@@ -71,10 +71,10 @@ $(document).ready(() => {
 
             { "data": "ReceiptNo", "autoWidth": true },
             { "data": "ReceiptDate", "autoWidth": true },
-            { "data": "GRNo", "autoWidth": true },
-            { "data": "Name", "autoWidth": true },
-            { "data": "ChaNo", "autoWidth": true },
-            { "data": "Amt", "autoWidth": true },
+            { "data": "MrNo", "autoWidth": true },
+            { "data": "PatientName", "autoWidth": true },
+            { "data": "CashAmt", "autoWidth": true },
+            { "data": "Shift", "autoWidth": true },
             //{ "data": "VOUCHER_NO", "autoWidth": true },
 
 
@@ -129,7 +129,7 @@ $(document).ready(() => {
 
 
                     if (deleteview) {
-                        markup += `<li class="text-danger-600"><a onclick="DeleteAlert({ 'Id':${full.ReceiptId}}, '/Transaction/Receipt/DeleteReceipt', 'Fee Receipt')"><i class="icon-trash"></i></a></li>`
+                        markup += `<li class="text-danger-600"><a onclick="DeleteAlert({ 'Id':${full.ReceiptId}}, '/Transaction/ReceiptMaster/DeleteReceiptMaster', 'Receipt')"><i class="icon-trash"></i></a></li>`
 
 
 
@@ -141,9 +141,9 @@ $(document).ready(() => {
 
 
                     if (editview) {
-                        markup += `<li class="text-primary-600"><a data-modalhorizontal="true" data-modalsize="modal-lg" data-heading="Edit Fees Receipt" data-script="/assets/Areas/Transaction/Receipt/Receipt.js" data-url="/Transaction/Receipt/AReceipt?Id=${full.ReceiptId}"><i class="icon-pencil7"></i></a></li>`
+                        markup += `<li class="text-primary-600"><a data-modalhorizontal="true" data-modalsize="modal-lg" data-heading="Edit Fees Receipt" data-script="/assets/Areas/Transaction/ReceiptMaster/ReceiptMaster.js" data-url="/Transaction/ReceiptMaster/AReceiptMaster?Id=${full.ReceiptId}"><i class="icon-pencil7"></i></a></li>`
 
-
+                          
 
                     }
 
@@ -249,7 +249,7 @@ $('#body').delegate('.PrintBtn', 'click', function () {
     debugger;
     const id = $(this).attr('id');
 
-    var value = `/Report/Reportrdlc/AReport?rvalues.Name=38&rvalues.Value[0]=${id}&rvalues.Value[1]=''&rvalues.Value[2]=''&rvalues.Value[3]=''&rvalues.Value[4]=1&rvalues.Value[5]=''&rvalues.Value[6]=''`
+    var value = `/Report/Reportrdlc/AReport?rvalues.Name=49&rvalues.Value[0]=${id}&rvalues.Value[1]=''&rvalues.Value[2]=''&rvalues.Value[3]=''&rvalues.Value[4]=1&rvalues.Value[5]=''&rvalues.Value[6]=''`
 
 
 
