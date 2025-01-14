@@ -138,6 +138,12 @@ namespace ZCLINIC.Areas.Report.Controllers
         }
 
 
+          public IActionResult DoctorWiseDetail()
+        {
+            return View();
+        }
+
+
 
 
 
