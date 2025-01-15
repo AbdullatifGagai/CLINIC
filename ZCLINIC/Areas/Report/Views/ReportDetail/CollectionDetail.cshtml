@@ -54,7 +54,28 @@
 
 
 
+                    <div class="form-group form-group-xs col-md-4">
+                       
+                        <div class="form-group form-group-xs col-md-4">
+                            <label>Shift Name<b class="wysiwyg-color-red"></b></label>
+                            @{
 
+                                var Status = new List<(int Id, string Name)>();
+
+                                Status.Add((Id: 0, Name: "All"));
+                                Status.Add((Id: 1, Name: "A"));
+                                Status.Add((Id: 2, Name: "B"));
+                                Status.Add((Id: 3, Name: "C"));
+
+
+
+
+                            }
+                            @Html.DropDownList("ShiftN", Status.Select(p => new SelectListItem() { Text = p.Name, Value = p.Name.ToString() }), new { @class = "form-control", data_style = "btn-default btn-xs", tabindex = '4', data_search = "true", data_width = "100%" })
+
+                        </div>
+
+                    </div>
 
 
 
@@ -75,27 +96,7 @@
 
 
 
-                        <div class="form-group form-group-xs col-md-4">
-                            <label>Supplier Name<b class="wysiwyg-color-red"></b></label>
-                            <div class="form-group form-group-xs col-md-4">
-                                <label>Shift Name<b class="wysiwyg-color-red"></b></label>
-                                @{
-
-                                    var Status = new List<(int Id, string Name)>();
-
-                                    Status.Add((Id: 1, Name: "A"));
-                                    Status.Add((Id: 2, Name: "B"));
-                                    Status.Add((Id: 3, Name: "C"));
-
-
-
-
-                                }
-                                @Html.DropDownList("PaymentM", Status.Select(p => new SelectListItem() { Text = p.Name, Value = p.Name.ToString() }), new { @class = "form-control", data_style = "btn-default btn-xs", tabindex = '4', data_search = "true", data_width = "100%" })
-
-                            </div>
-
-                        </div>
+                       
 
                         
 
@@ -163,7 +164,7 @@
         debugger
 
 
-        var value = `/Report/Reportrdlc/AReport?rvalues.Name=50&rvalues.Value[0]=${$('#FromDate').val()}&rvalues.Value[1]=${$('#ToDate').val()}&rvalues.Value[2]=''&rvalues.Value[3]=''&rvalues.Value[4]=''&rvalues.Value[5]=''&rvalues.Value[6]=${Date}`
+        var value = `/Report/Reportrdlc/AReport?rvalues.Name=50&rvalues.Value[0]=${$('#FromDate').val()}&rvalues.Value[1]=${$('#ToDate').val()}&rvalues.Value[2]=${$('#ShiftN').val()}&rvalues.Value[3]=''&rvalues.Value[4]=''&rvalues.Value[5]=''&rvalues.Value[6]=${Date}`
         $(this).attr('href', value)
         $(this).attr('target', "_blank")
 

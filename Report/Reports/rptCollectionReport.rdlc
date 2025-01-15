@@ -161,16 +161,16 @@
             <TablixBody>
               <TablixColumns>
                 <TablixColumn>
-                  <Width>1.79617cm</Width>
+                  <Width>2.07337cm</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1.67349cm</Width>
+                  <Width>1.95069cm</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1.58057cm</Width>
+                  <Width>1.85777cm</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1.71286cm</Width>
+                  <Width>1.99006cm</Width>
                 </TablixColumn>
               </TablixColumns>
               <TablixRows>
@@ -877,7 +877,7 @@
               <TablixMembers>
                 <TablixMember>
                   <TablixHeader>
-                    <Size>2.1409cm</Size>
+                    <Size>1.92597cm</Size>
                     <CellContents>
                       <Textbox Name="Textbox76">
                         <CanGrow>true</CanGrow>
@@ -914,7 +914,7 @@
                   <TablixMembers>
                     <TablixMember>
                       <TablixHeader>
-                        <Size>2.1813cm</Size>
+                        <Size>2.4585cm</Size>
                         <CellContents>
                           <Textbox Name="Textbox91">
                             <CanGrow>true</CanGrow>
@@ -949,7 +949,7 @@
                       <TablixMembers>
                         <TablixMember>
                           <TablixHeader>
-                            <Size>1.25404cm</Size>
+                            <Size>1.53124cm</Size>
                             <CellContents>
                               <Textbox Name="Textbox98">
                                 <CanGrow>true</CanGrow>
@@ -984,7 +984,7 @@
                           <TablixMembers>
                             <TablixMember>
                               <TablixHeader>
-                                <Size>2.32533cm</Size>
+                                <Size>2.60253cm</Size>
                                 <CellContents>
                                   <Textbox Name="Textbox201">
                                     <CanGrow>true</CanGrow>
@@ -1039,7 +1039,7 @@
                     </SortExpression>
                   </SortExpressions>
                   <TablixHeader>
-                    <Size>2.1409cm</Size>
+                    <Size>1.92597cm</Size>
                     <CellContents>
                       <Textbox Name="ReceiptDate1">
                         <CanGrow>true</CanGrow>
@@ -1086,7 +1086,7 @@
                         </SortExpression>
                       </SortExpressions>
                       <TablixHeader>
-                        <Size>2.1813cm</Size>
+                        <Size>2.4585cm</Size>
                         <CellContents>
                           <Textbox Name="USER_NAME">
                             <CanGrow>true</CanGrow>
@@ -1130,7 +1130,7 @@
                             </SortExpression>
                           </SortExpressions>
                           <TablixHeader>
-                            <Size>1.25404cm</Size>
+                            <Size>1.53124cm</Size>
                             <CellContents>
                               <Textbox Name="Shift">
                                 <CanGrow>true</CanGrow>
@@ -1174,7 +1174,7 @@
                                 </SortExpression>
                               </SortExpressions>
                               <TablixHeader>
-                                <Size>2.32533cm</Size>
+                                <Size>2.60253cm</Size>
                                 <CellContents>
                                   <Textbox Name="PaymentMode">
                                     <CanGrow>true</CanGrow>
@@ -1213,7 +1213,7 @@
                         </TablixMember>
                         <TablixMember>
                           <TablixHeader>
-                            <Size>3.57937cm</Size>
+                            <Size>4.13377cm</Size>
                             <CellContents>
                               <Textbox Name="Textbox37">
                                 <CanGrow>true</CanGrow>
@@ -1250,7 +1250,7 @@
                     </TablixMember>
                     <TablixMember>
                       <TablixHeader>
-                        <Size>5.76067cm</Size>
+                        <Size>6.59227cm</Size>
                         <CellContents>
                           <Textbox Name="Textbox28">
                             <CanGrow>true</CanGrow>
@@ -1287,7 +1287,7 @@
                 </TablixMember>
                 <TablixMember>
                   <TablixHeader>
-                    <Size>7.90157cm</Size>
+                    <Size>8.51824cm</Size>
                     <CellContents>
                       <Textbox Name="Textbox170">
                         <CanGrow>true</CanGrow>
@@ -1328,10 +1328,10 @@
               </TablixMembers>
             </TablixRowHierarchy>
             <DataSetName>GetReportCollection</DataSetName>
-            <Top>0.32605cm</Top>
-            <Left>0.34466cm</Left>
+            <Top>0.10036cm</Top>
+            <Left>11.42541cm</Left>
             <Height>3.37042cm</Height>
-            <Width>14.66466cm</Width>
+            <Width>16.39011cm</Width>
             <Style>
               <Border>
                 <Style>None</Style>
@@ -1342,10 +1342,10 @@
             <TablixBody>
               <TablixColumns>
                 <TablixColumn>
-                  <Width>7.19775cm</Width>
+                  <Width>6.36433cm</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>3.59678cm</Width>
+                  <Width>4.53606cm</Width>
                 </TablixColumn>
               </TablixColumns>
               <TablixRows>
@@ -1669,10 +1669,10 @@
               </TablixMembers>
             </TablixRowHierarchy>
             <DataSetName>GetReportCollectionCategory</DataSetName>
-            <Top>4.24717cm</Top>
-            <Left>0.34466cm</Left>
+            <Top>2.12967cm</Top>
+            <Left>0.2388cm</Left>
             <Height>1.8cm</Height>
-            <Width>10.79453cm</Width>
+            <Width>10.90039cm</Width>
             <ZIndex>1</ZIndex>
             <Style>
               <Border>
@@ -1684,13 +1684,13 @@
             <TablixBody>
               <TablixColumns>
                 <TablixColumn>
-                  <Width>7.93657cm</Width>
+                  <Width>6.66269cm</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>2.02375cm</Width>
+                  <Width>2.02475cm</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>2.47354cm</Width>
+                  <Width>2.21295cm</Width>
                 </TablixColumn>
               </TablixColumns>
               <TablixRows>
@@ -2171,10 +2171,10 @@
               </TablixMembers>
             </TablixRowHierarchy>
             <DataSetName>GetReportCollectionConsultantOPD</DataSetName>
-            <Top>0.32605cm</Top>
-            <Left>15.36912cm</Left>
+            <Top>0.15328cm</Top>
+            <Left>0.2388cm</Left>
             <Height>1.8cm</Height>
-            <Width>12.43386cm</Width>
+            <Width>10.90039cm</Width>
             <ZIndex>2</ZIndex>
             <Style>
               <Border>
