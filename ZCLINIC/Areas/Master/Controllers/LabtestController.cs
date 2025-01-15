@@ -20,15 +20,15 @@ namespace ZCLINIC.Areas.Master.Controllers
         }
 
         [HttpPost]
-        public string SaveLabtest(Labtest model)
+        public string SaveLabtest(Labtest Labtest,List<LabtestDetail> LabtestDetail)
         {
-            return new LabtestApiController().LabtestSave(new List<object>() { model, HttpContext.Session.GetBValues() }, HttpContext.GetIP(), HttpContext.GetCInfo());
+            return new Labtest().Master_LabtestSave(HttpContext.Session.GetBValues(), HttpContext.GetIP(), HttpContext.GetCInfo(),Labtest,LabtestDetail);
         }
 
         [HttpPost]
-        public string UpdateLabtest(Labtest model)
+        public string UpdateLabtest(Labtest Labtest, LabtestDetail LabtestDetail)
         {
-            return new LabtestApiController().LabtestUpdate(new List<object>() { model, HttpContext.Session.GetBValues() }, HttpContext.GetIP(), HttpContext.GetCInfo());
+            return new Labtest().Master_LabtestUpdate(HttpContext.Session.GetBValues(), HttpContext.GetIP(), HttpContext.GetCInfo(),Labtest,LabtestDetail);
         }
 
         [HttpPost]

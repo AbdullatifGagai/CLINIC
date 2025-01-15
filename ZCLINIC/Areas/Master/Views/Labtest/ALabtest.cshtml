@@ -1,7 +1,193 @@
-﻿
+﻿@using ZCLINIC
+@model ZCLINIC.Areas.Master.Models.Labtest
+
 @{
-    ViewData["Title"] = "ALabtest";
+    string URL = Model == null ? "/Master/Labtest/SaveLabtest" : "/Master/Labtest/UpdateLabtest";
+    int counter = 0;
 }
 
-<h2>ALabtest</h2>
+<style>
+    /*Remove Arrows/Spinners from type number*/
+    /* Chrome, Safari, Edge, Opera */
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+
+    /* Firefox */
+    input[type=number] {
+        -moz-appearance: textfield;
+    }
+</style>
+
+<form method="post" data-url="@URL" data-rurl="/Transaction/ReceiptMaster" data-script="/assets/Areas/Transaction/ReceiptMaster/Index.js" data-display="ReceiptMaster">
+
+
+
+
+
+    @Html.HiddenFor(m => m.TestId)
+    <div class="row">
+
+
+
+        <div class="form-group form-group-xs col-md-12">
+
+            <div class="form-group form-group-xs col-md-2">
+                <label>TestId<b class="wysiwyg-color-red"></b></label>
+                @Html.TextBoxFor(m => m.TestCode, new { @class = "form-control", type = "text", @readonly = "readonly" })
+
+            </div>
+
+           
+
+
+
+
+            <div class="form-group form-group-xs col-md-4">
+                <label>Deparmanet Name<b class="wysiwyg-color-red"></b></label>
+                @{
+                    List<ZCLINIC.Areas.Master.Models.LabDeparment> LabDeparment = new ZCLINIC.Areas.Master.Models.LabDeparment().Master_LabDeparmentGetAll(Context.Session.GetBValues(), Context.GetIP(), Context.GetCInfo());
+
+                }
+                @Html.DropDownList("DepId", LabDeparment.Select(s => new SelectListItem() { Text = s.DepName, Value = s.DepId.ToString() }), new { @class = "form-control " })
+
+            </div>
+
+
+
+              <div class="form-group form-group-xs col-md-4">
+                <label>Lab Test<b class="wysiwyg-color-red"></b></label>
+                @{
+                    List<ZCLINIC.Areas.Master.Models.ClinicServices> ClinicServices = new ZCLINIC.Areas.Master.Models.ClinicServices().Master_ClinicServicesLabGetAll(Context.Session.GetBValues(), Context.GetIP(), Context.GetCInfo());
+
+                }
+                @Html.DropDownList("SerId", ClinicServices.Select(s => new SelectListItem() { Text = s.ServicesName, Value = s.ServicesId.ToString() }), new { @class = "form-control " })
+
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+           
+
+
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+   
+
+
+
+
+
+
+
+
+    <div class="table-responsive container-fluid quotaiontable">
+        <table class=" table table-xxs table-md table-bordered table-striped table-hover bg-lightgray dataTables_scrollBody">
+            <thead>
+                <tr class="bg-blue-800">
+
+                    <th>Discription Name</th>
+                    <th>Unit</th>
+                    <th>Ref Values</th>
+
+
+
+                    <th></th>
+
+
+                </tr>
+                <tr>
+
+
+
+
+
+                  
+                  
+                    
+                    
+                    
+                    <th class="col-md-2"><input type="text" class="form-control TxtBox" , id="Dis"/></th>
+                    <th class="col-md-1"><input type="text" class="form-control TxtBox" , id="Unit"/></th>
+                    <th class="col-md-6"><input type="text" class="form-control TxtBox" , id="Refvalue"/></th>
+
+                    <th class="col-lg-1"><a class="icon-add text-primary" id="AddItemBtn"></a></th>
+                </tr>
+
+
+            </thead>
+
+
+            <tbody id="tbodytable">
+            </tbody>
+
+
+
+
+
+
+
+
+
+
+           
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </table>
+
+
+
+
+    </div>
+   
+
+    <div class="modal-footer mt-10 no-padding no-border">
+
+
+
+        <a data-url="/Transaction/ReceiptMaster" data-script="/assets/Areas/Transaction/ReceiptMaster/Index.js" class="btn btn-danger btn-xs  closeBtn" data-dismiss="modal"><i class="icon-cross"></i>Close</a>
+
+
+
+
+        <button type="button" data-submit="" class="btn btn-primary  btn-xs  SaveBtn"><i class="icon-floppy-disk position-left"></i>Save</button>
+        @* <button type="button" data-submit="" class="btn btn-primary btn-xs SaveBtn"><i class="icon-floppy-disk position-left"></i>Save</button>*@
+
+    </div>
+
+</form>
 

@@ -7,19 +7,20 @@ using System.Linq;
 
 namespace ZCLINIC.Areas.Master.Models
 {
-    public class Labtest
+    public class LabtestDetail
     {
         private const string MODULE = "Master";
 
 
         [TVP]
-        public int TestId { get; set; }
+        public int testId { get; set; }
         [TVP]
-        public int TestCode { get; set; }
+        public string  Discri { get; set; }
         [TVP]
-        public int SerId { get; set; }
+        public string  Unit { get; set; }
         [TVP]
-        public int DepId { get; set; }
+        public string  Refvalue { get; set; }
+
 
 
 
@@ -40,36 +41,15 @@ namespace ZCLINIC.Areas.Master.Models
         //View only properties
         public string ReturnMessage { get; set; }
 
-        public string Master_LabtestSave(BValues bv, string ip, string cInfo,Labtest Labtest,List<LabtestDetail> LabtestDetail)
+        public string Master_LabtestDetailSave(BValues bv, string ip, string cInfo)
         {
-            var parameters = new { x = Labtest, LabtestDetail };
+            var parameters = new { x = this };
 
             try
             {
+                TenantId = bv.TenantId; AppId = bv.AppId; CreatedBy = bv.UserId; ModifiedBy = bv.UserId;
 
-
-
-
-
-
-                foreach(var item in LabtestDetail)
-                {
-
-
-
-                    item.TenantId = bv.TenantId; item.AppId = bv.AppId; item.CreatedBy = bv.UserId;
-                }
-
-
-
-
-
-
-
-
-                Labtest.TenantId = bv.TenantId; Labtest.AppId = bv.AppId; Labtest.CreatedBy = bv.UserId; Labtest.ModifiedBy = bv.UserId;
-
-                string message = DataBase.ExecuteQuery<Labtest>(parameters, Connection.GetConnection()).FirstOrDefault().ReturnMessage;
+                string message = DataBase.ExecuteQuery<LabtestDetail>(parameters, Connection.GetConnection()).FirstOrDefault().ReturnMessage;
 
                 Loging.DB_Log(eLogType.Log_Posetive, "", parameters, "", MODULE, Connection.GetLogConnection(), cInfo, ip, bv.UserId);
 
@@ -83,18 +63,15 @@ namespace ZCLINIC.Areas.Master.Models
             }
         }
 
-        public string Master_LabtestUpdate(BValues bv, string ip, string cInfo, Labtest Labtest, LabtestDetail LabtestDetail)
+        public string Master_LabtestDetailUpdate(BValues bv, string ip, string cInfo)
         {
-            var parameters = new { x = Labtest, y = LabtestDetail };
+            var parameters = new { x = this };
 
             try
             {
-                
+                TenantId = bv.TenantId; AppId = bv.AppId; ModifiedBy = bv.UserId;
 
-
-                Labtest.TenantId = bv.TenantId; Labtest.AppId = bv.AppId; Labtest.CreatedBy = bv.UserId; Labtest.ModifiedBy = bv.UserId;
-
-                string message = DataBase.ExecuteQuery<Labtest>(parameters, Connection.GetConnection()).FirstOrDefault().ReturnMessage;
+                string message = DataBase.ExecuteQuery<LabtestDetail>(parameters, Connection.GetConnection()).FirstOrDefault().ReturnMessage;
 
                 Loging.DB_Log(eLogType.Log_Posetive, "", parameters, "", MODULE, Connection.GetLogConnection(), cInfo, ip, bv.UserId);
 
@@ -108,13 +85,13 @@ namespace ZCLINIC.Areas.Master.Models
             }
         }
 
-        public Labtest Master_LabtestGetById(int id, BValues bv, string ip, string cInfo)
+        public LabtestDetail Master_LabtestDetailGetById(int id, BValues bv, string ip, string cInfo)
         {
             var parameters = new { bv.UserId, bv.TenantId, bv.AppId, Id = id };
 
             try
             {
-                Labtest record = DataBase.ExecuteQuery<Labtest>(parameters, Connection.GetConnection()).FirstOrDefault();
+                LabtestDetail record = DataBase.ExecuteQuery<LabtestDetail>(parameters, Connection.GetConnection()).FirstOrDefault();
 
                 Loging.DB_Log(eLogType.Log_Posetive, "", parameters, "", MODULE, Connection.GetLogConnection(), cInfo, ip, bv.UserId);
 
@@ -128,13 +105,13 @@ namespace ZCLINIC.Areas.Master.Models
             }
         }
 
-        public List<Labtest> Master_LabtestGetAll(BValues bv, string ip, string cInfo)
+        public List<LabtestDetail> Master_LabtestDetailGetAll(BValues bv, string ip, string cInfo)
         {
             var parameters = new { bv.UserId, bv.TenantId, bv.AppId };
 
             try
             {
-                List<Labtest> records = DataBase.ExecuteQuery<Labtest>(parameters, Connection.GetConnection());
+                List<LabtestDetail> records = DataBase.ExecuteQuery<LabtestDetail>(parameters, Connection.GetConnection());
 
                 Loging.DB_Log(eLogType.Log_Posetive, "", parameters, "", MODULE, Connection.GetLogConnection(), cInfo, ip, bv.UserId);
 
@@ -148,13 +125,13 @@ namespace ZCLINIC.Areas.Master.Models
             }
         }
 
-        public DataTable Master_LabtestGetAllTable(BValues bv, string ip, string cInfo)
+        public DataTable Master_LabtestDetailGetAllTable(BValues bv, string ip, string cInfo)
         {
             var parameters = new { bv.UserId, bv.TenantId, bv.AppId };
 
             try
             {
-                DataTable dataTable = DataBase.ExecuteforReport(parameters, Connection.GetConnection(), "Master_LabtestGetAllTable");
+                DataTable dataTable = DataBase.ExecuteforReport(parameters, Connection.GetConnection(), "Master_LabtestDetailGetAllTable");
 
                 Loging.DB_Log(eLogType.Log_Posetive, "", parameters, "", MODULE, Connection.GetLogConnection(), cInfo, ip, bv.UserId);
 
@@ -168,13 +145,13 @@ namespace ZCLINIC.Areas.Master.Models
             }
         }
 
-        public string Master_LabtestDelete(int id, BValues bv, string ip, string cInfo)
+        public string Master_LabtestDetailDelete(int id, BValues bv, string ip, string cInfo)
         {
             var parameters = new { bv.UserId, bv.TenantId, bv.AppId, Id = id };
 
             try
             {
-                string message = DataBase.ExecuteQuery<Labtest>(parameters, Connection.GetConnection()).FirstOrDefault().ReturnMessage;
+                string message = DataBase.ExecuteQuery<LabtestDetail>(parameters, Connection.GetConnection()).FirstOrDefault().ReturnMessage;
 
                 Loging.DB_Log(eLogType.Log_Posetive, "", parameters, "", MODULE, Connection.GetLogConnection(), cInfo, ip, bv.UserId);
 

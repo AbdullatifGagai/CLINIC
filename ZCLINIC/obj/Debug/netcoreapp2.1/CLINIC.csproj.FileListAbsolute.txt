@@ -450,3 +450,4 @@ C:\Users\Administrator\Documents\GitHub\CLINIC\ZCLINIC\obj\Debug\netcoreapp2.1\R
 C:\Users\Administrator\Documents\GitHub\CLINIC\ZCLINIC\obj\Debug\netcoreapp2.1\Razor\Areas\Master\Views\Labtest\Index.cshtml.g.cs
 C:\Users\Administrator\Documents\GitHub\CLINIC\ZCLINIC\obj\Debug\netcoreapp2.1\Razor\Areas\Master\Views\Labtest\ALabtest.cshtml.g.cs
 C:\Users\Administrator\Documents\GitHub\CLINIC\ZCLINIC\obj\Debug\netcoreapp2.1\Razor\Areas\Report\Views\ReportDetail\DoctorWiseDetail.cshtml.g.cs
+C:\Users\Administrator\Documents\GitHub\CLINIC\ZCLINIC\bin\Debug\netcoreapp2.1\wwwroot\assets\Areas\Master\Labtest\Labtest.js

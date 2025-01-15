@@ -18,17 +18,17 @@ namespace ZCLINIC.Areas.Master.APIControllers
             return new Labtest().Master_LabtestGetById(id, bv, ip, cInfo);
         }
 
-        [HttpPost]
-        public string LabtestSave(List<object> objList, string ip, string cInfo)
-        {
-            return ((Labtest)objList[0]).Master_LabtestSave((BValues)objList[1], ip, cInfo);
-        }
+        //[HttpPost]
+        //public string LabtestSave(List<object> objList, string ip, string cInfo)
+        //{
+        //    return ((Labtest)objList[0]).Master_LabtestSave((BValues)objList[1], ip, cInfo);
+        //}
 
-        [HttpPost]
-        public string LabtestUpdate(List<object> objList, string ip, string cInfo)
-        {
-            return ((Labtest)objList[0]).Master_LabtestUpdate((BValues)objList[1], ip, cInfo);
-        }
+        //[HttpPost]
+        //public string LabtestUpdate(List<object> objList, string ip, string cInfo)
+        //{
+        //    return ((Labtest)objList[0]).Master_LabtestUpdate((BValues)objList[1], ip, cInfo);
+        //}
 
         [HttpPost]
         public string LabtestDelete(int id, BValues bv, string ip, string cInfo)
