@@ -26,7 +26,7 @@ namespace ZCLINIC.Areas.Master.Controllers
         }
 
         [HttpPost]
-        public string UpdateLabtest(Labtest Labtest, LabtestDetail LabtestDetail)
+        public string UpdateLabtest(Labtest Labtest, List<LabtestDetail> LabtestDetail)
         {
             return new Labtest().Master_LabtestUpdate(HttpContext.Session.GetBValues(), HttpContext.GetIP(), HttpContext.GetCInfo(),Labtest,LabtestDetail);
         }

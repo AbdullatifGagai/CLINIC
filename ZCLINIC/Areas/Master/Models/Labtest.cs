@@ -40,6 +40,13 @@ namespace ZCLINIC.Areas.Master.Models
         //View only properties
         public string ReturnMessage { get; set; }
 
+
+
+        public string ServicesName { get; set; }
+
+
+        public string DepName { get; set; }
+
         public string Master_LabtestSave(BValues bv, string ip, string cInfo,Labtest Labtest,List<LabtestDetail> LabtestDetail)
         {
             var parameters = new { x = Labtest, LabtestDetail };
@@ -83,14 +90,20 @@ namespace ZCLINIC.Areas.Master.Models
             }
         }
 
-        public string Master_LabtestUpdate(BValues bv, string ip, string cInfo, Labtest Labtest, LabtestDetail LabtestDetail)
+        public string Master_LabtestUpdate(BValues bv, string ip, string cInfo, Labtest Labtest, List<LabtestDetail> LabtestDetail)
         {
             var parameters = new { x = Labtest, y = LabtestDetail };
 
             try
             {
-                
 
+                foreach (var item in LabtestDetail)
+                {
+
+
+
+                    item.TenantId = bv.TenantId; item.AppId = bv.AppId; item.CreatedBy = bv.UserId;
+                }
 
                 Labtest.TenantId = bv.TenantId; Labtest.AppId = bv.AppId; Labtest.CreatedBy = bv.UserId; Labtest.ModifiedBy = bv.UserId;
 

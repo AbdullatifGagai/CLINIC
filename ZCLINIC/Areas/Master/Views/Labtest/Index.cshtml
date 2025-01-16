@@ -61,7 +61,8 @@
                 <thead>
                     <tr class="bg-blue-800">
                         <th>ID</th>
-                        <th>Days Name</th>
+                        <th>Services Name</th>
+                        <th>Deparment  Name</th>
 
 
 
@@ -77,22 +78,24 @@
                         <tr data-rowid="@s.TestId">
 
                             <td>@s.TestCode</td>
+                            <td>@s.ServicesName</td>
+                            <td>@s.DepName</td>
                             
 
 
-
+                            
                             <td>
                                 <ul class="icons-list">
                                     @if (editview)
                                     {
                                         <li class="text-primary-600">
 
-                                            <a data-modalhorizontal="true" data-modalsize="modal-sm" data-heading="Edit Deparment" data-script="#" data-url="/Master/Labtest/ALabtest?Id=@s. "><i class="icon-pencil7"></i></a>
+                                            <a data-modalhorizontal="true" data-modalsize="modal-lg" data-heading="Edit Deparment" data-script="/assets/Areas/Master/Labtest/Labtest.js" data-url="/Master/Labtest/ALabtest?Id=@s.TestId"><i class="icon-pencil7"></i></a>
                                         </li>
                                     }
                                     @if (delete)
                                     {
-                                        <li class="text-danger-600"><a onclick="DeleteAlert({ 'Id':@s.DepId}, '/Master/LabDeparment/DeleteLabDeparment', 'Deparment')"><i class="icon-trash"></i></a></li>
+                                        <li class="text-danger-600"><a onclick="DeleteAlert({ 'Id':@s.TestId}, '/Master/Labtest/DeleteLabtest', 'Lab Test')"><i class="icon-trash"></i></a></li>
                                     }
 
 

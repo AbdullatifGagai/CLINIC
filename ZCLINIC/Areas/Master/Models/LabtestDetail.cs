@@ -105,9 +105,9 @@ namespace ZCLINIC.Areas.Master.Models
             }
         }
 
-        public List<LabtestDetail> Master_LabtestDetailGetAll(BValues bv, string ip, string cInfo)
+        public List<LabtestDetail> Master_LabtestDetailGetAll(int Id,BValues bv, string ip, string cInfo)
         {
-            var parameters = new { bv.UserId, bv.TenantId, bv.AppId };
+            var parameters = new { bv.UserId, bv.TenantId, bv.AppId,id  =Id };
 
             try
             {

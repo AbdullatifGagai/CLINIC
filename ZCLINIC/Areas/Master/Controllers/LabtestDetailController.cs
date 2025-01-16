@@ -10,7 +10,7 @@ namespace ZCLINIC.Areas.Master.Controllers
     {
         public IActionResult Index()
         {
-            return View(new LabtestDetailApiController().LabtestDetailGetAll(HttpContext.Session.GetBValues(), HttpContext.GetIP(), HttpContext.GetCInfo()));
+            return View();
         }
 
         // create/edit view for LabtestDetail
@@ -36,5 +36,14 @@ namespace ZCLINIC.Areas.Master.Controllers
         {
             return new LabtestDetailApiController().LabtestDetailDelete(id, HttpContext.Session.GetBValues(), HttpContext.GetIP(), HttpContext.GetCInfo());
         }
+        [HttpGet]
+        public List<LabtestDetail> LabtestDetailGetAll(int  Id)
+        {
+            return new LabtestDetail().Master_LabtestDetailGetAll(Id,HttpContext.Session.GetBValues(), HttpContext.GetIP(), HttpContext.GetCInfo());
+        }
+
+
+
+
     }
 }

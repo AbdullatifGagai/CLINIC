@@ -8,10 +8,10 @@ namespace ZCLINIC.Areas.Master.APIControllers
     [ApiController]
     public class LabtestDetailController : Controller
     {
-        public List<LabtestDetail> LabtestDetailGetAll(BValues bv, string ip, string cInfo)
-        {
-            return new LabtestDetail().Master_LabtestDetailGetAll(bv, ip, cInfo);
-        }
+        //public List<LabtestDetail> LabtestDetailGetAll(BValues bv, string ip, string cInfo)
+        //{
+        //    return new LabtestDetail().Master_LabtestDetailGetAll(bv, ip, cInfo);
+        //}
 
         public LabtestDetail LabtestDetailGetById(int id, BValues bv, string ip, string cInfo)
         {
