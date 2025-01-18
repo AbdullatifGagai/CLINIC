@@ -221,7 +221,7 @@
                   </TablixCells>
                 </TablixRow>
                 <TablixRow>
-                  <Height>0.9088cm</Height>
+                  <Height>0.6cm</Height>
                   <TablixCells>
                     <TablixCell>
                       <CellContents>
@@ -268,7 +268,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Fields!Rate.Value</Value>
+                                  <Value>=Sum(Fields!Rate.Value)</Value>
                                   <Style>
                                     <FontFamily>arial</FontFamily>
                                     <FontSize>7pt</FontSize>
@@ -610,30 +610,32 @@
             </TablixColumnHierarchy>
             <TablixRowHierarchy>
               <TablixMembers>
+                <TablixMember />
                 <TablixMember>
-                  <KeepWithGroup>After</KeepWithGroup>
+                  <Group Name="ServicesName">
+                    <GroupExpressions>
+                      <GroupExpression>=Fields!ServicesName.Value</GroupExpression>
+                    </GroupExpressions>
+                  </Group>
+                  <SortExpressions>
+                    <SortExpression>
+                      <Value>=Fields!ServicesName.Value</Value>
+                    </SortExpression>
+                  </SortExpressions>
+                  <TablixMembers>
+                    <TablixMember />
+                  </TablixMembers>
                 </TablixMember>
-                <TablixMember>
-                  <Group Name="Details" />
-                </TablixMember>
-                <TablixMember>
-                  <KeepWithGroup>Before</KeepWithGroup>
-                </TablixMember>
-                <TablixMember>
-                  <KeepWithGroup>Before</KeepWithGroup>
-                </TablixMember>
-                <TablixMember>
-                  <KeepWithGroup>Before</KeepWithGroup>
-                </TablixMember>
-                <TablixMember>
-                  <KeepWithGroup>Before</KeepWithGroup>
-                </TablixMember>
+                <TablixMember />
+                <TablixMember />
+                <TablixMember />
+                <TablixMember />
               </TablixMembers>
             </TablixRowHierarchy>
             <DataSetName>GetReportMasterReceipt</DataSetName>
             <Top>0.25706cm</Top>
             <Left>0.09525cm</Left>
-            <Height>3.9088cm</Height>
+            <Height>3.6cm</Height>
             <Width>6.79814cm</Width>
             <Style>
               <Border>
@@ -732,7 +734,7 @@
           </Border>
         </Style>
       </Body>
-      <Width>7.86787cm</Width>
+      <Width>7.22381cm</Width>
       <Page>
         <PageHeader>
           <Height>8.64016cm</Height>
