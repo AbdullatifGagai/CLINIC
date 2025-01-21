@@ -52,6 +52,7 @@
     <Content Remove="wwwroot\assets\Areas\Transaction\Appointment\Appointment.js" />
     <Content Remove="wwwroot\assets\Areas\Transaction\InstallmentVoucher\InstallmentVoucher.js" />
     <Content Remove="wwwroot\assets\Areas\Transaction\ReceiptMaster\ReceiptMaster.js" />
+    <Content Remove="wwwroot\assets\Areas\Transaction\ReportMaster\ReportMaster.js" />
   </ItemGroup>
 
   <ItemGroup>
@@ -113,6 +114,9 @@
     <None Include="wwwroot\assets\Areas\Master\Labtest\Labtest.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="wwwroot\assets\Areas\Transaction\ReportMaster\ReportMaster.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="wwwroot\assets\Areas\Transaction\ReceiptMaster\ReceiptMaster.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
@@ -136,6 +140,9 @@
 
   <ItemGroup>
     <Content Update="wwwroot\assets\Areas\Transaction\Appointment\Index.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="wwwroot\assets\Areas\Transaction\ReportMaster\Index.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Update="wwwroot\assets\Areas\Transaction\ReceiptMaster\Index.js">

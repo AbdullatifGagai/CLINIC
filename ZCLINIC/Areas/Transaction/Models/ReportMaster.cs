@@ -14,6 +14,23 @@ namespace ZCLINIC.Areas.Transaction.Models
 
         [TVP]
         public int ReportId { get; set; }
+       
+        [TVP]
+        public int ReportCode { get; set; }
+       
+        [TVP]
+        public int ReportNo{ get; set; }
+       
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         [TVP]
         public int ReceiptId { get; set; }
         [TVP]
@@ -64,6 +81,9 @@ namespace ZCLINIC.Areas.Transaction.Models
         public int ModifiedBy { get; set; }
 
         //View only properties
+
+
+        public string  PatientName { get; set; }
         public string ReturnMessage { get; set; }
 
         public string Transaction_ReportMasterSave(BValues bv, string ip, string cInfo)

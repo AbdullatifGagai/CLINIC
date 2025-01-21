@@ -1,7 +1,261 @@
-﻿
+﻿@using ZCLINIC
+@model ZCLINIC.Areas.Transaction.Models.ReportMaster
+
 @{
-    ViewData["Title"] = "AReportMaster";
+    string URL = Model == null ? "/Transaction/ReportMaster/SaveReportMaster" : "/Transaction/ReportMaster/UpdateReportMaster";
+    int counter = 0;
 }
 
-<h2>AReportMaster</h2>
+<style>
+    /*Remove Arrows/Spinners from type number*/
+    /* Chrome, Safari, Edge, Opera */
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+
+    /* Firefox */
+    input[type=number] {
+        -moz-appearance: textfield;
+    }
+</style>
+
+<form method="post" data-url="@URL" data-rurl="/Transaction/ReportMaster" data-script="/assets/Areas/Transaction/ReceiptMaster/Index.js" data-display="ReceiptMaster">
+
+
+
+
+
+    @Html.HiddenFor(m => m.ReportId)
+    @Html.HiddenFor(m => m.MrId)
+   
+    
+    <div class="row">
+
+
+
+        <div class="form-group form-group-xs col-md-12">
+
+            <div class="form-group form-group-xs col-md-2">
+                <label>Report No<b class="wysiwyg-color-red"></b></label>
+                @Html.TextBoxFor(m => m.ReportNo, new { @class = "form-control", type = "text", @readonly = "readonly" })
+
+            </div>
+
+            <div class="form-group form-group-xs col-md-2">
+                <label>Receipt No<b class="wysiwyg-color-red"></b></label>
+                @Html.TextBoxFor(m => m.ReceiptId, new { @class = "form-control", type = "text" })
+
+            </div>
+
+
+             <div class="form-group form-group-xs col-md-2">
+                <label>Mr No<b class="wysiwyg-color-red"></b></label>
+                @Html.TextBoxFor(m => m.Mrno, new { @class = "form-control", type = "text", @readonly = "readonly" })
+
+            </div>
+
+               <div class="form-group form-group-xs col-md-6">
+                <label>Patient Name<b class="wysiwyg-color-red"></b></label>
+                @Html.TextBoxFor(m => m.PName, new { @class = "form-control", type = "text", @readonly = "readonly" })
+
+            </div>
+
+
+
+
+
+
+
+
+
+
+        </div>
+    </div>
+
+    <div class="row">
+
+
+
+        <div class="form-group form-group-xs col-md-12">
+
+            <div class="form-group form-group-xs col-md-2">
+                <label>Age<b class="wysiwyg-color-red"></b></label>
+                @Html.TextBoxFor(m => m.Age, new { @class = "form-control", type = "text", @readonly = "readonly" })
+
+            </div>
+
+
+            <div class="form-group form-group-xs col-md-3">
+                <label>CollectDate<b class="wysiwyg-color-red"></b></label>
+                @Html.TextBoxFor(m => m.CollectedDate, new { @class = "form-control", type = "date" })
+
+            </div>
+            <div class="form-group form-group-xs col-md-3">
+                <label>ReportDate<b class="wysiwyg-color-red"></b></label>
+                @Html.TextBoxFor(m => m.ReportDate, new { @class = "form-control", type = "date" })
+
+            </div>
+
+
+
+
+            <div class="form-group form-group-xs col-md-4">
+                <label>Deparment Name<b class="wysiwyg-color-red"></b></label>
+                @{
+                    List<ZCLINIC.Areas.Master.Models.LabDeparment> LabDeparment = new ZCLINIC.Areas.Master.Models.LabDeparment().Master_LabDeparmentGetAll(Context.Session.GetBValues(), Context.GetIP(), Context.GetCInfo());
+                    LabDeparment.Insert(0, new ZCLINIC.Areas.Master.Models.LabDeparment { DepId = 0, DepName = "Select Deparment Name" });
+                }
+                @Html.DropDownList("DepId", LabDeparment.Select(s => new SelectListItem() { Text = s.DepName, Value = s.DepId.ToString() }), new { @class = "form-control " })
+
+            </div>
+
+
+
+
+
+
+
+
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="table-responsive container-fluid quotaiontable">
+        <table class=" table table-xxs table-md table-bordered table-striped table-hover bg-lightgray dataTables_scrollBody">
+            <thead>
+                <tr class="bg-blue-800">
+
+                    <th>Services  Name</th>
+                    <th>Rate</th>
+
+
+
+                    <th></th>
+
+
+                </tr>
+                <tr>
+
+
+
+
+
+                    <th class="col-md-6">
+                        <select class="form-control   combo-box" id="SevicesId" type=2 name="ModelId"></select>
+
+                    </th>
+                    <th class="col-md-2"><input type="text" class="form-control TxtBox" , id="Rate" readonly /></th>
+
+                    <th class="col-lg-1"><a class="icon-add text-primary" id="AddItemBtn"></a></th>
+                </tr>
+
+
+            </thead>
+
+
+            <tbody id="tbodytable">
+            </tbody>
+
+
+
+
+
+
+
+
+
+
+            @*<tfoot>
+                    <tr>
+
+                        <td>
+                            @Html.TextBoxFor(m => m.ServicesAmt, new { @class = "form-control", type = "number", @readonly = "readonly" })
+
+                            @Html.TextBoxFor(m => m.CashAmt, new { @class = "form-control", type = "number", @readonly = "readonly" })
+
+
+
+                        </td>
+
+                        <td>
+
+
+
+
+                            @Html.TextBoxFor(m => m.ServicesAmt, new { @class = "form-control", type = "number", @readonly = "readonly" })
+
+                            @Html.TextBoxFor(m => m.CashAmt, new { @class = "form-control", type = "number", @readonly = "readonly" })
+
+
+                        </td>
+
+
+
+
+
+
+
+                    </tr>
+
+                </tfoot>*@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </table>
+
+
+
+
+    </div>
+   
+
+    <div class="modal-footer mt-10 no-padding no-border">
+
+
+
+        <a data-url="/Transaction/ReceiptMaster" data-script="/assets/Areas/Transaction/ReceiptMaster/Index.js" class="btn btn-danger btn-xs  closeBtn" data-dismiss="modal"><i class="icon-cross"></i>Close</a>
+
+
+
+
+        <button type="button" data-submit="" class="btn btn-primary  btn-xs  SaveBtn"><i class="icon-floppy-disk position-left"></i>Save</button>
+        @* <button type="button" data-submit="" class="btn btn-primary btn-xs SaveBtn"><i class="icon-floppy-disk position-left"></i>Save</button>*@
+
+    </div>
+
+</form>
 
