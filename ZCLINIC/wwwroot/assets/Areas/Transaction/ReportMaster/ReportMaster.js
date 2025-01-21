@@ -530,12 +530,11 @@ $('#SModalBody').delegate('.selectAllowId', 'click', function () {
 
 
     
-    $('#MrId').val('');
-    $('#MrNo').val('');
-    $('#PatientName').val('');
-    $('#DateOfBirth').val('');
+    $('#ReceiptId').val('');
+    $('#Mrno').val('');
+    $('#PName').val('');
     $('#Age').val('');
-       
+   
 
 
 
