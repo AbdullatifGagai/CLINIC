@@ -29,8 +29,9 @@
 
     @Html.HiddenFor(m => m.ReportId)
     @Html.HiddenFor(m => m.MrId)
-   
-    
+    @Html.HiddenFor(m => m.ReceiptId)
+
+
     <div class="row">
 
 
@@ -45,18 +46,18 @@
 
             <div class="form-group form-group-xs col-md-2">
                 <label>Receipt No<b class="wysiwyg-color-red"></b></label>
-                @Html.TextBoxFor(m => m.ReceiptId, new { @class = "form-control", type = "text" })
+                @Html.TextBoxFor(m => m.ReceiptNo, new { @class = "form-control", type = "text" })
 
             </div>
 
 
-             <div class="form-group form-group-xs col-md-2">
+            <div class="form-group form-group-xs col-md-2">
                 <label>Mr No<b class="wysiwyg-color-red"></b></label>
                 @Html.TextBoxFor(m => m.Mrno, new { @class = "form-control", type = "text", @readonly = "readonly" })
 
             </div>
 
-               <div class="form-group form-group-xs col-md-6">
+            <div class="form-group form-group-xs col-md-6">
                 <label>Patient Name<b class="wysiwyg-color-red"></b></label>
                 @Html.TextBoxFor(m => m.PName, new { @class = "form-control", type = "text", @readonly = "readonly" })
 
@@ -92,24 +93,20 @@
                 @Html.TextBoxFor(m => m.CollectedDate, new { @class = "form-control", type = "date" })
 
             </div>
+
+            <div class="form-group form-group-xs col-md-3">
+                <label>Received Date<b class="wysiwyg-color-red"></b></label>
+                @Html.TextBoxFor(m => m.RecDate, new { @class = "form-control", type = "date" })
+
+            </div>
+
+
             <div class="form-group form-group-xs col-md-3">
                 <label>ReportDate<b class="wysiwyg-color-red"></b></label>
                 @Html.TextBoxFor(m => m.ReportDate, new { @class = "form-control", type = "date" })
 
             </div>
 
-
-
-
-            <div class="form-group form-group-xs col-md-4">
-                <label>Deparment Name<b class="wysiwyg-color-red"></b></label>
-                @{
-                    List<ZCLINIC.Areas.Master.Models.LabDeparment> LabDeparment = new ZCLINIC.Areas.Master.Models.LabDeparment().Master_LabDeparmentGetAll(Context.Session.GetBValues(), Context.GetIP(), Context.GetCInfo());
-                    LabDeparment.Insert(0, new ZCLINIC.Areas.Master.Models.LabDeparment { DepId = 0, DepName = "Select Deparment Name" });
-                }
-                @Html.DropDownList("DepId", LabDeparment.Select(s => new SelectListItem() { Text = s.DepName, Value = s.DepId.ToString() }), new { @class = "form-control " })
-
-            </div>
 
 
 
@@ -130,11 +127,35 @@
 
 
 
+    <div class="row">
+
+
+
+        <div class="form-group form-group-xs col-md-12">
+
+
+            <div class="form-group form-group-xs col-md-6">
+                <label>Deparment Name<b class="wysiwyg-color-red"></b></label>
+                @{
+                    List<ZCLINIC.Areas.Master.Models.LabDeparment> LabDeparment = new ZCLINIC.Areas.Master.Models.LabDeparment().Master_LabDeparmentGetAll(Context.Session.GetBValues(), Context.GetIP(), Context.GetCInfo());
+                    LabDeparment.Insert(0, new ZCLINIC.Areas.Master.Models.LabDeparment { DepId = 0, DepName = "Select Deparment Name" });
+                }
+                @Html.DropDownList("DepId", LabDeparment.Select(s => new SelectListItem() { Text = s.DepName, Value = s.DepId.ToString() }), new { @class = "form-control " })
+
+            </div>
+
+            
+            <div class="form-group form-group-xs col-md-6">
+                <label>Test Name<b class="wysiwyg-color-red"></b></label>
+                <select class="form-control   combo-box" id="testId" type=2 name="ModelId"></select>
+
+            </div>
 
 
 
 
-
+        </div>
+    </div>
 
 
 
@@ -146,8 +167,19 @@
             <thead>
                 <tr class="bg-blue-800">
 
-                    <th>Services  Name</th>
-                    <th>Rate</th>
+                    <th>Services Name</th>
+                    <th>Dis.</th>
+                    <th>Result</th>
+                    <th>Units</th>
+                    <th>Reference Ranges</th>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                  
 
 
 
@@ -155,21 +187,7 @@
 
 
                 </tr>
-                <tr>
-
-
-
-
-
-                    <th class="col-md-6">
-                        <select class="form-control   combo-box" id="SevicesId" type=2 name="ModelId"></select>
-
-                    </th>
-                    <th class="col-md-2"><input type="text" class="form-control TxtBox" , id="Rate" readonly /></th>
-
-                    <th class="col-lg-1"><a class="icon-add text-primary" id="AddItemBtn"></a></th>
-                </tr>
-
+              
 
             </thead>
 
@@ -241,7 +259,7 @@
 
 
     </div>
-   
+
 
     <div class="modal-footer mt-10 no-padding no-border">
 

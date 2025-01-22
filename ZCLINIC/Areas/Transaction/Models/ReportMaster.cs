@@ -33,6 +33,15 @@ namespace ZCLINIC.Areas.Transaction.Models
         
         [TVP]
         public int ReceiptId { get; set; }
+    
+        [TVP]
+        public string ReceiptNo { get; set; }
+    
+        
+        
+        
+        
+        
         [TVP]
         public int MrId { get; set; }
         [TVP]
@@ -44,6 +53,12 @@ namespace ZCLINIC.Areas.Transaction.Models
         public string Age { get; set; }
         [TVP]
         public string  CollectedDate { get; set; }
+       
+        [TVP]
+        public string  RecDate { get; set; }
+       
+        
+        
         [TVP]
         public string ReportDate { get; set; }
         [TVP]

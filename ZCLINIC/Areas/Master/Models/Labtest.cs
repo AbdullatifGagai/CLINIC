@@ -141,6 +141,66 @@ namespace ZCLINIC.Areas.Master.Models
             }
         }
 
+        public List<Labtest> LabtestGetLabServices(int Id,int RId,BValues bv, string ip, string cInfo)
+        {
+            var parameters = new { bv.UserId, bv.TenantId, bv.AppId,Id,RId };
+
+            try
+            {
+                List<Labtest> records = DataBase.ExecuteQuery<Labtest>(parameters, Connection.GetConnection());
+
+                Loging.DB_Log(eLogType.Log_Posetive, "", parameters, "", MODULE, Connection.GetLogConnection(), cInfo, ip, bv.UserId);
+
+                return records;
+            }
+            catch (Exception ex)
+            {
+                Loging.DB_Log(eLogType.Log_Negative, ex.Message, parameters, "", MODULE, Connection.GetLogConnection(), cInfo, ip, bv.UserId);
+
+                return null;
+            }
+        }
+
+
+       
+         public List<Labtest> LabtestGetRefId(int Id,BValues bv, string ip, string cInfo)
+        {
+            var parameters = new { bv.UserId, bv.TenantId, bv.AppId,Id };
+
+            try
+            {
+                List<Labtest> records = DataBase.ExecuteQuery<Labtest>(parameters, Connection.GetConnection());
+
+                Loging.DB_Log(eLogType.Log_Posetive, "", parameters, "", MODULE, Connection.GetLogConnection(), cInfo, ip, bv.UserId);
+
+                return records;
+            }
+            catch (Exception ex)
+            {
+                Loging.DB_Log(eLogType.Log_Negative, ex.Message, parameters, "", MODULE, Connection.GetLogConnection(), cInfo, ip, bv.UserId);
+
+                return null;
+            }
+        }
+
+
+       
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         public List<Labtest> Master_LabtestGetAll(BValues bv, string ip, string cInfo)
         {
             var parameters = new { bv.UserId, bv.TenantId, bv.AppId };
@@ -160,6 +220,11 @@ namespace ZCLINIC.Areas.Master.Models
                 return null;
             }
         }
+
+
+
+
+
 
         public DataTable Master_LabtestGetAllTable(BValues bv, string ip, string cInfo)
         {

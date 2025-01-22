@@ -30,6 +30,7 @@ else {
 
     document.getElementById('CollectedDate').valueAsDate = new Date();
     document.getElementById('ReportDate').valueAsDate = new Date();
+    document.getElementById('RecDate').valueAsDate = new Date();
 
    
 
@@ -377,13 +378,13 @@ function ReceiptRefno(Id) {
 
 
 
-$('#ReceiptId').keyup(function (e) {
+$('#ReceiptNo').keyup(function (e) {
     if (e.keyCode == 13) {
 
 
 
 
-        var id = $('#ReceiptId').val();
+        var id = $('#ReceiptNo').val();
 
 
 
@@ -453,6 +454,10 @@ function AllowSearch(data) {
                         <th>ReceiptDate</th>
                         <th>MrNo</th>
                         <th>Patient Name</th>
+                        <th hidden>Age</th>
+                        <th hidden>ReceiptId</th>
+                        <th hidden>MrId</th>
+                       
                         
 
 
@@ -464,7 +469,7 @@ function AllowSearch(data) {
 				</thead><tbody>`;
 
     data.forEach((item) => {
-        markup += `<tr><td>${item.ReceiptNo}</td><td>${item.ReceiptDate}</td><td>${item.MrNo}</td><td>${item.PatientName}</td><td><button type="button" class="selectAllowId btn btn-primary" id=${item.MRId}>Select</button></td></tr>`
+        markup += `<tr><td>${item.ReceiptNo}</td><td>${item.ReceiptDate}</td><td>${item.MrNo}</td><td>${item.PatientName}</td><td hidden>${item.age}</td><td hidden>${item.ReceiptId}</td><td hidden>${item.MrId}</td><td><button type="button" class="selectAllowId btn btn-primary" id=${item.ReceiptId}>Select</button></td></tr>`
 
     })
     markup += `</tbody>`;
@@ -530,20 +535,32 @@ $('#SModalBody').delegate('.selectAllowId', 'click', function () {
 
 
     
-    $('#MrId').val('');
-    $('#MrNo').val('');
-    $('#PatientName').val('');
-    $('#DateOfBirth').val('');
+    $('#ReceiptId').val('');
+    $('#ReceiptNo').val('');
+    $('#Mrno').val('');
+    $('#PName').val('');
     $('#Age').val('');
-       
+    $('#ReceiptId').val('');
+    $('#MrId').val('');
+
+    document.getElementById('CollectedDate').valueAsDate = new Date();
+
+
+   // $('#ReceiptId').val($(this).closest('tr').children().eq(0).text());
+    $('#ReceiptNo').val($(this).closest('tr').children().eq(0).text());
+    $('#CollectedDate').val($(this).closest('tr').children().eq(1).text());
+    $('#Mrno').val($(this).closest('tr').children().eq(2).text());
+    $('#PName').val($(this).closest('tr').children().eq(3).text());
+    $('#Age').val($(this).closest('tr').children().eq(4).text());
+    $('#ReceiptId').val($(this).closest('tr').children().eq(5).text());
+    $('#MrId').val($(this).closest('tr').children().eq(6).text());
 
 
 
-        $('#MrId').val($(this).closest('tr').children().eq(0).text());
-        $('#MrNo').val($(this).closest('tr').children().eq(1).text());
-        $('#PatientName').val($(this).closest('tr').children().eq(2).text());
-        $('#DateOfBirth').val($(this).closest('tr').children().eq(5).text());
-        $('#age').val($(this).closest('tr').children().eq(6).text());
+    //$('#MrNo').val($(this).closest('tr').children().eq(1).text());
+        //$('#PatientName').val($(this).closest('tr').children().eq(2).text());
+        //$('#DateOfBirth').val($(this).closest('tr').children().eq(5).text());
+        //$('#age').val($(this).closest('tr').children().eq(6).text());
 
 
 
@@ -594,184 +611,42 @@ $('tbody.ChaDetails').delegate(".VoucherNO", "click", function () {
 
 
 
-$('#CategoryId').change(function () {
-    let Id = parseInt($('#CategoryId').val());
-    let PId = parseInt($('#PanelId').val());
 
-    //debugger;
 
-   
 
 
-    GetJSONRequest('/Master/ClinicServices/Master_ClinicServicesGetServicesName', 'GET', { Id, PId }, data => {
 
-        if (data && data.length > 0) {
-            $('#SevicesId').empty();
-            $('#SevicesId').append(`<option value="0">Select Services</option>`);
-            for (const model of data) {
 
-                $('#SevicesId').append(`<option value="${model.ServicesId}">${model.ServicesName}</option>`);
 
-            }
 
 
 
-             $('#CategoryId').attr('disabled', 'true')
-            $('#PanelId').attr('disabled', 'true')
 
-            $('#SevicesId').select2()
-          
 
 
-            return;
 
 
 
-        }
-        ErrorAlert("No Records Found");
-        $('#SevicesId').empty();
-       
 
-        /// $('#Comp_id').attr('disabled', 'true')
 
-    })
 
 
-})
 
 
-$('#SevicesId').change(function () {
-    let Id = parseInt($('#SevicesId').val());
-    let PId = parseInt($('#PanelId').val());
-    //debugger;
 
-    $('#SevicesId').val(Id)
 
 
-    GetJSONRequest('/Master/ClinicServices/Master_ClinicServicesGetIdServices', 'GET', { Id, PId }, data => {
 
-        if (data && data.length > 0) {
-            
 
 
 
-            $('#Rate').val(data[0].Rate);
 
 
 
-        }
 
-        else {
-            ErrorAlert("No Records Found");
-        }
 
 
-    
 
-
-        /// $('#Comp_id').attr('disabled', 'true')
-
-    })
-
-
-})
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-$('#age').change(function () {
-
-
-
-
-
-
-
-
-
-
-    var PAge = $('#age').val();
-
-    GetJSONRequest('/Master/PatientReg/Master_Daysbrith', 'GET', { PAge }, function (data) {
-
-
-
-        if (data && data.length > 0) {
-
-
-
-
-
-
-
-
-
-
-
-
-
-            $('#DateOfBirth').val(data[0].Bdate);
-
-
-
-            //      $('#ProductId').val(data[0].ProductId);
-
-
-
-
-        }
-        else {
-
-
-
-            ErrorAlert("No Data Found");
-
-
-            //$('#Unit').val('');
-            //$('#TPRate').val('');
-            //$('#RetailRate').val('');
-
-        }
-    })
-
-
-
-
-
-
-
-    //$('#Amount').val(parseInt(tAmt) - parseInt(Discout));
-    //$('#OrderAmt').val(parseInt(tAmt));
-
-
-})
 
 
 $('#AddItemBtn').click(function () {
@@ -893,6 +768,158 @@ $('#DisAmt,#CashAmt,#BalanceAmt').change (function () {
 
 
 })
+
+$('#DepId').change(function () {
+    let Id = parseInt($('#DepId').val());
+    let RId = parseInt($('#ReceiptId').val());
+
+    //  let PId = parseInt($('#PanelId').val());
+
+    debugger;
+
+
+
+
+    GetJSONRequest('/Master/Labtest/LabtestGetLabServices', 'GET', { Id, RId }, data => {
+
+        if (data && data.length > 0) {
+            $('#testId').empty();
+            $('#testId').append(`<option value="0">Select Test Name</option>`);
+            for (const model of data) {
+
+                $('#testId').append(`<option value="${model.ServicesId}">${model.ServicesName}</option>`);
+
+            }
+
+
+
+            $('#DepId').attr('disabled', 'true')
+       
+
+            $('#testId').select2()
+
+
+
+            return;
+
+
+
+        }
+        ErrorAlert("No Records Found");
+        $('#testId').empty();
+
+
+        /// $('#Comp_id').attr('disabled', 'true')
+
+    })
+
+
+})
+
+
+
+
+$('#testId').change(function () {
+    let Id = $('#testId option:selected').val();
+   
+
+ 
+
+    debugger;
+
+
+
+
+    GetJSONRequest('/Master/Labtest/LabtestGetRefId', 'GET', { Id }, data => {
+
+
+        if (data && data.length > 0) {
+
+            debugger;
+            console.log(data);
+            //   $('tbody.VoucherDetail').empty();
+            for (var item of data) {
+
+                /// var Total = item.AdmissionFee + item.MonthlyFee;
+
+
+
+
+
+
+
+
+
+
+
+                const markup = `
+                            <tr>
+                              
+                              
+                                <td>
+                                         <input type="hidden" class="form-control GRId" readonly value="${item.GRId}" />
+                                         <input type="text" class="form-control StudentName"  readonly value="${item.StudentName}" />
+                                </td>
+                                <td>
+                                         <input type="hidden" class="form-control PanelId" readonly value="${item.PanelId}" />
+                                         <input type="text" class="form-control PanelN"  readonly value="${item.PanelN}" />
+                                </td>
+
+
+                                        
+                            
+
+                              <td><input type="text" class="form-control Grno"  readonly value="${item.Grno}" /></td>
+                              <td><input type="text" class="form-control TotalAmt"  value="0" /></td>
+                              <td><input type="text" class="form-control ChallanNo" readonly value="0" /></td>
+
+                             
+                            
+                                
+                                
+
+                                 
+                                   
+                              
+                                <td><a id=""><i class="icon-trash removeitem text-danger-600"></i></a>
+
+
+
+                 </tr>`;
+                $('#tbodytable').append(markup);
+                //calculateAdmAmt()
+                //calculateAnnAmt()
+                //calculateMonthlyAmt()
+                //calculateDisTotalAmt()
+                //calculateTotalAmt()
+
+            }
+
+
+
+        }
+        else {
+
+            ErrorAlert("No Data Found");
+        }
+
+
+
+        /// $('#Comp_id').attr('disabled', 'true')
+
+    })
+
+
+})
+
+
+
+
+
+
+
+
+
 
 
 
