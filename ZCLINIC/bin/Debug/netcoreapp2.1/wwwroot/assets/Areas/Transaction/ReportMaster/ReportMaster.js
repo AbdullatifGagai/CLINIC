@@ -607,6 +607,138 @@ $('tbody.ChaDetails').delegate(".VoucherNO", "click", function () {
 
 
 
+$('#AddItemBtn').click(() => { AddRow(); })
+
+
+
+
+
+function AddRow() {
+
+
+
+
+    debugger;
+    var check = false;
+
+
+    let Id = parseInt($('#testId').val());
+
+
+    if (Id == 0 || Id == null) {
+
+
+        ErrorAlert("Enter Level   Name");
+        check = true;
+
+    }
+
+
+
+    if (!check) {
+
+        //debugger;
+
+   
+
+      
+
+
+
+
+        debugger;
+
+        GetJSONRequest('/Master/Labtest/LabtestGetRefId', 'GET', { Id }, data => {
+
+            if (data && data.length > 0) {
+
+                debugger;
+                console.log(data);
+///              
+                for (var item of data) {
+
+                    
+                 
+
+
+
+
+
+                    const markup = `
+                            <tr>
+                              
+                              
+                                <td>
+                                         <input type="hidden" class="form-control GRId" readonly value="${item.GRId}" />
+                                         <input type="text" class="form-control StudentName"  readonly value="${item.StudentName}" />
+                                </td>
+                                <td>
+                                         <input type="hidden" class="form-control PanelId" readonly value="${item.PanelId}" />
+                                         <input type="text" class="form-control PanelN"  readonly value="${item.PanelN}" />
+                                </td>
+
+
+
+                            
+
+                              <td><input type="text" class="form-control Grno"  readonly value="${item.Grno}" /></td>
+                              <td><input type="text" class="form-control AdmAmt"  readonly value="${AdAmt}" /></td>
+                              <td><input type="text" class="form-control AnnualAmt" readonly value="${AnnAmt}" /></td>
+
+                              <td><input type="text" class="form-control MonthlyAmt"  readonly value="${MonthlyFee}" /></td>
+                              <td><input type="text" class="form-control MDisAmt"  readonly value="${item.MDisAmt}" /></td>
+
+                              <td><input type="text" class="form-control TotalAmt" readonly value="${AdAmt + AnnAmt + MonthlyFee - item.MDisAmt}" /></td>
+                              <td><input type="text" class="form-control ChallanNo" readonly value="0" /></td>
+
+                             
+                            
+                                
+                                
+
+                                 
+                                   
+                              
+                                <td><a id=""><i class="icon-trash removeitem text-danger-600"></i></a>
+
+
+
+                 </tr>`;
+                    $('tbody.VoucherDetail').append(markup);
+                   
+                }
+
+
+
+            }
+            else {
+
+                ErrorAlert("No Data Found");
+                $('tbody.VoucherDetail').empty();
+
+
+            }
+
+
+
+
+
+
+
+
+
+        })
+
+
+
+
+    }
+
+
+
+
+
+}
 
 
 
@@ -710,7 +842,7 @@ $('#tbodytable').delegate('.btn_delete', 'click', function () {
 
 
 
-    ///lstif
+  
     $(this).closest('tr').remove();
     TotalSevAmt();
 })
@@ -787,7 +919,7 @@ $('#DepId').change(function () {
             $('#testId').append(`<option value="0">Select Test Name</option>`);
             for (const model of data) {
 
-                $('#testId').append(`<option value="${model.ServicesId}">${model.ServicesName}</option>`);
+                $('#testId').append(`<option value="${model.SerId}">${model.ServicesName}</option>`);
 
             }
 
@@ -817,100 +949,6 @@ $('#DepId').change(function () {
 })
 
 
-
-
-$('#testId').change(function () {
-    let Id = $('#testId option:selected').val();
-   
-
- 
-
-    debugger;
-
-
-
-
-    GetJSONRequest('/Master/Labtest/LabtestGetRefId', 'GET', { Id }, data => {
-
-
-        if (data && data.length > 0) {
-
-            debugger;
-            console.log(data);
-            //   $('tbody.VoucherDetail').empty();
-            for (var item of data) {
-
-                /// var Total = item.AdmissionFee + item.MonthlyFee;
-
-
-
-
-
-
-
-
-
-
-
-                const markup = `
-                            <tr>
-                              
-                              
-                                <td>
-                                         <input type="hidden" class="form-control GRId" readonly value="${item.GRId}" />
-                                         <input type="text" class="form-control StudentName"  readonly value="${item.StudentName}" />
-                                </td>
-                                <td>
-                                         <input type="hidden" class="form-control PanelId" readonly value="${item.PanelId}" />
-                                         <input type="text" class="form-control PanelN"  readonly value="${item.PanelN}" />
-                                </td>
-
-
-                                        
-                            
-
-                              <td><input type="text" class="form-control Grno"  readonly value="${item.Grno}" /></td>
-                              <td><input type="text" class="form-control TotalAmt"  value="0" /></td>
-                              <td><input type="text" class="form-control ChallanNo" readonly value="0" /></td>
-
-                             
-                            
-                                
-                                
-
-                                 
-                                   
-                              
-                                <td><a id=""><i class="icon-trash removeitem text-danger-600"></i></a>
-
-
-
-                 </tr>`;
-                $('#tbodytable').append(markup);
-                //calculateAdmAmt()
-                //calculateAnnAmt()
-                //calculateMonthlyAmt()
-                //calculateDisTotalAmt()
-                //calculateTotalAmt()
-
-            }
-
-
-
-        }
-        else {
-
-            ErrorAlert("No Data Found");
-        }
-
-
-
-        /// $('#Comp_id').attr('disabled', 'true')
-
-    })
-
-
-})
 
 
 

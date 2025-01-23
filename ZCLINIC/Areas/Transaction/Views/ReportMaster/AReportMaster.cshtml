@@ -134,7 +134,7 @@
         <div class="form-group form-group-xs col-md-12">
 
 
-            <div class="form-group form-group-xs col-md-6">
+            <div class="form-group form-group-xs col-md-4">
                 <label>Deparment Name<b class="wysiwyg-color-red"></b></label>
                 @{
                     List<ZCLINIC.Areas.Master.Models.LabDeparment> LabDeparment = new ZCLINIC.Areas.Master.Models.LabDeparment().Master_LabDeparmentGetAll(Context.Session.GetBValues(), Context.GetIP(), Context.GetCInfo());
@@ -144,11 +144,24 @@
 
             </div>
 
-            
-            <div class="form-group form-group-xs col-md-6">
+
+            <div class="form-group form-group-xs col-md-4">
                 <label>Test Name<b class="wysiwyg-color-red"></b></label>
                 <select class="form-control   combo-box" id="testId" type=2 name="ModelId"></select>
 
+            </div>
+
+
+            
+
+
+
+
+
+
+
+            <div class="form-group form-group-xs mt-20 col-md-1">
+                <a class="btn btn-info btn-sm" id="AddItemBtn" data-script="#"><i class="icon-add mr-5"></i>Add</a>
             </div>
 
 
