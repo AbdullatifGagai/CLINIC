@@ -20,15 +20,16 @@ namespace ZCLINIC.Areas.Transaction.Controllers
         }
 
         [HttpPost]
-        public string SaveReportMaster(ReportMaster model)
+        public string SaveReportMaster(ReportMaster ReportMaster,List<ReportDetail> ReportDetail)
         {
-            return new ReportMasterApiController().ReportMasterSave(new List<object>() { model, HttpContext.Session.GetBValues() }, HttpContext.GetIP(), HttpContext.GetCInfo());
+            return new ReportMaster().Transaction_ReportMasterSave(HttpContext.Session.GetBValues(), HttpContext.GetIP(), HttpContext.GetCInfo(),ReportMaster,ReportDetail);
         }
 
         [HttpPost]
-        public string UpdateReportMaster(ReportMaster model)
+        public string UpdateReportMaster(ReportMaster ReportMaster, List<ReportDetail> ReportDetail)
         {
-            return new ReportMasterApiController().ReportMasterUpdate(new List<object>() { model, HttpContext.Session.GetBValues() }, HttpContext.GetIP(), HttpContext.GetCInfo());
+         
+            return new ReportMaster().Transaction_ReportMasterUpdate(HttpContext.Session.GetBValues(), HttpContext.GetIP(), HttpContext.GetCInfo(), ReportMaster, ReportDetail);
         }
 
         [HttpPost]

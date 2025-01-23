@@ -18,17 +18,17 @@ namespace ZCLINIC.Areas.Transaction.APIControllers
             return new ReportMaster().Transaction_ReportMasterGetById(id, bv, ip, cInfo);
         }
 
-        [HttpPost]
-        public string ReportMasterSave(List<object> objList, string ip, string cInfo)
-        {
-            return ((ReportMaster)objList[0]).Transaction_ReportMasterSave((BValues)objList[1], ip, cInfo);
-        }
+        //[HttpPost]
+        //public string ReportMasterSave(List<object> objList, string ip, string cInfo)
+        //{
+        //    return ((ReportMaster)objList[0]).Transaction_ReportMasterSave((BValues)objList[1], ip, cInfo);
+        //}
 
-        [HttpPost]
-        public string ReportMasterUpdate(List<object> objList, string ip, string cInfo)
-        {
-            return ((ReportMaster)objList[0]).Transaction_ReportMasterUpdate((BValues)objList[1], ip, cInfo);
-        }
+        //[HttpPost]
+        //public string ReportMasterUpdate(List<object> objList, string ip, string cInfo)
+        //{
+        //    return ((ReportMaster)objList[0]).Transaction_ReportMasterUpdate((BValues)objList[1], ip, cInfo);
+        //}
 
         [HttpPost]
         public string ReportMasterDelete(int id, BValues bv, string ip, string cInfo)

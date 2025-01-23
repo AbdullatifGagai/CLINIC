@@ -134,7 +134,7 @@
         <div class="form-group form-group-xs col-md-12">
 
 
-            <div class="form-group form-group-xs col-md-4">
+            <div class="form-group form-group-xs col-md-3">
                 <label>Deparment Name<b class="wysiwyg-color-red"></b></label>
                 @{
                     List<ZCLINIC.Areas.Master.Models.LabDeparment> LabDeparment = new ZCLINIC.Areas.Master.Models.LabDeparment().Master_LabDeparmentGetAll(Context.Session.GetBValues(), Context.GetIP(), Context.GetCInfo());
@@ -145,14 +145,18 @@
             </div>
 
 
-            <div class="form-group form-group-xs col-md-4">
+            <div class="form-group form-group-xs col-md-3">
                 <label>Test Name<b class="wysiwyg-color-red"></b></label>
                 <select class="form-control   combo-box" id="testId" type=2 name="ModelId"></select>
 
             </div>
 
 
-            
+            <div class="form-group form-group-xs col-md-3">
+                <label>Remarks<b class="wysiwyg-color-red"></b></label>
+                @Html.TextBoxFor(m => m.Remarks, new { @class = "form-control", type = "text" })
+
+            </div>
 
 
 
@@ -185,14 +189,14 @@
                     <th>Result</th>
                     <th>Units</th>
                     <th>Reference Ranges</th>
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                  
+
+
+
+
+
+
+
+
 
 
 
@@ -200,12 +204,25 @@
 
 
                 </tr>
-              
+
 
             </thead>
 
 
             <tbody id="tbodytable">
+          
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
             </tbody>
 
 
@@ -213,43 +230,6 @@
 
 
 
-
-
-
-
-            @*<tfoot>
-                    <tr>
-
-                        <td>
-                            @Html.TextBoxFor(m => m.ServicesAmt, new { @class = "form-control", type = "number", @readonly = "readonly" })
-
-                            @Html.TextBoxFor(m => m.CashAmt, new { @class = "form-control", type = "number", @readonly = "readonly" })
-
-
-
-                        </td>
-
-                        <td>
-
-
-
-
-                            @Html.TextBoxFor(m => m.ServicesAmt, new { @class = "form-control", type = "number", @readonly = "readonly" })
-
-                            @Html.TextBoxFor(m => m.CashAmt, new { @class = "form-control", type = "number", @readonly = "readonly" })
-
-
-                        </td>
-
-
-
-
-
-
-
-                    </tr>
-
-                </tfoot>*@
 
 
 
@@ -274,11 +254,24 @@
     </div>
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
     <div class="modal-footer mt-10 no-padding no-border">
 
 
 
-        <a data-url="/Transaction/ReceiptMaster" data-script="/assets/Areas/Transaction/ReceiptMaster/Index.js" class="btn btn-danger btn-xs  closeBtn" data-dismiss="modal"><i class="icon-cross"></i>Close</a>
+        <a data-url="/Transaction/ReportMaster" data-script="#" class="btn btn-danger btn-xs  closeBtn" data-dismiss="modal"><i class="icon-cross"></i>Close</a>
 
 
 

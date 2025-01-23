@@ -71,14 +71,14 @@
 
                 <thead>
                     <tr class="bg-blue-800">
-                        <th>Fee VoucherId</th>
+                        <th>Report</th>
 
-                        <th>Voucher Date</th>
+                        <th>Report Date</th>
 
-                        <th>Panel  Name</th>
-                        <th>Month Name</th>
-                        <th>Total  Amount</th>
-                        <th>RefNo</th>
+                        <th>Mrno</th>
+                        <th>Patient  Name</th>
+                       
+                        <th>Receipt No</th>
 
 
 
@@ -93,33 +93,35 @@
                     @foreach (ZCLINIC.Areas.Transaction.Models.ReportMaster s in Model)
                     {
                         <tr data-rowid="@s.ReportId">
-                            <td>@s.ReceiptId</td>
-                            @*<td>@s.RDate </td>
+                          
+                            <td>@s.ReportNo </td>
+                            <td>@s.ReportDate </td>
+                            
+                            
+                            <td>@s.Mrno </td>
                             <td>@s.PName </td>
-                            <td>@s.FeesTerm </td>
-                            <td>@s.Amt </td>
+                            <td>@s.ReceiptNo </td>
+                          
 
-
-                            <td>@s.VOUCHER_NO</td>*@
-
-                            @*<td>
+                           
+                            <td>
                                 <ul class="icons-list">
 
                                     @if (editview)
                                     {
-                                        <li class="text-primary-600"><a data-modalhorizontal="true" data-modalsize="modal-lg" data-heading="Edit Panel Receipt" data-script="/assets/Areas/Transaction/ReceiptPanelMaster/ReceiptPanelMaster.js" data-url="/Transaction/ReceiptPanelMaster/AReceiptPanelMaster?Id=@s.ReceiptId"><i class="icon-pencil7"></i></a></li>
+                                        <li class="text-primary-600"><a data-modalhorizontal="true" data-modalsize="modal-full" data-heading="Edit Panel Receipt" data-script="/assets/Areas/Transaction/ReportMaster/ReportMaster.js" data-url="/Transaction/ReportMaster/AReportMaster?Id=@s.ReportId"><i class="icon-pencil7"></i></a></li>
                                     }
 
 
                                     @if (delete)
                                     {
-                                        <li class="text-danger-600"><a onclick="DeleteAlert({ 'Id':@s.ReceiptId}, '/Transaction/ReceiptPanelMaster/DeleteReceiptPanelMaster', 'Panel Receipt')"><i class="icon-trash"></i></a></li>
+                                        <li class="text-danger-600"><a onclick="DeleteAlert({ 'Id':@s.ReportId}, '/Transaction/ReceiptPanelMaster/DeleteReceiptPanelMaster', 'Panel Receipt')"><i class="icon-trash"></i></a></li>
                                     }
 
 
                                     @if (Print)
                                     {
-                                        <li class="text-primary-600"><a data-toggle="tooltip" title="Report" href="/Report/Reportrdlc/AReport?rvalues.Name=19&rvalues.Value[0]=@s.ReceiptId&rvalues.Value[1]=@s.RDate&rvalues.Value[2]=@a&rvalues.Value[3]=@a&rvalues.Value[4]=@a&rvalues.Value[5]=@a&rvalues.Value[6]=@a" data-heading="CPD Form" target="_blank"><i class="icon-printer"></i></a></li>
+                                        <li class="text-primary-600"><a data-toggle="tooltip" title="Report" href="/Report/Reportrdlc/AReport?rvalues.Name=19&rvalues.Value[0]=@s.ReportId&rvalues.Value[1]=@s.ReportId&rvalues.Value[2]=@a&rvalues.Value[3]=@a&rvalues.Value[4]=@a&rvalues.Value[5]=@a&rvalues.Value[6]=@a" data-heading="CPD Form" target="_blank"><i class="icon-printer"></i></a></li>
                                     }
 
 
@@ -128,7 +130,7 @@
 
 
                                 </ul>
-                            </td>*@
+                            </td>
                         </tr>
                     }
                 </tbody>

@@ -131,6 +131,10 @@ namespace ZCLINIC.Areas.Transaction.Models
 
 
         public string Cellno { get; set; }
+
+
+
+        public string Discri { get; set; }
         //View only properties
         public string ReturnMessage { get; set; }
 

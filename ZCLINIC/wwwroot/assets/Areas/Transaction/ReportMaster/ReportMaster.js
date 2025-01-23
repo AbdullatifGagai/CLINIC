@@ -628,7 +628,7 @@ function AddRow() {
     if (Id == 0 || Id == null) {
 
 
-        ErrorAlert("Enter Level   Name");
+        ErrorAlert("Enter Test Name");
         check = true;
 
     }
@@ -637,23 +637,14 @@ function AddRow() {
 
     if (!check) {
 
-        //debugger;
-
-   
-
-      
-
-
-
-
-        debugger;
+       
 
         GetJSONRequest('/Master/Labtest/LabtestGetRefId', 'GET', { Id }, data => {
 
             if (data && data.length > 0) {
 
-                debugger;
-                console.log(data);
+                //debugger;
+                //console.log(data);
 ///              
                 for (var item of data) {
 
@@ -669,27 +660,37 @@ function AddRow() {
                               
                               
                                 <td>
-                                         <input type="hidden" class="form-control GRId" readonly value="${item.GRId}" />
-                                         <input type="text" class="form-control StudentName"  readonly value="${item.StudentName}" />
+                                         <input type="hidden" class="form-control SerId" readonly value="${item.SerId}" />
+                                         <input type="text" class="form-control ServicesName"  readonly value="${item.ServicesName}" />
                                 </td>
-                                <td>
-                                         <input type="hidden" class="form-control PanelId" readonly value="${item.PanelId}" />
-                                         <input type="text" class="form-control PanelN"  readonly value="${item.PanelN}" />
+                              
+
+                                 <td>
+                                         <input type="text" class="form-control Discri" readonly value="${item.Discri}" />
+                                      
                                 </td>
 
 
 
+            
+                                 <td>
+                                        <input type="text" class="form-control Result"  value="" />
+                                      
+                                </td>
+
+                                  <td>
+                                         <input type="text" class="form-control Unit" readonly value="${item.Unit}" />
+
+                                </td>
+
+
+                             
                             
+                                    <td>
+                                         <input type="text" class="form-control Refvalue" readonly value="${item.Refvalue}" />
 
-                              <td><input type="text" class="form-control Grno"  readonly value="${item.Grno}" /></td>
-                              <td><input type="text" class="form-control AdmAmt"  readonly value="${AdAmt}" /></td>
-                              <td><input type="text" class="form-control AnnualAmt" readonly value="${AnnAmt}" /></td>
+                                </td>
 
-                              <td><input type="text" class="form-control MonthlyAmt"  readonly value="${MonthlyFee}" /></td>
-                              <td><input type="text" class="form-control MDisAmt"  readonly value="${item.MDisAmt}" /></td>
-
-                              <td><input type="text" class="form-control TotalAmt" readonly value="${AdAmt + AnnAmt + MonthlyFee - item.MDisAmt}" /></td>
-                              <td><input type="text" class="form-control ChallanNo" readonly value="0" /></td>
 
                              
                             
@@ -699,12 +700,10 @@ function AddRow() {
                                  
                                    
                               
-                                <td><a id=""><i class="icon-trash removeitem text-danger-600"></i></a>
-
 
 
                  </tr>`;
-                    $('tbody.VoucherDetail').append(markup);
+                    $('#tbodytable').append(markup);
                    
                 }
 
@@ -714,7 +713,7 @@ function AddRow() {
             else {
 
                 ErrorAlert("No Data Found");
-                $('tbody.VoucherDetail').empty();
+             ///   $('tbody.VoucherDetail').empty();
 
 
             }
@@ -781,61 +780,7 @@ function AddRow() {
 
 
 
-$('#AddItemBtn').click(function () {
 
-
-
-
-    if ($('#SevicesId option:selected').val() == "0") {
-        ErrorAlert("SevicesId Name is Required")
-
-
-        debugger;
-    }
-
-
-
-
-    //else if ($('#StoreName').val() == "0") {
-    //    ErrorAlert("Store  is Required")
-    //}
-
-    else if ($('#Rate').val() == '') {
-        ErrorAlert("Miss Value")
-    }
-
-
-
-    else {
-        let markup = `<tr>
-                     
-                     <td><input type="hidden" class="form-control ServicesId" value="${$('#SevicesId option:selected').val()}"/>${$('#SevicesId option:selected').text()}</td>
-                 
-                     <td><input type="text" class="form-control  Rate"  readonly value="${$('#Rate').val()}"></td>
-                    
-                    
-                  
-
-                     
-                      <td><a class="btn_delete text-danger-600"><i class="icon-trash"></i></a></td>
-                      </tr>`
-        $('#tbodytable').append(markup)
-
-        TotalSevAmt();
-      
-        $('#Rate').val('');
-      
-        $('#SevicesId').val(0)
-     
-        $('#SevicesId').select2()
-
-        //  Total_DisAmt();
-        //Total_Saletex();
-        //Total_Amount();
-
-
-    }
-})
 $('#tbodytable').delegate('.btn_delete', 'click', function () {
 
     debugger;
@@ -966,11 +911,11 @@ $('#DepId').change(function () {
 
 
 $('.SaveBtn').on('click', function () {
-    var PaymentM = $('#PaymentM').val();
-    var MrId = $('#MrId').val();
-    var MrNo = $('#MrNo').val();
-    var PatientName = $('#PatientName').val();
-    var age = $('#age').val();
+    //var PaymentM = $('#PaymentM').val();
+    //var MrId = $('#MrId').val();
+    //var MrNo = $('#MrNo').val();
+    //var PatientName = $('#PatientName').val();
+    //var age = $('#age').val();
 
 
 
@@ -980,21 +925,21 @@ $('.SaveBtn').on('click', function () {
 
 
 
-    if (PaymentM == 0 || PaymentM == null) {
+    //if (PaymentM == 0 || PaymentM == null) {
 
 
-        ErrorAlert("Enter Payment Mode");
-        check = true;
+    //    ErrorAlert("Enter Payment Mode");
+    //    check = true;
 
-    }
+    //}
 
-    if (MrId ==  '' || MrNo == '' || PatientName == '', age == '') {
+    //if (MrId ==  '' || MrNo == '' || PatientName == '', age == '') {
 
 
-        ErrorAlert("Miss Value");
-        check = true;
+    //    ErrorAlert("Miss Value");
+    //    check = true;
 
-    }
+    //}
 
    
    
@@ -1008,6 +953,7 @@ $('.SaveBtn').on('click', function () {
 
 
 
+        debugger;
 
 
 
@@ -1018,38 +964,46 @@ $('.SaveBtn').on('click', function () {
 
 
 
-
-        var ReceiptMaster = [], ReceiptDetail = [];
-
+        var ReportMaster = [], ReportDetail = [];
 
 
-        ReceiptMaster = {
+
+        ReportMaster = {
+            ReportId: $('#ReportId').val(),
+            ReportCode: $('#ReportCode').val(),
+            ReportNo: $('#ReportNo').val(),
             ReceiptId: $('#ReceiptId').val(),
             ReceiptNo: $('#ReceiptNo').val(),
-            RefNo: $('#RefNo').val(),
-            RefNo: $('#RefNo').val(),
-            DocId: parseInt($('#DocId option:selected').val()),
             MrId: $('#MrId').val(),
-            MrNo: $('#MrNo').val(),
-            PatientName: $('#PatientName').val(),
-            PaymentM: parseInt($('#PaymentM option:selected').val()),
-            PanelId: parseInt($('#PanelId option:selected').val()),
-            CategoryId: parseInt($('#CategoryId option:selected').val()),
+            Mrno: $('#Mrno').val(),
+            PName: $('#PName').val(),
+            Age: $('#Age').val(),
+
+
+            CollectedDate: $('#CollectedDate').val(),
+            RecDate: $('#RecDate').val(),
+            ReportDate: $('#ReportDate').val(),
+            ReportTime: $('#ReportTime').val(),
+            DepId: parseInt($('#DepId option:selected').val()),
+            SerId: parseInt($('#testId option:selected').val()),
+
+
+
+
+
+
+
+
+
+
+
+
+
+         
+
+
+
           
-
-
-
-            DateOfBirth: $('#DateOfBirth').val(),
-            age: $('#age').val(),
-            ServicesAmt: $('#ServicesAmt').val(),
-            DisAmt: $('#DisAmt').val(),
-            CashAmt: $('#CashAmt').val(),
-            BalanceAmt: $('#BalanceAmt').val(),
-            age: $('#age').val(),
-
-
-
-            
 
 
 
@@ -1063,14 +1017,16 @@ $('.SaveBtn').on('click', function () {
 
         $('#tbodytable tr').each(function () {
 
-            ReceiptDetail.push({
+            ReportDetail.push({
 
 
 
-                ReceiptId: $('#ReceiptId').val(),
-                ServicesId: parseInt($(this).find(".ServicesId").val()),
-                Rate: parseFloat($(this).find(".Rate").val()),
-                CategoryId: parseInt($('#CategoryId option:selected').val()),
+                ReportId: $('#ReportId').val(),
+                Dis: $(this).find(".Discri").val(),
+                Unit: $(this).find(".Unit").val(),
+                result: $(this).find(".Result").val(),
+                RefValue: $(this).find(".Refvalue").val(),
+                SevId: parseInt($(this).find(".SerId").val()),
 
               
 
@@ -1087,19 +1043,19 @@ $('.SaveBtn').on('click', function () {
 
 
 
-        console.log(ReceiptMaster);
-        console.log(ReceiptDetail);
+        console.log(ReportMaster);
+        console.log(ReportDetail);
 
 
 
         debugger;
 
-        var ReceiptId = $('#ReceiptId').val();
+        var ReportId = $('#ReportId').val();
 
-        if (ReceiptId > 0) {
+        if (ReportId > 0) {
 
             debugger;
-            GetJSONRequest('/Transaction/ReceiptMaster/UpdateReceiptMaster', 'POST', { ReceiptMaster, ReceiptDetail }, function (data) {
+            GetJSONRequest('/Transaction/ReportMaster/UpdateReportMaster', 'POST', { ReportMaster, ReportDetail }, function (data) {
                 SuccessAlert("Data Saved");
                 $('.closeBtn').trigger('click');
             });
@@ -1109,7 +1065,7 @@ $('.SaveBtn').on('click', function () {
             debugger;
 
 
-            GetJSONRequest('/Transaction/ReceiptMaster/SaveReceiptMaster', 'POST', { ReceiptMaster, ReceiptDetail }, function (data) {
+            GetJSONRequest('/Transaction/ReportMaster/SaveReportMaster', 'POST', { ReportMaster, ReportDetail }, function (data) {
                 SuccessAlert("Data Saved");
                 $('.closeBtn').trigger('click');
 

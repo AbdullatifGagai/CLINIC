@@ -47,6 +47,13 @@ namespace ZCLINIC.Areas.Master.Models
 
         public string DepName { get; set; }
 
+
+        public string Discri { get; set; }
+
+        public string Unit { get; set; }
+
+        public string  Refvalue { get; set; }
+
         public string Master_LabtestSave(BValues bv, string ip, string cInfo,Labtest Labtest,List<LabtestDetail> LabtestDetail)
         {
             var parameters = new { x = Labtest, LabtestDetail };

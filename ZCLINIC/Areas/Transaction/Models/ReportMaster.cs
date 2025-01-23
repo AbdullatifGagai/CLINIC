@@ -19,7 +19,7 @@ namespace ZCLINIC.Areas.Transaction.Models
         public int ReportCode { get; set; }
        
         [TVP]
-        public int ReportNo{ get; set; }
+        public string  ReportNo{ get; set; }
        
         
         
@@ -69,6 +69,9 @@ namespace ZCLINIC.Areas.Transaction.Models
         [TVP]
         public int SerId { get; set; }
 
+           [TVP]
+        public string  Remarks { get; set; }
+
 
 
 
@@ -101,13 +104,39 @@ namespace ZCLINIC.Areas.Transaction.Models
         public string  PatientName { get; set; }
         public string ReturnMessage { get; set; }
 
-        public string Transaction_ReportMasterSave(BValues bv, string ip, string cInfo)
+        public string Transaction_ReportMasterSave(BValues bv, string ip, string cInfo, ReportMaster ReportMaster, List<ReportDetail> ReportDetail)
         {
-            var parameters = new { x = this };
+            var parameters = new { x = ReportMaster, y = ReportDetail };
+
+
+
+
+
+
+
+
+
 
             try
             {
-                TenantId = bv.TenantId; AppId = bv.AppId; CreatedBy = bv.UserId; ModifiedBy = bv.UserId;
+
+                foreach (var item in ReportDetail)
+                {
+
+
+
+                    item.TenantId = bv.TenantId; item.AppId = bv.AppId; item.CreatedBy = bv.UserId;
+                }
+
+
+
+
+
+
+
+
+
+                ReportMaster.TenantId = bv.TenantId; ReportMaster.AppId = bv.AppId; ReportMaster.CreatedBy = bv.UserId;
 
                 string message = DataBase.ExecuteQuery<ReportMaster>(parameters, Connection.GetConnection()).FirstOrDefault().ReturnMessage;
 
@@ -123,13 +152,31 @@ namespace ZCLINIC.Areas.Transaction.Models
             }
         }
 
-        public string Transaction_ReportMasterUpdate(BValues bv, string ip, string cInfo)
+        public string Transaction_ReportMasterUpdate(BValues bv, string ip, string cInfo, ReportMaster ReportMaster, List<ReportDetail> ReportDetail)
         {
-            var parameters = new { x = this };
+            var parameters = new { x = ReportMaster,y=ReportDetail };
 
             try
             {
-                TenantId = bv.TenantId; AppId = bv.AppId; ModifiedBy = bv.UserId;
+
+
+                foreach (var item in ReportDetail)
+                {
+
+
+
+                    item.TenantId = bv.TenantId; item.AppId = bv.AppId; item.CreatedBy = bv.UserId;
+                }
+
+
+
+
+
+
+
+
+
+                ReportMaster.TenantId = bv.TenantId; ReportMaster.AppId = bv.AppId; ReportMaster.ModifiedBy = bv.UserId; ;
 
                 string message = DataBase.ExecuteQuery<ReportMaster>(parameters, Connection.GetConnection()).FirstOrDefault().ReturnMessage;
 
