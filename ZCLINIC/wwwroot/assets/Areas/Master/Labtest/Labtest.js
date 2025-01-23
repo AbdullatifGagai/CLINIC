@@ -66,10 +66,10 @@ function  ReceiptDetail(Id) {
 
                                 
                                 
-                                    <td><input type="text" class="form-control Dis" readonly value="${item.Discri}" /></td>
-                                    <td><input type="text" class="form-control Unit" readonly value="${item.Unit}" /></td>
+                                    <td><input type="text" class="form-control Dis"  value="${item.Discri}" /></td>
+                                    <td><input type="text" class="form-control Unit"  value="${item.Unit}" /></td>
                                   
-                                    <td><input type="text" class="form-control Refvalue" readonly value="${item.Refvalue}" /></td>
+                                    <td><input type="text" class="form-control Refvalue"  value="${item.Refvalue}" /></td>
 
                                     <td><a id=""><i class="icon-trash btn_delete text-danger-600"></i></a>
 
@@ -593,9 +593,9 @@ $('#AddItemBtn').click(function () {
                      
                      
                  
-                     <td><input type="text" class="form-control  Dis"  readonly value="${$('#Dis').val()}"></td>
-                     <td><input type="text" class="form-control  Unit"  readonly value="${$('#Unit').val()}"></td>
-                     <td><input type="text" class="form-control  Refvalue"  readonly value="${$('#Refvalue').val()}"></td>
+                     <td><input type="text" class="form-control  Dis"   value="${$('#Dis').val()}"></td>
+                     <td><input type="text" class="form-control  Unit"   value="${$('#Unit').val()}"></td>
+                     <td><input type="text" class="form-control  Refvalue" value="${$('#Refvalue').val()}"></td>
                     
                     
                   

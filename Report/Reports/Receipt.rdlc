@@ -221,7 +221,7 @@
                   </TablixCells>
                 </TablixRow>
                 <TablixRow>
-                  <Height>0.9088cm</Height>
+                  <Height>0.6cm</Height>
                   <TablixCells>
                     <TablixCell>
                       <CellContents>
@@ -268,7 +268,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Fields!Rate.Value</Value>
+                                  <Value>=Sum(Fields!Rate.Value)</Value>
                                   <Style>
                                     <FontFamily>arial</FontFamily>
                                     <FontSize>7pt</FontSize>
@@ -610,30 +610,32 @@
             </TablixColumnHierarchy>
             <TablixRowHierarchy>
               <TablixMembers>
+                <TablixMember />
                 <TablixMember>
-                  <KeepWithGroup>After</KeepWithGroup>
+                  <Group Name="ServicesName">
+                    <GroupExpressions>
+                      <GroupExpression>=Fields!ServicesName.Value</GroupExpression>
+                    </GroupExpressions>
+                  </Group>
+                  <SortExpressions>
+                    <SortExpression>
+                      <Value>=Fields!ServicesName.Value</Value>
+                    </SortExpression>
+                  </SortExpressions>
+                  <TablixMembers>
+                    <TablixMember />
+                  </TablixMembers>
                 </TablixMember>
-                <TablixMember>
-                  <Group Name="Details" />
-                </TablixMember>
-                <TablixMember>
-                  <KeepWithGroup>Before</KeepWithGroup>
-                </TablixMember>
-                <TablixMember>
-                  <KeepWithGroup>Before</KeepWithGroup>
-                </TablixMember>
-                <TablixMember>
-                  <KeepWithGroup>Before</KeepWithGroup>
-                </TablixMember>
-                <TablixMember>
-                  <KeepWithGroup>Before</KeepWithGroup>
-                </TablixMember>
+                <TablixMember />
+                <TablixMember />
+                <TablixMember />
+                <TablixMember />
               </TablixMembers>
             </TablixRowHierarchy>
             <DataSetName>GetReportMasterReceipt</DataSetName>
             <Top>0.25706cm</Top>
             <Left>0.09525cm</Left>
-            <Height>3.90879cm</Height>
+            <Height>3.6cm</Height>
             <Width>6.79814cm</Width>
             <Style>
               <Border>
@@ -732,10 +734,10 @@
           </Border>
         </Style>
       </Body>
-      <Width>7.08851cm</Width>
+      <Width>7.22381cm</Width>
       <Page>
         <PageHeader>
-          <Height>7.39662cm</Height>
+          <Height>8.64016cm</Height>
           <PrintOnFirstPage>true</PrintOnFirstPage>
           <PrintOnLastPage>true</PrintOnLastPage>
           <ReportItems>
@@ -985,8 +987,8 @@
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>Textbox27</rd:DefaultName>
-              <Top>5.2611cm</Top>
-              <Left>0.11363cm</Left>
+              <Top>5.9026cm</Top>
+              <Left>0.16757cm</Left>
               <Height>0.50391cm</Height>
               <Width>2.30244cm</Width>
               <ZIndex>7</ZIndex>
@@ -1150,8 +1152,8 @@
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>PatientName</rd:DefaultName>
-              <Top>5.22462cm</Top>
-              <Left>2.47288cm</Left>
+              <Top>5.86612cm</Top>
+              <Left>2.52682cm</Left>
               <Height>0.6cm</Height>
               <Width>4.32988cm</Width>
               <ZIndex>12</ZIndex>
@@ -1182,8 +1184,8 @@
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>PatientName</rd:DefaultName>
-              <Top>6.62023cm</Top>
-              <Left>2.47126cm</Left>
+              <Top>7.26173cm</Top>
+              <Left>2.5252cm</Left>
               <Height>0.6cm</Height>
               <Width>4.32988cm</Width>
               <ZIndex>13</ZIndex>
@@ -1215,8 +1217,8 @@
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>Textbox27</rd:DefaultName>
-              <Top>6.65198cm</Top>
-              <Left>0.13354cm</Left>
+              <Top>7.32523cm</Top>
+              <Left>0.18748cm</Left>
               <Height>0.50391cm</Height>
               <Width>2.30244cm</Width>
               <ZIndex>14</ZIndex>
@@ -1247,8 +1249,8 @@
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>PatientName</rd:DefaultName>
-              <Top>5.91439cm</Top>
-              <Left>2.47126cm</Left>
+              <Top>6.55589cm</Top>
+              <Left>2.5252cm</Left>
               <Height>0.6cm</Height>
               <Width>4.32988cm</Width>
               <ZIndex>15</ZIndex>
@@ -1280,11 +1282,141 @@
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>Textbox27</rd:DefaultName>
-              <Top>5.97168cm</Top>
-              <Left>0.09474cm</Left>
+              <Top>6.61318cm</Top>
+              <Left>0.14868cm</Left>
               <Height>0.50391cm</Height>
               <Width>2.30244cm</Width>
               <ZIndex>16</ZIndex>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+                <PaddingTop>2pt</PaddingTop>
+                <PaddingBottom>2pt</PaddingBottom>
+              </Style>
+            </Textbox>
+            <Textbox Name="PatientName5">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>=Fields!age.Value &amp;  ""  &amp; "Y"</Value>
+                      <Style>
+                        <FontSize>8pt</FontSize>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style />
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>PatientName</rd:DefaultName>
+              <Top>5.23437cm</Top>
+              <Left>2.52682cm</Left>
+              <Height>0.6cm</Height>
+              <Width>1.47238cm</Width>
+              <ZIndex>17</ZIndex>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+                <PaddingTop>2pt</PaddingTop>
+                <PaddingBottom>2pt</PaddingBottom>
+              </Style>
+            </Textbox>
+            <Textbox Name="Textbox34">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>Age :</Value>
+                      <Style>
+                        <FontSize>8pt</FontSize>
+                        <FontWeight>Bold</FontWeight>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style />
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>Textbox27</rd:DefaultName>
+              <Top>5.23501cm</Top>
+              <Left>0.14868cm</Left>
+              <Height>0.57447cm</Height>
+              <Width>2.30244cm</Width>
+              <ZIndex>18</ZIndex>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+                <PaddingTop>2pt</PaddingTop>
+                <PaddingBottom>2pt</PaddingBottom>
+              </Style>
+            </Textbox>
+            <Textbox Name="Textbox35">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>PaymentType :</Value>
+                      <Style>
+                        <FontSize>8pt</FontSize>
+                        <FontWeight>Bold</FontWeight>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style />
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>Textbox27</rd:DefaultName>
+              <Top>7.97378cm</Top>
+              <Left>0.18748cm</Left>
+              <Height>0.50391cm</Height>
+              <Width>2.30244cm</Width>
+              <ZIndex>19</ZIndex>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+                <PaddingTop>2pt</PaddingTop>
+                <PaddingBottom>2pt</PaddingBottom>
+              </Style>
+            </Textbox>
+            <Textbox Name="PatientName6">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>=Fields!PaymentM.Value</Value>
+                      <Style>
+                        <FontSize>8pt</FontSize>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style />
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>PatientName</rd:DefaultName>
+              <Top>7.90054cm</Top>
+              <Left>2.55857cm</Left>
+              <Height>0.6cm</Height>
+              <Width>4.32988cm</Width>
+              <ZIndex>20</ZIndex>
               <Style>
                 <Border>
                   <Style>None</Style>

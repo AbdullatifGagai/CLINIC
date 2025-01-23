@@ -36,5 +36,25 @@ namespace ZCLINIC.Areas.Master.Controllers
         {
             return new LabtestApiController().LabtestDelete(id, HttpContext.Session.GetBValues(), HttpContext.GetIP(), HttpContext.GetCInfo());
         }
+    
+        [HttpGet]
+        public List<Labtest> LabtestGetLabServices(int Id,int RId)
+        {
+            return new Labtest().LabtestGetLabServices(Id,RId, HttpContext.Session.GetBValues(), HttpContext.GetIP(), HttpContext.GetCInfo());
+        }
+    
+    
+        [HttpGet]
+        public List<Labtest> LabtestGetRefId(int Id)
+        {
+            return new Labtest().LabtestGetRefId(Id, HttpContext.Session.GetBValues(), HttpContext.GetIP(), HttpContext.GetCInfo());
+        }
+    
+    
+    
+    
+    
+    
+    
     }
 }
