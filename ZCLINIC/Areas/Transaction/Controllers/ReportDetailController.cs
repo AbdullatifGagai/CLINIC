@@ -8,10 +8,10 @@ namespace ZCLINIC.Areas.Transaction.Controllers
     [Area("Transaction")]
     public class ReportDetailController : Controller
     {
-        public IActionResult Index()
-        {
-            return View(new ReportDetailApiController().ReportDetailGetAll(HttpContext.Session.GetBValues(), HttpContext.GetIP(), HttpContext.GetCInfo()));
-        }
+        //public IActionResult Index()
+        //{
+        //    return View(new ReportDetailApiController().ReportDetailGetAll(HttpContext.Session.GetBValues(), HttpContext.GetIP(), HttpContext.GetCInfo()));
+        //}
 
         // create/edit view for ReportDetail
         public IActionResult AReportDetail(int id = 0)
@@ -36,5 +36,24 @@ namespace ZCLINIC.Areas.Transaction.Controllers
         {
             return new ReportDetailApiController().ReportDetailDelete(id, HttpContext.Session.GetBValues(), HttpContext.GetIP(), HttpContext.GetCInfo());
         }
+    
+        [HttpGet]
+        public List<ReportDetail> Transaction_ReportDetailGetAll(int id)
+        {
+            return new ReportDetail().Transaction_ReportDetailGetAll(id, HttpContext.Session.GetBValues(), HttpContext.GetIP(), HttpContext.GetCInfo());
+        }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     }
 }

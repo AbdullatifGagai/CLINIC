@@ -30,7 +30,7 @@ namespace ZCLINIC.Areas.Transaction.Models
 
 
 
-
+     
 
 
 
@@ -51,8 +51,16 @@ namespace ZCLINIC.Areas.Transaction.Models
         [TVP]
         public int ModifiedBy { get; set; }
 
+
+
+        public string ServicesName { get; set; }
+
         //View only properties
         public string ReturnMessage { get; set; }
+
+
+        public int SerId { get; set; }
+
 
         public string Transaction_ReportDetailSave(BValues bv, string ip, string cInfo)
         {
@@ -118,9 +126,9 @@ namespace ZCLINIC.Areas.Transaction.Models
             }
         }
 
-        public List<ReportDetail> Transaction_ReportDetailGetAll(BValues bv, string ip, string cInfo)
+        public List<ReportDetail> Transaction_ReportDetailGetAll(int  id,BValues bv, string ip, string cInfo)
         {
-            var parameters = new { bv.UserId, bv.TenantId, bv.AppId };
+            var parameters = new { bv.UserId, bv.TenantId, bv.AppId,Id =id };
 
             try
             {

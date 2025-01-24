@@ -8,10 +8,10 @@ namespace ZCLINIC.Areas.Transaction.APIControllers
     [ApiController]
     public class ReportDetailController : Controller
     {
-        public List<ReportDetail> ReportDetailGetAll(BValues bv, string ip, string cInfo)
-        {
-            return new ReportDetail().Transaction_ReportDetailGetAll(bv, ip, cInfo);
-        }
+        //public List<ReportDetail> ReportDetailGetAll(BValues bv, string ip, string cInfo)
+        //{
+        //    return new ReportDetail().Transaction_ReportDetailGetAll(bv, ip, cInfo);
+        //}
 
         public ReportDetail ReportDetailGetById(int id, BValues bv, string ip, string cInfo)
         {
