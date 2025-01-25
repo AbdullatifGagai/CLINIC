@@ -182,6 +182,7 @@
     <EmbeddedResource Include="Reports\GetReportBankPayment.rdlc" />
     <EmbeddedResource Include="Reports\JournalVoucher.rdlc" />
     <EmbeddedResource Include="Reports\DoctorWiseDetail.rdlc" />
+    <EmbeddedResource Include="Reports\LaboratoryReport.rdlc" />
     <EmbeddedResource Include="Reports\UkitMisreceipt.rdlc" />
     <EmbeddedResource Include="Reports\TrialBalance.rdlc" />
     <Fakes Include="Fakes\System.Web.Razor.fakes" />
