@@ -794,6 +794,7 @@ $('.SaveBtn').on('click', function () {
             DepId: parseInt($('#DepId option:selected').val()),
             SerId: parseInt($('#testId option:selected').val()),
             Remarks: $('#Remarks').val(),
+            FID: $('#FID').val(),
 
 
 

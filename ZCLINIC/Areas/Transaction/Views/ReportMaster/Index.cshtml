@@ -79,6 +79,7 @@
                         <th>Patient  Name</th>
                        
                         <th>Receipt No</th>
+                        <th hidden>FID</th>
 
 
 
@@ -101,6 +102,7 @@
                             <td>@s.Mrno </td>
                             <td>@s.PName </td>
                             <td>@s.ReceiptNo </td>
+                            <td hidden>@s.FID</td>
                           
 
                            
@@ -121,8 +123,29 @@
 
                                     @if (Print)
                                     {
-                                        <li class="text-primary-600"><a data-toggle="tooltip" title="Report" href="/Report/Reportrdlc/AReport?rvalues.Name=52&rvalues.Value[0]=@s.ReportId&rvalues.Value[1]=@s.ReportId&rvalues.Value[2]=@a&rvalues.Value[3]=@a&rvalues.Value[4]=@a&rvalues.Value[5]=@a&rvalues.Value[6]=@a" data-heading="CPD Form" target="_blank"><i class="icon-printer"></i></a></li>
+
+
+
+
+                                            <li class="text-primary-600"><a data-toggle="tooltip" title="Report" href="/Report/Reportrdlc/AReport?rvalues.Name=@s.FID&rvalues.Value[0]=@s.ReportId&rvalues.Value[1]=@s.ReportId&rvalues.Value[2]=@a&rvalues.Value[3]=@a&rvalues.Value[4]=@a&rvalues.Value[5]=@a&rvalues.Value[6]=@a" data-heading="CPD Form" target="_blank"><i class="icon-printer"></i></a></li>
+
+
                                     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

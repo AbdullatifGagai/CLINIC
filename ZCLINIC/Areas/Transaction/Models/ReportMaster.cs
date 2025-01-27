@@ -73,6 +73,10 @@ namespace ZCLINIC.Areas.Transaction.Models
         public string  Remarks { get; set; }
 
 
+           [TVP]
+        public int   FID { get; set; }
+
+
 
 
 

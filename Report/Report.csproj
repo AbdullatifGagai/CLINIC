@@ -173,6 +173,8 @@
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
+    <EmbeddedResource Include="Reports\LaboratoryReportResult.rdlc" />
+    <EmbeddedResource Include="Reports\LaboratoryReportCutOff.rdlc" />
     <EmbeddedResource Include="Reports\rptCollectionReport.rdlc" />
     <EmbeddedResource Include="Reports\AccountLedger.rdlc" />
     <EmbeddedResource Include="Reports\Receipt.rdlc" />
