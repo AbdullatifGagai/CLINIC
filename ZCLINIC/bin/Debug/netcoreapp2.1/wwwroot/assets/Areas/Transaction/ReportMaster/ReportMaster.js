@@ -185,17 +185,17 @@ function ReportDetail(id) {
 
 
 
-$('#ReceiptNo').keyup(function (e) {
-    if (e.keyCode == 13) {
+$('#AddItemPatient').click(function (e) {
+   
 
 
 
 
-        var id = $('#ReceiptNo').val();
+      //  var id = $('#ReceiptNo').val();
 
+    debugger;
 
-
-        GetJSONRequest('/Transaction/ReceiptMaster/ReceiptMasterGetLabReceiptId', 'GET', { id}, function (data) {
+    GetJSONRequest('/Transaction/ReceiptMaster/ReceiptMasterGetLabReceiptId', 'GET', null, function (data) {
 
             if (data && data.length > 0) {
 
@@ -226,8 +226,7 @@ $('#ReceiptNo').keyup(function (e) {
 
 
 
-
-    }
+ 
 });
 
 
@@ -261,6 +260,10 @@ function AllowSearch(data) {
                         <th>ReceiptDate</th>
                         <th>MrNo</th>
                         <th>Patient Name</th>
+                        <th>Services Name</th>
+
+
+
                         <th hidden>Age</th>
                         <th hidden>ReceiptId</th>
                         <th hidden>MrId</th>
@@ -276,7 +279,7 @@ function AllowSearch(data) {
 				</thead><tbody>`;
 
     data.forEach((item) => {
-        markup += `<tr><td>${item.ReceiptNo}</td><td>${item.ReceiptDate}</td><td>${item.MrNo}</td><td>${item.PatientName}</td><td hidden>${item.age}</td><td hidden>${item.ReceiptId}</td><td hidden>${item.MrId}</td><td><button type="button" class="selectAllowId btn btn-primary" id=${item.ReceiptId}>Select</button></td></tr>`
+        markup += `<tr><td>${item.ReceiptNo}</td><td>${item.ReceiptDate}</td><td>${item.MrNo}</td><td>${item.PatientName}</td><td>${item.ServicesName}</td><td hidden>${item.age}</td><td hidden>${item.ReceiptId}</td><td hidden>${item.MrId}</td><td><button type="button" class="selectAllowId btn btn-primary" id=${item.ReceiptId}>Select</button></td></tr>`
 
     })
     markup += `</tbody>`;
@@ -358,9 +361,9 @@ $('#SModalBody').delegate('.selectAllowId', 'click', function () {
     $('#CollectedDate').val($(this).closest('tr').children().eq(1).text());
     $('#Mrno').val($(this).closest('tr').children().eq(2).text());
     $('#PName').val($(this).closest('tr').children().eq(3).text());
-    $('#Age').val($(this).closest('tr').children().eq(4).text());
-    $('#ReceiptId').val($(this).closest('tr').children().eq(5).text());
-    $('#MrId').val($(this).closest('tr').children().eq(6).text());
+    $('#Age').val($(this).closest('tr').children().eq(5).text());
+    $('#ReceiptId').val($(this).closest('tr').children().eq(6).text());
+    $('#MrId').val($(this).closest('tr').children().eq(7).text());
 
 
 
@@ -795,7 +798,7 @@ $('.SaveBtn').on('click', function () {
             SerId: parseInt($('#testId option:selected').val()),
             Remarks: $('#Remarks').val(),
             FID: $('#FID').val(),
-
+            MoId: parseInt($('#MoId option:selected').val()),
 
 
 

@@ -78,6 +78,11 @@ namespace ZCLINIC.Areas.Transaction.Models
 
 
 
+         [TVP]
+        public int MoId { get; set; }
+
+
+
 
 
 

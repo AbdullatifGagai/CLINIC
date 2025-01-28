@@ -46,7 +46,7 @@
 
             <div class="form-group form-group-xs col-md-2">
                 <label>Receipt No<b class="wysiwyg-color-red"></b></label>
-                @Html.TextBoxFor(m => m.ReceiptNo, new { @class = "form-control", type = "text" })
+                @Html.TextBoxFor(m => m.ReceiptNo, new { @class = "form-control", type = "text", @readonly = "readonly" })
 
             </div>
 
@@ -57,13 +57,16 @@
 
             </div>
 
-            <div class="form-group form-group-xs col-md-6">
+            <div class="form-group form-group-xs col-md-4">
                 <label>Patient Name<b class="wysiwyg-color-red"></b></label>
                 @Html.TextBoxFor(m => m.PName, new { @class = "form-control", type = "text", @readonly = "readonly" })
 
             </div>
 
 
+            <div class="form-group form-group-xs mt-20 col-md-1">
+                <a class="btn btn-info btn-sm" id="AddItemPatient" data-script="#"><i class="icon-add mr-5"></i>Get Lab Receipt</a>
+            </div>
 
 
 
@@ -158,7 +161,7 @@
 
             </div>
 
-            <div class="form-group form-group-xs col-md-4">
+            <div class="form-group form-group-xs col-md-2">
                 <label>Report Format<b class="wysiwyg-color-red"></b></label>
                 @{
 
@@ -167,12 +170,25 @@
                     Status.Add((Id: 1, Name: "Refference Ranges"));
                     Status.Add((Id: 2, Name: "Cut Off Value"));
                     Status.Add((Id: 3, Name: "Result"));
+                    Status.Add((Id: 4, Name: "CBC RePort (Morphology)"));
 
 
 
 
                 }
                 @Html.DropDownList("FID", Status.Select(p => new SelectListItem() { Text = p.Name, Value = p.Id.ToString() }), new { @class = "form-control", data_style = "btn-default btn-xs", tabindex = '4', data_search = "true", data_width = "100%" })
+
+            </div>
+
+
+
+            <div class="form-group form-group-xs col-md-2">
+                <label>Morphology<b class="wysiwyg-color-red"></b></label>
+                @{
+                    List<ZCLINIC.Areas.Master.Models.Morphology> Morphology = new ZCLINIC.Areas.Master.Models.Morphology().Master_MorphologyGetAll(Context.Session.GetBValues(), Context.GetIP(), Context.GetCInfo());
+                    Morphology.Insert(0, new ZCLINIC.Areas.Master.Models.Morphology { Id = 0, MName = "Select Morphology Name" });
+                }
+                @Html.DropDownList("MoId", Morphology.Select(s => new SelectListItem() { Text = s.MName, Value = s.Id.ToString() }), new { @class = "form-control " })
 
             </div>
 

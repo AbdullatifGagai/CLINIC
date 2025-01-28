@@ -46,9 +46,9 @@ namespace ZCLINIC.Areas.Transaction.Controllers
         }
 
            [HttpGet]
-        public List<ReceiptMaster> ReceiptMasterGetLabReceiptId(string  id)
+        public List<ReceiptMaster> ReceiptMasterGetLabReceiptId()
         {
-            return new ReceiptMaster().ReceiptMasterGetLabReceiptId(id, HttpContext.Session.GetBValues(), HttpContext.GetIP(), HttpContext.GetCInfo());
+            return new ReceiptMaster().ReceiptMasterGetLabReceiptId(HttpContext.Session.GetBValues(), HttpContext.GetIP(), HttpContext.GetCInfo());
         }
 
 

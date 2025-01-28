@@ -290,9 +290,9 @@ namespace ZCLINIC.Areas.Transaction.Models
 
 
 
-             public List<ReceiptMaster> ReceiptMasterGetLabReceiptId(string Id,BValues bv, string ip, string cInfo)
+             public List<ReceiptMaster> ReceiptMasterGetLabReceiptId(BValues bv, string ip, string cInfo)
         {
-            var parameters = new { bv.UserId, bv.TenantId, bv.AppId,Id };
+            var parameters = new { bv.UserId, bv.TenantId, bv.AppId};
 
             try
             {
