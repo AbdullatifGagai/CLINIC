@@ -455,3 +455,5 @@ C:\Users\Administrator\Documents\GitHub\CLINIC\ZCLINIC\obj\Debug\netcoreapp2.1\R
 C:\Users\Administrator\Documents\GitHub\CLINIC\ZCLINIC\obj\Debug\netcoreapp2.1\Razor\Areas\Transaction\Views\ReportMaster\AReportMaster.cshtml.g.cs
 C:\Users\Administrator\Documents\GitHub\CLINIC\ZCLINIC\bin\Debug\netcoreapp2.1\wwwroot\assets\Areas\Transaction\ReportMaster\Index.js
 C:\Users\Administrator\Documents\GitHub\CLINIC\ZCLINIC\bin\Debug\netcoreapp2.1\wwwroot\assets\Areas\Transaction\ReportMaster\ReportMaster.js
+C:\Users\Administrator\Documents\GitHub\CLINIC\ZCLINIC\obj\Debug\netcoreapp2.1\Razor\Areas\Master\Views\Morphology\Index.cshtml.g.cs
+C:\Users\Administrator\Documents\GitHub\CLINIC\ZCLINIC\obj\Debug\netcoreapp2.1\Razor\Areas\Master\Views\Morphology\AMorphology.cshtml.g.cs

@@ -18,6 +18,14 @@ namespace ZCLINIC.Areas.Master.Models
 
 
         [TVP]
+        public int Code { get; set; }
+
+
+
+
+
+
+        [TVP]
         public string MName { get; set; }
 
 
