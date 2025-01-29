@@ -94,8 +94,12 @@ function ReportDetail(id) {
                                          <input type="text" class="form-control Discri" readonly value="${item.Dis}" />
                                       
                                 </td>
+                      
 
+                                   <td>
+                                        <input type="text" class="form-control CutOff"  value="${item.CutOff}" />
 
+                                </td>
 
             
                                  <td>
@@ -481,14 +485,22 @@ function AddRow() {
                                 </td>
 
 
+                               <td>
+                                        <input type="text" class="form-control CutOff"  value="" />
 
+                                </td>
             
                                  <td>
                                         <input type="text" class="form-control Result"  value="" />
                                       
                                 </td>
 
-                                  <td>
+
+
+
+
+
+<td>
                                          <input type="text" class="form-control Unit" readonly value="${item.Unit}" />
 
                                 </td>
@@ -836,7 +848,13 @@ $('.SaveBtn').on('click', function () {
                 ReportId: $('#ReportId').val(),
                 Dis: $(this).find(".Discri").val(),
                 Unit: $(this).find(".Unit").val(),
+
+                CutOff: $(this).find(".CutOff").val(),
+
                 result: $(this).find(".Result").val(),
+                
+
+
                 RefValue: $(this).find(".Refvalue").val(),
                 SevId: parseInt($(this).find(".SerId").val()),
 
