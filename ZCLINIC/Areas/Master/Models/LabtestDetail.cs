@@ -21,6 +21,9 @@ namespace ZCLINIC.Areas.Master.Models
         [TVP]
         public string  Refvalue { get; set; }
 
+         [TVP]
+        public string HGroup { get; set; }
+
 
 
 

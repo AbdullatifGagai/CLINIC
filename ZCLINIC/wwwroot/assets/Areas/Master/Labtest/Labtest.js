@@ -70,6 +70,7 @@ function  ReceiptDetail(Id) {
                                     <td><input type="text" class="form-control Unit"  value="${item.Unit}" /></td>
                                   
                                     <td><input type="text" class="form-control Refvalue"  value="${item.Refvalue}" /></td>
+                                    <td><input type="text" class="form-control HGroup"  value="${item.HGroup}" /></td>
 
                                     <td><a id=""><i class="icon-trash btn_delete text-danger-600"></i></a>
 
@@ -582,7 +583,7 @@ $('#AddItemBtn').click(function () {
     //    ErrorAlert("Store  is Required")
     //}
 
-    if ($('#Dis').val() == '' || $('#Unit').val() == '' || $('#Refvalue').val() == '') {
+    if ($('#Dis').val() == '' || $('#Unit').val() == '' || $('#Refvalue').val() == '' || $('#HGroup').val() == '') {
         ErrorAlert("Miss Value")
     }
 
@@ -596,6 +597,7 @@ $('#AddItemBtn').click(function () {
                      <td><input type="text" class="form-control  Dis"   value="${$('#Dis').val()}"></td>
                      <td><input type="text" class="form-control  Unit"   value="${$('#Unit').val()}"></td>
                      <td><input type="text" class="form-control  Refvalue" value="${$('#Refvalue').val()}"></td>
+                     <td><input type="text" class="form-control  HGroup" value="${$('#HGroup').val()}"></td>
                     
                     
                   
@@ -610,6 +612,7 @@ $('#AddItemBtn').click(function () {
         $('#Dis').val('');
         $('#Unit').val('');
         $('#Refvalue').val('');
+        $('#HGroup').val('');
       
         //$('#SevicesId').val(0)
      
@@ -786,6 +789,7 @@ $('.SaveBtn').on('click', function () {
                 Discri: $(this).find('.Dis').val(),
                 Unit: $(this).find('.Unit').val(),
                 Refvalue: $(this).find('.Refvalue').val(),
+                HGroup: $(this).find('.HGroup').val(),
 
               
 
