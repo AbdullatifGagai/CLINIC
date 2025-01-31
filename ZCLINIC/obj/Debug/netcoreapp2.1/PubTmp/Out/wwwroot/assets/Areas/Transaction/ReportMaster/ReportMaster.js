@@ -120,6 +120,13 @@ function ReportDetail(id) {
 
                                 </td>
 
+                                    <td>
+                                         <input type="hidden" class="form-control HGroup" readonly value="${item.HGroup}" />
+
+                                </td>
+
+
+
 
                              <td><a id=""><i class="icon-trash btn_delete text-danger-600"></i></a>
 
@@ -508,8 +515,15 @@ function AddRow() {
 
                              
                             
-                                    <td>
+
+                                <td>
                                          <input type="text" class="form-control Refvalue" readonly value="${item.Refvalue}" />
+
+                                </td>
+
+
+                                <td>
+                                         <input type="hidden" class="form-control HGroup" readonly value="${item.HGroup}" />
 
                                 </td>
 
@@ -857,6 +871,7 @@ $('.SaveBtn').on('click', function () {
 
                 RefValue: $(this).find(".Refvalue").val(),
                 SevId: parseInt($(this).find(".SerId").val()),
+                HGroup: $(this).find(".HGroup").val(),
 
               
 
