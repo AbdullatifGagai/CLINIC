@@ -36,9 +36,9 @@ namespace ZCLINIC.Areas.Transaction.Models
         public int SevId { get; set; }
 
 
+        [TVP]
+        public string HGroup { get; set; }
 
-
-     
 
 
 
