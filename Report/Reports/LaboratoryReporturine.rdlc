@@ -130,6 +130,10 @@
           <DataField>HGroup</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
+        <Field Name="SerId">
+          <DataField>SerId</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
       </Fields>
       <rd:DataSetInfo>
         <rd:DataSetName>DataReport</rd:DataSetName>
@@ -588,6 +592,9 @@
                   </Group>
                   <SortExpressions>
                     <SortExpression>
+                      <Value>=Fields!SerId.Value</Value>
+                    </SortExpression>
+                    <SortExpression>
                       <Value>=Fields!ServicesName.Value</Value>
                     </SortExpression>
                   </SortExpressions>
@@ -693,14 +700,14 @@
             </Style>
           </Textbox>
         </ReportItems>
-        <Height>5.63729cm</Height>
+        <Height>3.46771cm</Height>
         <Style>
           <Border>
             <Style>None</Style>
           </Border>
         </Style>
       </Body>
-      <Width>20.04132cm</Width>
+      <Width>20.67632cm</Width>
       <Page>
         <PageHeader>
           <Height>10.01099cm</Height>
@@ -1441,9 +1448,44 @@
           </Style>
         </PageHeader>
         <PageFooter>
-          <Height>0.02646cm</Height>
+          <Height>1.27cm</Height>
           <PrintOnFirstPage>true</PrintOnFirstPage>
           <PrintOnLastPage>true</PrintOnLastPage>
+          <ReportItems>
+            <Textbox Name="Textbox17">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>THIS IS A COMPUTER GENERATED REPORT NO SIGNATURE REQUIRED</Value>
+                      <Style>
+                        <FontStyle>Normal</FontStyle>
+                        <FontWeight>Bold</FontWeight>
+                        <TextDecoration>None</TextDecoration>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style />
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>Textbox3</rd:DefaultName>
+              <Top>0.06944in</Top>
+              <Left>1.35319in</Left>
+              <Height>0.23622in</Height>
+              <Width>5.97558in</Width>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+                <PaddingTop>2pt</PaddingTop>
+                <PaddingBottom>2pt</PaddingBottom>
+              </Style>
+            </Textbox>
+          </ReportItems>
           <Style>
             <Border>
               <Style>None</Style>

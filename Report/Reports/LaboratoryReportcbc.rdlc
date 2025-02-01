@@ -122,6 +122,18 @@
           <DataField>MName</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
+        <Field Name="cutoff">
+          <DataField>cutoff</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="HGroup">
+          <DataField>HGroup</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="SerId">
+          <DataField>SerId</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
       </Fields>
       <rd:DataSetInfo>
         <rd:DataSetName>DataReport</rd:DataSetName>
@@ -539,6 +551,9 @@
                   </Group>
                   <SortExpressions>
                     <SortExpression>
+                      <Value>=Fields!SerId.Value</Value>
+                    </SortExpression>
+                    <SortExpression>
                       <Value>=Fields!ServicesName.Value</Value>
                     </SortExpression>
                   </SortExpressions>
@@ -573,6 +588,7 @@
                   <TextRun>
                     <Value>REMARKS :</Value>
                     <Style>
+                      <FontSize>9pt</FontSize>
                       <FontWeight>Bold</FontWeight>
                     </Style>
                   </TextRun>
@@ -582,9 +598,9 @@
             </Paragraphs>
             <rd:DefaultName>Textbox3</rd:DefaultName>
             <Top>1.12477in</Top>
-            <Left>0.38639in</Left>
+            <Left>0.36415in</Left>
             <Height>0.23622in</Height>
-            <Width>1.14571in</Width>
+            <Width>1.00128in</Width>
             <ZIndex>1</ZIndex>
             <Style>
               <Border>
@@ -605,6 +621,7 @@
                   <TextRun>
                     <Value>=First(Fields!remarks.Value, "GetReportLabReport")</Value>
                     <Style>
+                      <FontSize>9pt</FontSize>
                       <FontWeight>Bold</FontWeight>
                     </Style>
                   </TextRun>
@@ -614,7 +631,7 @@
             </Paragraphs>
             <rd:DefaultName>remarks</rd:DefaultName>
             <Top>2.8569cm</Top>
-            <Left>4.06792cm</Left>
+            <Left>3.64459cm</Left>
             <Height>0.6cm</Height>
             <Width>15.75056cm</Width>
             <ZIndex>2</ZIndex>
@@ -636,7 +653,9 @@
                 <TextRuns>
                   <TextRun>
                     <Value>=First(Fields!MName.Value, "GetReportLabReport")</Value>
-                    <Style />
+                    <Style>
+                      <FontSize>9pt</FontSize>
+                    </Style>
                   </TextRun>
                 </TextRuns>
                 <Style />
@@ -644,7 +663,7 @@
             </Paragraphs>
             <rd:DefaultName>MName</rd:DefaultName>
             <Top>2.11579cm</Top>
-            <Left>4.06792cm</Left>
+            <Left>3.64459cm</Left>
             <Height>0.6cm</Height>
             <Width>15.72232cm</Width>
             <ZIndex>3</ZIndex>
@@ -669,7 +688,7 @@
                     <Style>
                       <FontStyle>Normal</FontStyle>
                       <FontFamily>Calibri</FontFamily>
-                      <FontSize>11pt</FontSize>
+                      <FontSize>9pt</FontSize>
                       <FontWeight>Bold</FontWeight>
                       <TextDecoration>None</TextDecoration>
                       <Color>#000000</Color>
@@ -678,6 +697,7 @@
                   <TextRun>
                     <Value> :</Value>
                     <Style>
+                      <FontSize>9pt</FontSize>
                       <FontWeight>Bold</FontWeight>
                     </Style>
                   </TextRun>
@@ -689,7 +709,7 @@
             <Top>0.8191in</Top>
             <Left>0.36415in</Left>
             <Height>0.23622in</Height>
-            <Width>1.14571in</Width>
+            <Width>1.00128in</Width>
             <ZIndex>4</ZIndex>
             <Style>
               <Border>
@@ -702,14 +722,14 @@
             </Style>
           </Textbox>
         </ReportItems>
-        <Height>6.69562cm</Height>
+        <Height>3.70583cm</Height>
         <Style>
           <Border>
             <Style>None</Style>
           </Border>
         </Style>
       </Body>
-      <Width>20.06446cm</Width>
+      <Width>20.04132cm</Width>
       <Page>
         <PageHeader>
           <Height>10.01099cm</Height>
@@ -1450,9 +1470,44 @@
           </Style>
         </PageHeader>
         <PageFooter>
-          <Height>0.02646cm</Height>
+          <Height>1.37584cm</Height>
           <PrintOnFirstPage>true</PrintOnFirstPage>
           <PrintOnLastPage>true</PrintOnLastPage>
+          <ReportItems>
+            <Textbox Name="Textbox18">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>THIS IS A COMPUTER GENERATED REPORT NO SIGNATURE REQUIRED</Value>
+                      <Style>
+                        <FontStyle>Normal</FontStyle>
+                        <FontWeight>Bold</FontWeight>
+                        <TextDecoration>None</TextDecoration>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style />
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>Textbox3</rd:DefaultName>
+              <Top>0.15272in</Top>
+              <Left>0.88444in</Left>
+              <Height>0.23622in</Height>
+              <Width>5.97558in</Width>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+                <PaddingTop>2pt</PaddingTop>
+                <PaddingBottom>2pt</PaddingBottom>
+              </Style>
+            </Textbox>
+          </ReportItems>
           <Style>
             <Border>
               <Style>None</Style>

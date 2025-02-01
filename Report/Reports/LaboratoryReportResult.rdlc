@@ -118,6 +118,22 @@
           <DataField>remarks</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
+        <Field Name="MName">
+          <DataField>MName</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="cutoff">
+          <DataField>cutoff</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="HGroup">
+          <DataField>HGroup</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="SerId">
+          <DataField>SerId</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
       </Fields>
       <rd:DataSetInfo>
         <rd:DataSetName>DataReport</rd:DataSetName>
@@ -359,6 +375,9 @@
                   </Group>
                   <SortExpressions>
                     <SortExpression>
+                      <Value>=Fields!SerId.Value</Value>
+                    </SortExpression>
+                    <SortExpression>
                       <Value>=Fields!ServicesName.Value</Value>
                     </SortExpression>
                   </SortExpressions>
@@ -377,7 +396,7 @@
             <Top>0.07056cm</Top>
             <Left>0.9532cm</Left>
             <Height>1.8cm</Height>
-            <Width>18.33476cm</Width>
+            <Width>18.33475cm</Width>
             <Style>
               <Border>
                 <Style>None</Style>
@@ -449,14 +468,14 @@
             </Style>
           </Textbox>
         </ReportItems>
-        <Height>3.9175cm</Height>
+        <Height>2.88562cm</Height>
         <Style>
           <Border>
             <Style>None</Style>
           </Border>
         </Style>
       </Body>
-      <Width>20.06446cm</Width>
+      <Width>20.24967cm</Width>
       <Page>
         <PageHeader>
           <Height>10.01099cm</Height>
@@ -1197,9 +1216,44 @@
           </Style>
         </PageHeader>
         <PageFooter>
-          <Height>0.02646cm</Height>
+          <Height>1.37584cm</Height>
           <PrintOnFirstPage>true</PrintOnFirstPage>
           <PrintOnLastPage>true</PrintOnLastPage>
+          <ReportItems>
+            <Textbox Name="Textbox17">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>THIS IS A COMPUTER GENERATED REPORT NO SIGNATURE REQUIRED</Value>
+                      <Style>
+                        <FontStyle>Normal</FontStyle>
+                        <FontWeight>Bold</FontWeight>
+                        <TextDecoration>None</TextDecoration>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style />
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>Textbox3</rd:DefaultName>
+              <Top>0.11594in</Top>
+              <Left>1.30641in</Left>
+              <Height>0.23622in</Height>
+              <Width>5.97558in</Width>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+                <PaddingTop>2pt</PaddingTop>
+                <PaddingBottom>2pt</PaddingBottom>
+              </Style>
+            </Textbox>
+          </ReportItems>
           <Style>
             <Border>
               <Style>None</Style>
