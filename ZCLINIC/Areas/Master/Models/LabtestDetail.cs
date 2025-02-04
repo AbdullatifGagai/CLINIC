@@ -25,7 +25,10 @@ namespace ZCLINIC.Areas.Master.Models
         public string HGroup { get; set; }
 
 
-
+        [TVP]
+        public int HGId { get; set; }
+        [TVP]
+        public int DisId { get; set; }
 
 
         //properties for model

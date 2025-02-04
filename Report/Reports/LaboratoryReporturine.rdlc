@@ -134,6 +134,14 @@
           <DataField>SerId</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
+        <Field Name="HGId">
+          <DataField>HGId</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DisId">
+          <DataField>DisId</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
       </Fields>
       <rd:DataSetInfo>
         <rd:DataSetName>DataReport</rd:DataSetName>
@@ -471,6 +479,7 @@
                             <PaddingBottom>2pt</PaddingBottom>
                           </Style>
                         </Textbox>
+                        <rd:Selected>true</rd:Selected>
                       </CellContents>
                     </TablixCell>
                     <TablixCell>
@@ -608,6 +617,9 @@
                       </Group>
                       <SortExpressions>
                         <SortExpression>
+                          <Value>=Fields!HGId.Value</Value>
+                        </SortExpression>
+                        <SortExpression>
                           <Value>=Fields!HGroup.Value</Value>
                         </SortExpression>
                       </SortExpressions>
@@ -617,6 +629,11 @@
                         </TablixMember>
                         <TablixMember>
                           <Group Name="Details" />
+                          <SortExpressions>
+                            <SortExpression>
+                              <Value>=Fields!DisId.Value</Value>
+                            </SortExpression>
+                          </SortExpressions>
                         </TablixMember>
                       </TablixMembers>
                     </TablixMember>
@@ -1462,6 +1479,7 @@
                       <Value>THIS IS A COMPUTER GENERATED REPORT NO SIGNATURE REQUIRED</Value>
                       <Style>
                         <FontStyle>Normal</FontStyle>
+                        <FontSize>6pt</FontSize>
                         <FontWeight>Bold</FontWeight>
                         <TextDecoration>None</TextDecoration>
                       </Style>

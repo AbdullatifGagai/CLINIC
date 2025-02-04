@@ -10,15 +10,15 @@
 
 
 
-<object style="width:100%; height:100%" data="https://localhost:44393//Reports/ViewPDF?bv.IP=@Context.GetIP()&bv.CInfo=@Context.GetCInfo()&bv.reportValues.Name=@list.Name&bv.reportValues.Value[0]=@list.Value[0]&bv.reportValues.Value[1]=@list.Value[1]&bv.reportValues.Value[2]=@list.Value[2]&bv.reportValues.Value[3]=@list.Value[3]&bv.reportValues.Value[4]=@list.Value[4]&bv.reportValues.Value[5]=@list.Value[5]&bv.reportValues.Value[6]=@list.Value[6]&bv.UserId=@bValues.UserId&bv.TenantId=@bValues.TenantId&bv.AppId=@bValues.AppId" type="application/pdf">
+@*<object style="width:100%; height:100%" data="https://localhost:44393//Reports/ViewPDF?bv.IP=@Context.GetIP()&bv.CInfo=@Context.GetCInfo()&bv.reportValues.Name=@list.Name&bv.reportValues.Value[0]=@list.Value[0]&bv.reportValues.Value[1]=@list.Value[1]&bv.reportValues.Value[2]=@list.Value[2]&bv.reportValues.Value[3]=@list.Value[3]&bv.reportValues.Value[4]=@list.Value[4]&bv.reportValues.Value[5]=@list.Value[5]&bv.reportValues.Value[6]=@list.Value[6]&bv.UserId=@bValues.UserId&bv.TenantId=@bValues.TenantId&bv.AppId=@bValues.AppId" type="application/pdf">
     <embed src="https://localhost:44393//Reports/ViewPDF?ReportName=@list.Name&bv.IP=@Context.GetIP()&bv.CInfo=@Context.GetCInfo()&bv.rvalues.Name=@list.Name&bv.Value=@list.Value" type="application/pdf" />
-</object>
+</object>*@
 
 
 
-@*<object style="width:100%; height:100%" data="https://reports.zhealthcare.net:9056//Reports/ViewPDF?bv.IP=@Context.GetIP()&bv.CInfo=@Context.GetCInfo()&bv.reportValues.Name=@list.Name&bv.reportValues.Value[0]=@list.Value[0]&bv.reportValues.Value[1]=@list.Value[1]&bv.reportValues.Value[2]=@list.Value[2]&bv.reportValues.Value[3]=@list.Value[3]&bv.reportValues.Value[4]=@list.Value[4]&bv.reportValues.Value[5]=@list.Value[5]&bv.reportValues.Value[6]=@list.Value[6]&bv.UserId=@bValues.UserId&bv.TenantId=@bValues.TenantId&bv.AppId=@bValues.AppId" type="application/pdf">
+<object style="width:100%; height:100%" data="https://reports.zhealthcare.net:9056//Reports/ViewPDF?bv.IP=@Context.GetIP()&bv.CInfo=@Context.GetCInfo()&bv.reportValues.Name=@list.Name&bv.reportValues.Value[0]=@list.Value[0]&bv.reportValues.Value[1]=@list.Value[1]&bv.reportValues.Value[2]=@list.Value[2]&bv.reportValues.Value[3]=@list.Value[3]&bv.reportValues.Value[4]=@list.Value[4]&bv.reportValues.Value[5]=@list.Value[5]&bv.reportValues.Value[6]=@list.Value[6]&bv.UserId=@bValues.UserId&bv.TenantId=@bValues.TenantId&bv.AppId=@bValues.AppId" type="application/pdf">
         <embed src="https://reports.zhealthcare.net:9056//Reports/ViewPDF?ReportName=@list.Name&bv.IP=@Context.GetIP()&bv.CInfo=@Context.GetCInfo()&bv.rvalues.Name=@list.Name&bv.Value=@list.Value" type="application/pdf" />
-    </object>*@
+    </object>
 <script>
     debugger;
     var uri = window.location.toString();
