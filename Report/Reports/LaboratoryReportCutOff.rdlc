@@ -1438,6 +1438,7 @@
                       <Value>THIS IS A COMPUTER GENERATED REPORT NO SIGNATURE REQUIRED</Value>
                       <Style>
                         <FontStyle>Normal</FontStyle>
+                        <FontSize>6pt</FontSize>
                         <FontWeight>Bold</FontWeight>
                         <TextDecoration>None</TextDecoration>
                       </Style>
