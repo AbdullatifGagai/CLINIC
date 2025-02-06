@@ -13,6 +13,35 @@ namespace ZCLINIC.Areas.Transaction.Controllers
             return View(new ReportMasterApiController().ReportMasterGetAll(HttpContext.Session.GetBValues(), HttpContext.GetIP(), HttpContext.GetCInfo()));
         }
 
+   
+        public IActionResult TechIndex()
+        {
+            return View(new ReportMaster().Transaction_ReportMasterTechnoGetAll(HttpContext.Session.GetBValues(), HttpContext.GetIP(), HttpContext.GetCInfo()));
+        }
+
+     public IActionResult PathologistIndex()
+        {
+            return View(new ReportMaster().Transaction_ReportMasterPathGetAll(HttpContext.Session.GetBValues(), HttpContext.GetIP(), HttpContext.GetCInfo()));
+        }
+
+   
+        
+      
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         // create/edit view for ReportMaster
         public IActionResult AReportMaster(int id = 0)
         {
@@ -37,5 +66,40 @@ namespace ZCLINIC.Areas.Transaction.Controllers
         {
             return new ReportMasterApiController().ReportMasterDelete(id, HttpContext.Session.GetBValues(), HttpContext.GetIP(), HttpContext.GetCInfo());
         }
+   
+    
+    
+    
+        [HttpPost]
+        public string ApprovedTech(int id)
+        {
+            return new ReportMaster().ApprovedTech(id, HttpContext.Session.GetBValues(), HttpContext.GetIP(), HttpContext.GetCInfo());
+        }
+   
+    
+    
+    
+    
+        [HttpPost]
+        public string ApprovedPathologist(int id)
+        {
+            return new ReportMaster().ApprovedPathologist(id, HttpContext.Session.GetBValues(), HttpContext.GetIP(), HttpContext.GetCInfo());
+        }
+   
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     }
 }

@@ -401,6 +401,68 @@ function DeleteAlert(_JsonObj, _URL, _Menu) {
 
 
 
+function ApprovedAlert(_JsonObj, _URL, _Menu) {
+    Swal.fire({
+        title: 'Are you sure?',
+        text: ' You won"t be able to revert this!',
+        timer: 10000,
+        timerProgressBar: true,
+        showCancelButton: true,
+        allowOutsideClick: false,
+        confirmButtonText: '<i class="icon-bin icon-1x"></i> Approved',
+        cancelButtonText: '<i class="icon-cross3 icon-1x"></i> Cancel',
+        confirmButtonColor: 'Green',
+        cancelButtonColor: 'Red',
+    }).then((result) => {
+        if (result.value) {
+            $.ajax({
+                type: 'POST',
+                url: _URL,
+                data: _JsonObj,
+                success: function (results) {
+                    if (results == 'OK') {
+                        SuccessAlert("Success");
+                        // CloseTab($('#TabHead .active').find('.tabcross'));
+                        LoadPartial($.parseHTML($('.navigation li [data-display="' + _Menu + '"]').closest('li').html()));
+                    }
+                    else {
+                        ErrorAlert(results);
+
+                    }
+                    //$('.navigation li [data-display="' + _Menu + '"]').closest('li a').click();
+                }
+            });
+        }
+    })
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 function SmsAlert(_JsonObj, _URL, _Menu) {
     Swal.fire({
         title: 'Are you sure Send Sms?',

@@ -81,6 +81,14 @@ namespace ZCLINIC.Areas.Transaction.Models
          [TVP]
         public int MoId { get; set; }
 
+        [TVP]
+        public int TecId { get; set; }
+        [TVP]
+        public int TecUserId { get; set; }
+        [TVP]
+        public int PathId { get; set; }
+        [TVP]
+        public int PathUserId { get; set; }
 
 
 
@@ -240,6 +248,61 @@ namespace ZCLINIC.Areas.Transaction.Models
                 return null;
             }
         }
+         public List<ReportMaster> Transaction_ReportMasterTechnoGetAll(BValues bv, string ip, string cInfo)
+        {
+            var parameters = new { bv.UserId, bv.TenantId, bv.AppId };
+
+            try
+            {
+                List<ReportMaster> records = DataBase.ExecuteQuery<ReportMaster>(parameters, Connection.GetConnection());
+
+                Loging.DB_Log(eLogType.Log_Posetive, "", parameters, "", MODULE, Connection.GetLogConnection(), cInfo, ip, bv.UserId);
+
+                return records;
+            }
+            catch (Exception ex)
+            {
+                Loging.DB_Log(eLogType.Log_Negative, ex.Message, parameters, "", MODULE, Connection.GetLogConnection(), cInfo, ip, bv.UserId);
+
+                return null;
+            }
+        }
+
+
+         public List<ReportMaster> Transaction_ReportMasterPathGetAll(BValues bv, string ip, string cInfo)
+        {
+            var parameters = new { bv.UserId, bv.TenantId, bv.AppId };
+
+            try
+            {
+                List<ReportMaster> records = DataBase.ExecuteQuery<ReportMaster>(parameters, Connection.GetConnection());
+
+                Loging.DB_Log(eLogType.Log_Posetive, "", parameters, "", MODULE, Connection.GetLogConnection(), cInfo, ip, bv.UserId);
+
+                return records;
+            }
+            catch (Exception ex)
+            {
+                Loging.DB_Log(eLogType.Log_Negative, ex.Message, parameters, "", MODULE, Connection.GetLogConnection(), cInfo, ip, bv.UserId);
+
+                return null;
+            }
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
         public DataTable Transaction_ReportMasterGetAllTable(BValues bv, string ip, string cInfo)
         {
@@ -279,6 +342,99 @@ namespace ZCLINIC.Areas.Transaction.Models
 
                 return ex.Message;
             }
+
+
         }
+
+
+        public string ApprovedTech(int id, BValues bv, string ip, string cInfo)
+            {
+                var parameters = new { bv.UserId, bv.TenantId, bv.AppId, Id = id };
+
+                try
+                {
+                    string message = DataBase.ExecuteQuery<ReportMaster>(parameters, Connection.GetConnection()).FirstOrDefault().ReturnMessage;
+
+                    Loging.DB_Log(eLogType.Log_Posetive, "", parameters, "", MODULE, Connection.GetLogConnection(), cInfo, ip, bv.UserId);
+
+                    return message;
+                }
+                catch (Exception ex)
+                {
+                    Loging.DB_Log(eLogType.Log_Negative, ex.Message, parameters, "", MODULE, Connection.GetLogConnection(), cInfo, ip, bv.UserId);
+
+                    return ex.Message;
+                }
+            }
+
+
+         public string ApprovedPathologist(int id, BValues bv, string ip, string cInfo)
+            {
+                var parameters = new { bv.UserId, bv.TenantId, bv.AppId, Id = id };
+
+                try
+                {
+                    string message = DataBase.ExecuteQuery<ReportMaster>(parameters, Connection.GetConnection()).FirstOrDefault().ReturnMessage;
+
+                    Loging.DB_Log(eLogType.Log_Posetive, "", parameters, "", MODULE, Connection.GetLogConnection(), cInfo, ip, bv.UserId);
+
+                    return message;
+                }
+                catch (Exception ex)
+                {
+                    Loging.DB_Log(eLogType.Log_Negative, ex.Message, parameters, "", MODULE, Connection.GetLogConnection(), cInfo, ip, bv.UserId);
+
+                    return ex.Message;
+                }
+            }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        public string Transaction_ReportMasterPathGetAll(int id, BValues bv, string ip, string cInfo)
+            {
+                var parameters = new { bv.UserId, bv.TenantId, bv.AppId, Id = id };
+
+                try
+                {
+                    string message = DataBase.ExecuteQuery<ReportMaster>(parameters, Connection.GetConnection()).FirstOrDefault().ReturnMessage;
+
+                    Loging.DB_Log(eLogType.Log_Posetive, "", parameters, "", MODULE, Connection.GetLogConnection(), cInfo, ip, bv.UserId);
+
+                    return message;
+                }
+                catch (Exception ex)
+                {
+                    Loging.DB_Log(eLogType.Log_Negative, ex.Message, parameters, "", MODULE, Connection.GetLogConnection(), cInfo, ip, bv.UserId);
+
+                    return ex.Message;
+                }
+            }
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
     }
 }
