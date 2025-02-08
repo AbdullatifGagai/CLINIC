@@ -634,7 +634,7 @@
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>=First(Fields!remarks.Value, "GetReportLabReport")</Value>
+                    <Value>=JOIN(Split(Fields!remarks.Value,","), System.Environment.NewLine)</Value>
                     <Style>
                       <FontSize>9pt</FontSize>
                     </Style>

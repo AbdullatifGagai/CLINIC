@@ -124,6 +124,7 @@ C:\Users\Administrator\Documents\GitHub\CLINIC\ZCLINIC\obj\Debug\netcoreapp2.1\P
 C:\Users\Administrator\Documents\GitHub\CLINIC\ZCLINIC\obj\Debug\netcoreapp2.1\PubTmp\Out\wwwroot\assets\images\backgrounds\boxed_bg_retina.png
 C:\Users\Administrator\Documents\GitHub\CLINIC\ZCLINIC\obj\Debug\netcoreapp2.1\PubTmp\Out\wwwroot\assets\images\backgrounds\seamless.png
 C:\Users\Administrator\Documents\GitHub\CLINIC\ZCLINIC\obj\Debug\netcoreapp2.1\PubTmp\Out\wwwroot\assets\images\backgrounds\user_bg4.jpg
+C:\Users\Administrator\Documents\GitHub\CLINIC\ZCLINIC\obj\Debug\netcoreapp2.1\PubTmp\Out\wwwroot\assets\images\Bottom.jpg
 C:\Users\Administrator\Documents\GitHub\CLINIC\ZCLINIC\obj\Debug\netcoreapp2.1\PubTmp\Out\wwwroot\assets\images\cover.jpg
 C:\Users\Administrator\Documents\GitHub\CLINIC\ZCLINIC\obj\Debug\netcoreapp2.1\PubTmp\Out\wwwroot\assets\images\details_close.png
 C:\Users\Administrator\Documents\GitHub\CLINIC\ZCLINIC\obj\Debug\netcoreapp2.1\PubTmp\Out\wwwroot\assets\images\details_open.png
@@ -146,6 +147,7 @@ C:\Users\Administrator\Documents\GitHub\CLINIC\ZCLINIC\obj\Debug\netcoreapp2.1\P
 C:\Users\Administrator\Documents\GitHub\CLINIC\ZCLINIC\obj\Debug\netcoreapp2.1\PubTmp\Out\wwwroot\assets\images\pnotify\success.png
 C:\Users\Administrator\Documents\GitHub\CLINIC\ZCLINIC\obj\Debug\netcoreapp2.1\PubTmp\Out\wwwroot\assets\images\pnotify\warning.png
 C:\Users\Administrator\Documents\GitHub\CLINIC\ZCLINIC\obj\Debug\netcoreapp2.1\PubTmp\Out\wwwroot\assets\images\signature.png
+C:\Users\Administrator\Documents\GitHub\CLINIC\ZCLINIC\obj\Debug\netcoreapp2.1\PubTmp\Out\wwwroot\assets\images\Top.jpg
 C:\Users\Administrator\Documents\GitHub\CLINIC\ZCLINIC\obj\Debug\netcoreapp2.1\PubTmp\Out\wwwroot\assets\images\ui\datepicker_trigger.png
 C:\Users\Administrator\Documents\GitHub\CLINIC\ZCLINIC\obj\Debug\netcoreapp2.1\PubTmp\Out\wwwroot\assets\images\ui\map_marker.png
 C:\Users\Administrator\Documents\GitHub\CLINIC\ZCLINIC\obj\Debug\netcoreapp2.1\PubTmp\Out\wwwroot\assets\js\charts\c3\c3_advanced.js
