@@ -134,6 +134,22 @@
           <DataField>SerId</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
+        <Field Name="HGId">
+          <DataField>HGId</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DisId">
+          <DataField>DisId</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Top">
+          <DataField>Top</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Bottom">
+          <DataField>Bottom</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
       </Fields>
       <rd:DataSetInfo>
         <rd:DataSetName>DataReport</rd:DataSetName>
@@ -620,7 +636,7 @@
                   <TextRun>
                     <Value>=First(Fields!remarks.Value, "GetReportLabReport")</Value>
                     <Style>
-                      <FontWeight>Bold</FontWeight>
+                      <FontSize>9pt</FontSize>
                     </Style>
                   </TextRun>
                 </TextRuns>
@@ -644,14 +660,14 @@
             </Style>
           </Textbox>
         </ReportItems>
-        <Height>2.88562cm</Height>
+        <Height>2.93698cm</Height>
         <Style>
           <Border>
             <Style>None</Style>
           </Border>
         </Style>
       </Body>
-      <Width>20.01154cm</Width>
+      <Width>20.43487cm</Width>
       <Page>
         <PageHeader>
           <Height>10.01099cm</Height>
@@ -1384,6 +1400,21 @@
                 <PaddingBottom>2pt</PaddingBottom>
               </Style>
             </Textbox>
+            <Image Name="Image1">
+              <Source>External</Source>
+              <Value>=First(Fields!Top.Value, "GetReportLabReport")</Value>
+              <Sizing>Fit</Sizing>
+              <Top>0.55245cm</Top>
+              <Left>0.31821cm</Left>
+              <Height>3.27271cm</Height>
+              <Width>19.47203cm</Width>
+              <ZIndex>22</ZIndex>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+              </Style>
+            </Image>
           </ReportItems>
           <Style>
             <Border>
@@ -1392,7 +1423,7 @@
           </Style>
         </PageHeader>
         <PageFooter>
-          <Height>1.48167cm</Height>
+          <Height>3.75709cm</Height>
           <PrintOnFirstPage>true</PrintOnFirstPage>
           <PrintOnLastPage>true</PrintOnLastPage>
           <ReportItems>
@@ -1412,13 +1443,15 @@
                       </Style>
                     </TextRun>
                   </TextRuns>
-                  <Style />
+                  <Style>
+                    <TextAlign>Center</TextAlign>
+                  </Style>
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>Textbox3</rd:DefaultName>
-              <Top>0.05556in</Top>
-              <Left>1.40982in</Left>
-              <Height>0.23622in</Height>
+              <Top>0.82666in</Top>
+              <Left>1.07249in</Left>
+              <Height>0.1633in</Height>
               <Width>5.97558in</Width>
               <Style>
                 <Border>
@@ -1430,6 +1463,21 @@
                 <PaddingBottom>2pt</PaddingBottom>
               </Style>
             </Textbox>
+            <Image Name="Image2">
+              <Source>External</Source>
+              <Value>=First(Fields!Bottom.Value, "GetReportLabReport")</Value>
+              <Sizing>Fit</Sizing>
+              <Top>2.6909cm</Top>
+              <Left>0.31821cm</Left>
+              <Height>0.85618cm</Height>
+              <Width>19.69333cm</Width>
+              <ZIndex>1</ZIndex>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+              </Style>
+            </Image>
           </ReportItems>
           <Style>
             <Border>
