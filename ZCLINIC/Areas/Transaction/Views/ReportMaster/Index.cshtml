@@ -80,6 +80,8 @@
                        
                         <th>Receipt No</th>
                         <th hidden>FID</th>
+                        <th>Technologist</th>
+                        <th>Pathologist</th>
 
 
 
@@ -93,48 +95,67 @@
                 <tbody>
                     @foreach (ZCLINIC.Areas.Transaction.Models.ReportMaster s in Model)
                     {
-                        <tr data-rowid="@s.ReportId">
-                          
-                            <td>@s.ReportNo </td>
-                            <td>@s.ReportDate </td>
-                            
-                            
-                            <td>@s.Mrno </td>
-                            <td>@s.PName </td>
-                            <td>@s.ReceiptNo </td>
-                            <td hidden>@s.FID</td>
-                          
+                    <tr data-rowid="@s.ReportId">
 
-                           
-                            <td>
-                                <ul class="icons-list">
-
-                                    @if (editview)
-                                    {
-                                        <li class="text-primary-600"><a data-modalhorizontal="true" data-modalsize="modal-full" data-heading="Edit Report" data-script="/assets/Areas/Transaction/ReportMaster/ReportMaster.js" data-url="/Transaction/ReportMaster/AReportMaster?Id=@s.ReportId"><i class="icon-pencil7"></i></a></li>
-                                    }
+                        <td>@s.ReportNo </td>
+                        <td>@s.ReportDate </td>
 
 
-                                    @if (delete)
-                                    {
-                                        <li class="text-danger-600"><a onclick="DeleteAlert({ 'Id':@s.ReportId}, '/Transaction/ReportMaster/DeleteReportMaster', 'Lab Report')"><i class="icon-trash"></i></a></li>
-                                    }
+                        <td>@s.Mrno </td>
+                        <td>@s.PName </td>
+                        <td>@s.ReceiptNo </td>
+                        <td hidden>@s.FID</td>
 
+                        <td>
+                            @if (s.TecId == 1)
+                            {
+                                <span id="online" class="label bg-success">Yes</span>
+                            }
+                            else
+                            {
+                                <span id="online" class="label bg-danger">No</span>
+                            }
+                        </td>
 
-                                    @if (Print)
-                                    {
-
-
-
-
-                                            <li class="text-primary-600"><a data-toggle="tooltip" title="Report" href="/Report/Reportrdlc/AReport?rvalues.Name=@s.FID&rvalues.Value[0]=@s.ReportId&rvalues.Value[1]=@s.ReportId&rvalues.Value[2]=@a&rvalues.Value[3]=@a&rvalues.Value[4]=@a&rvalues.Value[5]=@a&rvalues.Value[6]=@a" data-heading="CPD Form" target="_blank"><i class="icon-printer"></i></a></li>
-
-
-                                    }
+                        <td>
+                            @if (s.PathId == 1)
+                            {
+                                <span id="online" class="label bg-success">Yes</span>
+                            }
+                            else
+                            {
+                                <span id="online" class="label bg-danger">No</span>
+                            }
+                        </td>
 
 
 
 
+                        <td>
+                            <ul class="icons-list">
+
+                                @if (editview)
+                                {
+                                    <li class="text-primary-600"><a data-modalhorizontal="true" data-modalsize="modal-full" data-heading="Edit Report" data-script="/assets/Areas/Transaction/ReportMaster/ReportMaster.js" data-url="/Transaction/ReportMaster/AReportMaster?Id=@s.ReportId"><i class="icon-pencil7"></i></a></li>
+                                }
+
+
+                                @if (delete)
+                                {
+                                    <li class="text-danger-600"><a onclick="DeleteAlert({ 'Id':@s.ReportId}, '/Transaction/ReportMaster/DeleteReportMaster', 'Lab Report')"><i class="icon-trash"></i></a></li>
+                                }
+
+
+                                @if (Print)
+                                {
+
+
+
+
+                                    <li class="text-primary-600"><a data-toggle="tooltip" title="Report" href="/Report/Reportrdlc/AReport?rvalues.Name=@s.FID&rvalues.Value[0]=@s.ReportId&rvalues.Value[1]=0&rvalues.Value[2]=@a&rvalues.Value[3]=@a&rvalues.Value[4]=@a&rvalues.Value[5]=@a&rvalues.Value[6]=@a" data-heading="CPD Form" target="_blank"><i class="icon-printer"></i></a></li>
+                                    <li class="text-primary-600"><a data-toggle="tooltip" title="Report" href="/Report/Reportrdlc/AReport?rvalues.Name=@s.FID&rvalues.Value[0]=@s.ReportId&rvalues.Value[1]=0&rvalues.Value[2]=1&rvalues.Value[3]=@a&rvalues.Value[4]=@a&rvalues.Value[5]=@a&rvalues.Value[6]=@a" data-heading="CPD Form" target="_blank"><i class="icon-printer"></i></a></li>
+
+                                }
 
 
 
@@ -149,10 +170,14 @@
 
 
 
-                                </ul>
 
-                            </td>
-                        </tr>
+
+
+
+                            </ul>
+
+                        </td>
+                    </tr>
                     }
                 </tbody>
             </table>

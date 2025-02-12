@@ -20,7 +20,15 @@ namespace ZCLINIC.Areas.Transaction.Models
         public  string  Unit { get; set; }
         [TVP]
 
+        public string CutOff { get; set; }
+        
+        [TVP]
+
         public string  result { get; set; }
+        
+        
+        
+        
         [TVP]
         public string  RefValue { get; set; }
         [TVP]
@@ -28,9 +36,9 @@ namespace ZCLINIC.Areas.Transaction.Models
         public int SevId { get; set; }
 
 
+        [TVP]
+        public string HGroup { get; set; }
 
-
-     
 
 
 

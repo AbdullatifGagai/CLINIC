@@ -118,6 +118,38 @@
           <DataField>remarks</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
+        <Field Name="MName">
+          <DataField>MName</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="cutoff">
+          <DataField>cutoff</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="HGroup">
+          <DataField>HGroup</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="SerId">
+          <DataField>SerId</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="HGId">
+          <DataField>HGId</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DisId">
+          <DataField>DisId</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Top">
+          <DataField>Top</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Bottom">
+          <DataField>Bottom</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
       </Fields>
       <rd:DataSetInfo>
         <rd:DataSetName>DataReport</rd:DataSetName>
@@ -535,6 +567,9 @@
                   </Group>
                   <SortExpressions>
                     <SortExpression>
+                      <Value>=Fields!SerId.Value</Value>
+                    </SortExpression>
+                    <SortExpression>
                       <Value>=Fields!ServicesName.Value</Value>
                     </SortExpression>
                   </SortExpressions>
@@ -599,9 +634,9 @@
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>=First(Fields!remarks.Value, "GetReportLabReport")</Value>
+                    <Value>=JOIN(Split(Fields!remarks.Value,","), System.Environment.NewLine)</Value>
                     <Style>
-                      <FontWeight>Bold</FontWeight>
+                      <FontSize>9pt</FontSize>
                     </Style>
                   </TextRun>
                 </TextRuns>
@@ -625,14 +660,14 @@
             </Style>
           </Textbox>
         </ReportItems>
-        <Height>3.9175cm</Height>
+        <Height>2.93698cm</Height>
         <Style>
           <Border>
             <Style>None</Style>
           </Border>
         </Style>
       </Body>
-      <Width>20.06446cm</Width>
+      <Width>20.43487cm</Width>
       <Page>
         <PageHeader>
           <Height>10.01099cm</Height>
@@ -1365,6 +1400,21 @@
                 <PaddingBottom>2pt</PaddingBottom>
               </Style>
             </Textbox>
+            <Image Name="Image1">
+              <Source>External</Source>
+              <Value>=First(Fields!Top.Value, "GetReportLabReport")</Value>
+              <Sizing>Fit</Sizing>
+              <Top>0.55245cm</Top>
+              <Left>0.31821cm</Left>
+              <Height>3.27271cm</Height>
+              <Width>19.47203cm</Width>
+              <ZIndex>22</ZIndex>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+              </Style>
+            </Image>
           </ReportItems>
           <Style>
             <Border>
@@ -1373,9 +1423,62 @@
           </Style>
         </PageHeader>
         <PageFooter>
-          <Height>0.02646cm</Height>
+          <Height>3.75709cm</Height>
           <PrintOnFirstPage>true</PrintOnFirstPage>
           <PrintOnLastPage>true</PrintOnLastPage>
+          <ReportItems>
+            <Textbox Name="Textbox17">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>THIS IS A COMPUTER GENERATED REPORT NO SIGNATURE REQUIRED</Value>
+                      <Style>
+                        <FontStyle>Normal</FontStyle>
+                        <FontSize>6pt</FontSize>
+                        <FontWeight>Bold</FontWeight>
+                        <TextDecoration>None</TextDecoration>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Center</TextAlign>
+                  </Style>
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>Textbox3</rd:DefaultName>
+              <Top>0.82666in</Top>
+              <Left>1.07249in</Left>
+              <Height>0.1633in</Height>
+              <Width>5.97558in</Width>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+                <PaddingTop>2pt</PaddingTop>
+                <PaddingBottom>2pt</PaddingBottom>
+              </Style>
+            </Textbox>
+            <Image Name="Image2">
+              <Source>External</Source>
+              <Value>=First(Fields!Bottom.Value, "GetReportLabReport")</Value>
+              <Sizing>Fit</Sizing>
+              <Top>2.6909cm</Top>
+              <Left>0.31821cm</Left>
+              <Height>0.85618cm</Height>
+              <Width>19.69333cm</Width>
+              <ZIndex>1</ZIndex>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+              </Style>
+            </Image>
+          </ReportItems>
           <Style>
             <Border>
               <Style>None</Style>

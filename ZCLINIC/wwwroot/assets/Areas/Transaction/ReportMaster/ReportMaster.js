@@ -94,8 +94,12 @@ function ReportDetail(id) {
                                          <input type="text" class="form-control Discri" readonly value="${item.Dis}" />
                                       
                                 </td>
+                      
 
+                                   <td>
+                                        <input type="text" class="form-control CutOff"  value="${item.CutOff}" />
 
+                                </td>
 
             
                                  <td>
@@ -115,6 +119,13 @@ function ReportDetail(id) {
                                          <input type="text" class="form-control Refvalue" readonly value="${item.RefValue}" />
 
                                 </td>
+
+                                    <td>
+                                         <input type="hidden" class="form-control HGroup" readonly value="${item.HGroup}" />
+
+                                </td>
+
+
 
 
                              <td><a id=""><i class="icon-trash btn_delete text-danger-600"></i></a>
@@ -481,14 +492,22 @@ function AddRow() {
                                 </td>
 
 
+                               <td>
+                                        <input type="text" class="form-control CutOff"  value="" />
 
+                                </td>
             
                                  <td>
                                         <input type="text" class="form-control Result"  value="" />
                                       
                                 </td>
 
-                                  <td>
+
+
+
+
+
+<td>
                                          <input type="text" class="form-control Unit" readonly value="${item.Unit}" />
 
                                 </td>
@@ -496,8 +515,15 @@ function AddRow() {
 
                              
                             
-                                    <td>
+
+                                <td>
                                          <input type="text" class="form-control Refvalue" readonly value="${item.Refvalue}" />
+
+                                </td>
+
+
+                                <td>
+                                         <input type="hidden" class="form-control HGroup" readonly value="${item.HGroup}" />
 
                                 </td>
 
@@ -836,9 +862,16 @@ $('.SaveBtn').on('click', function () {
                 ReportId: $('#ReportId').val(),
                 Dis: $(this).find(".Discri").val(),
                 Unit: $(this).find(".Unit").val(),
+
+                CutOff: $(this).find(".CutOff").val(),
+
                 result: $(this).find(".Result").val(),
+                
+
+
                 RefValue: $(this).find(".Refvalue").val(),
                 SevId: parseInt($(this).find(".SerId").val()),
+                HGroup: $(this).find(".HGroup").val(),
 
               
 

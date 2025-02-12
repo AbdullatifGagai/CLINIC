@@ -21,8 +21,14 @@ namespace ZCLINIC.Areas.Master.Models
         [TVP]
         public string  Refvalue { get; set; }
 
+         [TVP]
+        public string HGroup { get; set; }
 
 
+        [TVP]
+        public int HGId { get; set; }
+        [TVP]
+        public int DisId { get; set; }
 
 
         //properties for model

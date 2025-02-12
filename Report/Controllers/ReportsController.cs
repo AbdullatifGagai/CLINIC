@@ -29,6 +29,7 @@ namespace Report.Controllers
                     "Report_ReportParameterGetByReportId");
 
                 LocalReport lr = new LocalReport();
+                lr.EnableExternalImages = true;
                 string path = Server.MapPath(report[0].ReportPath);
 
                 if (System.IO.File.Exists(path))
@@ -68,7 +69,7 @@ namespace Report.Controllers
                 //"  <MarginBottom>0.19in</MarginBottom>" +
                 //"</DeviceInfo>";
 
-                lr.EnableExternalImages = true;
+             
                 Warning[] warnings;
                 string[] streams;
                 byte[] renderedBytes = lr.Render(reportType, deviceinfo, out mimeType, out encoding, out fileNameExtension, out streams, out warnings);
