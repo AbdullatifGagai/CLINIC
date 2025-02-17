@@ -146,6 +146,14 @@ namespace ZCLINIC.Areas.Report.Controllers
 
 
 
+         public IActionResult LabWorkSheet()
+        {
+            return View();
+        }
+
+
+
+
 
 
 
