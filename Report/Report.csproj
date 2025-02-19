@@ -173,6 +173,7 @@
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
+    <EmbeddedResource Include="Reports\LabWorkSheet.rdlc" />
     <EmbeddedResource Include="Reports\LaboratoryReporturine.rdlc" />
     <EmbeddedResource Include="Reports\LaboratoryReportcbc.rdlc" />
     <EmbeddedResource Include="Reports\LaboratoryReportResult.rdlc" />
