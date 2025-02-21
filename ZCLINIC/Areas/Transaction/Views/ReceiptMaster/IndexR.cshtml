@@ -1,0 +1,149 @@
+﻿@using ZCLINIC;
+
+
+
+@model IEnumerable<ZCLINIC.Areas.Transaction.Models.ReceiptMaster>
+
+@{
+    bool addview = ZCLINIC.UserRights.URM_AddNew_IsAuthenticated(Context.Session.GetRoleId(), "114");
+    bool editview = ZCLINIC.UserRights.URM_Update_IsAuthenticated(Context.Session.GetRoleId(), "114");
+    bool delete = ZCLINIC.UserRights.URM_Delete_IsAuthenticated(Context.Session.GetRoleId(), "114");
+    bool Print = ZCLINIC.UserRights.URM_Print_IsAuthenticated(Context.Session.GetRoleId(), "114");
+
+}
+
+
+@{
+    string a = string.Empty;
+}
+
+
+
+<div class="page-header page-header-default">
+    <div class="breadcrumb-line">
+        <h6 class="text-semibold">Receipt</h6>
+    </div>
+</div>
+
+
+<div class="content">
+    <div class="panel panel-flat">
+        <div class="panel-body">
+            <div class="row">
+                <div class="col-md-3 buttons-top">
+
+                    @if (addview)
+                    {
+                        <a class="btn btn-success btn-sm" data-modalhorizontal="true" data-modalsize="modal-lg" data-url="/Transaction/ReceiptMaster/AReceiptMasterRefund" data-heading="Receipt" data-script="/assets/Areas/Transaction/ReceiptMaster/ReceiptMasterR.js"><i class="icon-add mr-5"></i> Add</a>
+                    }
+
+
+
+
+                </div>
+
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        @*<select class="bootstrap-select data-type" data-style="btn-primary" data-width="20%">
+                                <option value="0">All</option>
+                                <option value="1">Active</option>
+                                <option value="2">Inactive </option>
+                            </select>*@
+
+                        @*<select url="/Master/MasterReports/City" class="bootstrap-select" id="downloadBtn" data-style="btn-primary" data-width="30%">
+                                <option value="0">[SELECT Type]</option>
+                                <option value="1">PDF</option>
+                                <option value="2">EXCEL</option>
+                            </select>*@
+                    </div>
+
+                </div>
+
+                <div class="col-sm-3">
+                    <div class="input-group ">
+                        <input type="text" class="form-control" id="FilterInput">
+                        <span class="input-group-addon bg-blue-800"><i class="icon-search4"></i></span>
+                    </div>
+                </div>
+            </div>
+
+            <table class="table table-xxs table-md ServerSidePagination table-bordered table-striped table-hover bg-lightgray dataTables_scrollBody table-responsive">
+
+                <thead>
+                    <tr class="bg-blue-800">
+                        <th>Receipt No</th>
+                        <th>Receipt Date</th>
+                        <th>MR No</th>
+                        <th>Patient Name</th>
+                        <th>Cash</th>
+                        <th>Shift</th>
+                        <th>Mobile</th>
+
+
+
+
+
+
+
+                        @*  <th>Status</th>*@
+                        <th>Actions</th>
+
+                    </tr>
+                </thead>
+                <tbody>
+                    @*@foreach (ZCLINIC.Areas.Transaction.Models.ReceiptMaster s in Model)
+                        {
+                            <tr data-rowid="@s.ReceiptId">
+
+                                <td>@s.ReceiptNo</td>
+                                <td>@s.ReceiptDate</td>
+                                <td>@s.MrNo</td>
+                                <td>@s.PatientName</td>
+                                <td>@s.CashAmt</td>
+                                <td>@s.Shift</td>
+
+
+
+
+                                <td>
+                                    <ul class="icons-list">
+
+                                        @if (editview)
+                                        {
+                                            <li class="text-primary-600"><a data-modalhorizontal="true" data-modalsize="modal-lg" data-heading="Edit Appointment" data-script="/assets/Areas/Transaction/ReceiptMaster/ReceiptMaster.js" data-url="/Transaction/ReceiptMaster/AReceiptMaster?Id=@s.ReceiptId"><i class="icon-pencil7"></i></a></li>
+                                        }
+
+
+                                        @if (delete)
+                                        {
+                                            <li class="text-danger-600"><a onclick="DeleteAlert({ 'Id':@s.ReceiptId}, '/Transaction/ReceiptMaster/DeleteReceiptMaster', 'Receipt')"><i class="icon-trash"></i></a></li>
+                                        }
+
+
+                                        @if (Print)
+                                        {
+                                            <li class="text-primary-600"><a data-toggle="tooltip" title="Report" href="/Report/Reportrdlc/AReport?rvalues.Name=49&rvalues.Value[0]=@s.ReceiptId&rvalues.Value[1]=@a&rvalues.Value[2]=@a&rvalues.Value[3]=@a&rvalues.Value[4]=@a&rvalues.Value[5]=@a&rvalues.Value[6]=@a" data-heading="CPD Form" target="_blank"><i class="icon-printer"></i></a></li>
+                                        }
+
+
+
+
+
+
+                                    </ul>
+                                </td>
+                            </tr>
+                        }*@
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<script>
+
+    @*var addNew = @Html.Raw(Json.Serialize(addview));*@
+    var editview = @Html.Raw(Json.Serialize(editview));
+    var deleteview = @Html.Raw(Json.Serialize(delete));
+    var Printview = @Html.Raw(Json.Serialize(Print));
+
+</script>

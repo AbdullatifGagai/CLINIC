@@ -251,7 +251,7 @@ function ReceiptRefno(Id) {
 
 
 
-    GetJSONRequest('/Transaction/ReceiptMaster/Transaction_ReceiptMasterGetRefNO', 'GET', { Id }, data => {
+    GetJSONRequest('/Transaction/ReceiptMaster/Transaction_ReceiptMasterGetRefund_RefNO', 'GET', { Id }, data => {
 
 
         debugger;
@@ -332,7 +332,7 @@ function ReceiptRefno(Id) {
             $('#ServicesAmt').attr('disabled', 'true');
             $('#DisAmt').attr('disabled', 'true');
             $('#BalanceAmt').attr('disabled', 'true');
-         //   $('#CashAmt').attr('disabled', 'true');
+           $('#CashAmt').attr('disabled', 'true');
 
 
 

@@ -332,7 +332,7 @@ function ReceiptRefno(Id) {
             $('#ServicesAmt').attr('disabled', 'true');
             $('#DisAmt').attr('disabled', 'true');
             $('#BalanceAmt').attr('disabled', 'true');
-            $('#CashAmt').attr('disabled', 'true');
+         //   $('#CashAmt').attr('disabled', 'true');
 
 
 
@@ -935,6 +935,7 @@ $('.SaveBtn').on('click', function () {
     var MrNo = $('#MrNo').val();
     var PatientName = $('#PatientName').val();
     var age = $('#age').val();
+    var CashAmt = $('#CashAmt').val();
 
 
 
@@ -952,7 +953,7 @@ $('.SaveBtn').on('click', function () {
 
     }
 
-    if (MrId ==  '' || MrNo == '' || PatientName == '', age == '') {
+    if (MrId == '' || MrNo == '' || PatientName == '', age == '' || CashAmt == 0) {
 
 
         ErrorAlert("Miss Value");

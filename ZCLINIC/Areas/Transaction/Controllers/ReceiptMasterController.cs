@@ -15,11 +15,31 @@ namespace ZCLINIC.Areas.Transaction.Controllers
             return View();
         }
 
+        public IActionResult IndexR()
+        {
+            return View();
+        }
+
+
+
+
+
+
+
         // create/edit view for ReceiptMaster
         public IActionResult AReceiptMaster(int id = 0)
         {
             return View(new ReceiptMasterApiController().ReceiptMasterGetById(id, HttpContext.Session.GetBValues(), HttpContext.GetIP(), HttpContext.GetCInfo()));
         }
+
+        public IActionResult AReceiptMasterRefund(int id = 0)
+        {
+            return View(new ReceiptMasterApiController().ReceiptMasterGetById(id, HttpContext.Session.GetBValues(), HttpContext.GetIP(), HttpContext.GetCInfo()));
+        }
+
+
+
+
 
         [HttpPost]
         public string SaveReceiptMaster(ReceiptMaster ReceiptMaster, List<ReceiptDetail> ReceiptDetail)
@@ -45,6 +65,26 @@ namespace ZCLINIC.Areas.Transaction.Controllers
             return new ReceiptMaster().Transaction_ReceiptMasterGetRefNO(id, HttpContext.Session.GetBValues(), HttpContext.GetIP(), HttpContext.GetCInfo());
         }
 
+        [HttpGet]
+        public List<ReceiptMaster> Transaction_ReceiptMasterGetRefund_RefNO(string  id)
+        {
+            return new ReceiptMaster().Transaction_ReceiptMasterGetRefNO(id, HttpContext.Session.GetBValues(), HttpContext.GetIP(), HttpContext.GetCInfo());
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
            [HttpGet]
         public List<ReceiptMaster> ReceiptMasterGetLabReceiptId()
         {
@@ -61,6 +101,15 @@ namespace ZCLINIC.Areas.Transaction.Controllers
             var a = data.FirstOrDefault();
             int TotalRecords = a != null ? a.TotalCount : 0;
             return Json(new { data, recordsFiltered = TotalRecords, recordsTotal = data.Count, draw = Convert.ToInt32(Request.Form["draw"]) });
+        }
+
+          public JsonResult Transaction_ReceiptRefundGetAll()
+         {
+
+            List<ReceiptMaster> data1 = new ReceiptMaster().Transaction_ReceiptRefundGetAll(HttpContext.Session.GetBValues(), HttpContext.GetIP(), HttpContext.GetCInfo(), Convert.ToInt32(Request.Form["length"]), Convert.ToInt32(Request.Form["start"]), Request.Form["search[value]"].ToString(), Convert.ToInt32(Request.Form["Status"]));
+            var a = data1.FirstOrDefault();
+            int TotalRecords = a != null ? a.TotalCount : 0;
+            return Json(new { data1, recordsFiltered = TotalRecords, recordsTotal = data1.Count, draw = Convert.ToInt32(Request.Form["draw"]) });
         }
 
 
