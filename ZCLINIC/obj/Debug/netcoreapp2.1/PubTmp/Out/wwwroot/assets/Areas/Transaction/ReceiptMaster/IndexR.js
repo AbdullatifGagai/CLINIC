@@ -142,7 +142,7 @@ $(document).ready(() => {
 
 
                     if (editview) {
-                        markup += `<li class="text-primary-600"><a data-modalhorizontal="true" data-modalsize="modal-lg" data-heading="Edit Fees Refund" data-script="/assets/Areas/Transaction/ReceiptMaster/ReceiptMasterR.js" data-url="/Transaction/ReceiptMaster/AReceiptMasterRefund?Id=${full.ReceiptId}"><i class="icon-pencil7"></i></a></li>`
+                        markup += `<li class="text-primary-600"><a data-modalhorizontal="true" data-modalsize="modal-lg" data-heading="Edit Fees Receipt" data-script="/assets/Areas/Transaction/ReceiptMaster/ReceiptMasterR.js" data-url="/Transaction/ReceiptMaster/AReceiptMasterRefund?Id=${full.ReceiptId}"><i class="icon-pencil7"></i></a></li>`
 
                           
 

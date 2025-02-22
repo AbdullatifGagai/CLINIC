@@ -23,6 +23,10 @@ if ($('#ReceiptId').val() > 0) {
 
 
     ReceiptDetail($('#ReceiptId').val());
+    $('#ServicesAmt').attr('disabled', 'true');
+    $('#DisAmt').attr('disabled', 'true');
+    $('#BalanceAmt').attr('disabled', 'true');
+    $('#CashAmt').attr('disabled', 'true');
 
     //})
 }
