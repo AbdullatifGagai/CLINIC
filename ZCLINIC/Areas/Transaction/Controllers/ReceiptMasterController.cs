@@ -68,7 +68,7 @@ namespace ZCLINIC.Areas.Transaction.Controllers
         [HttpGet]
         public List<ReceiptMaster> Transaction_ReceiptMasterGetRefund_RefNO(string  id)
         {
-            return new ReceiptMaster().Transaction_ReceiptMasterGetRefNO(id, HttpContext.Session.GetBValues(), HttpContext.GetIP(), HttpContext.GetCInfo());
+            return new ReceiptMaster().Transaction_ReceiptMasterGetRefund_RefNO(id, HttpContext.Session.GetBValues(), HttpContext.GetIP(), HttpContext.GetCInfo());
         }
 
 
@@ -106,10 +106,10 @@ namespace ZCLINIC.Areas.Transaction.Controllers
           public JsonResult Transaction_ReceiptRefundGetAll()
          {
 
-            List<ReceiptMaster> data1 = new ReceiptMaster().Transaction_ReceiptRefundGetAll(HttpContext.Session.GetBValues(), HttpContext.GetIP(), HttpContext.GetCInfo(), Convert.ToInt32(Request.Form["length"]), Convert.ToInt32(Request.Form["start"]), Request.Form["search[value]"].ToString(), Convert.ToInt32(Request.Form["Status"]));
-            var a = data1.FirstOrDefault();
+            List<ReceiptMaster> data = new ReceiptMaster().Transaction_ReceiptRefundGetAll(HttpContext.Session.GetBValues(), HttpContext.GetIP(), HttpContext.GetCInfo(), Convert.ToInt32(Request.Form["length"]), Convert.ToInt32(Request.Form["start"]), Request.Form["search[value]"].ToString(), Convert.ToInt32(Request.Form["Status"]));
+            var a = data.FirstOrDefault();
             int TotalRecords = a != null ? a.TotalCount : 0;
-            return Json(new { data1, recordsFiltered = TotalRecords, recordsTotal = data1.Count, draw = Convert.ToInt32(Request.Form["draw"]) });
+            return Json(new { data, recordsFiltered = TotalRecords, recordsTotal = data.Count, draw = Convert.ToInt32(Request.Form["draw"]) });
         }
 
 

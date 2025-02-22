@@ -110,68 +110,6 @@ function  ReceiptDetail(id) {
 
 
 
-function  ReceiptDetail(id) {
-
-
-
-    GetJSONRequest('/Transaction/ReceiptDetail/ReceiptDetailGetAll', 'GET', { id }, data => {
-
-
-        debugger;
-        let i = 0;
-
-
-        if (data && data.length > 0) {
-            $('#tbodytable').empty();
-            for (const item of data) {
-                i++;
-                const markup = `
-               <tr>
-
-
-                                <td>
-                                         <input type="hidden" class="form-control ServicesId" readonly value="${item.ServicesId}" />
-                                         <input type="text" class="form-control ServicesName"  readonly value="${item.ServicesName}" />
-                                </td>
-                                
-                                
-                                    <td><input type="text" class="form-control Rate" readonly value="${item.Rate}" /></td>
-
-                                    <td><a id=""><i class="icon-trash btn_delete text-danger-600"></i></a>
-
-
-
-                 </tr>`;
-
-                $('#tbodytable').append(markup);
-                //calculateAdmAmt()
-                //calculateAnnAmt()
-                //calculateMonthlyAmt()
-                //calculateDisTotalAmt()
-                //calculateTotalAmt()
-
-            }
-
-
-            debugger;
-
-            // console.log(data);
-            ///   DropDown2Initializers();
-            //    $('#Supcode').val(data[0].Supcode).change();
-
-            //$('#Remarks').val(data[0].Remarks);
-            //$('#ItemId').val(data[0].ItemId).change();
-            //$('#Category').val(data[0].Category).change();
-            //	$('#ReqDate').val(data[0].ReqDate);
-
-
-
-            return;
-        }
-        ErrorAlert('No Purchase Receive Found');
-    })
-
-}
 
 
 
@@ -182,69 +120,6 @@ function  ReceiptDetail(id) {
 
 
 
-
-function ReceiptDetail(id) {
-
-
-
-    GetJSONRequest('/Transaction/ReceiptDetail/ReceiptDetailGetAll', 'GET', { id }, data => {
-
-
-        debugger;
-        let i = 0;
-
-
-        if (data && data.length > 0) {
-            $('#tbodytable').empty();
-            for (const item of data) {
-                i++;
-                const markup = `
-               <tr>
-
-
-                                <td>
-                                         <input type="hidden" class="form-control ServicesId" readonly value="${item.ServicesId}" />
-                                         <input type="text" class="form-control ServicesName"  readonly value="${item.ServicesName}" />
-                                </td>
-                                
-                                
-                                    <td><input type="text" class="form-control Rate" readonly value="${item.Rate}" /></td>
-
-                                    <td><a id=""><i class="icon-trash btn_delete text-danger-600"></i></a>
-
-
-
-                 </tr>`;
-
-                $('#tbodytable').append(markup);
-                //calculateAdmAmt()
-                //calculateAnnAmt()
-                //calculateMonthlyAmt()
-                //calculateDisTotalAmt()
-                //calculateTotalAmt()
-
-            }
-
-
-            debugger;
-
-            // console.log(data);
-            ///   DropDown2Initializers();
-            //    $('#Supcode').val(data[0].Supcode).change();
-
-            //$('#Remarks').val(data[0].Remarks);
-            //$('#ItemId').val(data[0].ItemId).change();
-            //$('#Category').val(data[0].Category).change();
-            //	$('#ReqDate').val(data[0].ReqDate);
-
-
-
-            return;
-        }
-        ErrorAlert('No Purchase Receive Found');
-    })
-
-}
 
 
 function ReceiptRefno(Id) {
