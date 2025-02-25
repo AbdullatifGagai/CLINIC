@@ -142,7 +142,7 @@ $(document).ready(() => {
 
 
                     if (editview) {
-                        markup += `<li class="text-primary-600"><a data-modalhorizontal="true" data-modalsize="modal-lg" data-heading="Edit Fees Receipt" data-script="/assets/Areas/Transaction/ReceiptMaster/ReceiptMaster.js" data-url="/Transaction/ReceiptMaster/AReceiptMaster?Id=${full.ReceiptId}"><i class="icon-pencil7"></i></a></li>`
+                        markup += `<li class="text-primary-600"><a data-modalhorizontal="true" data-modalsize="modal-lg" data-heading="Edit Fees Refund" data-script="/assets/Areas/Transaction/ReceiptMaster/ReceiptMasterR.js" data-url="/Transaction/ReceiptMaster/AReceiptMasterRefund?Id=${full.ReceiptId}"><i class="icon-pencil7"></i></a></li>`
 
                           
 
@@ -152,7 +152,7 @@ $(document).ready(() => {
 
                     if (Printview) {
                         markup += `<li class="text-primary-600"><a id="${full.ReceiptId}"  class="PrintBtn"><i class="icon-printer"></i></a></li>`
-                        markup += `<li class="text-primary-600"><a id="${full.ReceiptId}"  class="LabBtn"><i class="icon-printer"></i></a></li>`
+                    
 
 
 
@@ -253,8 +253,9 @@ $('#body').delegate('.DeleteBtn', 'click', function () {
 $('#body').delegate('.PrintBtn', 'click', function () {
     debugger;
     const id = $(this).attr('id');
+    var  StatUs = 'Refund';
 
-    var value = `/Report/Reportrdlc/AReport?rvalues.Name=49&rvalues.Value[0]=${id}&rvalues.Value[1]=''&rvalues.Value[2]=''&rvalues.Value[3]=''&rvalues.Value[4]=1&rvalues.Value[5]=''&rvalues.Value[6]=''`
+    var value = `/Report/Reportrdlc/AReport?rvalues.Name=49&rvalues.Value[0]=${id}&rvalues.Value[1]=''&rvalues.Value[2]=''&rvalues.Value[3]=''&rvalues.Value[4]=1&rvalues.Value[5]=''&rvalues.Value[6]=${StatUs}`
 
 
 
