@@ -12,7 +12,7 @@
     <Shape ID="DesignTable:GetReportCollection" ZOrder="8" X="0" Y="36" Height="239" Width="184" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="235" />
     <Shape ID="DesignTable:GetReportCollectionCategory" ZOrder="7" X="0" Y="36" Height="68" Width="236" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="64" />
     <Shape ID="DesignTable:GetReportCollectionConsultantOPD" ZOrder="6" X="82" Y="342" Height="68" Width="273" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="64" />
-    <Shape ID="DesignTable:GetReportDoctorWiseReport" ZOrder="5" X="189" Y="214" Height="28" Width="233" AdapterExpanded="true" DataTableExpanded="false" OldAdapterHeight="0" OldDataTableHeight="178" SplitterPosition="24" />
+    <Shape ID="DesignTable:GetReportDoctorWiseReport" ZOrder="5" X="189" Y="214" Height="429" Width="233" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="24" SplitterPosition="425" />
     <Shape ID="DesignTable:GetReportLabReport" ZOrder="3" X="0" Y="36" Height="28" Width="186" AdapterExpanded="true" DataTableExpanded="false" OldAdapterHeight="0" OldDataTableHeight="710" SplitterPosition="24" />
     <Shape ID="DesignTable:GetReportCollectionDetails" ZOrder="2" X="632" Y="61" Height="239" Width="223" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="235" />
     <Shape ID="DesignTable:GetReportLabWorkGet" ZOrder="1" X="548" Y="517" Height="28" Width="198" AdapterExpanded="true" DataTableExpanded="false" OldAdapterHeight="0" OldDataTableHeight="300" SplitterPosition="24" />

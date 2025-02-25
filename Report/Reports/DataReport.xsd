@@ -397,6 +397,10 @@
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
+              <xs:element name="ServicesAmt" msprop:Generator_ColumnVarNameInTable="columnServicesAmt" msprop:Generator_ColumnPropNameInRow="ServicesAmt" msprop:Generator_ColumnPropNameInTable="ServicesAmtColumn" msprop:Generator_UserColumnName="ServicesAmt" type="xs:decimal" minOccurs="0" />
+              <xs:element name="DisAmt" msprop:Generator_ColumnVarNameInTable="columnDisAmt" msprop:Generator_ColumnPropNameInRow="DisAmt" msprop:Generator_ColumnPropNameInTable="DisAmtColumn" msprop:Generator_UserColumnName="DisAmt" type="xs:decimal" minOccurs="0" />
+              <xs:element name="BalanceAmt" msprop:Generator_ColumnVarNameInTable="columnBalanceAmt" msprop:Generator_ColumnPropNameInRow="BalanceAmt" msprop:Generator_ColumnPropNameInTable="BalanceAmtColumn" msprop:Generator_UserColumnName="BalanceAmt" type="xs:decimal" minOccurs="0" />
+              <xs:element name="DocShareAmt" msprop:Generator_ColumnVarNameInTable="columnDocShareAmt" msprop:Generator_ColumnPropNameInRow="DocShareAmt" msprop:Generator_ColumnPropNameInTable="DocShareAmtColumn" msprop:Generator_UserColumnName="DocShareAmt" type="xs:decimal" minOccurs="0" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>
