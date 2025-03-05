@@ -152,6 +152,12 @@ namespace ZCLINIC.Areas.Report.Controllers
         }
 
 
+         public IActionResult ProfitSheet()
+        {
+            return View();
+        }
+
+
 
 
 
