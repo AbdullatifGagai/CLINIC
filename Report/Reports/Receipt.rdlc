@@ -272,6 +272,7 @@
                                   <Style>
                                     <FontFamily>arial</FontFamily>
                                     <FontSize>7pt</FontSize>
+                                    <Format>#,0.00;(#,0.00)</Format>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -348,6 +349,7 @@
                                   <Style>
                                     <FontFamily>arial</FontFamily>
                                     <FontSize>8pt</FontSize>
+                                    <Format>#,0.00;(#,0.00)</Format>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -424,6 +426,7 @@
                                   <Style>
                                     <FontFamily>arial</FontFamily>
                                     <FontSize>8pt</FontSize>
+                                    <Format>#,0.00;(#,0.00)</Format>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -500,6 +503,7 @@
                                   <Style>
                                     <FontFamily>arial</FontFamily>
                                     <FontSize>8pt</FontSize>
+                                    <Format>#,0.00;(#,0.00)</Format>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -576,6 +580,7 @@
                                   <Style>
                                     <FontFamily>arial</FontFamily>
                                     <FontSize>8pt</FontSize>
+                                    <Format>#,0.00;(#,0.00)</Format>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -595,6 +600,7 @@
                             <PaddingBottom>2pt</PaddingBottom>
                           </Style>
                         </Textbox>
+                        <rd:Selected>true</rd:Selected>
                       </CellContents>
                     </TablixCell>
                   </TablixCells>
@@ -737,7 +743,7 @@
       <Width>7.22381cm</Width>
       <Page>
         <PageHeader>
-          <Height>8.64016cm</Height>
+          <Height>9.38099cm</Height>
           <PrintOnFirstPage>true</PrintOnFirstPage>
           <PrintOnLastPage>true</PrintOnLastPage>
           <ReportItems>
@@ -856,8 +862,8 @@
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>PatientName</rd:DefaultName>
-              <Top>4.56112cm</Top>
-              <Left>2.4967cm</Left>
+              <Top>5.3014cm</Top>
+              <Left>2.47531cm</Left>
               <Height>0.6cm</Height>
               <Width>4.32988cm</Width>
               <ZIndex>3</ZIndex>
@@ -888,8 +894,8 @@
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>ReceiptNo</rd:DefaultName>
-              <Top>2.54527cm</Top>
-              <Left>2.5cm</Left>
+              <Top>3.28555cm</Top>
+              <Left>2.47861cm</Left>
               <Height>0.6cm</Height>
               <Width>4.32988cm</Width>
               <ZIndex>4</ZIndex>
@@ -921,8 +927,8 @@
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>Textbox27</rd:DefaultName>
-              <Top>2.52327cm</Top>
-              <Left>0.15875cm</Left>
+              <Top>3.26355cm</Top>
+              <Left>0.13736cm</Left>
               <Height>0.57447cm</Height>
               <Width>2.30244cm</Width>
               <ZIndex>5</ZIndex>
@@ -954,8 +960,8 @@
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>Textbox27</rd:DefaultName>
-              <Top>4.55471cm</Top>
-              <Left>0.11363cm</Left>
+              <Top>5.29499cm</Top>
+              <Left>0.09224cm</Left>
               <Height>0.57447cm</Height>
               <Width>2.30244cm</Width>
               <ZIndex>6</ZIndex>
@@ -987,8 +993,8 @@
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>Textbox27</rd:DefaultName>
-              <Top>5.9026cm</Top>
-              <Left>0.16757cm</Left>
+              <Top>6.64288cm</Top>
+              <Left>0.14618cm</Left>
               <Height>0.50391cm</Height>
               <Width>2.30244cm</Width>
               <ZIndex>7</ZIndex>
@@ -1022,8 +1028,8 @@
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>ReceiptNo</rd:DefaultName>
-              <Top>3.89056cm</Top>
-              <Left>2.5cm</Left>
+              <Top>4.63084cm</Top>
+              <Left>2.47861cm</Left>
               <Height>0.6cm</Height>
               <Width>4.32989cm</Width>
               <ZIndex>8</ZIndex>
@@ -1055,8 +1061,8 @@
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>Textbox27</rd:DefaultName>
-              <Top>3.91089cm</Top>
-              <Left>0.14868cm</Left>
+              <Top>4.65117cm</Top>
+              <Left>0.12729cm</Left>
               <Height>0.57447cm</Height>
               <Width>2.27069cm</Width>
               <ZIndex>9</ZIndex>
@@ -1088,8 +1094,8 @@
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>Textbox27</rd:DefaultName>
-              <Top>3.26355cm</Top>
-              <Left>0.15875cm</Left>
+              <Top>4.00383cm</Top>
+              <Left>0.13736cm</Left>
               <Height>0.54151cm</Height>
               <Width>2.25731cm</Width>
               <ZIndex>10</ZIndex>
@@ -1120,8 +1126,8 @@
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>ReceiptNo</rd:DefaultName>
-              <Top>3.26791cm</Top>
-              <Left>2.5cm</Left>
+              <Top>4.00819cm</Top>
+              <Left>2.47861cm</Left>
               <Height>0.6cm</Height>
               <Width>4.30114cm</Width>
               <ZIndex>11</ZIndex>
@@ -1152,8 +1158,8 @@
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>PatientName</rd:DefaultName>
-              <Top>5.86612cm</Top>
-              <Left>2.52682cm</Left>
+              <Top>6.6064cm</Top>
+              <Left>2.50543cm</Left>
               <Height>0.6cm</Height>
               <Width>4.32988cm</Width>
               <ZIndex>12</ZIndex>
@@ -1184,8 +1190,8 @@
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>PatientName</rd:DefaultName>
-              <Top>7.26173cm</Top>
-              <Left>2.5252cm</Left>
+              <Top>8.00201cm</Top>
+              <Left>2.50381cm</Left>
               <Height>0.6cm</Height>
               <Width>4.32988cm</Width>
               <ZIndex>13</ZIndex>
@@ -1217,8 +1223,8 @@
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>Textbox27</rd:DefaultName>
-              <Top>7.32523cm</Top>
-              <Left>0.18748cm</Left>
+              <Top>8.06551cm</Top>
+              <Left>0.16609cm</Left>
               <Height>0.50391cm</Height>
               <Width>2.30244cm</Width>
               <ZIndex>14</ZIndex>
@@ -1249,8 +1255,8 @@
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>PatientName</rd:DefaultName>
-              <Top>6.55589cm</Top>
-              <Left>2.5252cm</Left>
+              <Top>7.29617cm</Top>
+              <Left>2.50381cm</Left>
               <Height>0.6cm</Height>
               <Width>4.32988cm</Width>
               <ZIndex>15</ZIndex>
@@ -1282,8 +1288,8 @@
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>Textbox27</rd:DefaultName>
-              <Top>6.61318cm</Top>
-              <Left>0.14868cm</Left>
+              <Top>7.35346cm</Top>
+              <Left>0.12729cm</Left>
               <Height>0.50391cm</Height>
               <Width>2.30244cm</Width>
               <ZIndex>16</ZIndex>
@@ -1314,8 +1320,8 @@
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>PatientName</rd:DefaultName>
-              <Top>5.23437cm</Top>
-              <Left>2.52682cm</Left>
+              <Top>5.97465cm</Top>
+              <Left>2.50543cm</Left>
               <Height>0.6cm</Height>
               <Width>1.47238cm</Width>
               <ZIndex>17</ZIndex>
@@ -1347,8 +1353,8 @@
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>Textbox27</rd:DefaultName>
-              <Top>5.23501cm</Top>
-              <Left>0.14868cm</Left>
+              <Top>5.97529cm</Top>
+              <Left>0.12729cm</Left>
               <Height>0.57447cm</Height>
               <Width>2.30244cm</Width>
               <ZIndex>18</ZIndex>
@@ -1380,8 +1386,8 @@
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>Textbox27</rd:DefaultName>
-              <Top>7.97378cm</Top>
-              <Left>0.18748cm</Left>
+              <Top>8.71406cm</Top>
+              <Left>0.22959cm</Left>
               <Height>0.50391cm</Height>
               <Width>2.30244cm</Width>
               <ZIndex>19</ZIndex>
@@ -1412,11 +1418,44 @@
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>PatientName</rd:DefaultName>
-              <Top>7.90054cm</Top>
-              <Left>2.55857cm</Left>
+              <Top>8.64082cm</Top>
+              <Left>2.60068cm</Left>
               <Height>0.6cm</Height>
               <Width>4.32988cm</Width>
               <ZIndex>20</ZIndex>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+                <PaddingTop>2pt</PaddingTop>
+                <PaddingBottom>2pt</PaddingBottom>
+              </Style>
+            </Textbox>
+            <Textbox Name="prmParaName">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>=Parameters!prmParaName.Value</Value>
+                      <Style>
+                        <FontSize>12pt</FontSize>
+                        <FontWeight>Bold</FontWeight>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style />
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>prmParaName</rd:DefaultName>
+              <Top>2.41474cm</Top>
+              <Left>0.12729cm</Left>
+              <Height>0.7077cm</Height>
+              <Width>6.60735cm</Width>
+              <ZIndex>21</ZIndex>
               <Style>
                 <Border>
                   <Style>None</Style>
@@ -1482,6 +1521,10 @@
       <DataType>String</DataType>
       <Prompt>ReportParameter1</Prompt>
     </ReportParameter>
+    <ReportParameter Name="prmParaName">
+      <DataType>String</DataType>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
   </ReportParameters>
   <ReportParametersLayout>
     <GridLayoutDefinition>
@@ -1517,6 +1560,11 @@
           <ColumnIndex>1</ColumnIndex>
           <RowIndex>1</RowIndex>
           <ParameterName>prmReportName</ParameterName>
+        </CellDefinition>
+        <CellDefinition>
+          <ColumnIndex>2</ColumnIndex>
+          <RowIndex>1</RowIndex>
+          <ParameterName>prmParaName</ParameterName>
         </CellDefinition>
       </CellDefinitions>
     </GridLayoutDefinition>

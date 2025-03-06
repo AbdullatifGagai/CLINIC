@@ -460,3 +460,8 @@ C:\Users\Administrator\Documents\GitHub\CLINIC\ZCLINIC\obj\Debug\netcoreapp2.1\R
 C:\Users\Administrator\Documents\GitHub\CLINIC\ZCLINIC\obj\Debug\netcoreapp2.1\Razor\Areas\Transaction\Views\ReportMaster\TechIndex.cshtml.g.cs
 C:\Users\Administrator\Documents\GitHub\CLINIC\ZCLINIC\obj\Debug\netcoreapp2.1\Razor\Areas\Transaction\Views\ReportMaster\PathologistIndex.cshtml.g.cs
 C:\Users\Administrator\Documents\GitHub\CLINIC\ZCLINIC\obj\Debug\netcoreapp2.1\Razor\Areas\Report\Views\ReportDetail\LabWorkSheet.cshtml.g.cs
+C:\Users\Administrator\Documents\GitHub\CLINIC\ZCLINIC\bin\Debug\netcoreapp2.1\wwwroot\assets\Areas\Transaction\ReceiptMaster\IndexR.js
+C:\Users\Administrator\Documents\GitHub\CLINIC\ZCLINIC\bin\Debug\netcoreapp2.1\wwwroot\assets\Areas\Transaction\ReceiptMaster\ReceiptMasterR.js
+C:\Users\Administrator\Documents\GitHub\CLINIC\ZCLINIC\obj\Debug\netcoreapp2.1\Razor\Areas\Transaction\Views\ReceiptMaster\IndexR.cshtml.g.cs
+C:\Users\Administrator\Documents\GitHub\CLINIC\ZCLINIC\obj\Debug\netcoreapp2.1\Razor\Areas\Transaction\Views\ReceiptMaster\AReceiptMasterRefund.cshtml.g.cs
+C:\Users\Administrator\Documents\GitHub\CLINIC\ZCLINIC\obj\Debug\netcoreapp2.1\Razor\Areas\Report\Views\ReportDetail\ProfitSheet.cshtml.g.cs

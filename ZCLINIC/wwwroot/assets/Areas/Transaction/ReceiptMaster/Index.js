@@ -152,6 +152,10 @@ $(document).ready(() => {
 
                     if (Printview) {
                         markup += `<li class="text-primary-600"><a id="${full.ReceiptId}"  class="PrintBtn"><i class="icon-printer"></i></a></li>`
+                        markup += `<li class="text-primary-600"><a id="${full.ReceiptId}"  class="LabBtn"><i class="icon-printer"></i></a></li>`
+
+
+
                     }
 
 
@@ -249,8 +253,22 @@ $('#body').delegate('.DeleteBtn', 'click', function () {
 $('#body').delegate('.PrintBtn', 'click', function () {
     debugger;
     const id = $(this).attr('id');
+    var StatUs = 'Receipt';
+    var value = `/Report/Reportrdlc/AReport?rvalues.Name=49&rvalues.Value[0]=${id}&rvalues.Value[1]=''&rvalues.Value[2]=''&rvalues.Value[3]=''&rvalues.Value[4]=1&rvalues.Value[5]=''&rvalues.Value[6]=${StatUs}`
 
-    var value = `/Report/Reportrdlc/AReport?rvalues.Name=49&rvalues.Value[0]=${id}&rvalues.Value[1]=''&rvalues.Value[2]=''&rvalues.Value[3]=''&rvalues.Value[4]=1&rvalues.Value[5]=''&rvalues.Value[6]=''`
+
+
+    $(this).attr('href', value)
+    $(this).attr('target', "_blank")
+
+});
+
+
+$('#body').delegate('.LabBtn', 'click', function () {
+    debugger;
+    const id = $(this).attr('id');
+
+    var value = `/Report/Reportrdlc/AReport?rvalues.Name=58&rvalues.Value[0]=${id}&rvalues.Value[1]=''&rvalues.Value[2]=''&rvalues.Value[3]=''&rvalues.Value[4]=1&rvalues.Value[5]=''&rvalues.Value[6]=''`
 
 
 

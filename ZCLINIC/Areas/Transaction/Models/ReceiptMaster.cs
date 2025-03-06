@@ -266,9 +266,53 @@ namespace ZCLINIC.Areas.Transaction.Models
             }
         }
 
+         public List<ReceiptMaster> Transaction_ReceiptRefundGetAll(BValues bv, string ip, string cInfo, int length, int offset, string searchtext, int status)
+        {
+
+
+            var parameters = new { bv.UserId, bv.TenantId, bv.AppId, offset, length, searchtext, status };
+
+
+
+            try
+            {
+                List<ReceiptMaster> records = DataBase.ExecuteQuery<ReceiptMaster>(parameters, Connection.GetConnection());
+
+                Loging.DB_Log(eLogType.Log_Posetive, "", parameters, "", MODULE, Connection.GetLogConnection(), cInfo, ip, bv.UserId);
+
+                return records;
+            }
+            catch (Exception ex)
+            {
+                Loging.DB_Log(eLogType.Log_Negative, ex.Message, parameters, "", MODULE, Connection.GetLogConnection(), cInfo, ip, bv.UserId);
+
+                return null;
+            }
+        }
+
 
 
         public List<ReceiptMaster> Transaction_ReceiptMasterGetRefNO(string Id,BValues bv, string ip, string cInfo)
+        {
+            var parameters = new { bv.UserId, bv.TenantId, bv.AppId,Id };
+
+            try
+            {
+                List<ReceiptMaster> records = DataBase.ExecuteQuery<ReceiptMaster>(parameters, Connection.GetConnection());
+
+                Loging.DB_Log(eLogType.Log_Posetive, "", parameters, "", MODULE, Connection.GetLogConnection(), cInfo, ip, bv.UserId);
+
+                return records;
+            }
+            catch (Exception ex)
+            {
+                Loging.DB_Log(eLogType.Log_Negative, ex.Message, parameters, "", MODULE, Connection.GetLogConnection(), cInfo, ip, bv.UserId);
+
+                return null;
+            }
+        }
+
+           public List<ReceiptMaster> Transaction_ReceiptMasterGetRefund_RefNO(string Id,BValues bv, string ip, string cInfo)
         {
             var parameters = new { bv.UserId, bv.TenantId, bv.AppId,Id };
 

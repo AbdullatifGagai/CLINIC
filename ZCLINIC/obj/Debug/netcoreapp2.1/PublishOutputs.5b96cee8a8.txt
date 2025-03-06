@@ -1,4 +1,5 @@
 C:\Users\Administrator\Documents\GitHub\CLINIC\ZCLINIC\obj\Debug\netcoreapp2.1\PubTmp\Out\wwwroot\assets\Areas\Master\Labtest\Labtest.js
+C:\Users\Administrator\Documents\GitHub\CLINIC\ZCLINIC\obj\Debug\netcoreapp2.1\PubTmp\Out\wwwroot\assets\Areas\Transaction\ReceiptMaster\ReceiptMasterR.js
 C:\Users\Administrator\Documents\GitHub\CLINIC\ZCLINIC\obj\Debug\netcoreapp2.1\PubTmp\Out\wwwroot\assets\Areas\Transaction\ReportMaster\ReportMaster.js
 C:\Users\Administrator\Documents\GitHub\CLINIC\ZCLINIC\obj\Debug\netcoreapp2.1\PubTmp\Out\wwwroot\assets\Areas\Transaction\ReceiptMaster\ReceiptMaster.js
 C:\Users\Administrator\Documents\GitHub\CLINIC\ZCLINIC\obj\Debug\netcoreapp2.1\PubTmp\Out\wwwroot\assets\Areas\Transaction\Appointment\Appointment.js
@@ -27,6 +28,7 @@ C:\Users\Administrator\Documents\GitHub\CLINIC\ZCLINIC\obj\Debug\netcoreapp2.1\P
 C:\Users\Administrator\Documents\GitHub\CLINIC\ZCLINIC\obj\Debug\netcoreapp2.1\PubTmp\Out\wwwroot\assets\Areas\Transaction\PurchaseInward\PurchaseInward.js
 C:\Users\Administrator\Documents\GitHub\CLINIC\ZCLINIC\obj\Debug\netcoreapp2.1\PubTmp\Out\wwwroot\assets\Areas\Transaction\PurchaseOrder\PurchaseOrder.js
 C:\Users\Administrator\Documents\GitHub\CLINIC\ZCLINIC\obj\Debug\netcoreapp2.1\PubTmp\Out\wwwroot\assets\Areas\Transaction\ReceiptMaster\Index.js
+C:\Users\Administrator\Documents\GitHub\CLINIC\ZCLINIC\obj\Debug\netcoreapp2.1\PubTmp\Out\wwwroot\assets\Areas\Transaction\ReceiptMaster\IndexR.js
 C:\Users\Administrator\Documents\GitHub\CLINIC\ZCLINIC\obj\Debug\netcoreapp2.1\PubTmp\Out\wwwroot\assets\Areas\Transaction\ReceiptPanelMaster\ReceiptPanelMaster.js
 C:\Users\Administrator\Documents\GitHub\CLINIC\ZCLINIC\obj\Debug\netcoreapp2.1\PubTmp\Out\wwwroot\assets\Areas\Transaction\ReportMaster\Index.js
 C:\Users\Administrator\Documents\GitHub\CLINIC\ZCLINIC\obj\Debug\netcoreapp2.1\PubTmp\Out\wwwroot\assets\Areas\Transaction\Requisition\Requisition.js
