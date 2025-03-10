@@ -1,0 +1,65 @@
+﻿
+
+@using ZCLINIC
+@model ZCLINIC.Areas.Master.Models.Store
+
+@{
+    string URL = Model == null ? "/Master/Store/SaveStore" : "/Master/Store/UpdateStore";
+}
+
+<form class="form-horizontal" method="post" id="" data-url="@URL" data-display="Master" data-rurl="/Master/Store">
+
+    @Html.HiddenFor(m => m.storeId)
+
+    <div class="row">
+
+        <div class="form-group form-group-xs">
+            <label class="control-label col-sm-4">Store Id<b class="wysiwyg-color-red">*</b></label>
+            <div class="form-group has-feedback col-sm-4">
+                @Html.TextBoxFor(m => m.storeId, new { @class = "form-control input-group", type = "text", @readonly = "readonly" })
+                <div class="form-control-feedback"><i class=""></i></div>
+            </div>
+        </div>
+
+        <div class="form-group form-group-xs">
+            <label class="control-label col-sm-4">Store Name<b class="wysiwyg-color-red">*</b></label>
+            <div class="form-group has-feedback col-sm-8">
+                @Html.TextBoxFor(m => m.Storename, new { @class = "form-control input-group", placeholder = "Enter Account Name", type = "text", required = "required" })
+                <div class="form-control-feedback"><i class=""></i></div>
+            </div>
+        </div>
+
+        @*<div class="form-group form-group-xs">
+            <label class="control-label col-sm-4">Branch Name<b class="wysiwyg-color-red">*</b></label>
+            <div class="form-group has-feedback col-sm-8">
+
+                @{
+                    List<SMSERP.Areas.Master.Models.Branch> Branch = new SMSERP.Areas.Master.Models.Branch().Master_BranchGetAll(Context.Session.GetBValues(), Context.GetIP(), Context.GetCInfo());
+
+                }
+                @Html.DropDownList("Branch_Id", Branch.Select(s => new SelectListItem() { Text = s.BranchName, Value = s.BranchId.ToString() }), new { @class = "form-control " })
+
+
+
+
+
+                <div class="form-control-feedback"><i class=""></i></div>
+            </div>
+        </div>*@
+
+
+
+
+
+
+
+
+
+        <div class="modal-footer no-padding no-border">
+            <button type="button" class="btn btn-danger btn-xs" data-dismiss="modal"><i class="icon-cross"></i>Close</button>
+            <button type="button" data-submit="true" class="btn btn-primary btn-xs"><i class="icon-floppy-disk position-left"></i>Save</button>
+        </div>
+
+    </div>
+
+</form>
