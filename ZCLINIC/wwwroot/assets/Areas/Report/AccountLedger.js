@@ -16,6 +16,7 @@ $('#Master_Code').change(() => {
 
 
 
+
         var Id = $('#Master_Code').val()
 
 
