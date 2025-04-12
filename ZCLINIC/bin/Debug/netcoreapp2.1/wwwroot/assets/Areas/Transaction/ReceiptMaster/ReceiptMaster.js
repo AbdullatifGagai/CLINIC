@@ -953,7 +953,7 @@ $('.SaveBtn').on('click', function () {
 
     }
 
-    if (MrId == '' || MrNo == '' || PatientName == '', age == '' || CashAmt == 0) {
+    if (MrId == '' || MrNo == '' || PatientName == '', age == '' ) {
 
 
         ErrorAlert("Miss Value");

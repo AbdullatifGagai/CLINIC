@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Administrator\\Documents\\GitHub\\CLINIC\\ZCLINIC\\CLINIC.csproj": {}
+    "C:\\Users\\PC\\Documents\\GitHub\\CLINIC\\ZCLINIC\\CLINIC.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Administrator\\Documents\\GitHub\\CLINIC\\ZCLINIC\\CLINIC.csproj": {
+    "C:\\Users\\PC\\Documents\\GitHub\\CLINIC\\ZCLINIC\\CLINIC.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Administrator\\Documents\\GitHub\\CLINIC\\ZCLINIC\\CLINIC.csproj",
+        "projectUniqueName": "C:\\Users\\PC\\Documents\\GitHub\\CLINIC\\ZCLINIC\\CLINIC.csproj",
         "projectName": "SMSERP",
-        "projectPath": "C:\\Users\\Administrator\\Documents\\GitHub\\CLINIC\\ZCLINIC\\CLINIC.csproj",
-        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Administrator\\Documents\\GitHub\\CLINIC\\ZCLINIC\\obj\\",
+        "projectPath": "C:\\Users\\PC\\Documents\\GitHub\\CLINIC\\ZCLINIC\\CLINIC.csproj",
+        "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\PC\\Documents\\GitHub\\CLINIC\\ZCLINIC\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -109,7 +109,6 @@
               "version": "[4.2.1, )"
             },
             "Microsoft.NETCore.App": {
-              "suppressParent": "All",
               "target": "Package",
               "version": "[2.1.0, )",
               "autoReferenced": true
@@ -144,16 +143,10 @@
             }
           },
           "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48"
+            "net461"
           ],
           "assetTargetFallback": true,
-          "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.408\\RuntimeIdentifierGraph.json"
+          "warn": true
         }
       }
     }
