@@ -6,8 +6,12 @@
     int counter = 0;
 
     List<ZCLINIC.Areas.Master.Models.Doctor> DoctorName = new ZCLINIC.Areas.Master.Models.Doctor().Master_DoctorGetAll(Context.Session.GetBValues(), Context.GetIP(), Context.GetCInfo());
-    List<ZCLINIC.Areas.Master.Models.ClinicCategory> ClinicCategory = new ZCLINIC.Areas.Master.Models.ClinicCategory().Master_ClinicCategoryGetAll(Context.Session.GetBValues(), Context.GetIP(), Context.GetCInfo());
+    DoctorName.Insert(0, new ZCLINIC.Areas.Master.Models.Doctor { DocId = 0, DoctorName = "--Select Doctor Name--" });
 
+
+
+    List<ZCLINIC.Areas.Master.Models.ClinicCategory> ClinicCategory = new ZCLINIC.Areas.Master.Models.ClinicCategory().Master_ClinicCategoryGetAll(Context.Session.GetBValues(), Context.GetIP(), Context.GetCInfo());
+    ClinicCategory.Insert(0, new ZCLINIC.Areas.Master.Models.ClinicCategory { CategoryId = 0, CategoryName = "--Select Category Name--" });
 
 
 }
@@ -112,11 +116,11 @@
                         @Html.DropDownList("ConId", DoctorName.Select(p => new SelectListItem() { Text = p.DoctorName.ToString(), Value = p.DocId.ToString() }), new { @class = "bootstrap-select vatratecal", data_live_search = "true", data_width = "100%" })
 
                     </th>
-                    <th class="col-md-1"><input type="text" class="form-control  DocShare TxtBox" , id="DocShare" /></th>
-                    <th class="col-md-1"><input type="text" class="form-control  Amount TxtBox" , id="Amount" /></th>
-                    <th class="col-md-1"><input type="text" class="form-control  ShareAmt TxtBox" id="ShareAmt" /></th>
+                    <th class="col-md-1"><input type="number" class="form-control  DocShare TxtBox" , id="DocShare" /></th>
+                    <th class="col-md-1"><input type="number" class="form-control  Amount TxtBox" , id="Amount" /></th>
+                    <th class="col-md-1"><input type="number" class="form-control  ShareAmt TxtBox" id="ShareAmt" /></th>
 
-                    <th class="col-md-1"><input type="text" class="form-control CountOPD TxtBox" id="CountOPD" /></th>
+                    <th class="col-md-1"><input type="number" class="form-control CountOPD TxtBox" id="CountOPD" /></th>
 
                     <th class="col-md-3">
                         @Html.DropDownList("TypeID", ClinicCategory.Select(p => new SelectListItem() { Text = p.CategoryName.ToString(), Value = p.CategoryId.ToString() }), new { @class = "bootstrap-select vatratecal", data_live_search = "true", data_width = "100%" })

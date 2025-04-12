@@ -122,8 +122,17 @@ $('#AddItemBtn').click(function () {
 
     debugger;
 
-    if ($('#DayId').val() == "0") {
-        ErrorAlert("Product Name is Required")
+    if ($('#ConId').val() == "0") {
+        ErrorAlert("Doctor Name is Required")
+    }
+   
+   
+    if ($('#TypeID').val() == "0") {
+        ErrorAlert("Type Name is Required")
+    }
+   
+    if ($('#DocShare').val() == '' || $('#Amount').val() == '' || $('#ShareAmt').val() == '' || $('#CountOPD').val() == ''  ) {
+        ErrorAlert("Miss Values")
     }
    
    
@@ -131,22 +140,51 @@ $('#AddItemBtn').click(function () {
     else
     {
         let markup = `<tr>
-                      <td><input hidden class="ConId" readonly value="${$('#ConId').val()}"/>${$('#ConId option:selected').text()}</td>
-
-                        
-
+                      
+                        <td><input type="text" class="form-control" readonly value="${$('#ConId option:selected').text()}"><input type="hidden" class="ConId form-control" value="${$('#ConId').val()}"></td>
+                        <td><input class="DocShare form-control"  value="${$('#DocShare').val()}" /></td>
+                        <td><input class="Amount form-control"  value="${$('#Amount').val()}" /></td>
+                        <td><input class="ShareAmt form-control"  value="${$('#ShareAmt').val()}" /></td>
+                        <td><input class="CountOPD form-control"  value="${$('#CountOPD').val()}" /></td>
+                         
+                         <td><input type="text" class="form-control" readonly value="${$('#TypeID option:selected').text()}"><input type="hidden" class="TypeID form-control" value="${$('#TypeID').val()}"></td>
                       
 
                    
                       <td><a class="removeitem text-danger-600"><i class="icon-trash"></i></a></td>
                       </tr>`
         $('tbody.VoucherDetail').append(markup)
-
+        Clear();
      
        
 
     }
 })
+
+
+function Clear() {
+    $('#ConId').val(0)
+    $('#ConId').select2()
+    $('#TypeID').val(0)
+    $('#TypeID').select2()
+
+
+    $('#DocShare').val('')
+
+    $('#Amount').val('')
+    $('#ShareAmt').val('')
+    $('#CountOPD').val('')
+ 
+
+
+
+
+
+
+    // $('#creditaccount').select2()
+    //   $('#expenseaccount').select2()
+}
+
 
 $('#ConId').change(function () {
     debugger;
@@ -245,44 +283,33 @@ $('#ConId').change(function () {
 
 //})
 
-$('#Rate,#Qty,#SalePar,#DisAmt').change(function () {
+$('#Amount').change(function () {
 
 
     var Amount = $('#Amount').val() || 0;
     var DocShare = $('#DocShare').val() || 0;
+
+
+
   
 
-    //  var Qty = $('#Qty').val() || 0;
+
+     
 
 
-  
-
-
-
-    var SAmt = 0;
-    var TAmt = 0;
-    var Total_Amt = 0;
-
-
-    //var  TotalAmt = 0;
-
-
-    SAmt = TotalAmount * SalePar / 100;
+    SAmt = Amount * DocShare / 100;
 
 
 
     // SAmt = parseFloat(Amount);
 
 
-    TAmt = Rate * Qty;
-
-    Total_Amt = TAmt + SAmt - DisAmt;
+   
     debugger;
 
     // $('#Rate').val(TAmt.toFixed(2));
-    $('#TotalAmt').val(TAmt.toFixed(2));
-    $('#SaleAmt').val(SAmt.toFixed(2));
-    $('#TAmt').val(Total_Amt.toFixed(2));
+    $('#ShareAmt').val(SAmt.toFixed(2));
+  
 
 
 
