@@ -11,6 +11,38 @@ namespace ZCLINIC.Areas.Transaction.Models
     {
         private const string MODULE = "Transaction";
 
+
+
+        [TVP]
+        public int Id { get; set; }
+
+        [TVP]
+        public int Code { get; set; }
+        [TVP]
+        public string Wdate { get; set; }
+        [TVP]
+        public decimal tAmt { get; set; }
+        [TVP]
+
+        public int RefId { get; set; }
+        [TVP]
+        public int TypeM { get; set; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         //properties for model
         [TVP]
         public int TenantId { get; set; }

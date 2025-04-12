@@ -636,3 +636,7 @@ C:\Users\PC\Documents\GitHub\CLINIC\ZCLINIC\obj\Debug\netcoreapp2.1\CLINIC.dll
 C:\Users\PC\Documents\GitHub\CLINIC\ZCLINIC\obj\Debug\netcoreapp2.1\CLINIC.pdb
 C:\Users\PC\Documents\GitHub\CLINIC\ZCLINIC\obj\Debug\netcoreapp2.1\Razor\Areas\Master\Views\DoctorLedgerMaster\Index.g.cshtml.cs
 C:\Users\PC\Documents\GitHub\CLINIC\ZCLINIC\obj\Debug\netcoreapp2.1\Razor\Areas\Master\Views\DoctorLedgerMaster\ADoctorLedgerMaster.g.cshtml.cs
+C:\Users\Administrator\Documents\GitHub\CLINIC\ZCLINIC\obj\Debug\netcoreapp2.1\Razor\Areas\Master\Views\Store\AStore.cshtml.g.cs
+C:\Users\Administrator\Documents\GitHub\CLINIC\ZCLINIC\obj\Debug\netcoreapp2.1\Razor\Areas\Master\Views\Store\Index.cshtml.g.cs
+C:\Users\Administrator\Documents\GitHub\CLINIC\ZCLINIC\obj\Debug\netcoreapp2.1\Razor\Areas\Transaction\Views\DoctorLedgerMaster\Index.cshtml.g.cs
+C:\Users\Administrator\Documents\GitHub\CLINIC\ZCLINIC\obj\Debug\netcoreapp2.1\Razor\Areas\Transaction\Views\DoctorLedgerMaster\ADoctorLedgerMaster.cshtml.g.cs
