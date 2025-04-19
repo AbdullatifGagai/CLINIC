@@ -131,7 +131,7 @@ $('#AddItemBtn').click(function () {
         ErrorAlert("Type Name is Required")
     }
    
-    if ($('#DocShare').val() == '' || $('#Amount').val() == '' || $('#ShareAmt').val() == '' || $('#CountOPD').val() == ''  ) {
+    else if ($('#DocShare').val() == '' || $('#Amount').val() == '' || $('#ShareAmt').val() == '' || $('#CountOPD').val() == ''  ) {
         ErrorAlert("Miss Values")
     }
    
@@ -403,6 +403,13 @@ $('tbody.VoucherDetail').delegate(".removeitem", "click", function () {
 
 
 $('.SaveBtn').on('click', function () {
+
+
+
+
+    debugger;
+
+
     var DoctorName = $('#DoctorName').val();
    
 
@@ -437,14 +444,7 @@ $('.SaveBtn').on('click', function () {
 
 
     
-    if ($('#LPatient').val() == '') {
-
-
-        ErrorAlert("Enter Patient Limit");
-        check = true;
-
-    }
-
+   
     
   
    
